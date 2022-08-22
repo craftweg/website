@@ -17,8 +17,8 @@ env:
   MIX_ENV: test
 
 jobs:
-  build:
-    name: Build
+  test:
+    name: Test
     runs-on: 'ubuntu-latest'
     timeout-minutes: 15
     services:
