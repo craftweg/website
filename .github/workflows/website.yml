@@ -12,6 +12,8 @@ concurrency:
 
 env:
   DEBUG: 1
+  OTP_VERSION: 25.0.4
+  ELIXIR_VERSION: 1.13.4
 
 jobs:
   build:
@@ -23,8 +25,8 @@ jobs:
 
       - uses: erlef/setup-elixir@v1
         with:
-          otp-version: '23.2'
-          elixir-version: '1.11.3'
+          otp-version: ${{ env.OTP_VERSION }}
+          elixir-version: ${{ env.ELIXIR_VERSION }}
 
       - name: Restore Cache
         uses: actions/cache@v2

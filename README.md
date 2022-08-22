@@ -13,6 +13,11 @@ This repository contains Craftweg' website powered by Phoenix.
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+## Requirements
+
+- Elixir 1.13.4 with OTP 25
+- Erlang 25.0.4
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
