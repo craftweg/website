@@ -6,7 +6,7 @@ defmodule Craftweg.Blog do
     build: Post,
     from: Application.app_dir(:craftweg, "priv/posts/**/*.md"),
     as: :posts,
-    parser: Craftweg.Blog.Parser,
+    parser: Parser,
     highlighters: []
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})

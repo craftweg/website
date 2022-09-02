@@ -3,7 +3,7 @@ defmodule Craftweg.Blog.Parser do
   This module is a custom parser for NimblePublisher to extract the frontmatter delimited
   by the "---" delimiters.
   """
-  def parser(path, contents) do
+  def parse(path, contents) do
     {[], "body"}
   end
 end

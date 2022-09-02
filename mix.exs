@@ -33,7 +33,7 @@ defmodule Craftweg.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:nimble_publisher, "~> 0.1.2"},
+      {:nimble_publisher, git: "https://github.com/dashbitco/nimble_publisher", ref: "abee26e755c6dc638341869f090bc1d63c690f3f"},
       {:phoenix, "~> 1.6.11"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.6"},
