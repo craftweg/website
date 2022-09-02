@@ -1,9 +1,7 @@
 defmodule Craftweg do
   @moduledoc """
-  Craftweg keeps the contexts that define your domain
-  and business logic.
-
-  Contexts are also responsible for managing your data, regardless
-  if it comes from the database, an external API or others.
+  This project is the [Craftweg](https://craftweg.com) website powered by [Phoenix](https://phoenixframework.org/).
+  Blog posts are part of the [repository](https://github.com/craftweg/website) and compiled with Elixir using the
+  [NimblePublisher](https://github.com/dashbitco/nimble_publisher) package.
   """
 end
