@@ -46,6 +46,7 @@ defmodule Craftweg.MixProject do
        ref: "abee26e755c6dc638341869f090bc1d63c690f3f"},
       {:phoenix, "~> 1.6.11"},
       {:phoenix_ecto, "~> 4.4"},
+      {:yaml_elixir, "~> 2.9.0"},
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.0"},
