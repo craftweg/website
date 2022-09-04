@@ -2,6 +2,5 @@
     "recommendations": [
         "JakeBecker.elixir-ls",
         "saratravi.elixir-formatter",
-        "xolan.slime"
     ]
 }

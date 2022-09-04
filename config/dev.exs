@@ -60,7 +60,8 @@ config :craftweg, CraftwegWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/craftweg_web/(live|views)/.*(ex)$",
-      ~r"lib/craftweg_web/templates/.*(eex)$"
+      ~r"lib/craftweg_web/templates/.*(eex)$",
+      ~r"priv/posts/.*(md)$"
     ]
   ]
 

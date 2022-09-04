@@ -1,0 +1,24 @@
+---
+title: 'The React chain'
+categories: ['react', 'javascript', 'development']
+---
+
+I’ve been thinking a lot lately about the role [React](https://reactjs.org/) plays when building a web app. Companies like [GitHub](https://github.com) and [Shopify](https://shopify.com), both very successful software companies, introduced React recently in areas where **it makes sense**. This led me to the question: Is React and everything that comes with it (e.g., abstractions, tools, libraries) an influential piece in generating value for users?
+
+There are great things about the React stack. You can more easily **unit-test** the business logic of your frontend, **share and use components** that atomically encapsulate structure (HTML), behavior (JS), and style (CSS). Moreover, you have access to beautiful abstractions to do theme-based styling and even leverage the Typescript compiler to validate your styling object. React turns building a web app into a LEGO game where many blocks are already provided by the community.
+
+However, with React, projects pull in a chain of drawbacks that wouldn’t exist if we didn’t add React in the first place. The first of them is having an API. Sure, if you plan to have more clients in the future, an API is a must. But what if that’s not the future plan, or it’s far ahead? You end up optimizing for a future that might never come.
+
+In many cases, we end up going down the path of [GraphQL](https://graphql.org/) because libraries make it so convenient that we think we need it, but we don’t realize again that GraphQL was designed for a problem we are far from having. And as you probably know, but with an API, we introduce a new set of problems because we have two sources of truth for the data. Many Javascript libraries are trying to abstract that away through caching strategies. Some projects decide to go down the path of trying to model their state with yet another dependency, Redux, that ends up spreading like a virus and bringing more complexity to the frontend domain.
+
+At this point, one might argue that it’s possible to solve that by doing **server-side rendering (SSR)**. True, but the moment you hydrate the app on the client, you want the routing experience to be on the client, leading to components having to fetch data through the API. We can’t move away from it. React and, more generally SPAs, force you to have two sources of truth for your data. And I forgot to mention that SSR requires your React libraries to be compatible with it, limiting the options from the exciting pool of component libraries one has access to.
+
+Furthermore, React means JSX, and JSX means you need **additional tooling and process changes**. Babel or any other transpiler needs plugins to transform the JSX into a valid Javascript syntax, and some CSS-in-JS libraries might couple themselves to the underlying tooling through macros. Because the Javascript that you write is not the one that gets executed, and it’s just a declaration that is then loaded in a virtual DOM and persisted to the document, debugging requires additional browser extensions. Don’t get me wrong. Having to install tools is not a bad thing; having to mess around with these things when starting a project takes the focus from the important thing, generating value through technology.
+
+We should not forget that we can make our styling themeable by simply leveraging CSS building blocks, generate HTML server-side without a framework like React and the chain of tools that come with it, and that small touches of Javascript are sufficient to add some interactivity where it makes sense.
+
+**When does it make sense to follows the React approach then?** I think it makes sense that the app will be very interactive, for example, if you are building a tool like [Figma](https://figma.com/). It also makes sense if the value the abstraction brings outweighs the cost of maintaining and evolving a most likely convoluted set of Javascript libraries and NodeJS tools. You can also take the path of letting a framework do that for you, which is what [RedwoodJS](https://redwoodjs.com/) and [NextJS](https://nextjs.org/) are betting on. It also makes sense if supporting multiple clients is core to the product, and where developing an API and reusing mental models align closely with the product direction.
+
+It **does not make sense** if your sole focus is to generate value through a web app. Throw a project with a [Rails](https://rubyonrails.org/) or similar framework and focus on the product and not the tools and the technology around it.
+
+My **sentiment** with React and Javascript development is that it’s a bit like capitalism; it creates more problems that can be solved with more Javascript. Solutions are in rare cases evolving an existing foundation, but creating better versions of existing tools or creating new tools from scratch like Rome because everything that was built before is fundamentally wrong.

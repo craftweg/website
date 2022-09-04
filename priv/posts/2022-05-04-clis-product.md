@@ -1,0 +1,16 @@
+---
+title: "CLIs are products too"
+categories: ['cli', 'open-source', 'product']
+---
+
+Over the years of working on [command-line interface tools](https://en.wikipedia.org/wiki/Command-line_interface) I observed that they are not often perceived as products. Consequently, organizations don't embrace the same principles as UI-oriented products, which leads to complex tools designed by developers for developers.  **The few projects that adopt a product mindset make a difference.**
+
+A manifestation of the above is seeing ideas that are not ported over to CLIs. For example, **[design systems](https://en.wikipedia.org/wiki/Design_system)** are popularized across UI-oriented products. They play a crucial role in ensuring a consistent experience across features and products. The need for design systems grew organically when large organizations realized that it was becoming impossible to collaborate without a common foundation of blocks and principles. That manifested as inconsistently-styled experiences, which tightly connect with the user experience (UX). Design systems can play a similar role in CLIs, but few organizations spend some time devising and laying out a foundation to build upon. The ideas are the same, but they map to a different set of building blocks in the domain of terminal interfaces.
+
+Adopting a product mindset requires looking at **CLI commands as UI**. Limited compared to browser-based products, but UI nonetheless that developers can experience. A command is a dialog between a person and a different domain through a terminal. Unless we put the attention to detail it deserves, we might end up designing conversations that feel like the person on the other side of the screen is a robot. They might serve their purpose, but they won't be as enjoyable as if it felt like talking to another human.
+
+Pay attention to how you **name** commands, arguments, and flags. A terminal is limiting, but remember, **constraints foster creativity.** An intent well captured with the command's name and flags that become indirect complements of a sentence can yield a very expressive interface.
+
+When you send output through the [standard streams](https://en.wikipedia.org/wiki/Standard_streams) it resembles receiving a response in a conversation. Be **clear and direct**, and when doing something that takes time, make sure the person knows about it. If you couldn't do what the user asked the CLI to do, tell them why, and provide the next steps that they can take to overcome the issue. Errors are also disregarded in CLIs primarily due to, in my experience, developers' laziness. It's quicker to just *throw* than go to the roots of the error to fix it or provide a better error experience.
+
+If you build a CLI, remember, **the how is as important as the what**. The **what** makes a command satisfy the developers' intent. The **how** is what can make the experience more enjoyable to use. Some smartphones had been designed before Apple introduced the iPhone. They all served a similar purpose, but one put attention to the how and created an experience that made the product a successful piece of technology. Resist the urge of being lazy and not consider scenarios other than the *happy path*. You'll move slower, but remember, this is a long-term investment that pays off and you'r users will be thankful for it.

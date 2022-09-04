@@ -7,10 +7,18 @@ defmodule Craftweg.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:gettext] ++ Mix.compilers(),
+      compilers: [] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      # Docs
+      name: "Craftweg",
+      source_url: "https://github.com/craftweg/website",
+      homepage_url: "https://craftweg.com",
+      docs: [
+        main: "Craftweg",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -33,8 +41,12 @@ defmodule Craftweg.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:nimble_publisher,
+       git: "https://github.com/dashbitco/nimble_publisher",
+       ref: "abee26e755c6dc638341869f090bc1d63c690f3f"},
       {:phoenix, "~> 1.6.11"},
       {:phoenix_ecto, "~> 4.4"},
+      {:yaml_elixir, "~> 2.9.0"},
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.0"},
@@ -48,7 +60,8 @@ defmodule Craftweg.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false}
     ]
   end
 

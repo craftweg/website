@@ -1,0 +1,23 @@
+---
+title: On having focus
+excerpt: I'm struggling to have focus nowadays. In this post I describe why it's so hard for me to focus, and the things that I'm doing to overcome the problem.
+categories: [technology, focus, developer]
+---
+
+There's something that has been happening to me lately, and that I'm struggling with: **having focus**. While this wasn't a problem a few years ago, and I was able to sit down and work on one thing at a time without distractions, I can't do that anymore. It might be that I'm getting older, or that I ambitiously pushed myself beyond my limits. The fact is that this started affecting me, losing motivation for things, and feeling exhausted with technology overall.
+
+I found myself involved in multiple projects at the same time. I'm terrible at saying no, especially if it's an exciting project where I can contribute. I'm also bad at processing ideas. Every time I have an idea, I overexcite instead of sleeping over it, and adding it to a backlog in case it's something feasible with high potential to be worked on in the future. Imagine that happening every day and your list of active projects growing endlessly. You open your laptop in the morning, try to plan your day, and you don't know in which project you should focus on. Should I work on this because today I feel that I'd love to do this one? Or should I work on this other one that has a couple of issues opened waiting for feedback from me?
+
+Moreover, and like most developers, we are forced to work on the **ongoing project of renovating ourselves**. You can't just learn a language X and expect that knowledge to be enough for your whole career. Language X evolves, and with it, some other technologies or languages that emerge. There are trends that you need to follow, even if don't want to because that's the only way you'll have decent work opportunities in the future. For example, if you were Objective-C developer until Swift came out, and you didn't invest time in learning Swift, you would very likely be missing a lot of opportunities nowadays. That applies to any language and technology: the Javascript developer that hasn't learned declarative UIs using components, or the Android developer that is still using Java.
+
+With so many projects to dedicate time to and a lot of distractions, having a lack of focus is a natural consequence. These are the things that I'm currently doing to bring that focus back and feel less overwhelmed:
+
+- **Slow down:** This might seem obvious but my personality leads me to the opposite. I'm a person who reacts quickly without thinking thoroughly. Changing this is tough because there is an inner Pedro whose excitement would lead him to answer without thinking twice.
+- **Notifications-free phone setup:** I decided to leave my iPhone at home and go with an old Nokia that only allows me to make and receive calls and SMS. That's all I need. Notifications are rarely important, and that consumes a lot of energy and focus from me. All work-related emails or Slack messages will be accessible only from my computer and the same with the social networks that I barely use.
+- **A side project at a time:** Instead of kicking off and dragging multiple projects at the same time I'd devote my time to one project instead. I became less active in open source projects than I used to be, and I'm focusing on my first software product project that I'll share with you soon.
+- **It's ok not to stay up to date with technologies:** There are new technologies, blog posts, and projects coming out every day so I changed my mindset from having to be aware of all of them, to filtering those who really matter to me. As an example, I don't follow the evolution of Swift actively but only skim through the release notes when there's a new version.
+- **Spend less time with technology:** I love technology, but like any other thing, too much of it creates an addiction, and that's not good. Instead, I'm devoting more time to myself and to the people around me. Spending more time with people helps you make your software more human-driven.
+
+I think it's important to have these retrospectives with ourselves where we can see how technology is impacting us and how healthy our relationship is. We spend an insane amount of time with it, and this time is increasing every day. We shouldn't allow technology take control over our focus, whether that is being happy, or be an astronaut.
+
+If you are a developer, who has experienced something similar I'm curious to know how you overcame it and how you make to stay focus in this world where it's easy to get distracted.
