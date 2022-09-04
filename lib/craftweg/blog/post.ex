@@ -12,7 +12,7 @@ defmodule Craftweg.Blog.Post do
   """
   @type attributes :: any
   @spec build(String.t(), attributes, String.t()) :: %Craftweg.Blog.Post{}
-  def build(path, %{"title" => title, "excerpt" => excerpt, "categories" => categories}, body) do
+  def build(path, %{"title" => title, "categories" => categories, "excerpt" => excerpt}, body) do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")

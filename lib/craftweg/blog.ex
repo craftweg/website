@@ -11,5 +11,8 @@ defmodule Craftweg.Blog do
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
 
+  @doc """
+  The function returns all the Craftweg.Blog.Post posts.
+  """
   def all_posts, do: @posts
 end

@@ -10,7 +10,7 @@ defmodule Craftweg.Blog.Parser do
 
 
     frontmatter = YamlElixir.read_from_string!(frontmatter_string)
-      |> Map.put_new("excerpt", String.slice(body, 0..200) <> "...")
+      |> Map.put_new(:excerpt, String.slice(body, 0..200) <> "...")
 
     {frontmatter, body}
   end
