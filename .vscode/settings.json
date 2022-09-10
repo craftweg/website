@@ -1,3 +1,6 @@
 {
-    "editor.defaultFormatter": "saratravi.elixir-formatter"
+    "editor.defaultFormatter": "saratravi.elixir-formatter",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

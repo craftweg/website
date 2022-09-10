@@ -1,6 +1,6 @@
 defmodule Craftweg.Blog do
   alias Craftweg.Blog.Post
-  alias Craftweg.Blog.Parser
+  alias Craftweg.Markdown.Parser
 
   use NimblePublisher,
     build: Post,
