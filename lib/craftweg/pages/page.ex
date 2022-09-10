@@ -10,7 +10,7 @@ defmodule Craftweg.Pages.Page do
   """
   @spec build(String.t, any, String.t) :: %Craftweg.Pages.Page{}
   def build(path, %{ "title" => title }, body) do
-    slug = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
+    slug = "/" <> (path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd)
     struct!(
       __MODULE__,
       path: path,

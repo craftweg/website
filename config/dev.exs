@@ -61,7 +61,8 @@ config :craftweg, CraftwegWeb.Endpoint,
       ~r"priv/gettext/.*(po)$",
       ~r"lib/craftweg_web/(live|views)/.*(ex)$",
       ~r"lib/craftweg_web/templates/.*(eex)$",
-      ~r"priv/posts/.*(md)$"
+      ~r"priv/posts/.*(md)$",
+      ~r"priv/pages/.*(md)$"
     ]
   ]
 

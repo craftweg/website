@@ -3,7 +3,7 @@ defmodule Craftweg.Blog.Post do
   This module is a struct that represents a blog post.
   """
 
-  defstruct [:path, :slug, :title, :excerpt, :date, :categories, :body]
+  defstruct [:path, :slug, :old_slug, :title, :excerpt, :date, :categories, :body]
 
   @doc """
   This method takes the absolute path to the file representing a blog post,
@@ -16,11 +16,13 @@ defmodule Craftweg.Blog.Post do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
-    slug = year <> "/" <> month <> "/" <> day <> "/" <> filename_without_extension
+    filename_without_date_and_extension = filename_without_extension |> String.replace("#{year}-#{month}-#{day}-", "")
+    slug = "/" <> year <> "/" <> month <> "/" <> day <> "/" <> filename_without_date_and_extension
 
     struct!(
       __MODULE__,
       path: path,
+      old_slug: "/" <> filename_without_date_and_extension,
       slug: slug,
       title: title,
       date: date,

@@ -18,6 +18,10 @@ defmodule CraftwegWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/:year/:month/:day/:title", BlogController, :post
+    for page <- Craftweg.Pages.all_pages do
+      get page.slug, PageController, :markdown
+    end
   end
 
   # Other scopes may use custom stacks.

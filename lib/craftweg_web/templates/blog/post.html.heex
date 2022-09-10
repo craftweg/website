@@ -1,0 +1,8 @@
+<b>Title</b>
+<p><%= @post.title %></p>
+<b>Excerpt</b>
+<p><%= @post.excerpt %></p>
+<b>Categories</b>
+<p><%= @post.categories |> Enum.join(", ") %></p>
+<b>Body</b>
+<p><%= @post.body %></p>
