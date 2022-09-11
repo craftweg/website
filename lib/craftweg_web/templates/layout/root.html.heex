@@ -12,11 +12,11 @@
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon"  href={Routes.static_url(@conn, "/favicon/favicon.ico")} />
-    <link rel="apple-touch-icon" sizes="180x180" href={Routes.static_url(@conn, "/favicon/apple-touch-icon.png")}>
-    <link rel="icon" type="image/png" sizes="32x32" href={Routes.static_url(@conn, "/favicon/favicon-32x32.png")}>
-    <link rel="icon" type="image/png" sizes="16x16" href={Routes.static_url(@conn, "/favicon/favicon-16x16.png")}>
-    <link rel="manifest" href={Routes.static_url(@conn, "/favicon/site.webmanifest")}>
+    <link rel="shortcut icon"  href={Routes.static_path(@conn, "/favicon.ico")} />
+    <link rel="apple-touch-icon" sizes="180x180" href={Routes.static_path(@conn, "/favicon/apple-touch-icon.png")}>
+    <link rel="icon" type="image/png" sizes="32x32" href={Routes.static_path(@conn, "/favicon/favicon-32x32.png")}>
+    <link rel="icon" type="image/png" sizes="16x16" href={Routes.static_path(@conn, "/favicon/favicon-16x16.png")}>
+    <link rel="manifest" href={Routes.static_path(@conn, "/favicon/site.webmanifest")}>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
