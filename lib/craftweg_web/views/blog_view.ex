@@ -7,8 +7,8 @@ defmodule CraftwegWeb.BlogView do
 
   # Metadata
 
-  def metadata(:post, %{post: %{ title: title, excerpt: excerpt } }), do: %{
+  def metadata(:post, %{post: %{ title: title, description: description } }), do: %{
     title: title,
-    description: excerpt
+    description: description
   }
 end
