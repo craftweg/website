@@ -1,4 +1,6 @@
 defmodule CraftwegWeb.Router do
+  import Redirect
+
   use CraftwegWeb, :router
 
   pipeline :browser do
@@ -18,11 +20,15 @@ defmodule CraftwegWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/:year/:month/:day/:title", BlogController, :post
+    get "/blog/:year/:month/:day/:title", BlogController, :post
 
     for page <- Craftweg.Pages.all_pages() do
       get page.slug, PageController, :markdown
     end
+  end
+
+  for post <- Craftweg.Blog.all_posts() do
+    redirect(post.old_slug, post.slug, :permanent, preserve_query_string: true)
   end
 
   # Other scopes may use custom stacks.
