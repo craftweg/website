@@ -11,7 +11,7 @@ defmodule Craftweg.Blog do
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
   @categories @posts |> Enum.flat_map(& &1.categories) |> Enum.uniq() |> Enum.sort()
-  @feed_xml @posts |> Enum.map(& &1)
+  @feed @posts |> Craftweg.Feed.generate
 
   @doc """
   The function returns all the Craftweg.Blog.Post posts.
@@ -22,8 +22,4 @@ defmodule Craftweg.Blog do
   The function returns all the categories.
   """
   def all_categories, do: @categories
-
-  def feed_xml() do
-    []
-  end
 end
