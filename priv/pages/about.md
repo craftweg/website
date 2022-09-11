@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Craftweg is a purpose-driven organization that addresses humans' problems and needs with simple software crafts."
+description: "Craftweg is a purpose-driven organization that crafts software."
 ---
 
 <p>Hola 👋.</p>
