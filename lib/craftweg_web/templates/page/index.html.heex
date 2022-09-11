@@ -1,4 +1,6 @@
-<h1>~/craftweg.com/src</h1>
+<h1>
+    <a href="/">~/craftweg.com/src</a>
+</h1>
 <p>Empowering people through open-source craftsmanship</p>
 
 <!-- Links -->
@@ -12,7 +14,10 @@
 
 <%= for post <- posts() do %>
     <article>
-        <div><%= post.title  %></div>
+        <div>
+            <% post_attributes = %{ href: post.slug } %>
+            <a {post_attributes}><%= post.title  %></a>
+        </div>
         <% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
         <div><%= time_ago_date %></div>
     </article>
