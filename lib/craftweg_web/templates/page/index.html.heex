@@ -10,17 +10,17 @@
 </section>
 
 <!-- Blog posts -->
-<section>
+<section class="flex flex-col">
 
-<%= for post <- posts() do %>
-    <article>
-        <div>
-            <% post_attributes = %{ href: post.slug } %>
-            <a {post_attributes}><%= post.title  %></a>
-        </div>
-        <% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
-        <div><%= time_ago_date %></div>
-    </article>
-<% end %>
+    <%= for post <- posts() do %>
+        <article>
+            <div>
+                <% post_attributes = %{ href: post.slug } %>
+                <a {post_attributes}><%= post.title  %></a>
+            </div>
+            <% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
+            <div><%= time_ago_date %></div>
+        </article>
+    <% end %>
 
 </section>

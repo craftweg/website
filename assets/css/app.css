@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 h1 {
   font-size: 3.6rem;
   line-height: 1.25;
@@ -39,4 +43,8 @@ pre {
 }
 select {
   width: auto;
+}
+
+a {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
 }

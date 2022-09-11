@@ -1,6 +1,18 @@
 {
-    "editor.defaultFormatter": "saratravi.elixir-formatter",
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "editor.defaultFormatter": "saratravi.elixir-formatter",
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[phoenix-heex]": {
+    "editor.defaultFormatter": "RoyalMist.vscode-eex-format"
+  },
+  "tailwindCSS.includeLanguages": {
+    "phoenix-heex": "html"
+  }
 }

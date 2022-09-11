@@ -3,31 +3,31 @@ title: "About"
 ---
 
 <p>Hola 👋.</p>
-	<p>
-		I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a> and a
-		open-source enthusiast. I fight for open, small, and human technology. I enjoy devising and
-		building developer tools that spark joy. Elixir 🧪, Rust 🦀, Javascript 🚀 are my day-to-day
-		languages.
-	</p>
-	<p>
-		I devised and created <a href="https://tuist.io">Tuist</a> to help teams scale up Xcode
-		projects, proposed a modular architecture to build apps,
-		<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
-			>µfeatures architecture</a
-		>.
-	</p>
-  <p>
-  My <b>long-term life plans</b> are to retire my parents early and make a living by building human and open-source tools with technology. Open source has the power to impact society positively and can be financially sustainable.
-  </p>
-	<p>
-		You can contact me via email <a href="mailto:hola@craftweg.com">hola@craftweg.com</a> and find me on
-		<a href="https://github.com/pepicrft" target="_blank">GitHub</a>,
-		<a href="https://gitlab.com/pepicrft" target="_blank">GitLab</a>
-		<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, <a href="https://mastodon.technology/web/@pepicrft" target="_blank">Mastodon</a>, and
-		<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
-			>LinkedIn</a
-		>
-	</p>
+<p>
+	I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a> and a
+	open-source enthusiast. I fight for open, small, and human technology. I enjoy devising and
+	building developer tools that spark joy. Elixir 🧪, Rust 🦀, Javascript 🚀 are my day-to-day
+	languages.
+</p>
+<p>
+	I devised and created <a href="https://tuist.io">Tuist</a> to help teams scale up Xcode
+	projects, proposed a modular architecture to build apps,
+	<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
+		>µfeatures architecture</a
+	>.
+</p>
+<p>
+My <b>long-term life plans</b> are to retire my parents early and make a living by building human and open-source tools with technology. Open source has the power to impact society positively and can be financially sustainable.
+</p>
+<p>
+	You can contact me via email <a href="mailto:hola@craftweg.com">hola@craftweg.com</a> and find me on
+	<a href="https://github.com/pepicrft" target="_blank">GitHub</a>,
+	<a href="https://gitlab.com/pepicrft" target="_blank">GitLab</a>
+	<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, <a href="https://mastodon.technology/web/@pepicrft" target="_blank">Mastodon</a>, and
+	<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
+		>LinkedIn</a
+	>
+</p>
 
 ## Work 👨‍💻
 

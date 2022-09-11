@@ -2,6 +2,9 @@
     "recommendations": [
         "JakeBecker.elixir-ls",
         "saratravi.elixir-formatter",
-        "phoenixframework.phoenix"
+        "phoenixframework.phoenix",
+        "EditorConfig.EditorConfig",
+        "RoyalMist.vscode-eex-format",
+        "bradlc.vscode-tailwindcss"
     ]
 }

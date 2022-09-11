@@ -5,4 +5,4 @@
 <b>Categories</b>
 <p><%= @post.categories |> Enum.join(", ") %></p>
 <b>Body</b>
-<p><%= @post.body %></p>
+<p><%= raw @post.body %></p>
