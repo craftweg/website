@@ -66,7 +66,9 @@ defmodule Craftweg.MixProject do
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
       {:rss, "~> 0.2.1"},
       {:sweet_xml, "~> 0.7.1", only: :test},
-      {:redirect, "~> 0.4.0"}
+      {:redirect, "~> 0.4.0"},
+      {:pandex, "~> 0.2.0"},
+      {:phoenix_html_sanitizer, "~> 1.1"}
     ]
   end
 

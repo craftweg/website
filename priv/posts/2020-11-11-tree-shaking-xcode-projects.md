@@ -1,7 +1,7 @@
 ---
 title: Tree-shaking Xcode projects
 categories: ['xcode', 'tuist', 'caching', 'build times']
-excerpt: Tree-shaking is a concept inspired by Javascript and used by Tuist to generate lean Xcode projects that are processed and compile faster.
+description: Tree-shaking is a concept inspired by Javascript and used by Tuist to generate lean Xcode projects that are processed and compile faster.
 ---
 
 You might have seen me talking about Xcode projects' tree-shaking with no idea of what I'm talking about. This is a concept inspired by the same concept in the Javascript land. Over there, it refers to the process of stripping away from the resulting Javascript bundle those bits that are not necessary because there are no execution paths that go through them. The goal is to minimize the size of the file that is served that the website opens faster. I liked the idea and made me wonder if something like that would be useful in Xcode projects. It turned out it is.

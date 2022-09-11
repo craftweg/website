@@ -1,6 +1,6 @@
 ---
 title: The hermeticism and rigidity of Xcode and its projects
-excerpt: Xcode and its projects are not as flexible as they could be, which makes it hard for companies to optimize their workflows and processes. In this post I'll analyze some of the things that I would improve from its build system and projects.
+description: Xcode and its projects are not as flexible as they could be, which makes it hard for companies to optimize their workflows and processes. In this post I'll analyze some of the things that I would improve from its build system and projects.
 categories: [hooked, internet, products]
 ---
 

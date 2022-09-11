@@ -1,6 +1,6 @@
 ---
 title: Project description helpers
-excerpt: In this blog post I talk about a beautiful abstraction which Alex and I came up with to push Tuist's awesomeness even further.
+description: In this blog post I talk about a beautiful abstraction which Alex and I came up with to push Tuist's awesomeness even further.
 categories: [tuist, open source]
 ---
 

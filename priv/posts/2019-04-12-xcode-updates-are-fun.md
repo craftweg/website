@@ -1,6 +1,6 @@
 ---
 title: Xcode updates are fun
-excerpt: On this blog post I talk about Xcode updates and how painful they can sometimes be.
+description: On this blog post I talk about Xcode updates and how painful they can sometimes be.
 categories: [xcode, swift, ios, macos]
 ---
 

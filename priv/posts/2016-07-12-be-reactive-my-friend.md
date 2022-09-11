@@ -1,6 +1,6 @@
 ---
 title: Be Reactive my friend
-excerpt: Article that explains the benefits of reactive programming in the iOS world.
+description: Article that explains the benefits of reactive programming in the iOS world.
 categories: [github, scrum, issues, zenhub, management, project]
 ---
 

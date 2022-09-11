@@ -1,6 +1,6 @@
 ---
 title: 'All you need is tools 🛠'
-excerpt: In this post I talk about why investing in good tooling is crucial for projects to move steadily.
+description: In this post I talk about why investing in good tooling is crucial for projects to move steadily.
 categories: [swift, ruby, fastlane, ios, android, shopify, engineering, tooling]
 ---
 

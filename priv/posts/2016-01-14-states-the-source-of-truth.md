@@ -1,6 +1,6 @@
 ---
 title: 'States - The source of truth'
-excerpt: 'Overview of states in iOS apps, how we tipically handle them, current challenges with states and how to overcome them'
+description: 'Overview of states in iOS apps, how we tipically handle them, current challenges with states and how to overcome them'
 categories: [tvos, popcorn time, torrent]
 ---
 

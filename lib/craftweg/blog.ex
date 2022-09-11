@@ -7,7 +7,7 @@ defmodule Craftweg.Blog do
     from: Application.app_dir(:craftweg, "priv/posts/**/*.md"),
     as: :posts,
     parser: Parser,
-    highlighters: []
+    highlighters: [:makeup_elixir, :makeup_erlang]
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
   @categories @posts |> Enum.flat_map(& &1.categories) |> Enum.uniq() |> Enum.sort()

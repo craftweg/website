@@ -1,6 +1,6 @@
 ---
 title: "Laying out a software project foundation"
-excerpt: "In this blog post I share my thoughts around the role that a foundation plays in a new software project and give some concrete examples in the context of the Gestalt framework."
+description: "In this blog post I share my thoughts around the role that a foundation plays in a new software project and give some concrete examples in the context of the Gestalt framework."
 categories: ['gestalt', 'open source']
 ---
 

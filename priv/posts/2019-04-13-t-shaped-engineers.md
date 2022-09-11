@@ -1,6 +1,6 @@
 ---
 title: T-shaped engineers
-excerpt: Specialized engineers usually refrain from working on tasks outside their comfort zone of familiar programming languages and tools. While I believe this might be a good setup for projects that are just starting, I think building teams with t-shaped engineers is crucial for the long-term success of the project.
+description: Specialized engineers usually refrain from working on tasks outside their comfort zone of familiar programming languages and tools. While I believe this might be a good setup for projects that are just starting, I think building teams with t-shaped engineers is crucial for the long-term success of the project.
 categories: [shopify, engineering, teams, leadership]
 ---
 

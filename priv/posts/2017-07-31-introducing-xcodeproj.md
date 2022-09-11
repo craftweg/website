@@ -1,6 +1,6 @@
 ---
 title: Introducing xcodeproj
-excerpt: Read, update and write your Xcode projects from Swift
+description: Read, update and write your Xcode projects from Swift
 categories: [xcodeproj, swift, xcode]
 ---
 

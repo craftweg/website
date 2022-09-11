@@ -1,6 +1,6 @@
 ---
 title: All you need is tools (talk)
-excerpt: This post contains the video of the talk that I gave at AltConf about why I think it's important investing into tooling and some tips to build great tools.
+description: This post contains the video of the talk that I gave at AltConf about why I think it's important investing into tooling and some tips to build great tools.
 categories: [shopify, tools, swift, ios, xcode]
 ---
 

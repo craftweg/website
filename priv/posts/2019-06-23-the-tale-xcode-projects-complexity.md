@@ -1,6 +1,6 @@
 ---
 title: The tale of Xcode projects' complexity
-excerpt: This is a short story of how Xcode projects can end up being very complex and hard to maintain.
+description: This is a short story of how Xcode projects can end up being very complex and hard to maintain.
 categories: [xcode, projects, accidental complexity, swift]
 ---
 

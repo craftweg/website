@@ -1,6 +1,6 @@
 ---
 title: Consistent vs convenient
-excerpt: I analyze in this post why some decisions that we make in our projects might turn into bad viruses that spread all over the code base.
+description: I analyze in this post why some decisions that we make in our projects might turn into bad viruses that spread all over the code base.
 categories: [consistency, convenience, rxswift, swift, xcode, reactive, realm]
 ---
 

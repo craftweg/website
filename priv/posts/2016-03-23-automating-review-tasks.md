@@ -1,6 +1,6 @@
 ---
 title: 'Automating iOS review tasks with Danger'
-excerpt: 'Post that explains how to automate review tasks with the help of the tool Danger'
+description: 'Post that explains how to automate review tasks with the help of the tool Danger'
 categories: [review, danger, pr, github]
 ---
 

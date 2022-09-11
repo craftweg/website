@@ -1,6 +1,6 @@
 ---
 title: information.subscribe(next)
-excerpt: A brief reflexion on how we are consumers of very intensive information streams.
+description: A brief reflexion on how we are consumers of very intensive information streams.
 categories: [notifications, gadgets, devices]
 ---
 

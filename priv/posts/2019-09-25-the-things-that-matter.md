@@ -1,6 +1,6 @@
 ---
 title: The things that matter
-excerpt: This blog post is a reflection of a book that I recently read, "Stand out of light", and that talks about the attention economy. I explain how I've also been victim of the attention economy, and why I believe is important to regain it.
+description: This blog post is a reflection of a book that I recently read, "Stand out of light", and that talks about the attention economy. I explain how I've also been victim of the attention economy, and why I believe is important to regain it.
 categories: [attention economy, social networks]
 ---
 

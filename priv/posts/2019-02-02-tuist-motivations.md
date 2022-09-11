@@ -1,6 +1,6 @@
 ---
 title: The motivations behind building Tuist
-excerpt: Tuist is my most beloved open source project. In this blog post I touch on the motivations that led me to build it.
+description: Tuist is my most beloved open source project. In this blog post I touch on the motivations that led me to build it.
 categories: [tuist, xcodeproje, xcodegen]
 ---
 

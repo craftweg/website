@@ -1,6 +1,6 @@
 ---
 title: Turning negativism into positivism
-excerpt: Short reflection on how beneficial it can be turning negativism into something positive.
+description: Short reflection on how beneficial it can be turning negativism into something positive.
 categories: [philosophy, work, life]
 ---
 

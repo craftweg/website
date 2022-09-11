@@ -1,6 +1,6 @@
 ---
 title: 'Building PopcornTime for tvOS'
-excerpt: 'I explain in this post the steps I followed to bring the concept of PopcornTime to tvOS and offering torrent video streaming in the last Apple TV device.'
+description: 'I explain in this post the steps I followed to bring the concept of PopcornTime to tvOS and offering torrent video streaming in the last Apple TV device.'
 categories: [tvos, popcorn time, torrent]
 ---
 

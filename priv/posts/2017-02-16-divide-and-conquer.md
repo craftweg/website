@@ -1,6 +1,6 @@
 ---
 title: Divide and conquer
-excerpt: How modularizing your apps is helping us to scale our Xcode app.
+description: How modularizing your apps is helping us to scale our Xcode app.
 categories: [swift, scalability, apps, xcode]
 ---
 

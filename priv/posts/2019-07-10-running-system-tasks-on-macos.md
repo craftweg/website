@@ -1,6 +1,6 @@
 ---
 title: Running system tasks with Swift and Foundation
-excerpt: In this blog post, I talk about my experience using one of Foundation's APIs, Process.
+description: In this blog post, I talk about my experience using one of Foundation's APIs, Process.
 categories: [foundation, swift, macos]
 ---
 

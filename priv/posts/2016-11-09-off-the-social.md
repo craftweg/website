@@ -1,6 +1,5 @@
 ---
 title: Stepping off the social world
-excerpt:
 categories: [facebook, twitter, instagram, social]
 ---
 

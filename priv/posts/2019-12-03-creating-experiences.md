@@ -1,6 +1,6 @@
 ---
 title: Creating experiences
-excerpt: Picked up my phone and dumped some thoughts on why I'm so engaged and excited to build Tuist.
+description: Picked up my phone and dumped some thoughts on why I'm so engaged and excited to build Tuist.
 categories: [tuist, product, open source, development]
 ---
 

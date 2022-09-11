@@ -1,6 +1,6 @@
 ---
 title: 'What a psychologist helped me realize'
-excerpt: It's been a few months going through a therapy that has helped me understand how my brain works and where the stress that I used to experience came from.
+description: It's been a few months going through a therapy that has helped me understand how my brain works and where the stress that I used to experience came from.
 categories: [berlin, oberbaum, water color, painting]
 ---
 

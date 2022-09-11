@@ -1,6 +1,6 @@
 ---
 title: Who is controlling whom
-excerpt: With technology everywhere, we don't have control over it anymore. It's learnt how to hook us and keep us using it.
+description: With technology everywhere, we don't have control over it anymore. It's learnt how to hook us and keep us using it.
 categories: [hooked, internet, products]
 ---
 

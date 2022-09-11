@@ -1,6 +1,6 @@
 ---
 title: Are companies highjacking our brains?
-excerpt: In this post I make a reflexion around the impact Internet is having in our brains.
+description: In this post I make a reflexion around the impact Internet is having in our brains.
 categories: [internet, highjacking, google, facebook, instagram, connected]
 ---
 

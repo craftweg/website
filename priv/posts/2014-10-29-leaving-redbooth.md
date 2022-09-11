@@ -1,6 +1,6 @@
 ---
 title: Leaving Redbooth
-excerpt: 'I took de decision to leave Redbooth and join to a new adventure. I explain here the reasons, everything I learned from there and my expectations for 8fit'
+description: 'I took de decision to leave Redbooth and join to a new adventure. I explain here the reasons, everything I learned from there and my expectations for 8fit'
 categories: ['redbooth', 'ios', '8fit']
 ---
 

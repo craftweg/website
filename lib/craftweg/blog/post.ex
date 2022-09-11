@@ -3,7 +3,7 @@ defmodule Craftweg.Blog.Post do
   This module is a struct that represents a blog post.
   """
 
-  defstruct [:path, :slug, :old_slug, :title, :excerpt, :date, :categories, :body]
+  defstruct [:path, :slug, :old_slug, :title, :description, :date, :categories, :body]
 
   @doc """
   This method takes the absolute path to the file representing a blog post,
@@ -12,10 +12,12 @@ defmodule Craftweg.Blog.Post do
   """
   @type attributes :: any
   @spec build(String.t(), attributes, String.t()) :: %Craftweg.Blog.Post{}
-  def build(path, %{:excerpt => excerpt, "title" => title, "categories" => categories}, body) do
+  def build(path, %{"title" => title, "categories" => categories} = frontmatter, body) do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
+    description = frontmatter["description"] || (String.slice(body, 0..200) <> "...") |> html_to_text
+
 
     filename_without_date_and_extension =
       filename_without_extension |> String.replace("#{year}-#{month}-#{day}-", "")
@@ -32,7 +34,20 @@ defmodule Craftweg.Blog.Post do
       date: date,
       body: body,
       categories: categories,
-      excerpt: excerpt
+      description: description
     )
+  end
+
+  defp html_to_text(html) do
+    {:safe, html} =
+      html
+      |> String.replace(~r/<li>/, "\\g{1}- ", global: true)
+      |> String.replace(
+        ~r/<\/?\s?br>|<\/\s?p>|<\/\s?li>|<\/\s?div>|<\/\s?h.>/,
+        "\\g{1}\n\r",
+        global: true
+      )
+      |> PhoenixHtmlSanitizer.Helpers.sanitize(:strip_tags)
+    html
   end
 end

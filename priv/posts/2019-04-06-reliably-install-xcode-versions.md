@@ -1,6 +1,6 @@
 ---
 title: Reliably installing Xcode
-excerpt: I started developing a tool, install-xcode that aims to help developers to install and upgrade versions of Xcode easily. In this blog post I talk about the motivation behinds building it and some design principles that I'm embrazcing.
+description: I started developing a tool, install-xcode that aims to help developers to install and upgrade versions of Xcode easily. In this blog post I talk about the motivation behinds building it and some design principles that I'm embrazcing.
 categories: [xcode, swift, ios, macos]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Functional is about functions (Swift)
-excerpt: 'Quick introduction to what Functional Programming in Swift is from the simple perspective of functions'
+description: 'Quick introduction to what Functional Programming in Swift is from the simple perspective of functions'
 categories: [functional, functions, programming, reactive, swift]
 ---
 

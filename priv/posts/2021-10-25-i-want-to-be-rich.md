@@ -1,6 +1,6 @@
 ---
 title: 'I want to be rich'
-excerpt: ""
+description: ""
 categories: ['finances', 'investments', 'financial independence', 'dvag scam']
 ---
 

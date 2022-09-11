@@ -1,6 +1,6 @@
 ---
 title: Modularize your mobile projects
-excerpt: 'Learn how to split your app components in different bundles instead of dealing with an unique bundle that packages the whole app'
+description: 'Learn how to split your app components in different bundles instead of dealing with an unique bundle that packages the whole app'
 categories: [target, module, android studio, scheme, xcconfig, xcode]
 ---
 

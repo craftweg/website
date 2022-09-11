@@ -1,6 +1,6 @@
 ---
 title: Providing mocks and testing data from your frameworks.
-excerpt: This post introduces an approach to share testing data and mocks from your frameworks to other frameworks that might need them for testing purposes.
+description: This post introduces an approach to share testing data and mocks from your frameworks to other frameworks that might need them for testing purposes.
 categories: [xcodeproj, swift, xcode]
 ---
 

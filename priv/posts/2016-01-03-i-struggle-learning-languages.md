@@ -1,6 +1,6 @@
 ---
 title: 'I struggle learning languages'
-excerpt: "It's not easy for me. My mind has never been willing to learn languages but I'll do my best this year to overcome this problem."
+description: "It's not easy for me. My mind has never been willing to learn languages but I'll do my best this year to overcome this problem."
 categories: [languages, german, english]
 ---
 

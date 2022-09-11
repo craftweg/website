@@ -1,6 +1,6 @@
 ---
 title: Why Open Source helps you to become a better developer
-excerpt: "Most of developers haven't tried creating an Open Source component before. Since I apply it to every of my projects I feel the results and development process has improved a lot. In this article I will describe why it's so important"
+description: "Most of developers haven't tried creating an Open Source component before. Since I apply it to every of my projects I feel the results and development process has improved a lot. In this article I will describe why it's so important"
 categories: [opensource, carthage, cocoapods]
 ---
 

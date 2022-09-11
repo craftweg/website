@@ -1,6 +1,6 @@
 ---
 title: Better relative paths
-excerpt: We are providing a new API from Tuist to define relative paths and this blog post describes the motivation behind it and the solution that we are adopting.
+description: We are providing a new API from Tuist to define relative paths and this blog post describes the motivation behind it and the solution that we are adopting.
 categories: [tuist, open source]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The urge to be the first
-excerpt: "Just an observation of a trend that I've seen in our industry: developers rushing to be the gain the label of expert in a given technology."
+description: "Just an observation of a trend that I've seen in our industry: developers rushing to be the gain the label of expert in a given technology."
 categories: [unhealthy-tech, stress, technology, wwdc]
 ---
 

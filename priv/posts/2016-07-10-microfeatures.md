@@ -1,6 +1,6 @@
 ---
 title: 'Micro Features Architecture for iOS'
-excerpt: 'Organize your app in small features that you '
+description: 'Organize your app in small features that you '
 categories: [xcode, ios swift, objective-c, testing, appcode]
 ---
 

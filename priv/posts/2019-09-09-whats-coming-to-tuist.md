@@ -1,6 +1,6 @@
 ---
 title: What's coming to Tuist
-excerpt: A Monday blog post with some reflections about the current state of Tuist and its future.
+description: A Monday blog post with some reflections about the current state of Tuist and its future.
 categories: [tuist, open source, xcode, swift]
 ---
 

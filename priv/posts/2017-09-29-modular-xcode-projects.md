@@ -1,6 +1,6 @@
 ---
 title: Modular Xcode projects
-excerpt: This post presents some elementary concepts of how Xcode projects are structured, and introduces an structural approach to build modular Xcode apps.
+description: This post presents some elementary concepts of how Xcode projects are structured, and introduces an structural approach to build modular Xcode apps.
 categories: [xcodeproj, swift, xcode, xcodembed]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: On having focus
-excerpt: I'm struggling to have focus nowadays. In this post I describe why it's so hard for me to focus, and the things that I'm doing to overcome the problem.
+description: I'm struggling to have focus nowadays. In this post I describe why it's so hard for me to focus, and the things that I'm doing to overcome the problem.
 categories: [technology, focus, developer]
 ---
 

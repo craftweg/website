@@ -1,6 +1,6 @@
 ---
 title: 'Boy Scouts rule with Danger'
-excerpt: 'Post where I explain how Danger helped us at SoundCloud to apply the programming Boy Scouts rule to our workflow'
+description: 'Post where I explain how Danger helped us at SoundCloud to apply the programming Boy Scouts rule to our workflow'
 categories: [danger, github, soundcloud]
 ---
 

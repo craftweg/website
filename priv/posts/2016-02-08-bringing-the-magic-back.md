@@ -1,6 +1,6 @@
 ---
 title: 'The spare time project journey. Why I started GitDo'
-excerpt: 'Personal reflexion about myself and why I came up with the idea of investing my spare time working on GitDo'
+description: 'Personal reflexion about myself and why I came up with the idea of investing my spare time working on GitDo'
 categories: [setup, xcode, script]
 ---
 

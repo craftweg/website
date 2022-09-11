@@ -1,6 +1,6 @@
 ---
 title: Extensions, dependency injection and frameworks
-excerpt: Learn how handy protocol extensions can be, when used in a frameworks architecture.
+description: Learn how handy protocol extensions can be, when used in a frameworks architecture.
 categories: [soundcloud, core, developer, ios, xcode, swift, extensionss]
 ---
 

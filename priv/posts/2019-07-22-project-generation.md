@@ -1,6 +1,6 @@
 ---
 title: Project generation
-excerpt: This blog post describes the advantages of dynamic over static Xcode projects, and how Tuist leverages project generation to help teams overcome the challenges associated to scaling up projects.
+description: This blog post describes the advantages of dynamic over static Xcode projects, and how Tuist leverages project generation to help teams overcome the challenges associated to scaling up projects.
 categories: [tuist, swift, xcode, ios]
 ---
 

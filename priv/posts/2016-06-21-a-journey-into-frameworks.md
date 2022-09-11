@@ -1,6 +1,6 @@
 ---
 title: 'A journey into Frameworks - Le Testing Framework'
-excerpt: 'One of posts that tells about the migration from a monolithic architecture based in single target to have multiple reusable Frameworks.'
+description: 'One of posts that tells about the migration from a monolithic architecture based in single target to have multiple reusable Frameworks.'
 categories: [xcode, ios swift, objective-c]
 ---
 

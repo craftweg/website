@@ -1,6 +1,6 @@
 ---
 title: 'VIPER, Looking for the perfect architecture'
-excerpt: 'Talk I gave in the Redbooth HQ office for NSBarcelona with the iOS team talking about the VIPER architecture'
+description: 'Talk I gave in the Redbooth HQ office for NSBarcelona with the iOS team talking about the VIPER architecture'
 categories: [redbooth, ios, 8fit]
 ---
 

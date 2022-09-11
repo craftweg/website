@@ -1,6 +1,6 @@
 ---
 title: 'Marcheta en la vida'
-excerpt: 'Mi experiencia de haber salido a vivir fuera de España y las lecciones aprendidas'
+description: 'Mi experiencia de haber salido a vivir fuera de España y las lecciones aprendidas'
 categories: [vida, marcheta, berlin]
 ---
 

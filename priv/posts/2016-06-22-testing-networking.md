@@ -1,6 +1,6 @@
 ---
 title: 'Network Testing - Say hello to Szimpla'
-excerpt: "Introduction post for the last library that I've been working on, Szimpla."
+description: "Introduction post for the last library that I've been working on, Szimpla."
 categories: [xcode, ios swift, objective-c, testing, appcode]
 ---
 

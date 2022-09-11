@@ -1,6 +1,6 @@
 ---
 title: Little tweak to be more productive writing XCTest tests
-excerpt: Because readability might compromise productivity.
+description: Because readability might compromise productivity.
 categories: [xcodeproj, swift, xcode]
 ---
 

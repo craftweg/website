@@ -1,6 +1,6 @@
 ---
 title: How I feel working on Tuist
-excerpt: A random reflection about Tuist and why I'm so glad working on it.
+description: A random reflection about Tuist and why I'm so glad working on it.
 categories: [xcode, tuist, feelings]
 ---
 

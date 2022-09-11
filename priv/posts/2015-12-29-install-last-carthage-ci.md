@@ -1,6 +1,6 @@
 ---
 title: 'Install the last Carthage version on CI services (Travis, Circle, ...)'
-excerpt: 'Very simple script to keep your Carthage version updated without depending on Brew.'
+description: 'Very simple script to keep your Carthage version updated without depending on Brew.'
 categories: [carthage, travis, ci]
 ---
 

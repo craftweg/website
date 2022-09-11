@@ -1,6 +1,6 @@
 ---
 title: 'Rewriting SugarRecord, 2.0'
-excerpt: 'I explain in this post how was the process of rewriting SugarRecord, a CoreData/Realm wrapper for Swift.'
+description: 'I explain in this post how was the process of rewriting SugarRecord, a CoreData/Realm wrapper for Swift.'
 categories: [sugarrecord, realm, coredata]
 ---
 

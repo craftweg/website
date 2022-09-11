@@ -1,6 +1,6 @@
 ---
 title: But it's powered by Electron
-excerpt: This tiny blog post contains some thoughts on the rants I often see about apps written in Electron and what's my opinion on the framework and the apps written with it.
+description: This tiny blog post contains some thoughts on the rants I often see about apps written in Electron and what's my opinion on the framework and the apps written with it.
 categories: [electron, web, desktop apps, js, electronjs]
 ---
 

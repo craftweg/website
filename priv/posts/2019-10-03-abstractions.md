@@ -1,6 +1,6 @@
 ---
 title: Abstractions
-excerpt: In this blog post I talk about abstractions in the Xcode projects domain and how Tuist leverages the concept to conceptually compress intricacies of Xcode projects that developers are often confronted with.
+description: In this blog post I talk about abstractions in the Xcode projects domain and how Tuist leverages the concept to conceptually compress intricacies of Xcode projects that developers are often confronted with.
 categories: [tuist, open source]
 ---
 

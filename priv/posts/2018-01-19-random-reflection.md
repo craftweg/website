@@ -1,6 +1,6 @@
 ---
 title: Random thoughts a Friday night in Ottawa
-excerpt: I sat down after work and thought about some things that have been in my mind for some time. I wrote them in this blog post that if I have to summarize it, it talks about minimalism, open source, egno, and career paths.
+description: I sat down after work and thought about some things that have been in my mind for some time. I wrote them in this blog post that if I have to summarize it, it talks about minimalism, open source, egno, and career paths.
 categories: ['2017', retro, year]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Implementing a Mutable Collection Property for ReactiveCocoa
-excerpt: 'These are the steps I followed to create a Mutable Collection Property for ReactiveCocoa. Very useful if you want to get events about changes produced in a collection'
+description: 'These are the steps I followed to create a Mutable Collection Property for ReactiveCocoa. Very useful if you want to get events about changes produced in a collection'
 categories: [reactivecocoa, reactive, cocoa, stream, signals]
 ---
 

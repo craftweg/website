@@ -1,6 +1,6 @@
 ---
 title: 'Codemotion experience'
-excerpt: 'After two days of Codemotion I would like to share my experience in my first time in a developers event like that one'
+description: 'After two days of Codemotion I would like to share my experience in my first time in a developers event like that one'
 categories: ['codemotion', 'viper']
 ---
 

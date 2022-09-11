@@ -1,6 +1,6 @@
 ---
 title: Static site generators
-excerpt: In this blog post I talk about what traits I expect a static site generator to have, and why I believe Gatsby is a more suitable option than other alternatives in the industry.
+description: In this blog post I talk about what traits I expect a static site generator to have, and why I believe Gatsby is a more suitable option than other alternatives in the industry.
 categories: [web, open source, static generator]
 ---
 

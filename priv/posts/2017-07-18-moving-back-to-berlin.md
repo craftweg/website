@@ -1,6 +1,6 @@
 ---
 title: Moving back to Berlin
-excerpt: A brief retrospective on what my life has been in the last few months and my thougts on my move to Berlin.
+description: A brief retrospective on what my life has been in the last few months and my thougts on my move to Berlin.
 categories: [budapest, berlin, remote]
 ---
 

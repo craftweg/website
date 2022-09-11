@@ -1,6 +1,6 @@
 ---
 title: Developing tools for developers
-excerpt: Learnings from being a core developer and providing other teams with the tools that they need for their daily work.
+description: Learnings from being a core developer and providing other teams with the tools that they need for their daily work.
 categories: [soundcloud, core, developer, ios, xcode]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'El patrón Comando en Swift'
-excerpt: 'Cómo he aplicado el patrón de comandos en Swift para desarrollar el core de GitDo'
+description: 'Cómo he aplicado el patrón de comandos en Swift para desarrollar el core de GitDo'
 categories: [command, pattern, swift, reactive]
 ---
 

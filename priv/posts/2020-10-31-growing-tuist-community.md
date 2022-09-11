@@ -1,7 +1,7 @@
 ---
 title: Growing Tuist's community
 categories: ['tuist', 'open-source', 'community']
-excerpt: In this blog post, I share my experience building the Tuist community. I talked about the things that have worked well, and the areas where there's still some room for improvement.
+description: In this blog post, I share my experience building the Tuist community. I talked about the things that have worked well, and the areas where there's still some room for improvement.
 ---
 
 As you might already know, I devised and started working on [Tuist](https://tuist.io/) a few years ago. I was motivated by the fact that modular Xcode projects were a nightmare to maintain and that existing project generation solutions were taking a direction that would lead them to surface the same intricacies and complexities present in Xcode projects. I envisioned Tuist as more than just a project generation. I wanted it to be a platform that makes development convenient and removes indirection layers introduced by tools written in different programming languages. Rails was my most massive inspiration. The framework places convention over configuration to provide a great user experience. Rather than installing a handful of tools, like it happens when developing apps with Xcode *(CocoaPods, Carthage, SwiftLint, [Sourcery](https://github.com/krzysztofzablocki/Sourcery), [SwiftGen](https://github.com/SwiftGen/SwiftGen))*, you install one, and it works. I was thrilled to bring the same idea to the Swift community.

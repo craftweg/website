@@ -1,6 +1,6 @@
 ---
 title: Where does the stress come from?
-excerpt: Are you one of those software engineers that read many blog posts and watch talks? Do take your personal branding on the internet very seriously? What comes to your mind when I say "side projects"? This blog post is a reflection on what I think have been the three major sources of stress in my life.
+description: Are you one of those software engineers that read many blog posts and watch talks? Do take your personal branding on the internet very seriously? What comes to your mind when I say "side projects"? This blog post is a reflection on what I think have been the three major sources of stress in my life.
 categories: [stress, mental health, health]
 ---
 

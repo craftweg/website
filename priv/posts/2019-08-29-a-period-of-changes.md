@@ -1,6 +1,6 @@
 ---
 title: A period of changes
-excerpt: Dumping some thoughts on what the last month have been for me in my personal and professional life.
+description: Dumping some thoughts on what the last month have been for me in my personal and professional life.
 categories: [life, update]
 ---
 

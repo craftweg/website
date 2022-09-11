@@ -1,6 +1,6 @@
 ---
 title: I gave up using Medium
-excerpt: I gave up using Medium and here are the reasons that led me to make the decission.
+description: I gave up using Medium and here are the reasons that led me to make the decission.
 categories: [medium, blog, writing]
 ---
 

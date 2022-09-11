@@ -1,6 +1,6 @@
 ---
 title: 'Swift Spain Community'
-excerpt: 'Creating the first Slack Community for Swift developers in Spain'
+description: 'Creating the first Slack Community for Swift developers in Spain'
 categories: [swift, spain, slack]
 ---
 

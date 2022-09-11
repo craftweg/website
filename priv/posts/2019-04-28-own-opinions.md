@@ -1,6 +1,6 @@
 ---
 title: Genuine opinions on the Internet
-excerpt: I reflect on how difficult it is nowadays to have and share your own opinions on the Internet.
+description: I reflect on how difficult it is nowadays to have and share your own opinions on the Internet.
 categories: [opinions, internet, twitter]
 ---
 

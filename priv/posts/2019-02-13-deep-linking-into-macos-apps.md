@@ -1,6 +1,6 @@
 ---
 title: Deep linking into macOS apps
-excerpt: Some comments on what's the state of art of macOS handling deeplinks.
+description: Some comments on what's the state of art of macOS handling deeplinks.
 categories: [deeplink, macos, cocoa, safari]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: What's the value?
-excerpt: I've been recently asking myself for the value of the things that I do. I used to learn and work on things that did not bring any value to my life and therefor were a waste of my time.
+description: I've been recently asking myself for the value of the things that I do. I used to learn and work on things that did not bring any value to my life and therefor were a waste of my time.
 categories: [reflection, focus, goals]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: This app could not be installed at this time
-excerpt: Because sometimes Xcode cannot install your apps, and you have to figure out why.
+description: Because sometimes Xcode cannot install your apps, and you have to figure out why.
 categories: [ios, watch, xcode, install]
 ---
 

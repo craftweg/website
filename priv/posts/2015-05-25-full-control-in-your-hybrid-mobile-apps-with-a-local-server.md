@@ -1,6 +1,6 @@
 ---
 title: Full control in your hybrid mobile apps with a local server, 8fit
-excerpt: 'Custom solution to have full control over your hybrid apps bundling the content locally and controlling updates'
+description: 'Custom solution to have full control over your hybrid apps bundling the content locally and controlling updates'
 categories: [gcdwebserver, nanohttpd, ionic]
 ---
 

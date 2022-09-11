@@ -1,6 +1,6 @@
 ---
 title: Module caching with Galaxy
-excerpt: Tuist has been of a great value for developers that found it difficult to extend their Xcode projects because Xcode exposed a lot of complexity to them. Having conceptually compressed those difficulties by leveraging project generation, it's time for Tuist to tackle a new challenge, reduce compilation times.
+description: Tuist has been of a great value for developers that found it difficult to extend their Xcode projects because Xcode exposed a lot of complexity to them. Having conceptually compressed those difficulties by leveraging project generation, it's time for Tuist to tackle a new challenge, reduce compilation times.
 categories: [tuist, open source, github, xcodeproj, xcode, swift]
 ---
 
