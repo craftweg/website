@@ -8,8 +8,8 @@ defmodule Craftweg.Markdown.Parser do
       contents
       |> String.split("---\n", parts: 2, trim: true)
 
-
-    frontmatter = YamlElixir.read_from_string!(frontmatter_string)
+    frontmatter =
+      YamlElixir.read_from_string!(frontmatter_string)
       |> Map.put_new(:excerpt, String.slice(body, 0..200) <> "...")
 
     {frontmatter, body}

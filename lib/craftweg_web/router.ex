@@ -19,7 +19,8 @@ defmodule CraftwegWeb.Router do
 
     get "/", PageController, :index
     get "/:year/:month/:day/:title", BlogController, :post
-    for page <- Craftweg.Pages.all_pages do
+
+    for page <- Craftweg.Pages.all_pages() do
       get page.slug, PageController, :markdown
     end
   end

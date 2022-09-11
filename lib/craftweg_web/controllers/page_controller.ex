@@ -7,7 +7,7 @@ defmodule CraftwegWeb.PageController do
 
   def markdown(conn, _params) do
     path = conn.request_path
-    page = Craftweg.Pages.all_pages |> Enum.find(& &1.slug == path)
+    page = Craftweg.Pages.all_pages() |> Enum.find(&(&1.slug == path))
     render(conn, "markdown.html", %{page: page})
   end
 end
