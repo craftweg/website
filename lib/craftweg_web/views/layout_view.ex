@@ -1,12 +1,8 @@
 defmodule CraftwegWeb.LayoutView do
   use CraftwegWeb, :view
 
-  def metadata(key) do
-    Application.fetch_env!(:craftweg, :metadata) |> Keyword.fetch!(key)
-  end
-
   def feed_url do
-    url = Application.fetch_env!(:craftweg, :metadata) |> Keyword.fetch!(:base_url) |> URI.parse()
+    %{base_url: url} = Application.fetch_env!(:craftweg, :metadata)
     url = %{url | path: "/blog/feed.xml"}
     url |> URI.to_string()
   end

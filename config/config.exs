@@ -7,14 +7,15 @@
 # General application configuration
 import Config
 
-config :craftweg, :metadata,
+config :craftweg, :metadata, %{
   title: "Craftweg",
   description: "This is my litle corner in the internet where I share experiences building with software.",
   domain: "craftweg.com",
-  base_url: "https://craftweg.com",
+  base_url: "https://craftweg.com" |> URI.parse(),
   language: "en-us",
   twitter_handle: "@pepicrft",
   author: "Pedro Piñera"
+}
 
 config :craftweg,
   ecto_repos: [Craftweg.Repo]

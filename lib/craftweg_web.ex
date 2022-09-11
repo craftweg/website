@@ -39,6 +39,8 @@ defmodule CraftwegWeb do
 
       # Include shared imports and aliases for views
       unquote(view_helpers())
+
+      use CraftwegWeb.Meta
     end
   end
 
