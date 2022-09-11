@@ -63,7 +63,7 @@ defmodule Craftweg.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
-      {:tailwind, "~> 0.1", only: :dev}
+      {:tailwind, "~> 0.1", runtime: Mix.env() == :dev}
     ]
   end
 
