@@ -22,4 +22,9 @@ defmodule Craftweg.Blog do
   The function returns all the categories.
   """
   def all_categories, do: @categories
+
+  @doc """
+  The function returns an RSS-formatted feed containing all the blog posts.
+  """
+  def feed, do: @feed
 end
