@@ -5,13 +5,16 @@ defmodule Craftweg.Feed do
   """
   @spec generate(list(%Craftweg.Blog.Post{})) :: any
   def generate(posts) do
+    [title: title, description: description, url: url, language: language] =
+      Application.fetch_env!(:craftweg, :metadata)
+
     channel =
       RSS.channel(
-        "Craftweg",
-        "https://craftweg.com",
-        "Description",
+        title,
+        url,
+        description,
         Timex.now() |> Timex.format!("{RFC1123}"),
-        "en-us"
+        language
       )
 
     item =

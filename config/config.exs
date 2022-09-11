@@ -7,6 +7,12 @@
 # General application configuration
 import Config
 
+config :craftweg, :metadata,
+  title: "Craftweg",
+  description: "Craftweg is an organization that empowers people through software craftsmanship.",
+  url: "https://craftweg.com",
+  language: "en-us"
+
 config :craftweg,
   ecto_repos: [Craftweg.Repo]
 

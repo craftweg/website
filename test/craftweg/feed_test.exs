@@ -11,10 +11,13 @@ defmodule Craftweg.FeedTest do
     feed = generate(posts)
 
     # Then
-    assert feed |> xpath(~x"//channel/title/text()"s) == "Craftweg"
-    assert feed |> xpath(~x"//channel/link/text()"s) == "https://craftweg.com"
-    assert feed |> xpath(~x"//channel/description/text()"s) == "Description"
-    assert feed |> xpath(~x"//channel/language/text()"s) == "en-us"
+    [title: title, description: description, url: url, language: language] =
+      Application.fetch_env!(:craftweg, :metadata)
+
+    assert feed |> xpath(~x"//channel/title/text()"s) == title
+    assert feed |> xpath(~x"//channel/link/text()"s) == url
+    assert feed |> xpath(~x"//channel/description/text()"s) == description
+    assert feed |> xpath(~x"//channel/language/text()"s) == language
 
     %{year: last_build_year, month: last_build_month, day: last_build_day} =
       feed |> xpath(~x"//channel/lastBuildDate/text()"s) |> Timex.parse!("{RFC1123}")
