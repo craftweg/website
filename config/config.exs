@@ -9,9 +9,12 @@ import Config
 
 config :craftweg, :metadata,
   title: "Craftweg",
-  description: "Craftweg is an organization that empowers people through software craftsmanship.",
-  url: "https://craftweg.com",
-  language: "en-us"
+  description: "This is my litle corner in the internet where I share experiences building with software.",
+  domain: "craftweg.com",
+  base_url: "https://craftweg.com",
+  language: "en-us",
+  twitter_handle: "@pepicrft",
+  author: "Pedro Piñera"
 
 config :craftweg,
   ecto_repos: [Craftweg.Repo]

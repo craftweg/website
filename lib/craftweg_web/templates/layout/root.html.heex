@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <% title = assigns[:page_title] || "Craftweg" %>
+
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content={csrf_token_value()}>
-    <%= live_title_tag assigns[:page_title] || "Craftweg", suffix: " · Phoenix Framework" %>
+    <%= live_title_tag title, suffix: " · Phoenix Framework" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+
+    <!-- Open Graph -->
+    <meta name="author" content={metadata(:author)}>
+    <meta property="og:site_name" content="Craftweg">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={metadata(:description)}>
+    <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
+    <meta property="og:image" content={Routes.static_url(@conn, "/images/logo.png")}>
+
+    <!-- Twitter -->
+    <meta name="twitter:site" content={metadata(:twitter_handle)}>
+    <meta property="twitter:domain" content={metadata(:domain)}>
+    <meta property="twitter:url" content={metadata(:base_url)}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={metadata(:description)}>
+    <meta name="twitter:image" content={Routes.static_url(@conn, "/images/logo.png")}>
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2022-09-07T00:00:00+00:00">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
     <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" title={title} href={feed_url}>
+    <link rel="alternate" type="application/rss+xml" title={metadata(:title)} href={feed_url}>
   </head>
   <body>
     <header>
