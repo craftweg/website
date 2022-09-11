@@ -21,11 +21,14 @@ defmodule CraftwegWeb.Router do
 
     get "/", PageController, :index
     get "/blog/:year/:month/:day/:title", BlogController, :post
+    get "/blog/feed.xml", BlogController, :feed
 
     for page <- Craftweg.Pages.all_pages() do
       get page.slug, PageController, :markdown
     end
   end
+
+  redirect "/blog/atom.xml", "/blog/feed.xml", :permanent
 
   for post <- Craftweg.Blog.all_posts() do
     redirect(post.old_slug, post.slug, :permanent, preserve_query_string: true)
