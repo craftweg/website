@@ -7,9 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content={csrf_token_value()}>
-    <%= live_title_tag title, suffix: " · Phoenix Framework" %>
+    <%= live_title_tag title %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon"  href={Routes.static_url(@conn, "/favicon/favicon.ico")} />
+    <link rel="apple-touch-icon" sizes="180x180" href={Routes.static_url(@conn, "/favicon/apple-touch-icon.png")}>
+    <link rel="icon" type="image/png" sizes="32x32" href={Routes.static_url(@conn, "/favicon/favicon-32x32.png")}>
+    <link rel="icon" type="image/png" sizes="16x16" href={Routes.static_url(@conn, "/favicon/favicon-16x16.png")}>
+    <link rel="manifest" href={Routes.static_url(@conn, "/favicon/site.webmanifest")}>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Open Graph -->
     <meta name="author" content={metadata(:author)}>
