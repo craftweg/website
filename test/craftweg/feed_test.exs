@@ -15,7 +15,7 @@ defmodule Craftweg.FeedTest do
       Application.fetch_env!(:craftweg, :metadata)
 
     assert feed |> xpath(~x"//channel/title/text()"s) == title
-    assert feed |> xpath(~x"//channel/link/text()"s) == base_url |> URI.to_string
+    assert feed |> xpath(~x"//channel/link/text()"s) == base_url |> URI.to_string()
     assert feed |> xpath(~x"//channel/description/text()"s) == description
     assert feed |> xpath(~x"//channel/language/text()"s) == language
 

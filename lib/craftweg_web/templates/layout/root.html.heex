@@ -21,18 +21,18 @@
     <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url}>
   </head>
   <body class="font-serif">
-    <header>
-      <h1>
-          <a href="/">~/craftweg.com/src</a>
-      </h1>
-      <p>Empowering people through open-source craftsmanship</p>
+    <header class="bg-green-300 py-4">
+      <div class="flex max-w-4xl mx-auto">
+        <a href="/">Craftweg</a>
 
-      <!-- Links -->
-      <section>
-          <a href="/about">About</a>
-          <a href="/blog/feed.xml">RSS</a>
-      </section>
+          <div class="flex-1"/>
 
+          <!-- Links -->
+          <section>
+              <a href="/about">About</a>
+              <a href="/blog/feed.xml">RSS</a>
+          </section>
+      </div>
     </header>
     <%= @inner_content %>
   </body>

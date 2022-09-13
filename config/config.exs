@@ -9,7 +9,8 @@ import Config
 
 config :craftweg, :metadata, %{
   title: "Craftweg",
-  description: "This is my litle corner in the internet where I share experiences building with software.",
+  description:
+    "This is my litle corner in the internet where I share experiences building with software.",
   domain: "craftweg.com",
   base_url: "https://craftweg.com" |> URI.parse(),
   language: "en-us",

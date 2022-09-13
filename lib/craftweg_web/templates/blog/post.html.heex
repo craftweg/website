@@ -1,8 +1,9 @@
-<b>Title</b>
-<p><%= @post.title %></p>
-<b>Description</b>
-<p><%= @post.description %></p>
-<b>Categories</b>
-<p><%= @post.categories |> Enum.join(", ") %></p>
-<b>Body</b>
-<p><%= raw @post.body %></p>
+<div class="flex flex-col gap-y-10">
+  <header>
+    <h1><%= @post.title %></h1>
+    <p class="text-sm text-gray-500"><%= @post.categories |> Enum.join(", ") %></p>
+  </header>
+  <div>
+    <%= raw @post.body %>
+  </div>
+</div>

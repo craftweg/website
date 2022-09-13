@@ -16,8 +16,9 @@ defmodule Craftweg.Blog.Post do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
-    description = frontmatter["description"] || (String.slice(body, 0..200) <> "...") |> html_to_text
 
+    description =
+      frontmatter["description"] || (String.slice(body, 0..200) <> "...") |> html_to_text
 
     filename_without_date_and_extension =
       filename_without_extension |> String.replace("#{year}-#{month}-#{day}-", "")
@@ -48,6 +49,7 @@ defmodule Craftweg.Blog.Post do
         global: true
       )
       |> PhoenixHtmlSanitizer.Helpers.sanitize(:strip_tags)
+
     html
   end
 end
