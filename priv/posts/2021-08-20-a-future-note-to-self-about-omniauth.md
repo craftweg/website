@@ -17,7 +17,7 @@ Besides the standard steps to set up Omniauth and [Omniauth GitHub](https://gith
 we need to add [omniauth-rails_csrf_protection](https://github.com/cookpad/omniauth-rails_csrf_protection) to bring [CSRF Protection](https://owasp.org/www-community/attacks/csrf) to the requests that are sent from the authentication pages.
 After adding the dependency to the `Gemfile`, we need to add a new initializer, `omniauth.rb`, to allow sending `POST` requests from the Omniauth links:
 
-```rb
+```ruby
 OmniAuth.config.allowed_request_methods = [:get, :post]
 ```
 
@@ -25,7 +25,7 @@ In that same initializer,
 we need to set the host to ensure Omniauth passes the right redirection URL when initiating the authentication flow.
 Otherwise the Omniauth provider might fail due to mismatching URLs:
 
-```rb
+```ruby
 OmniAuth.config.full_host = "https://myapp.com"
 ```
 
@@ -40,7 +40,7 @@ If we generated the Devise views under our project's `app/views` directory, we c
 And last but not least, we need to instruct Omniauth on what to do once the authentication flow has finished.
 We do that by configuring a controller in the `routes.rb`:
 
-```rb
+```ruby
 Rails.application.routes.draw do
   # Devise
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
@@ -50,7 +50,7 @@ end
 In the controller each provider is represented by a method with the same name of the provider.
 Note that the request's `env` attribute provides all the user metadata that we need to find or create the user in our database and authenticate them using Devise's `sign_in_and_redirect` method:
 
-```rb
+```ruby
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def github
     @user = ... # Create the user

@@ -49,7 +49,7 @@ Moreover,
 we unlock the keychain so that processes can access it without the os prompting the user for the password.
 The `set_key_partition_list` function configures the keychain to give Apple's tools access to the keychain:
 
-```rb
+```ruby
 def with_keychain
   keychain_name = "ci.keychain"
   keychain_password = "ci"
@@ -87,7 +87,7 @@ the directory where Xcode reads them from.
 The snippet below iterates through all the certificates and profiles under the `certificates/` directories,
 installing and copying the certificates and provisioning profiles respectively:
 
-```rb
+```ruby
 def install_certificates(keychain: nil)
   puts("🔑 Installing certificates and copying provisioning profiles")
   files = Dir.glob(File.join(__dir__, "certificates/*"))
@@ -186,7 +186,7 @@ end
 And combining all the previous snippets,
 the resulting code looks like the snippet below. Beautiful, _isn't it?_
 
-```rb
+```ruby
 with_keychain do |keychain|
   install_certificates(keychain: keychain) do
     set_key_partition_list.call

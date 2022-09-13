@@ -44,7 +44,7 @@ The tool Apple released to bridge Swift and Objective-C was something called **b
 
 **Product-Bridging-Header.h**
 
-```objc
+```objective-c
 //
 //  Use this file to import your target's public headers that you would
 //  like to expose to Swift.
@@ -74,7 +74,7 @@ class NSObjectSwiftClass: NSObject { }
 
 **ProductName-Swift.h**
 
-```objc
+```objective-c
 SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @interface NSObjectSwiftClass : NSObject
 - (instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -110,7 +110,7 @@ You can subclass Objective-C classes in Swift, remember to use the **override** 
 
 ![Subclass](/images/posts/swiftobjc-subclass.png)
 
-```objc
+```objective-c
 #if !defined(SWIFT_CLASS)
 # if defined(__has_attribute) && ...
 #  define SWIFT_CLASS(SWIFT_NAME)...
@@ -139,7 +139,7 @@ if let fifthCharacter = myObject.characterAtIndex?(5) {
 
 As you probably know Swift introduced a new type of data, **optionals** those allow nil type and the real content of the type (in case of having) is wrapped inside that optional. Objective-C is more flexible in that aspect and allows you to call methods on those nil objects without causing exceptions or making your app crash. The way the **compiler translates** those variables or function return parameters that **might be nil** is using **implicitly unwrapped optionals** (var!). It implies that if you are planning to use one of those implicitly unwrapped optionals that the compiler generated from your Objective-C code do it carefully checking firstly if the value is nil. **Otherwise, trying to access it being nil will cause a runtime error and your app will crash**
 
-```objc
+```objective-c
 - (NSDate *)dueDateForProject:(Project *)project;
 ```
 
@@ -178,7 +178,7 @@ They are automatically converted too by the compiler. There's only a difference 
 
 **Example in Objective-C**
 
-```objc
+```objective-c
 __block CustomObject  *myObject = [CustomObject new];
 void (^myBlock)() = ^void() {
   NSLog(@"%@", myObject);
@@ -231,7 +231,7 @@ let myString: NSString = "123"
 
 **Int, UInt, Float, Double and Bool** have its equivalent in Objective-C that is **NSNumber**
 
-```objc
+```objective-c
 let n = 42
 let m: NSNumber = n
 ```
