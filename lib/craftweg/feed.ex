@@ -5,6 +5,8 @@ defmodule Craftweg.Feed do
   """
   @spec generate(list(%Craftweg.Blog.Post{})) :: any
   def generate(posts) do
+    Application.ensure_all_started(:timex)
+
     %{ title: title, description: description, language: language, base_url: base_url} = Application.fetch_env!(:craftweg, :metadata)
 
     channel =
@@ -19,7 +21,6 @@ defmodule Craftweg.Feed do
     items = posts |> Enum.map(fn post ->
       post_url = %{ base_url | path: post.slug } |> URI.to_string
       guid = %{ base_url | path: post.old_slug } |> URI.to_string
-      content = post.body
       pub_date = post.date |> Timex.to_datetime("Europe/Berlin") |> Timex.format!("{RFC822}")
       """
       <item>
@@ -32,11 +33,6 @@ defmodule Craftweg.Feed do
         <content><![CDATA[#{post.body}]]></content>
       </item>
       """
-
-# <published>2022-09-07T00:00:00+00:00</published>
-# <updated>2022-09-07T00:00:00+00:00</updated>
-# <link href="https://craftweg.com/blog/laying-out-a-project-foundation/" type="text/html"/>
-# <id>https://craftweg.com/blog/laying-out-a-project-foundation/</id>
     end)
     feed = RSS.feed(channel, items)
     feed
