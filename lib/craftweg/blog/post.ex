@@ -28,7 +28,7 @@ defmodule Craftweg.Blog.Post do
     struct!(
       __MODULE__,
       path: path,
-      old_slug: "/" <> filename_without_date_and_extension,
+      old_slug: "/blog/" <> filename_without_date_and_extension,
       slug: slug,
       title: title,
       date: date,
