@@ -11,11 +11,11 @@ defmodule Craftweg.FeedTest do
     feed = generate(posts)
 
     # Then
-    [title: title, description: description, url: url, language: language] =
+    %{title: title, description: description, base_url: base_url, language: language} =
       Application.fetch_env!(:craftweg, :metadata)
 
     assert feed |> xpath(~x"//channel/title/text()"s) == title
-    assert feed |> xpath(~x"//channel/link/text()"s) == url
+    assert feed |> xpath(~x"//channel/link/text()"s) == base_url |> URI.to_string
     assert feed |> xpath(~x"//channel/description/text()"s) == description
     assert feed |> xpath(~x"//channel/language/text()"s) == language
 
