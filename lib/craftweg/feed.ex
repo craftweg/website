@@ -28,7 +28,7 @@ defmodule Craftweg.Feed do
         <description><![CDATA[#{post.description}]]></description>
         <author>hola@craftweg.com</author>
         <pubDate>#{pub_date}</pubDate>
-        <link href="#{post_url}" type="text/html"/>
+        <link>#{post_url}</link>
         <guid>#{guid}</guid>
         <content><![CDATA[#{post.body}]]></content>
       </item>
