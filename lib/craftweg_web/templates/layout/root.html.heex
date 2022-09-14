@@ -20,9 +20,9 @@
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url}>
   </head>
-  <body class="font-serif">
+  <body class="font-serif space-y-6">
     <header class="py-4 font-sans">
-      <div class="flex max-w-4xl mx-auto gap-x-3">
+      <div class="flex mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto">
           <a class="no-underline text-emerald-600 visited:text-emerald-600 font-bold" href={CraftwegWeb.Router.Helpers.page_path(@conn, :index)}>Craftweg</a>
           <a class="no-underline text-gray-800 visited:text-gray-800" href={CraftwegWeb.Router.Helpers.about_path(@conn, :show)}>About</a>
           <div class="flex-1"/>
@@ -40,6 +40,8 @@
           </section>
       </div>
     </header>
-    <%= @inner_content %>
+    <main class="py-16 leading-8 mx-0 px-7 sm:max-w-4xl sm:mx-auto">
+      <%= @inner_content %>
+    </main>
   </body>
 </html>
