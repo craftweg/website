@@ -7,27 +7,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @apply text-3xl;
-  line-height: 1.25;
+  @apply text-4xl;
+  @apply my-6
 }
 h2 {
-  @apply text-2xl;
-  line-height: 1.3;
+  @apply text-3xl;
+  @apply my-5;
 }
 h3 {
-  font-size: 2.2rem;
-  letter-spacing: -0.08rem;
-  line-height: 1.35;
+  @apply text-2xl;
+  @apply my-4;
 }
 h4 {
-  font-size: 1.8rem;
-  letter-spacing: -0.05rem;
-  line-height: 1.5;
+  @apply text-xl;
+  @apply my-3;
 }
 h5 {
-  font-size: 1.6rem;
-  letter-spacing: 0;
-  line-height: 1.4;
+  @apply text-lg;
+  @apply my-3;
 }
 h6 {
   font-size: 1.4rem;
@@ -38,6 +35,10 @@ pre {
   padding: 1em;
 }
 
+strong {
+  @apply font-bold;
+}
+
 .container {
   margin: 0 auto;
   max-width: 80rem;
@@ -45,10 +46,15 @@ pre {
   position: relative;
   width: 100%;
 }
+
 select {
   width: auto;
 }
 
+ul {
+  @apply list-disc pl-10;
+}
+
 a {
-  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+  @apply underline text-emerald-600 visited:text-emerald-600
 }

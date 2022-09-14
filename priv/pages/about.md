@@ -30,7 +30,7 @@ My <b>long-term life plans</b> are to retire my parents early and make a living 
 	>
 </p>
 
-## Work 👨‍💻
+## Work
 
 Here's the list of the companies that I've proudly been part of:
 
@@ -43,7 +43,7 @@ Here's the list of the companies that I've proudly been part of:
 - [8fit](https://8fit.com/): Mobile developer in 2014 and 2015
 - [Redbooth](https://redbooth.com/): iOS developer in 2013 and 2014
 
-## Values 🌱
+## Values
 
 Here's a list of values that I believe in and that drive most of my decisions in life:
 

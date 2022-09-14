@@ -21,16 +21,22 @@
     <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url}>
   </head>
   <body class="font-serif">
-    <header class="bg-green-300 py-4">
-      <div class="flex max-w-4xl mx-auto">
-        <a href="/">Craftweg</a>
-
+    <header class="py-4 font-sans">
+      <div class="flex max-w-4xl mx-auto gap-x-3">
+          <a class="no-underline text-emerald-600 visited:text-emerald-600 font-bold" href={CraftwegWeb.Router.Helpers.page_path(@conn, :index)}>Craftweg</a>
+          <a class="no-underline text-gray-800 visited:text-gray-800" href={CraftwegWeb.Router.Helpers.about_path(@conn, :show)}>About</a>
           <div class="flex-1"/>
 
           <!-- Links -->
-          <section>
-              <a href="/about">About</a>
-              <a href="/blog/feed.xml">RSS</a>
+          <section class="flex flex-row">
+            <a class="no-underline text-gray-800 visited:text-gray-800">
+
+            </a>
+            <a class="no-underline text-gray-800 visited:text-gray-800" href={CraftwegWeb.Router.Helpers.blog_path(@conn, :feed)}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+            </a>
           </section>
       </div>
     </header>

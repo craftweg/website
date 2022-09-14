@@ -24,7 +24,7 @@ defmodule CraftwegWeb.Router do
     get "/blog/feed.xml", BlogController, :feed
 
     for page <- Craftweg.Pages.all_pages() do
-      get page.slug, PageController, :markdown
+      get page.slug, PageController, :show, as: page.identifier
     end
   end
 
