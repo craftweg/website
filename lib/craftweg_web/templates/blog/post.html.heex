@@ -1,7 +1,7 @@
 <div class="flex flex-col gap-y-10">
   <header>
     <h1 class="tracking-tight"><%= @post.title %></h1>
-    <p class="text-sm text-gray-500"><%= @post.categories |> Enum.join(", ") %></p>
+    <p class="text-base text-gray-500 font-sans"><%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ") %></p>
   </header>
   <div>
     <%= raw @post.body %>
