@@ -23,7 +23,8 @@
   <body class="font-serif space-y-6">
     <header class="py-4 font-sans">
       <div class="flex mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto">
-          <a class="no-underline text-emerald-600 visited:text-emerald-600 font-bold" href={CraftwegWeb.Router.Helpers.page_path(@conn, :index)}>Craftweg</a>
+          <img src={Routes.static_url(@conn, "/images/logo-rounded.png")} class="h-6 w-6"/>
+          <a class="no-underline text-rose-700 visited:text-rose-700 font-bold" href={CraftwegWeb.Router.Helpers.page_path(@conn, :index)}>Craftweg</a>
           <a class="no-underline text-gray-800 visited:text-gray-800" href={CraftwegWeb.Router.Helpers.about_path(@conn, :show)}>About</a>
           <div class="flex-1"/>
 

@@ -56,5 +56,5 @@ ul {
 }
 
 a {
-  @apply underline text-emerald-600 visited:text-emerald-600
+  @apply underline text-rose-600 visited:text-rose-600
 }

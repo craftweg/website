@@ -10,7 +10,7 @@ import Config
 config :craftweg, :metadata, %{
   title: "Craftweg",
   description:
-    "This is my litle corner in the internet where I share experiences building with software.",
+    "Open source software as craftmanship to have a long-lasting positive impact.",
   domain: "craftweg.com",
   base_url: "https://craftweg.com" |> URI.parse(),
   language: "en-us",
