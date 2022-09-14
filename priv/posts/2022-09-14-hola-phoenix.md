@@ -1,6 +1,6 @@
 ---
 title: Hola Phoenix
-description: Short reflection on how beneficial it can be turning negativism into something positive.
+description: Craftweg's website is now written in Elixir and this blog post touches on what led to the migration and how the process has been.
 categories: [elixir, phoenix]
 ---
 
