@@ -51,6 +51,10 @@ select {
   width: auto;
 }
 
+:root {
+  @apply text-gray-800;
+}
+
 ul {
   @apply list-disc pl-10;
 }
