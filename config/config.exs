@@ -13,6 +13,7 @@ config :craftweg, :metadata, %{
     "Open source software as craftmanship to have a long-lasting positive impact.",
   domain: "craftweg.com",
   base_url: "https://craftweg.com" |> URI.parse(),
+  github_url: "https://github.com/craftweg",
   language: "en-us",
   twitter_handle: "@pepicrft",
   author: "Pedro Piñera"

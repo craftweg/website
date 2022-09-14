@@ -9,15 +9,15 @@ I'm <a href="https://twitter.com">Pedro Piñera</a> and <a href="https://github.
     <h2>Recent Blog posts</h2>
   </header>
 
-  <main class="flex flex-col">
+  <main class="flex flex-col gap-2">
     <%= for post <- posts() |> Enum.take(10) do %>
-      <article class="flex gap-3">
-          <div class="flex-1">
+      <article class="flex gap-3 font-sans text-lg">
+          <div class="flex-1 tracking-tight hover:text-rose-600">
               <% post_attributes = %{ href: post.slug } %>
               <a {post_attributes}><%= post.title  %></a>
           </div>
           <% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
-          <div class="text-gray-400"><%= time_ago_date %></div>
+          <div class="text-gray-400 text-sm"><%= time_ago_date %></div>
       </article>
     <% end %>
   </main>

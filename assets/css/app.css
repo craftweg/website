@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  @apply text-gray-800;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @apply font-sans;
 }
@@ -51,14 +55,60 @@ select {
   width: auto;
 }
 
-:root {
-  @apply text-gray-800;
-}
-
 ul {
   @apply list-disc pl-10;
 }
 
-a {
-  @apply underline text-rose-600 visited:text-rose-600
+.markdown > * + * {
+  @apply mt-5;
+}
+
+.markdown > li + li  {
+  @apply mt-5;
+}
+
+.markdown li > p + p {
+  @apply mt-5;
+}
+
+.markdown strong {
+  @apply text-black font-bold;
+}
+
+.markdown a {
+  @apply underline text-rose-600 visited:text-rose-600;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h2 {
+  @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+}
+
+.markdown h3 {
+  @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+}
+
+.markdown code {
+  @apply font-mono text-sm inline px-1;
+}
+
+.markdown pre code {
+  @apply block bg-black p-4 rounded;
+}
+
+.markdown blockquote {
+  @apply border-l-4 pl-4 italic;
+}
+
+.markdown ul {
+  @apply pl-5;
+  @apply sm:pl-10;
+}
+
+.markdown ol {
+  @apply pl-5;
+  @apply sm:pl-10;
 }

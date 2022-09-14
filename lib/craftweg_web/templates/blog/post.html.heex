@@ -3,7 +3,7 @@
     <h1 class="tracking-tight"><%= @post.title %></h1>
     <p class="text-base text-gray-500 font-sans"><%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ") %></p>
   </header>
-  <div>
+  <main class="markdown">
     <%= raw @post.body %>
-  </div>
+  </main>
 </div>
