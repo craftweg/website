@@ -19,9 +19,10 @@ defmodule CraftwegWeb.Router do
   scope "/", CraftwegWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    get "/blog/:year/:month/:day/:title", BlogController, :post
-    get "/blog/feed.xml", BlogController, :feed
+    get "/", PageController, :home
+    get "/blog", PageController, :blog
+    get "/blog/:year/:month/:day/:title", PageController, :blog_post
+    get "/blog/feed.xml", PageController, :feed
 
     for page <- Craftweg.Pages.all_pages() do
       get page.slug, PageController, :show, as: page.identifier

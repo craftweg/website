@@ -1,0 +1,20 @@
+<p>
+I'm <a href="https://twitter.com">Pedro Piñera</a> and <a href="https://github.com/craftweg">Craftweg</a> is an organization that embraces software as craftmanship and open source as a catalyst for building tools and communities that sustain long-term and reflect the world's diversity.
+</p>
+
+<!-- Blog posts -->
+<section class="flex flex-col">
+
+  <header>
+    <h2>Recent Blog posts</h2>
+  </header>
+
+  <main class="flex flex-col gap-2">
+    <.posts_component posts={posts} take={10}/>
+
+    <div class="font-sans mt-5 text-rose-600">
+      <a href={CraftwegWeb.Router.Helpers.page_path(@conn, :blog)}>Read more blog posts</a>
+    </div>
+  </main>
+
+</section>
