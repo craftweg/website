@@ -112,3 +112,7 @@ ul {
   @apply pl-5;
   @apply sm:pl-10;
 }
+
+code.inline {
+  @apply text-rose-700 bg-rose-100 rounded
+}
