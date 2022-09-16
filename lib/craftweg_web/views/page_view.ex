@@ -18,7 +18,7 @@ defmodule CraftwegWeb.PageView do
     }
 
   def metadata(:blog_post, %{post: %{title: title, description: description}}) do
-    title |> dbg
+    title
 
     %{
       title: title,
