@@ -21,7 +21,6 @@ defmodule CraftwegWeb.PageController do
     |> render("feed.xml")
   end
 
-
   def show(conn, _params) do
     path = conn.request_path
     page = Craftweg.Pages.all_pages() |> Enum.find(&(&1.slug == path))

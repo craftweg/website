@@ -12,6 +12,7 @@ defmodule Craftweg.Pages.Page do
   def build(path, %{"title" => title, "description" => description}, body) do
     slug = "/" <> (path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd)
     identifier = path |> Path.basename(".md")
+
     struct!(
       __MODULE__,
       path: path,

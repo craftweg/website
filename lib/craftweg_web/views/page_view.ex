@@ -5,17 +5,34 @@ defmodule CraftwegWeb.PageView do
     Craftweg.Blog.all_posts()
   end
 
+  def render("feed.xml", _assigns) do
+    Craftweg.Blog.feed()
+  end
+
+  # Metadata
+
   def metadata(:markdown, %{page: %{title: title, description: description}}),
     do: %{
       title: title,
       description: description
     }
+
+  def metadata(:blog_post, %{post: %{title: title, description: description}}) do
+    title |> dbg
+
+    %{
+      title: title,
+      description: description
+    }
+  end
+
   def posts_component(assigns) do
-    assigns = if assigns |> Map.has_key?(:take) do
-      Phoenix.LiveView.assign(assigns, :posts,  assigns.posts |> Enum.take(assigns.take))
-    else
-      assigns
-    end
+    assigns =
+      if assigns |> Map.has_key?(:take) do
+        Phoenix.LiveView.assign(assigns, :posts, assigns.posts |> Enum.take(assigns.take))
+      else
+        assigns
+      end
 
     ~H"""
     <%= for post <- assigns.posts() do %>
