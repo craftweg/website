@@ -6,16 +6,8 @@ description: "Craftweg is a purpose-driven organization that crafts software."
 <p>Hola 👋.</p>
 <p>
 	I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a> and a
-	open-source enthusiast. I fight for open, small, and human technology. I enjoy devising and
-	building developer tools that spark joy. Elixir 🧪, Rust 🦀, Typescript 🚀 are my day-to-day
-	languages. I devised and created <a href="https://tuist.io">Tuist</a> to help teams scale up Xcode
-	projects, proposed a modular architecture to build apps,
-	<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
-		>µfeatures architecture</a
-	>.
-</p>
-<p>
-My <b>long-term life plans</b> are to retire my parents early and make a living by building human and open-source tools with technology. Open source has the power to impact society positively and can be financially sustainable.
+	open-source enthusiast. I advocate for open, small, and human technology. I enjoy devising and
+	building developer tools that spark joy with Elixir 🧪, Ruby 💎, Rust 🦀, and Typescript 🚀.
 </p>
 <p>
 	You can contact me via email <a href="mailto:hola@craftweg.com">hola@craftweg.com</a> and find me on
