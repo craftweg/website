@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url}>
+    <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url()}>
   </head>
   <body class="font-serif space-y-6">
     <header class="py-4 font-sans">
