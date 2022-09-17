@@ -5,9 +5,7 @@ description: "Craftweg is a purpose-driven organization that crafts software."
 
 <p>Hola 👋.</p>
 <p>
-	I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a> and a
-	open-source enthusiast. I advocate for open, small, and human technology. I enjoy devising and
-	building developer tools that spark joy with Elixir 🧪, Ruby 💎, Rust 🦀, and Typescript 🚀.
+	I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a> and I enjoy building tools with technology.
 </p>
 <p>
 	You can contact me via email <a href="mailto:hola@craftweg.com">hola@craftweg.com</a> and find me on
@@ -21,7 +19,7 @@ description: "Craftweg is a purpose-driven organization that crafts software."
 
 ## Work
 
-Here's the list of the companies that I've proudly been part of:
+Here's the list of the companies that I've worked for:
 
 - [Shopify](https://shopify.com/):
   - 2022: Senior staff Engineer
