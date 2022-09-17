@@ -11,11 +11,12 @@ defmodule CraftwegWeb.PageView do
 
   # Metadata
 
-  def metadata(:markdown, %{page: %{title: title, description: description}}),
-    do: %{
+  def metadata(_, %{page: %{title: title, description: description}}) do
+    %{
       title: title,
       description: description
-    }
+    } |> dbg
+  end
 
   def metadata(:blog_post, %{post: %{title: title, description: description}}) do
     title

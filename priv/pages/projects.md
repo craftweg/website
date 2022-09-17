@@ -5,12 +5,6 @@ description: "Check out the projects we devised, implemented, and maintain"
 
 We don’t have a strong opinion when it comes to problems to solve and the technologies to solve them. We work on problems that we find exciting to solve and choose technologies that we think are the most suitable to solve the problems, except when we want to play with a particular technology. This page contains projects created by Craftweg, some of which might not be maintained anymore or have been handed over to other maintainers.
 
-## Maintained
-
-### [typed-file-system-path](https://github.com/craftweg/typed-file-system-path)
-
-A tiny NPM package that provides Typescript primitives to model absolute and relative paths and prevent bug-prone implementations and non-idiomatic APIs.
-
 ## In progress
 
 ### [Gestalt](https://gestaltjs.org)
@@ -19,8 +13,13 @@ We are building a batteries-included full-stack Javascript framework. We are goi
 
 ### [Catalysis](https://twitter.com/catalysisdotdev)
 
-We are building a simple, open-source deployment tool with a strong focus on the developer experience, a tool that’s driven by a community instead of corporations or investors.
+We are building a simple open-source and community-driven deployment tool with a strong focus on the developer experience.
 
+## Maintained
+
+### [typed-file-system-path](https://github.com/craftweg/typed-file-system-path)
+
+A tiny NPM package that provides Typescript primitives to model absolute and relative paths and prevent bug-prone implementations and non-idiomatic APIs.
 ## Handed over
 
 ### [Tuist](https://tuist.io)
