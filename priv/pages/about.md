@@ -5,7 +5,7 @@ description: "Craftweg is a purpose-driven organization that crafts software."
 
 <p>Hola 👋.</p>
 <p>
-	I'm <a href="/about"><b>Pedro Piñera</b></a> and I'm a Senior Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a>. I used to be excited about learning new technologies (e.g., programming languages), but I geared my energy and creativity towards building <a href="https://www.whatisanindiemaker.com/" target="_blank">indie products</a>. Learning technology is fun, but applying it to actual problems is even funnier.
+	I'm <a href="/about"><b>Pedro Piñera</b></a> and I'm a Senior Staff Production Engineer at <a href="https://shopify.com" target="_blank">Shopify</a>. I love learning programming languages and technologies, and building open source developer tools with them.
 </p>
 <p>
 	You can find me on <a href="https://github.com/pepicrft" target="_blank">GitHub</a>,

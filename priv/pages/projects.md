@@ -9,11 +9,12 @@ We don’t have a strong opinion when it comes to problems to solve and the tech
 
 ### [Gestalt](https://gestaltjs.org)
 
-We are building a batteries-included full-stack Javascript framework. We are going deep into the stack of packages, tools, and APIs to build a well-tested and thought-of foundation to make web apps and sites with Javascript fun, a long-term foundation that organizations can safe and calmly run their projects on.
+Gestalt is a batteries-included full-stack Javascript framework. We are going deep into the stack of packages, tools, and APIs to build a well-tested and thought-of foundation to make web apps and sites with Javascript fun, a long-term foundation that organizations can safe and calmly run their projects on.
 
 ### [Catalysis](https://twitter.com/catalysisdotdev)
 
-We are building a simple open-source and community-driven deployment tool with a strong focus on the developer experience.
+Catalysis is a simple open-source and community-driven deployment tool with a strong focus on the developer experience.
+Organizations can self-host an instance of Catalysis and deploy projects to their infrastructure provider (e.g. AWS, Google Cloud, Digital Ocean), or use our hosted instance whose costs is proportional to the infrastructure costs.
 
 ## Maintained
 
