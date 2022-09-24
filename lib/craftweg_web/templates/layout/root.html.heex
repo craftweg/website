@@ -19,6 +19,15 @@
 
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:craftweg, :metadata).title} href={feed_url()}>
+
+    <!-- Import maps -->
+    <script type="importmap">
+    {
+      "imports": {
+        "prism": "https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",
+      }
+    }
+    </script>
   </head>
   <body class="font-serif space-y-6">
     <header class="py-4 font-sans">
