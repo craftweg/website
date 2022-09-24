@@ -19,7 +19,7 @@ Cuando empecé a introducir los conceptos reactivos una de mis primeras inquietu
 
 Extensivamente usado en Cocoa. Permite observar el estado de las properties de un objeto determinado y reaccionar antes sus cambios. El mayor problema de KVO es que no es fácil de usar, su API está demasiado recargada y todavía no dispone de una interfaz basada en bloques (o closures en Swift)
 
-```swift
+```language-swift
 objectToObserve.addObserver(self, forKeyPath: "myDate", options: .New, context: &myContext)
 ```
 
@@ -27,7 +27,7 @@ objectToObserve.addObserver(self, forKeyPath: "myDate", options: .New, context: 
 
 Uno de los primeros patrones que aprendes cuando das tus primeros pasos en el desarrollo para iOS/OSX ya que la mayoría de componentes de los frameworks de Apple lo implementan. _UITableViewDelegate, UITableViewDataSource_, … son algunos ejemplos. El principal problema que presenta este patrón es que sólo puede haber un delegado registrado. Si estamos ante un escenario más complejo donde con una entidad suscrita no es suficiente el patrón requiere de algunas modificaciones para que pueda soportar múltiples delegados.
 
-```swift
+```language-swift
 func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell()
 }
@@ -37,7 +37,7 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
 
 Cuando es complejo aproximarnos al componente fuente del evento para _subscribirnos_ se usa el patrón que consiste en el envío de notificaciones. ¿Conóces NSNotificationCenter? CoreData lo utiliza por ejemplo para notificar cuando un contexto va a ejecutar una operación de guardado. El problema que tiene este patrón es que toda la información enviada se retorna en un diccionario, _UserInfo_, y el observador tiene que conocer previamente la estructura de este diccionario para poder interpretarlo. No hay por lo tanto seguridad ni en la estructura ni en los tipos enviados.
 
-```swift
+```language-swift
 NSNotificationCenter.defaultCenter().addObserver(self, selector: "contextWillSave:", name: NSManagedObjectContextWillSaveNotification, object: self)
 ```
 
@@ -58,7 +58,7 @@ Después de unos meses usando [ReactiveCocoa](https://github.com/ReactiveCocoa/R
 - **Bindeado de datos:** Podemos conectar todos los eventos que llegan a través de un stream por ejemplo con una colección de forma que nuevas colecciones que lleguen en formato de eventos actualizarán la colección _“bindeada”_. De la misma forma por podemos actualizar una property de un elemento de UI con eventos recibidos.
 - **Gestión de errores:** Por defecto los frameworks reactivos dan la opción de reintentar la operación fuente del stream en el caso de fallo. Por ejemplo, si un stream recibe la respuesta de una petición web y queremos que está se reintente en el caso de fallo podemos usar el operador y la petición se volverá a ejecutar:
 
-```swift
+```language-swift
 NSURLSession.sharedSession().rac_dataWithRequest(URLRequest)
             |> retry(2)
             |> catch { error in

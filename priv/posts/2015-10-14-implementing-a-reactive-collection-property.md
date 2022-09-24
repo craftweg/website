@@ -12,7 +12,7 @@ For those who don't know what a Property is in ReactiveCocoa 3/4 it's a custom g
 
 Here's an example of a property:
 
-```swift
+```language-swift
 import ReactiveCocoa
 
 let myProperty: MutableProperty<String> = MutableProperty("")
@@ -27,7 +27,7 @@ As you can see we in the example above the property has a producer that we can s
 
 ReactiveCocoa offers currently three types of Properties that cover most of the cases where we'll need to this pattern and all of them conform the same protocol:
 
-```swift
+```language-swift
 public protocol PropertyType {
 	typealias Value
 	var value: Value { get }
@@ -39,7 +39,7 @@ public protocol PropertyType {
 
 - **PropertyOf**: It's a kind of property that once created doesn't allow the modification of it's value externaly. You can only subscribe to the changes of this property that are sent from another Signal/SignalProducer or even another property. Consequently this kind of property can be initialized using these three components:
 
-```swift
+```language-swift
 public init<P: PropertyType where P.Value == T>(_ property: P)
 public init(initialValue: T, producer: SignalProducer<T, NoError>)
 public init(initialValue: T, signal: Signal<T, NoError>)
@@ -51,7 +51,7 @@ public init(initialValue: T, signal: Signal<T, NoError>)
 
 Properties are very useful in the MVVM pattern because it allows us to detect changes int hese properties values and then update the view according to these changes. For example, imagine the following situation:
 
-```swift
+```language-swift
 class ProfileView: UIView {
 	// MARK: - Attributes
 	let avatarView: UIImageView = UIImageView()
@@ -83,7 +83,7 @@ We want to update the avatar image in the ProfileView when we get the image from
 
 In the example above, we could for example define a map function with the following format:
 
-```swift
+```language-swift
 func addBadge(badgeConfig: BadgeConfig)(image: UIImage) -> UIImage {
 	// Add badge logic
 }
@@ -91,7 +91,7 @@ func addBadge(badgeConfig: BadgeConfig)(image: UIImage) -> UIImage {
 
 Then have a new property in the view model
 
-```swift
+```language-swift
 lazy var avatarImageWithBadge: MutableProperty<UIImage> = {
 	PropertyOf(avatarImage.value, producer: avatarImage.producer |> map(addBadge(myBadgeConfig)))
 }()
@@ -109,7 +109,7 @@ _Note: I've created a repository where this new component has been implemented, 
 
 `MutableCollectionProperty` is a ReactiveCocoa property that notifies about the changes that are produced in an internal collection. It exposes Swift array methods to modify collections in order to redirect these changes to the attached subscribers as shown in the example below:
 
-```swift
+```language-swift
 let property: MutableCollectionProperty<String> = MutableCollectionProperty(["test1", "test2"])
 property.changesProducer.startWithNext { [weak self] next in
   case .StartChange:
@@ -126,7 +126,7 @@ property.append("test4"s)
 
 Every sequence of changes is preceded by an event `StartChange` and ends with a `EndChange`. It allows multiple changes together and set the view which is going to reflect these changes in an "update" state. The methods exposed by the property are:
 
-```swift
+```language-swift
 public func removeFirst()
 public func removeLast()
 public func removeAll()

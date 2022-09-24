@@ -34,7 +34,7 @@ It’s not that hard as it seems, but we are so used to let CocoaPods that we fo
 
 Once the **Testing** framework is defined these testing dependencies can be removed from the `Podfile` and use the Framework instead. It can be easily linking from the application target _Build phases_. You’ll probably have to refactor some imports because they were importing the external dependencies directly. It becomes simpler thanks to the Framework.
 
-```objective-c
+```language-objc
 @import Testing;
 ```
 

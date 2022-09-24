@@ -12,7 +12,7 @@ And last but not least, maintaining a piece of business logic that has paths as 
 
 To solve the above issues, I open-sourced a tiny NPM package, [typed-file-system-path](https://www.npmjs.com/package/typed-file-system-path), which provides primitives for modeling absolute and relative paths and operating with them. The API is simple. You have utilities to initialize a relative or an absolute path. They’ll through if you are initializing them with an invalid path. The primitives provide convenient functions to prevent having to import utilities from the `node:path` module:
 
-```ts
+```language-ts
 import { relativePath, absolutePath } from "typed-file-system-path"
 
 // Initialize an absolute path

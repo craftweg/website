@@ -24,7 +24,7 @@ When I tried the tool I felt that adding all the Ruby logic in a single `Dangerf
 - First create a folder `danger` where all the tasks/checks will be.
 - Each of these checks represents a ruby file. Its structure would be like this one:
 
-```ruby
+```language-ruby
 require 'danger'
 
 module Danger
@@ -51,7 +51,7 @@ end
 
 Where every check inherits from `Danger::Checks::Base`. That base class defines a base constructor with taking a `Danger::Dangerfile` instance that contains all the environment variables exposed from Danger, variables like the number of lines of your PR, the new files added,...:
 
-```ruby
+```language-ruby
 require 'danger'
 
 module Danger
@@ -78,7 +78,7 @@ end
 
 Then the structure of your `Dangerfile` would look like this one:
 
-```ruby
+```language-ruby
 
 
 Dir["./danger/*.rb"].each {|file| require file }

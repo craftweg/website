@@ -100,7 +100,7 @@ webview.loadJS("Ef.vent.trigger('payment:completed', "+payment.toString()+")")
 
 Apple did it difficult here. There's no native component to expose a kind of interface to Javascript as Android does. How can I do then? Well, if we take a look to the _UIWebViewDelegate_ methods there's one called
 
-```objective-c
+```language-objc
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType;
@@ -110,7 +110,7 @@ Which is a method to ask if the webview should or not load a given `NSURLRequest
 
 Let's say that we built a custom **communication API** using the scheme `eightfit://` and that way any intercepted url with the scheme `eightfit://` would be passed to the **NativeBridge**. The previos `buyIAPProduct` would turn into `eightfit://buyiapproduct/product_id=pro_subscription`.
 
-```objective-c
+```language-objc
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType
@@ -127,7 +127,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 The parsing of the URL can be made using **regex** but fortunately there were other developers thinking about it befure and we find libraries like **JLRoutes** which helps on that. What JLRoutes actually does is to build a local API passing the endpoints and actions for those endpoints:
 
-```objective-c
+```language-objc
 [JLRoutes addRoute:@"/buyiapproduct/:product_id" handler:^BOOL(NSDictionary *parameters) {
 
     NSString *productId = parameters[@"product_id"]; // defined in the route by specifying ":product_id"

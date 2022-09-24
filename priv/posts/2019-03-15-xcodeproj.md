@@ -48,7 +48,7 @@ CocoaPods already did some of that work, but that did not prevent us from having
 
 I could write a blog post explaining each of the objects and get you weary with some theory, but I thought it'd be better to take you through some practical examples that you could write yourself to get familiar with the objects. Before we dive into them, we need to create a new Swift executable package where we'll add `xcodeproj` as a dependency. Let's create a folder and initialize a package:
 
-```bash
+```language-bash
 mkdir examples
 cd examples
 swift package init --type executable
@@ -57,7 +57,7 @@ swift package init --type executable
 The commands above will create a manifest file, `Package.swift`, and a `Sources/examples` directory with a `main.swift` file where we'll write our examples.
 Next up, we need to add `xcodeproj` as a dependency. Edit the `Package.swift` and add the following dependencies to the `dependencies` array:
 
-```swift
+```language-swift
 .package(url: "https://github.com/tuist/xcodeproj.git", .upToNextMajor(from: "6.5.0")),
 ```
 
@@ -65,7 +65,7 @@ Next up, we need to add `xcodeproj` as a dependency. Edit the `Package.swift` an
 
 Alternatively, you can use [swift-sh](https://github.com/mxcl/swift-sh), a handy tool that facilitates the definition of Swift scripts with external dependencies. The only thing you need to do is to install the tool, which can be done with Homebrew by running `brew install swift-sh` and create a Swift script where you'll code the examples:
 
-```swift
+```language-swift
 #!/usr/bin/swift sh
 
 import Foundation
@@ -79,7 +79,7 @@ That's all we need to start playing with the examples.
 
 In this example, we'll write some Swift lines to create an empty Xcode project. _Exciting, isn't it?_ If you ever wondered what Xcode does when you click `File > New Project`, you'll learn it with this example. You'll realize that after all, creating an Xcode project is not as complicated as it might seem. **You could write your own Xcode project generator**. Let me dump some code here and navigate you through it right after:
 
-```swift
+```language-swift
 import Foundation
 import PathKit
 import xcodeproj
@@ -134,7 +134,7 @@ If you run the code above, you'll get an Xcode project that works in Xcode. Howe
 
 Continuing with examples that help you understand the project's structure, we'll add a target to an existing project. Like I did with the preceding example, I'll introduce you to the code first:
 
-```swift
+```language-swift
 import xcodeproj
 import PathKit
 
@@ -181,7 +181,7 @@ try project.write(path: path)
 3. A target has build phases. `xcodeproj` provides classes representing each of the build phases supported by Xcode, all of them following the naming convention `PB---BuildPhase`. In our example, we are creating two build phases for the sources and the resources.
 4. Targets need a reference to their output product. It's the file that you see under the `Products` directory when you create a new target with Xcode. It references the product in the derived data directory. Since we are creating the target manually, we need to create that reference ourselves. For that, we use an object of type `PBXFileReference`. The name is initialized with two attributes, the name, and the `sourceTree` which defines the parent directory or the association with its parent group. You can see all the possible values that `sourceTree` can take. In the case of the target product, the file must be relative to the build products directory. Don't forget to add the product as a child of the project products group.
 
-```swift
+```language-swift
 public enum PBXSourceTree {
   case none
   case absolute // Absolute path.
@@ -202,7 +202,7 @@ With all the ingredients to bake the target, we can create the instance and add 
 
 If you have solved git conflicts before in your Xcode projects, you might already know that sometimes, you end up with files in your build phases that reference files that don't exist. Most times, Xcode doesn't let you know about it, and you end up with a project in a project in a not-so-good state. What if we were able to detect that before Xcode even tries to compile your app?
 
-```swift
+```language-swift
 import xcodeproj
 import PathKit
 
@@ -239,7 +239,7 @@ if filePath?.exists == false {
 
 Another typical scenario when working with Xcode projects, is when we add a file to the copy resources build phase when it shouldn't be there. An excellent example of this one is copying the `Info.plist` file. Have you been there before? Fortunately, we can leverage `xcodeproj` to detect that as well.
 
-```swift
+```language-swift
 import xcodeproj
 import PathKit
 

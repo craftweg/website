@@ -22,7 +22,7 @@ When I first tried the torrent client I added some console logs in these callbac
 
 Guess what? It worked! _(included real device, not only simulator)_
 
-```swift
+```language-swift
 PTTorrentStreamer.sharedStreamer().startStreamingFromFileOrMagnetLink("magnet-link", progress: { (status) -> Void in
    print("Status: \(status)")
 }, readyToPlay: { (url) -> Void in

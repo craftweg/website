@@ -44,7 +44,7 @@ The tool Apple released to bridge Swift and Objective-C was something called **b
 
 **Product-Bridging-Header.h**
 
-```objective-c
+```language-objc
 //
 //  Use this file to import your target's public headers that you would
 //  like to expose to Swift.
@@ -59,7 +59,7 @@ The tool Apple released to bridge Swift and Objective-C was something called **b
 
 **Swift-Class.swift**
 
-```swift
+```language-swift
 // Use here your Objective-C exposed classes
 let cola = CocaColaAlgorithm.prepareCola()
 ```
@@ -68,13 +68,13 @@ let cola = CocaColaAlgorithm.prepareCola()
 
 **Swift.swift**
 
-```swift
+```language-swift
 class NSObjectSwiftClass: NSObject { }
 ```
 
 **ProductName-Swift.h**
 
-```objective-c
+```language-objc
 SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @interface NSObjectSwiftClass : NSObject
 - (instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -110,7 +110,7 @@ You can subclass Objective-C classes in Swift, remember to use the **override** 
 
 ![Subclass](/images/posts/swiftobjc-subclass.png)
 
-```objective-c
+```language-objc
 #if !defined(SWIFT_CLASS)
 # if defined(__has_attribute) && ...
 #  define SWIFT_CLASS(SWIFT_NAME)...
@@ -129,7 +129,7 @@ SWIFT_CLASS("_TtC9SwiftObjc9ObjcClass")
 
 AnyObject is the Swift equivalent of **ids**. However AnyObject in comparison with id is not a class type but a protocol. AnyObject **is not known until runtime execution**. It supposes that the compiler can pass if you call a method on the AnyObject object that it doesn't actually implement but if your program executes that line of code your app is going to crash. **Be careful!**:
 
-```swift
+```language-swift
 if let fifthCharacter = myObject.characterAtIndex?(5) {
     println("Found \(fifthCharacter) at index 5")
 }
@@ -139,11 +139,11 @@ if let fifthCharacter = myObject.characterAtIndex?(5) {
 
 As you probably know Swift introduced a new type of data, **optionals** those allow nil type and the real content of the type (in case of having) is wrapped inside that optional. Objective-C is more flexible in that aspect and allows you to call methods on those nil objects without causing exceptions or making your app crash. The way the **compiler translates** those variables or function return parameters that **might be nil** is using **implicitly unwrapped optionals** (var!). It implies that if you are planning to use one of those implicitly unwrapped optionals that the compiler generated from your Objective-C code do it carefully checking firstly if the value is nil. **Otherwise, trying to access it being nil will cause a runtime error and your app will crash**
 
-```objective-c
+```language-objc
 - (NSDate *)dueDateForProject:(Project *)project;
 ```
 
-```swift
+```language-swift
 func dueDateForProject(project: Project!) -> NSDate!
 ```
 
@@ -151,7 +151,7 @@ func dueDateForProject(project: Project!) -> NSDate!
 
 Extensions are the equivalent of categories in Swift. The main difference is that we can use extensions in Swift to make classes conform protocols that they originally didn't. For example we can make our class _MyClass_ conform the protocol **StringLiteralCovertible** and initialize it using an string:
 
-```swift
+```language-swift
 extension MyClass: StringLiteralConvertible
 {
     typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
@@ -178,7 +178,7 @@ They are automatically converted too by the compiler. There's only a difference 
 
 **Example in Objective-C**
 
-```objective-c
+```language-objc
 __block CustomObject  *myObject = [CustomObject new];
 void (^myBlock)() = ^void() {
   NSLog(@"%@", myObject);
@@ -187,7 +187,7 @@ void (^myBlock)() = ^void() {
 
 **Example in Swift**
 
-```swift
+```language-swift
 let customObject: MyObject = MyObject()
 let myBlock: () -> () = { in
   println("\(customObject)")
@@ -200,7 +200,7 @@ And yes! we have the [FuckingBlockSyntax.com](www.fuckingblocksyntax.com) equiva
 
 When you want to specify the compiler that any Swift class, property or method must be visible in Objective-C after your code has been compiled you have to use the keyword @objc. Take look to the example below where we say the _SwiftCat_ is going to be visible in Objective-C with the name _ObjcCat_
 
-```swift
+```language-swift
 @objc(ObjcCat)
 class SwiftCat {
     @objc(initWithName:)
@@ -214,7 +214,7 @@ In protocols there are such exceptions crossing the protocols usage between Obje
 
 Moreover if you are using protocols in a **Delegate** pattern you have to declare your protocols as **class**. Why? Because not only classes in Swift can conform protocols but structs too. Strucs are passed by copy instead of by reference and we don't want have a copied object that conforms a protocol behaving as a delegate of something because it's not actually the real delegate object. When you set a protocol as `class`, **only classes can conform that protocol**
 
-```swift
+```language-swift
 /** MyProtocol.swift */
 @objc protocol MyProtocol: NSObjectProtocol {
     // Protocol stuff
@@ -225,13 +225,13 @@ Moreover if you are using protocols in a **Delegate** pattern you have to declar
 
 Most of the foundation data types can be used interchangeably with Swift types (_remember to import Foundation_). So for example you can initialize a NSSTring object in Swift using a Swift string:
 
-```swift
+```language-swift
 let myString: NSString = "123"
 ```
 
 **Int, UInt, Float, Double and Bool** have its equivalent in Objective-C that is **NSNumber**
 
-```objective-c
+```language-objc
 let n = 42
 let m: NSNumber = n
 ```
@@ -240,7 +240,7 @@ Regarding the collection types, we have equivalents too there. **[AnyObject]** S
 
 Any **NSArray** will be converted into a Swift [AnyObject] array. We can even downcast it into the real type:
 
-```swift
+```language-swift
 for myItem in foundationArray as [UIView] {
     // Do whatever you want
 }
@@ -272,7 +272,7 @@ Finally as a conclussion of this summary/helping post I would like to give you s
 
 ## Resources
 
-```swift
+```language-swift
 //MARK: - You should read
 let swiftTypes = "https://github.com/jbrennan/swift-tips/blob/master/swift_tips.md"
 let realmAndObjc = "http://realm.io/news/swift-objc-best-friends-forever"

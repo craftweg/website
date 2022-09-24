@@ -17,7 +17,7 @@ I found myself in that situation and I was between modifying in the CocoaPods ba
 
 You can easily install the tool using [Homebrew](https://brew.sh/) with the following command:
 
-```bash
+```language-bash
 brew tap swift-xcode/xcodembed git@github.com:swift-xcode/xcode.git
 brew install xcode
 ```
@@ -42,7 +42,7 @@ If you have used Carthage before in your projects you might already be familiar 
 
 **Besides copying the frameworks, the tool also copies the symbols and the `bcsymbolmap` files of your framework, stripping the architectures that are not necessary**. By default, the command embeds the frameworks for all the configurations. If you would like to do it only for some configurations, you can do it by just passing a parameter to the command above:
 
-```bash
+```language-bash
 xcode frameworks embed -config Debug,Release
 xcode frameworks embed --config Debug
 ```

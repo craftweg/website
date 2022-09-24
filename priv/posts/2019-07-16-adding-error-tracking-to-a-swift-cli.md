@@ -72,7 +72,7 @@ Notice the `---xcconfig-overrides` the argument that indicates the SwiftPM to us
 
 Try to import your framework and use its API. The Xcode project should compile:
 
-```swift
+```language-swift
 // main.swift
 import Sentry
 
@@ -90,7 +90,7 @@ it doesn't know how to link the framework.
 Fortunately,
 the `swift build` command accepts arguments to be passed to the compiler:
 
-```bash
+```language-bash
 swift build \
   --configuration Release \
   --Xswiftc -F -Xswiftc ./Frameworks/ \
@@ -114,7 +114,7 @@ To fix the issue, you need to make sure of 2 things:
 If we assume we'll copy the framework into the `/usr/local/Frameworks` directory,
 we can run the following command to add that directory to the runtime search paths.
 
-```bash
+```language-bash
 install_name_tool -add_rpath "/usr/local/Frameworks" "/path/to/MyTool"
 ```
 

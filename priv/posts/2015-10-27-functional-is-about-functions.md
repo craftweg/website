@@ -24,7 +24,7 @@ Thinking about it the concept isn’t complex at all, but… we were given more 
 We started grouping these functions into something called classes and assigning it a state which is created when and instance of this class is created. We still have functions but they seem to belong now to something and in languages like Objective-C _we cannot extract them from its scope (ask a Javascript developer about functions and contexts and you’ll get surprise about what they’re able to do)_. We sticked to Object Oriented principles and we set ourselves far from the basic function concept we saw above.
 Object Oriented programming introduces a grade of flexibility and mutability working with objects and its functions. I’m sure most of you have coded something like this:
 
-```swift
+```language-swift
 class ApiClient {
 
   // MARK: - Attributes
@@ -81,7 +81,7 @@ I’ve seem the problems above manifesting when the user logouts and you want to
 
 Let’s bring our function concept and make it simpler. Remember:
 
-```swift
+```language-swift
 func execute(request: Request, session: Session, completion: (Result<AnyObject, Error>) -> Void) {
   let authenticatedRequest: (Request, Session) -> (Request) = { request in
     // Authenticates the request
@@ -116,7 +116,7 @@ With OOP it’s seems easier to organise our code logic, we have models, control
 **Building namespaces with Structs**
 My suggestion about this is use structs to create namespaces in Swift grouping the functions that are related to the same business logic. For example if you have a set of functions related to network. Group them under Network as shown below:
 
-```swift
+```language-swift
 struct Network {
   static func execute(request: Request, completion: (Result<AnyObject, Error>) -> Void)
   static func authenticate(username: String, password: String, completion Result<Session, Error> -> Void)

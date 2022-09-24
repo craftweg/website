@@ -27,13 +27,13 @@ Decidimos pivotar la arquitectura antes de incluso lanzar el producto. Lo que hi
 
 Como nuestro comando debía ser añadido a una cola de ejecución que determinara la concurrencia y el hilo de ejecución, decidimos definir la clase `Command` a partir de `NSOperation`. _Command_ sería una clase genérica respecto al tipo retornado y al tipo de error:
 
-```swift
+```language-swift
 public class Command<T, E: ErrorType>: NSOperation {}
 ```
 
 Cualquier comando debería definir un método `execute` que contendría la implementación de dicho comando. Usamos en nuestro caso la librería [Result](https://github.com/antitypical/Result) para encapsular bajo un mismo tipo el valor y el error de retorno.
 
-```swift
+```language-swift
 public func execute() -> Result<T!, E> {
   assertionFailure("The execute method of command must be overriden")
   return Result(value: nil)
@@ -46,7 +46,7 @@ Cualquier implementación de un nuevo comando tan solo tendría que definirse co
 
 Cuando una `NSOperation` es ejecutada en una `NSOperationQueue` esta llama a un método `main()` que define en las `NSOperation` la operación a ejecutar. En nuestro caso definimos una implementación base para dicho método que notificara a todos los observers de la ejecución de la operación. Internamente haría uso de la función `execute` requerida para los comandos:
 
-```swift
+```language-swift
 class Command<T, E: ErrorType>: NSOperation {
   let executionSubject: PublishSubject<T> = PublishSubject<T>()
   override func main() {
@@ -86,7 +86,7 @@ Teniendo definido `Command` y como poder escuchar su ejecución mediante una int
 
 Además posteriormente introdujimos un nuevo parámetro `reuse` que permitía subscribirnos a la operación si esta ya estaba ya en la cola, de forma que si lanzábamos la operación dos veces, al subscribirnos a la segunda lo que en realidad haríamos sería subscribirnos al comando ya existente en la cola.
 
-```swift
+```language-swift
 class CommandQueue: NSOperationQueue {
 
   init(concurrency: Int? = nil) {
@@ -119,7 +119,7 @@ class CommandQueue: NSOperationQueue {
 
 Finalmente, y puesto que ibamos a utilizar una única cola para toda la aplicación lo que hicimos fue tener una instancia **singleton** y añadir un método en el propio comando para que desde el mismo pudiéramos añadirlo a una cola de ejecución:
 
-```swift
+```language-swift
 public func observable(inQueue queue: CommandQueue = CommandQueue.instance, reuse: Bool = false) -> Observable<T> {
   return queue.addCommand(self, reuse: reuse)
 }
@@ -131,7 +131,7 @@ La definición tanto de `Command` como de `CommandQueue` la incluímos en el fra
 
 Teniendo la definición base de `Command`, implementamos concrecciones del mismo para distintos usos, por ejemplo en el framework `GitDoAPI` donde incluimos todos los comandos de interacción con la API definimos un comando de HTTP `HTTPCommand` con una estructura como la siguiente:
 
-```swift
+```language-swift
 public class HTTPCommand<O, T>: Command<T, HTTPError> {
   internal let httpRequestDispatcher: HTTPRequestDispatcher
   internal let request: NSURLRequest
@@ -142,7 +142,7 @@ public class HTTPCommand<O, T>: Command<T, HTTPError> {
 
 Dónde `httpRequestDispatcher` es responsable de dado un `NSURLRequest` ejecutar la petición y retornar el resultado de forma **síncrona**. El propio comando sería responsable además de adaptar la respoesta y mapearla a modelos usando el adapter `modelAdapter`. De esa forma mediante _factories_ generaríamos comandos para interactuar con diversos endpoints de la API de GitHub como por ejemplo el siguiente para obtener el model user:
 
-```swift
+```language-swift
 class GitHubAccountCommandFactory: GitHubCommandFactory {
 
     private let requestFactory: GitHubAccountRequestFactory
@@ -164,7 +164,7 @@ class GitHubAccountCommandFactory: GitHubCommandFactory {
 
 De forma similar, y para interactuar con la base de datos _(en nuestro caso usamos Realm como base de datos)_, definimos un tipo de comando llamado `StoreCommand` cuya particularidad era poder acceder a la instancia de acceso a la base de datos, en nuestro caso, a una instancia de `Realm`:
 
-```swift
+```language-swift
 class StoreCommand<T, E: ErrorType>: Command<T, E> {
 
     let store: () -> Store
@@ -185,7 +185,7 @@ class StoreCommand<T, E: ErrorType>: Command<T, E> {
 
 La forma en la que usaríamos dichos comandos sería en su mayoría desde presenters _(a menos que la ejecución de estos sea independiente del ciclo de vida de las vistas, como por ejemplo una sincronización periódica en la app)_. En los presenters tendríamos instancias de las factories de comandos y en cualquier instante en el que necesitáramos de un comando, simplemente lo instanciaríamos y ejecutaríamos subscribiéndonos a él. Por ejemplo los siguientes métodos son ejemplos de ejecución de comandos desde la vista de repositorios de `GitDo`, el primero de ellos para traer los repositorios de la base de datos, y el segundo de ellos para sincronizarlos:
 
-```swift
+```language-swift
 private func fetchProjects() {
   self.fethRepositoryCommandFactory.projects()
     .observable()
@@ -212,7 +212,7 @@ private func syncRepositories() {
 
 Al principio de la entrada mencionaba que una de las razones que nos llevó a usar comandos fue la falicidad de reuso de estos. La forma de reusar comandos es muy sencilla ya que estos exponen su ejecución mediante el método `execute()`. Digamos por ejemplo que un comando de sincronización necesita primero de un comando que ejecute una petición a la API, y también de un segundo comando que guarde el resultado de la ejecución del primero:
 
-```swift
+```language-swift
 class GitHubAccountSyncCommand: Command<Void, CoreError> {
 
   private let githubAccountCommandFactory: GitHubAccountCommandFactory
@@ -242,7 +242,7 @@ Como se aprecia en el ejemplo lo que hacemos es primero con `execute()` obtenemo
 
 ¿Cómo podemos testear un componente que usa comandos? En nuestro caso lo que hicimos fue definir en nuestro framework con herramientas de testing `GitDoTestKit` un comando llamado `TestCommand` con el siguiente formato:
 
-```swift
+```language-swift
 class TestCommand<T, E: ErrorType>: Command<T, E> {
 
     let result: Result<T!, E>
@@ -265,7 +265,7 @@ class TestCommand<T, E: ErrorType>: Command<T, E> {
 
 Es importante para el uso de estos comandos que las **factories no definan concrecciones**, es decir, en lugar de tener una definición como la siguiente para retornar un comando que hace fetch de la cuenta:
 
-```swift
+```language-swift
 class AccountCommandFactory {
   func fetch() -> AccountFetchCommand {
     // Initialize and return the command
@@ -275,7 +275,7 @@ class AccountCommandFactory {
 
 Lo que hacemos en su lugar es especificar que el tipo retornado es de tipo `Command` con los tipos asociados.
 
-```swift
+```language-swift
 class AccountCommandFactory {
   func fetch() -> Command<GitHubAccount, CoreError> {
     // Initialize and return the command

@@ -52,7 +52,7 @@ You have **different approaches** depending on your needs. The first one consist
 - **Create three XCode projects** in different folders, ExampleApp, ExampleCore, ExampleData.
 - ExampleApp doesn't need podspec file. **ExampleCore and ExampleData need a podspec** file with information about the bundle. The structure should be similar to the following:
 
-```ruby
+```language-ruby
 Pod::Spec.new do |spec|
   spec.name         = 'ExampleCore'
   spec.version      = '0.0.1'
@@ -69,14 +69,14 @@ end
 - Upload those projects into their respective repositories _(e.g. github.com/Example/ExampleData, github.com/Example/ExampleCore, github.com/Example/ExampleApp)_
 - Once you have the bundles on a remote repository you can bring them to the ExampleApp **bundle as submodules** using
 
-```bash
+```language-bash
 git submodule add https://github.com/Example/ExampleCore dependencies/core
 git submodule add https://github.com/Example/ExampleCore dependencies/data
 ```
 
 - In ExampleApp **specify your CocoaPods dependencies locally**
 
-```ruby
+```language-ruby
 source 'https://github.com/CocoaPods/Specs.git'
 inhibit_all_warnings!
 pod 'ExampleData', :path => './dependencies/data'
@@ -137,7 +137,7 @@ Before working with Android modules in your projects there are some points I wou
 
 We've seen how to use modules in either iOS or Android and how to use Git Submodule to have a local git copy of those "library" modules but what if we want to have an specific branch of the core/data package? Submodules has support for it. If you edit your **.gitmodules** you'll have a structure similar to this one where you can specify the branch
 
-```bash
+```language-bash
 [submodule "ExampleCore"]
     path = core
     url = https://github.com/Example/ExampleApp.git

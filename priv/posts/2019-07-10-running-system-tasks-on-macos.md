@@ -35,7 +35,7 @@ It's unfortunate that those issues haven't been tackled.
 The API is not very user-friendly and there's a lot of room for improvement to make it more straightforward to use.
 If we look at Ruby's API, this is how we look like:
 
-```ruby
+```language-ruby
 require 'open3'
 
 # Launch the process and capture the standard output in a variable.

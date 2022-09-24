@@ -27,7 +27,7 @@ Tuist abstracts the low-level intricacies and handles them for you.
 For example,
 the dependencies are described semantically and not in terms of build phases or build settings:
 
-```swift
+```language-swift
 let app = Target(name: "App", product: .application, dependencies: [
   .target("Profile")
 ])
@@ -61,7 +61,7 @@ Tuist provides a command,
 to verify and configure the environment.
 Teams just need to describe the configuration in a `Setup.swift` file:
 
-```swift
+```language-swift
 import ProjectDescription
 
 let setup = Setup([
@@ -129,7 +129,7 @@ Consistency can also manifest in:
 The way Tuist helps making the projects more consistent is by having a programmable interface where developers can leverage Swift features like functions.
 The definition of a project can be the result of calling a function:
 
-```swift
+```language-swift
 func frameworkProject(name: String) -> Project {
   // Targets
   let framework = Target(name: name, product: .framework)
@@ -183,7 +183,7 @@ but other times they are not.
 Some teams decide to automate all these tasks using Fastlane lanes,
 which calls underlying system commands:
 
-```ruby
+```language-ruby
 lane :bootstrap do
   cocoapods
   swiftgen
@@ -204,7 +204,7 @@ and executes them as part of the project generation.
 The idea is the developer doesn't have to think about all of that.
 They can just remember one and easy to remember command:
 
-```bash
+```language-bash
 tuist generate
 ```
 
@@ -243,7 +243,7 @@ the example below is a function that ensures that all the targets,
 regardless of the project they belong to,
 have the sources in the same directory.
 
-```swift
+```language-swift
 func target(name: String) -> Target {
   return Target(name: name,
                sources: "Sources/**/*.swift")
@@ -269,7 +269,7 @@ Tuist knows your projects and will leverage that information to offer a simple s
 Being positioned in a directory where there's a project defined,
 I could execute something like:
 
-```bash
+```language-bash
 tuist build
 ```
 

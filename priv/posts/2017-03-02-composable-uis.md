@@ -26,7 +26,7 @@ As I pointed out, with a mindset change, you can also have your own component-dr
 
 A component is a **class** that gives you the view and an interface to set up the view. Whoever uses these components shouldn't know anything other than what it needs. Internally the view can use programming patterns like MVP, MVC, MVVM... But these patterns are _invisible_ from the outside.
 
-```swift
+```language-swift
 class LikeComponent {
    typealias TrackId = String
    var view: UIView

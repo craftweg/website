@@ -96,7 +96,7 @@ ul {
 }
 
 .markdown pre code {
-  @apply block bg-black p-4 rounded;
+  @apply block p-4 rounded;
 }
 
 .markdown blockquote {

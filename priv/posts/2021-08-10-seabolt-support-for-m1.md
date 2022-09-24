@@ -16,7 +16,7 @@ If you run into this same issue in the future,
 you can either run the steps on that repository or download the [compiled version](/assets/tools/seabolt/seabolt-1.7.4-dev-Darwin.tar.gz) that I built myself.
 [Here](seabolt-1.7.4-dev-Darwin.tar.gz.sha256) is the sha256 checksum to validate you downloaded the correct binary.
 
-```bash
+```language-bash
 shasum -a 256 seabolt-1.7.4-dev-Darwin.tar.gz
 ```
 
@@ -24,7 +24,7 @@ Once you verify the binary is correct,
 you can untar the content,
 and copy the dynamic library into the directory where the driver expects it:
 
-```bash
+```language-bash
 cd build/dist/lib
 cp libseabolt17.dylib /usr/local/lib/libseabolt17.dylib
 ```

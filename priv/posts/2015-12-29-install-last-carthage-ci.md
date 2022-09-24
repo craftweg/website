@@ -10,7 +10,7 @@ I've lately been working with multiple libraries and integrating them with CI, i
 
 Use that bash script passing as argument the version of Carthage that you want to install. It'll download the last `.pkg` available and install it. For example, if we wanted to use it in our `.travis.yml` script:
 
-```ruby
+```language-ruby
 language: objective-c
 notifications:
   email: false

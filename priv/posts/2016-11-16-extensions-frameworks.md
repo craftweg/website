@@ -6,7 +6,7 @@ categories: [soundcloud, core, developer, ios, xcode, swift, extensionss]
 
 I'd barely used extensions in my Swift code. When we started using Swift at SoundCloud I noticed a common parttern that most of people follow. They created extensions to organize the interface methods in different _"namespaces"_. As shown in the example below:
 
-```swift
+```language-swift
 struct MyStruct {
   let name: String
 }
@@ -26,7 +26,7 @@ With the transition into frameworks we found out a couple of use cases for exten
 
 When a framework provides a feature, it takes all the dependencies _(aka Services)_ from the app. Typically a constructor of a feature that is defined in a framework looks like this:
 
-```swift
+```language-swift
 // Feature.framework
 public class MyFeature {
   private let client: Client
@@ -40,7 +40,7 @@ public class MyFeature {
 
 Every time we instantiate the feature from the app, we'll end up writing the same initialization, passing the dependencies managed by the app:
 
-```swift
+```language-swift
 // App
 class Services {
   static var client: Client!
@@ -52,7 +52,7 @@ let anotherInstance = Feature(client: Services.client)
 
 The more dependencies our feature has, the more code we'll duplicate, since by default, all the instances will take the same dependencies _(in rare cases we'll inject a different dependency into a feature)_. **Here is where extensions came very handy**. Since we want to prevent our developers from write the same initialization logic all the time, we can extend the class from the app, adding up a convenience initializer:
 
-```swift
+```language-swift
 // App
 extension Feature {
   convenience init() {
@@ -73,7 +73,7 @@ Another very useful use case for extensions in a frameworks setup is the conform
 
 Thanks to extensions we can solve this issue. By just conforming a protocol from the app, we provide our framework models with a behaviour that they didn't have originally:
 
-```swift
+```language-swift
 // Search.framework
 struct SearchEntity {
   let title: String

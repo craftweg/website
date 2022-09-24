@@ -9,7 +9,7 @@ You might have seen me talking about Xcode projects' tree-shaking with no idea o
 What's tree-shaking an Xcode project
 Have you tried to open a large project in Xcode? Indexing is not immediate, the list of schemes is probably large and hard to navigate through, Xcode's features like searching are slower than usual. This is something we are, in fact, experiencing in Tuist's codebase, and it's very annoying. What if the generated project had a focus on a given target and removed everything that is not necessary to work on that target? In a modular codebase, that's a common thing to do. You work on the Search team, and most of your work is done in Search.framework. There'll be scenarios when you need to work on core frameworks, but most of the time, it's not the case. Well... that's what Tuist does when you run the following command:
 
-```bash
+```language-bash
 tuist focus Search
 ```
 

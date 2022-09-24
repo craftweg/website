@@ -16,7 +16,7 @@ Since I joined Shopify, I've been doing mostly Ruby. There are great engineers w
 
 - **Code organization:** In Ruby, there's this notion of modules. Modules are used among others, to create namespaces. That's an idea that didn't take me much to swallow cause there's something similar in Swift, but how to split modules and classes in different `.rb` files is another story. I've checked multiple open source projects, and each of them does it differently. I've seen some using `require_relative`, others using an umbrella entry point Ruby file that defines the project hierarchy autoloading all the components. I've stuck to the latter, and it's working well for me. `autoload` is not thread-safe, and that it'll be deprecated, but since I don't have any thread-safety requirements in the tools that I write, it's safe to use it. This is an example of what an umbrella Ruby file looks like:
 
-```ruby
+```language-ruby
 module Catalisis
   module Builder
     autoload :Project, 'catalisis/builder/project'

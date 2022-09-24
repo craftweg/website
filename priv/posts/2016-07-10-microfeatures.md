@@ -40,7 +40,7 @@ If you want to know more about frameworks, I’ve written about them before, but
 
 As I pointed out, frameworks should be atomic. However some will access resources that are shared with other frameworks. Just to mention some, the disk space through [`NSFileManager`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSFileManager_Class/index.html) or the user preferences via [`NSUserDefaults`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSUserDefaults_Class/)… We should try the access to be also atomic. _How?_, organise the resource atomically, providing subspaces in those resources that you access from all your feature frameworks. As an example we could have different databases in different folders inside a `Databases` root folder:
 
-```bash
+```language-bash
 Databases/
   Player/
   Database.sqlite
@@ -69,7 +69,7 @@ These frameworks are also useful to avoid the boilerplate setup code that some p
 
 A **backend** framework is a framework that doesn't provide an UI interface. In most of cases they'll fetch data from somewhere, apply some business logic and return data back to be consumed. In some other cases they might be input only frameworks, for example, we could have a framework that is responsible for downloading images and persisting them in the disk. The API of that framework would look like this:
 
-```swift
+```language-swift
 // Image Caching framework
 class ImageCaching {
   func isCached(url: String) -> Bool
@@ -95,7 +95,7 @@ UI frameworks must be _navigatable_ _(i.e. the application should be able to nav
 
 The idea of coordinator is extracting the navigation from `ViewController`s and move it to entities called `Coordinators`. Coordinators are responsible of instantiate your `ViewController`s and setup everything necesary to navigate to the `ViewController`. Coordinators build up a tree that you can navigate through, and the only thing they need to navigate is a navigation context, for example a `ViewController`. They could also set up some information, for example a track identifier. The example below shows how these components would work in practice.
 
-```swift
+```language-swift
 // Player.swift
 class Player {
   let storage: Storage
@@ -115,7 +115,7 @@ extension Player {
 
 Then let's say we launch the player from the search results _(Search framework)_:
 
-```swift
+```language-swift
 // Search.swift
 class Search {
   let player: Player
@@ -157,7 +157,7 @@ Some of the modules that are defined require some setup and an instance to be cr
 
 Modules must be designed to be _injectable_. **What does it mean?** We have to define a module class that is the entry point of our module. We should then think our module API as a class that we instantiate.
 
-```swift
+```language-swift
 // Offline.swift
 class Offline {
 
@@ -177,7 +177,7 @@ class Offline {
 
 Since we have extensions we're not forced to implement the entire API in the same Swift file. We could separate it in multiple files and have everything better organized:
 
-```swift
+```language-swift
 // Offline+API.swift
 public extension Offline {
   func isTrackOffline(track: Track) -> Bool

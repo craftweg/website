@@ -11,7 +11,7 @@ In order to practice a little bit with reactive programming I implemented an API
 
 Taking advantange of the reactive approach of the client I implemented that paginated method and made it resusable for any client independent from the http framework you are using. Let's see how I did it:
 
-```swift
+```language-swift
 typealias PaginatedRequest = (page: Int, pageLimit: Int) -> RACSignal
 
 internal func rac_paginatedSignal(initialPage: Int, pageLimit: Int, requestSignal: PaginatedRequest) -> RACSignal {
@@ -52,7 +52,7 @@ internal func rac_paginatedSignal(initialPage: Int, pageLimit: Int, requestSigna
 
 - **PaginatedRequest**: We define that typealias which represents a function that takes the page number and the page limit and returns the signal. If someone subscribes to that signal it'll execute the request and return the results or an error.
 
-```swift
+```language-swift
 typealias PaginatedRequest = (page: Int, pageLimit: Int) -> RACSignal
 ```
 
@@ -60,7 +60,7 @@ typealias PaginatedRequest = (page: Int, pageLimit: Int) -> RACSignal
 
 - **Next signal generator**: That closure is the responsible to return the signal associated to the next page. The function context has a variable to keep a reference of the current page and every time this method is called, that counter is increased by 1. It uses the _PaginatedRequest_ closure.
 
-```swift
+```language-swift
 var currentPage = initialPage
 let nextSignal = { () -> RACSignal in
     let signal = requestSignal(page: currentPage, pageLimit: pageLimit)
@@ -74,7 +74,7 @@ let nextSignal = { () -> RACSignal in
   - _Sends_ the results through the stream
   - Subscribes to the _next signal_ when the results count is equal to the page limit
 
-```swift
+```language-swift
 var subscribeNext: ((RACSubscriber!) -> Void)?
 subscribeNext = { (s: RACSubscriber!) -> Void in
     nextSignal().subscribeNext({ (response) -> Void in
@@ -99,7 +99,7 @@ subscribeNext = { (s: RACSubscriber!) -> Void in
 
 - **Entry signal**: That's the source signal which fires the recursive subscribing. That just calls _subscribeNext_ passing the subscriber.
 
-```swift
+```language-swift
 RACSignal.createSignal({ (subscriber) -> RACDisposable! in
   subscribeNext!(subscriber)
   return nil

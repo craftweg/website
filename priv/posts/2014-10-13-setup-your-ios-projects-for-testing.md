@@ -38,7 +38,7 @@ Our firsts tests were written using Kiwi. We find it a little bit outdated and i
 
 Syntax in Specta + Expecta is more readable, friendly and easy to remember. The example below shows tests using **OCMHamcrest**:
 
-```objective-c
+```language-objc
 assertThat(@"foo", is(equalTo(@"foo")));
 assertThatUnsignedInteger(foo, isNot(equalToUnsignedInteger(1)));
 assertThatBool([bar isBar], is(equalToBool(YES)));
@@ -47,7 +47,7 @@ assertThatDouble(baz, is(equalToDouble(3.14159)));
 
 Using **Kiwi**
 
-```objective-c
+```language-objc
 [[@"foo" should] equal:@"foo"];
 [[foo shouldNot] equal:theValue(1)];
 [[[bar isBar] should] equal:theValue(YES)];
@@ -56,7 +56,7 @@ Using **Kiwi**
 
 And finally **Expecta**:
 
-```objective-c
+```language-objc
 expect(@"foo").to.equal(@"foo"); // `to` is a syntatic sugar and can be safely omitted.
 expect(foo).notTo.equal(1);
 expect([bar isBar]).to.equal(YES);
@@ -93,7 +93,7 @@ Finally we have to select which targets are going to be built in our testing sch
 
 With the project setup the next step is to prepare the **Podfile** to integrate the testing libraries with our project targets. _If you haven't worked with CocoaPods before I recommend you to read about it here: http://guides.cocoapods.org/_. Our Podfile has the following format:
 
-```ruby
+```language-ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
@@ -144,7 +144,7 @@ Snapshot tests are not very common in the world of testing, however they are bec
 
 Basically the snapshot tests consist of a definition for **snapshots creation** and then once it's checked that the snapshot is ok, the **snapshot checking tests** snapshots are stored in your project folder and they are used for future tests. If tests are executed and there's no incoherence between these images and the tested views, tests will pass but if something is detected the test won't pass giving you a **command to be used with the software [Kaleidoscope](http://www.kaleidoscopeapp.com/)**. Take a look at the example below where we define the test for testing a header view and an example of failed test shown in Kaleidoscope. The failed example shows an animation with the introduced UI bug _(Someone changed the left margin and it was detected)_
 
-```objective-c
+```language-objc
 #import "TBHeaderView.h"
 
 SpecBegin(TBHeaderView)

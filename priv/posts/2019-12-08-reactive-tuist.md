@@ -31,7 +31,7 @@ reactive frameworks make that easy thanks to operators than can be chained,
 and that describes how asynchronous units of work are combined.
 Let me include some pseudocode to represent that:
 
-```swift
+```language-swift
 let result = combineLatest([a, b, c]).wait()
 ```
 

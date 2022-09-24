@@ -8,7 +8,7 @@ Today I happened to play with deep links on macOS. Having worked a lot on the iO
 
 As you might know, websites can include a manifest file that associates a website with a given application on iOS. When the webview detects that the website is _deeplinkable_, it suggests the user to continue the navigation inside the app. _Seamless, isn't it?_ There could arguably be more flexible and better ways of dealing with deeplinks on iOS, but I think the approach that iOS currently provides is enough for the needs of most projects. The example below shows the format of that `apple-app-site-association.json` manifest file:
 
-```json
+```language-json
 {
 	"applinks": {
 		"apps": [],
@@ -34,7 +34,7 @@ Another solution, yet not perfect, could be implemented by using some Javascript
 
 After some reading, I found a little hack that also works in Safari. We can embed an `<iframe>` element in which we can load the deeplink. By doing that, we can trigger the processing of the deeplink by the system and prevent Safari from navigating to an invalid page. Not ideal, but works. If you are familiar with React, here is how I ended up wrapping everything into a component:
 
-```jsx
+```language-jsx
 class RedirectShowPage extends React.Component {
 
   render() {

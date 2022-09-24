@@ -30,7 +30,7 @@ As you might know, one of the aims of [Tuist](https://tuist.io) is abstracting a
 
 I've been thinking about how that abstraction would be, and this is the idea I came up with:
 
-```swift
+```language-swift
 enum InfoPlist {
     case file(Path)
     case dictionary([String: Any])
@@ -44,7 +44,7 @@ enum InfoPlist {
 
 Below you find some examples of how the definition of the target would look. Note that for simplicity of the examples, the targets don't take all the arguments that are required:
 
-```swift
+```language-swift
 // Existing Info.plist file
 let watchApp = Target(name: "MyWatchApp", infoPlist: .file("./WatchApp.plist"))
 
@@ -63,7 +63,7 @@ let app = Target(name: "MyApp", infoPlist: .productDefaults(extend: [
 
 One of the most beautiful features of Tuist in my humble opinion is that manifests are written in Swift. That allows us to take benefit of extensions and `Foundation` protocols to simplify the interface:
 
-```swift
+```language-swift
 extension InfoPlist: ExpressibleByDictionaryLiteral {
     init(dictionaryLiteral elements: (String, Any)...) {
         self = .dictionary(Dictionary(uniqueKeysWithValues: elements))
@@ -79,7 +79,7 @@ extension InfoPlist: ExpressibleByStringLiteral {
 
 Thanks to those extensions, we can turn the examples into:
 
-```swift
+```language-swift
 // Existing Info.plist file
 let watchApp = Target(name: "MyWatchApp", infoPlist: "./WatchApp.plist")
 
@@ -96,7 +96,7 @@ Although developers can git-ignore those files because they get generated automa
 
 An idea that I'm still pondering is how to structure the directory that contains the generated files. `Info.plist` files will be the first ones living in this directory but I'm sure they won't be the only ones. Here's a rough idea that I just had:
 
-```bash
+```language-bash
 ./Project.swift
 ./Generated
    InfoPlists/

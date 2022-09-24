@@ -18,7 +18,7 @@ This tiny blog-post contains my impressions using it for the first time:
 - I don't like the syntax for adding type annotations, but I don't dislike it either.
   It feels a bit detached from the implementation code. For example, for annotating a method, I'd expect something along the lines of:
 
-  ```ruby
+  ```language-ruby
   def my_method(x: String): String
   end
   ```

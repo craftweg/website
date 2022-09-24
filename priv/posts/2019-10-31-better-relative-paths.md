@@ -8,7 +8,7 @@ One of the best decisions that we made when we envisioned Tuist was using Swift 
 
 One of the concerns that surfaced when we proposed introducing project description helpers was being able to define paths relative to those helpers, or why not, relative to the root directory of the project. The good thing is that with some tricks, and some Swift interface, we found a solution for that. Let’s say there’s a helper that generates a standardized feature framework project:
 
-```swift
+```language-swift
 // FrameworkHelper.swift
 
 func framework(name: String) -> Project {
@@ -18,7 +18,7 @@ func framework(name: String) -> Project {
 
 With some rare exceptions, the Info.plist files the framework targets usually point to have the same content. It’s clearly a good candidate to be reduced to a single file that we can place in the root directory of our project to be reused by all the targets. With the current Tuist API, developers would have to write something along the lines of:
 
-```swift
+```language-swift
 // FrameworkHelper.swift
 
 let path = ""../../Shared/Framework.plist"
@@ -28,7 +28,7 @@ It’s a bit ugly, and the helper is making an assumptions on the directory wher
 
 Thanks to some work that we are doing, developers will be able to do something along the lines of:
 
-```swift
+```language-swift
 // FrameworkHelper.swift
 
 let path = Path.from(root: "Shared/Framework.plist")

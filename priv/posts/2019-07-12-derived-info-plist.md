@@ -10,7 +10,7 @@ Although it doesn't add much value compared to having the content in a `Info.pli
 it opens the door to a powerful abstraction:
 inheriting product-base values that developers can extend with their target-specific keys.
 
-```swift
+```language-swift
 let infoPlist = InfoPlist.default(extend:[
   "CFBundleShortVersionString": "1.0",
   "CFBundleVersion": "1"

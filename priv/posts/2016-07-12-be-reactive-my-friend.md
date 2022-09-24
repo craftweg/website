@@ -15,7 +15,7 @@ In a world where data comes from everywhere being reactive when coding your apps
 
 When our code is imperative, we notify the interested entities manually. How many of you have written pieces of code like these in your apps:
 
-```swift
+```language-swift
 // Synchronizing data
 apiClient.synchronizeTracks { [weak self] tracks in
   self?.tracks = tracks
@@ -51,7 +51,7 @@ In these cases it’s important that any entity in the app **interested** in tha
 
 When the `StreamViewController` is loaded we ask for data synchronization. This event doesn't report anything but it could return an error if we're interested in presenting an alert in that case. When the data is updated in the database we'll be observing it and updating the collection view presenting that new data that has been inserted.
 
-```swift
+```language-swift
 class StreamViewController: UIViewController {
   func viewDidLoad() {
     super.viewDidLoad()
@@ -89,7 +89,7 @@ If we support authentication in our apps we might be saving user's credentials i
 
 We subscribe in the `AppDelegate` to session changes. Since we're only interested in the transition between states, we use the operator `distinctUntilChanged`. When there's a new `.Next(Session?)` event sent we update the root view controller according to that.
 
-```swift
+```language-swift
 class AppDelegate {
 
   func observeUserSession() {
@@ -115,7 +115,7 @@ It's very important that the access to the keychain is always done via that prox
 
 The interface would look like this one:
 
-```swift
+```language-swift
 class KeychainRepository {
   static let instance: KeychainRepository = KeychainRepository()
   func save(session session: Session, name: String)
@@ -133,7 +133,7 @@ There's some data that is not persisted in databases for example the user profil
 
 #### Example
 
-```swift
+```language-swift
 func viewDidLoad() {
   super.viewDidLoad()
   self.userObserver = UserObserver()
@@ -147,7 +147,7 @@ func viewDidLoad() {
 
 If we support authentication in our apps we might be saving user’s credentials in Keychain. User signs in from the login view and the logout most likely from an account/settings view. When login/logout take place in the app there are some entities that might be interested about session changes in the Keychain. For example, your app navigation and your http client:
 
-```swift
+```language-swift
 protocol Repository {
   typealias T
   func save(entity entity: T, name: String)

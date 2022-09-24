@@ -30,7 +30,7 @@ The difference is that Tuist'd provide them with information about their project
 How cool is that?
 Let me dump some pseudo-code below:
 
-```swift
+```language-swift
 import TuistAutomation
 
 let tasks = [

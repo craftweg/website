@@ -36,7 +36,7 @@ What we did at SoundCloud, which I’ve seen in other teams, is having all of th
 
 For that reason, making things easier and opinions on the Xcode projects domain codifiable, was one of the motivations to build Tuist. For instance, one of the features that I put a lot of effort into simplifying was the definition of dependencies. With Tuist, defining a dependency is as simple as defining **what depends on what**. The build settings and phases that are required for that are an implementation detail. Moreover, and conversely to XcodeGen that uses YAML as a language to describe the projects, I decided to use Swift for a few simple reasons: it’d validate the syntax, users would get inline documentation while editing their projects, and most importantly, it’d make codifying opinions easy. For example, the targets that are part of a project can be defined by a function that acts as a factory of targets:
 
-```swift
+```language-swift
 func target(name: String) -> Target {
   // Initialize and return the target
 }

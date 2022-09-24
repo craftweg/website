@@ -20,7 +20,7 @@ generates:
 
 And then running `yarn graphql-codegen`. The tools outputs a `.ts` that contains all the necessary code for interacting with the API. For example, the snippet below shows how to fetch the current user by using the generated code:
 
-```jsx
+```language-jsx
 import { useMeQuery } from 'graphql/types';
 
 const MyComponent = () => {

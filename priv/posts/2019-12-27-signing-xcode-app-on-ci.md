@@ -33,7 +33,7 @@ in the following sections I include some Ruby snippets that I extracted from the
 
 The method below wraps the execution of system commands using Ruby's `system` method and adding support for printing the command that is executed:
 
-```ruby
+```language-ruby
 def execute(print_command: false)
   puts("Running: #{args.join(" ")}") if print_command
   system(*args) || abort
@@ -49,7 +49,7 @@ Moreover,
 we unlock the keychain so that processes can access it without the os prompting the user for the password.
 The `set_key_partition_list` function configures the keychain to give Apple's tools access to the keychain:
 
-```ruby
+```language-ruby
 def with_keychain
   keychain_name = "ci.keychain"
   keychain_password = "ci"
@@ -87,7 +87,7 @@ the directory where Xcode reads them from.
 The snippet below iterates through all the certificates and profiles under the `certificates/` directories,
 installing and copying the certificates and provisioning profiles respectively:
 
-```ruby
+```language-ruby
 def install_certificates(keychain: nil)
   puts("🔑 Installing certificates and copying provisioning profiles")
   files = Dir.glob(File.join(__dir__, "certificates/*"))
@@ -128,7 +128,7 @@ That way we can indicate Xcode to use a keychain other than the default one.
 with the difference that we need to pass the `-exportPath` to indicate the path where the app should be exported,
 as well as `-exportOptionsPlist` pointing to a `.plist` file with options to export the app.
 
-```ruby
+```language-ruby
 def archive_and_export(keychain: nil)
   puts("📦 Archiving app")
   archive(keychain: keychain) do |archive_path|
@@ -186,7 +186,7 @@ end
 And combining all the previous snippets,
 the resulting code looks like the snippet below. Beautiful, _isn't it?_
 
-```ruby
+```language-ruby
 with_keychain do |keychain|
   install_certificates(keychain: keychain) do
     set_key_partition_list.call

@@ -14,7 +14,7 @@ If you build your apps in a modular manner using Swift, you have probably been i
 
 We can overcome this issue by adding another module, that depends on `ModuleX` and exposes your module testing elements, `ModuleXTesting`. Since we would like to use the components in there from `Playgrounds` and example apps it's important that `ModuleXTesting` doesn't depend on the framework `XCTest`. In the snippet below you can see two examples, one of them shows how we use `ModuleXTesting` to define a mock for a protocol, and the other one how we extend an entity to provide testing data.
 
-```swift
+```language-swift
 // ModuleX - MyProtocol.swift
 public protocol MyProtocol {
   func sync() throws

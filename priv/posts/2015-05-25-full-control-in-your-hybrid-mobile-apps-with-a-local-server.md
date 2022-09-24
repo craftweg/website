@@ -34,7 +34,7 @@ Why not having a kind of native controller controller that decided when and how 
 
 The example below shows a config of the server to serve files and proxy some calls:
 
-```objective-c
+```language-objc
 - (void)setupServerHandlers:(NSString*)frontendPath
 {
     [self addGETHandlerForBasePath:@"/a/"

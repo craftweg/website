@@ -15,7 +15,7 @@ And that's what I ended up doing.
 It took me several iterations until I got it right.
 Since I'm sure I'm not the first one coming across this need, I'll leave the code snippet here:
 
-```swift
+```language-swift
 import Foundation
 import AppKit
 

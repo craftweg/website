@@ -80,7 +80,7 @@ we can summarize Tuist's project generation as a sequence of **4 steps:**
 If we translate that to code,
 we might be
 
-```swift
+```language-swift
 func generarte(load: (AbsolutePath) throws -> Graph,
                lint: (Graph) throws -> [LintingIssue],
                transform: [(Graph) throws -> Graph] = [],
@@ -96,7 +96,7 @@ or imported from third-party packages defined as Swift packages.
 
 There could be a transformation that adds a [Swiftlint](https://github.com/realm/SwiftLint) to all the targets:
 
-```swift
+```language-swift
 final class SwiftLintTransformer: TuistTransformer {
   func transform(graph: Graph) throws -> Graph {
     // Traverse projects' targets and add the build phase
