@@ -7,7 +7,7 @@ Have you tried to set up a modular Typescript project with multiple NPM packages
 It's painful.
 Typescript tried to solve that with [project references](https://www.typescriptlang.org/docs/handbook/project-references.html),
 an API to declare the project graph to Typescript for it to build the packages in the correct order.
-Still, 
+Still,
 it presents a terrible developer experience (DX) editing the code.
 It's widespread,
 especially when the project is in a clean state (i.e., `dist/` not populated with Javascript and definition files),
