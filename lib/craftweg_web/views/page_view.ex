@@ -1,5 +1,6 @@
 defmodule CraftwegWeb.PageView do
   use CraftwegWeb, :view
+  use Phoenix.Component
 
   def posts() do
     Craftweg.Blog.all_posts()
@@ -30,7 +31,7 @@ defmodule CraftwegWeb.PageView do
   def posts_component(assigns) do
     assigns =
       if assigns |> Map.has_key?(:take) do
-        Phoenix.LiveView.assign(assigns, :posts, assigns.posts |> Enum.take(assigns.take))
+        Phoenix.Component.assign(assigns, :posts, assigns.posts |> Enum.take(assigns.take))
       else
         assigns
       end
