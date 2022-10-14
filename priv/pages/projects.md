@@ -7,6 +7,10 @@ We don’t have a strong opinion when it comes to problems to solve and the tech
 
 ## In progress
 
+### [Gestalt](https://gestaltjs.org)
+
+Gestalt is a batteries-included full-stack Javascript framework. We are going deep into the stack of packages, tools, and APIs to build a well-tested and thought-of foundation to make web apps and sites with Javascript fun, a long-term foundation that organizations can safe and calmly run their projects on.
+
 ### [Catalysis](https://twitter.com/catalysisdotdev)
 
 Catalysis is a simple open-source and community-driven deployment tool with a strong focus on the developer experience.
