@@ -9,7 +9,7 @@ description: "Craftweg is a purpose-driven organization that crafts software."
 </p>
 <p>
 	You can find me on <a href="https://github.com/pepicrft" target="_blank">GitHub</a>,
-	<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, <a href="https://mastodon.technology/web/@pepicrft" target="_blank">Mastodon</a>, and
+	<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, <a href="https://fosstodon.org/web/@pepicrft" target="_blank">Mastodon</a>, and
 	<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
 		>LinkedIn</a
 	>
