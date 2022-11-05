@@ -3,13 +3,7 @@ title: "About"
 description: "Craftweg is a purpose-driven organization that crafts software."
 ---
 
-<p>Hola 👋.</p>
-<p>
-	It's <a href="https://twitter.com/pepicrft" target="_blank"><b>Pedro Piñera</b></a> and <a href="https://twitter.com/mjsesalm" target="_blank"><b>María José Salmerón</b></a>,
-  the couple behind the Craftweg organization.
-  We work as a software developer and a localization program manager at <a href="https://shopify.com" target="_blank">Shopify</a>.
-  We like devising and building open and human technology with open-source software.
-</p>
+
 
 ## Values
 
