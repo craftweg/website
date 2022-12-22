@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-sans;
+  @apply font-serif;
 }
 
 h1 {
@@ -15,11 +15,11 @@ h1 {
   @apply my-6
 }
 h2 {
-  @apply text-3xl;
+  @apply text-2xl;
   @apply my-5;
 }
 h3 {
-  @apply text-2xl;
+  @apply text-xl;
   @apply my-4;
 }
 h4 {
@@ -37,6 +37,10 @@ h6 {
 }
 pre {
   padding: 1em;
+}
+
+a {
+  @apply text-rose-700 underline;
 }
 
 strong {

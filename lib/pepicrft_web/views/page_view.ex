@@ -38,7 +38,7 @@ defmodule PepicrftWeb.PageView do
 
     ~H"""
     <%= for post <- assigns.posts() do %>
-      <article class="flex gap-3 font-sans text-lg">
+      <article class="flex font-serif">
           <div class="flex-1 tracking-tight hover:text-rose-600">
               <% post_attributes = %{ href: post.slug } %>
               <a {post_attributes}><%= post.title  %></a>

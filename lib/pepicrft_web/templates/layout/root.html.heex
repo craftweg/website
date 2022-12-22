@@ -24,11 +24,11 @@
     <link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css">
   </head>
   <body class="font-serif space-y-6">
-    <header class="py-4 font-sans">
+    <header class="py-4 font-serif">
       <div class="flex flex-col items-center gap-y-4 md:flex-row mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto">
           <img src={Routes.static_url(@conn, "/images/logo-rounded.png")} class="h-6 w-6"/>
           <a class="no-underline text-rose-700 visited:text-rose-700 font-bold" href={PepicrftWeb.Router.Helpers.page_path(@conn, :home)}>Pepicrft</a>
-          <%!-- <a class="no-underline text-gray-800 visited:text-gray-800" href={PepicrftWeb.Router.Helpers.page_path(@conn, :blog)}>Blog</a> --%>
+          <a class="no-underline text-gray-800 hover:text-rose-700 visited:text-gray-800" href={PepicrftWeb.Router.Helpers.page_path(@conn, :blog)}>Blog</a>
 
           <div class="flex-1"/>
 
@@ -36,6 +36,9 @@
           <section class="flex flex-row gap-3">
             <a class="no-underline text-gray-800 visited:text-gray-80" href={"https://twitter.com/" <> Application.get_env(:pepicrft, :metadata).twitter_handle} target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+            <a class="no-underline text-gray-800 visited:text-gray-80" href={Application.get_env(:pepicrft, :metadata).mastodon_url} target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32" width="24px" height="24px"><path d="M 15.9375 4.03125 C 12.917 4.0435 9.9179219 4.4269844 8.3574219 5.1464844 C 8.3574219 5.1464844 5 6.6748594 5 11.880859 C 5 18.077859 4.9955 25.860234 10.5625 27.365234 C 12.6945 27.938234 14.527953 28.061562 16.001953 27.976562 C 18.676953 27.825562 20 27.005859 20 27.005859 L 19.910156 25.029297 C 19.910156 25.029297 18.176297 25.640313 16.029297 25.570312 C 13.902297 25.495313 11.6615 25.335688 11.3125 22.679688 C 11.2805 22.432688 11.264625 22.182594 11.265625 21.933594 C 15.772625 23.052594 19.615828 22.420969 20.673828 22.292969 C 23.627828 21.933969 26.199344 20.081672 26.527344 18.388672 C 27.041344 15.720672 26.998047 11.880859 26.998047 11.880859 C 26.998047 6.6748594 23.646484 5.1464844 23.646484 5.1464844 C 22.000984 4.3779844 18.958 4.019 15.9375 4.03125 z M 12.705078 8.0019531 C 13.739953 8.0297031 14.762578 8.4927031 15.392578 9.4707031 L 16.001953 10.505859 L 16.609375 9.4707031 C 17.874375 7.5037031 20.709594 7.6264375 22.058594 9.1484375 C 23.302594 10.596438 23.025391 11.531 23.025391 18 L 23.025391 18.001953 L 20.578125 18.001953 L 20.578125 12.373047 C 20.578125 9.7380469 17.21875 9.6362812 17.21875 12.738281 L 17.21875 16 L 14.787109 16 L 14.787109 12.738281 C 14.787109 9.6362812 11.429688 9.7360938 11.429688 12.371094 L 11.429688 18 L 8.9765625 18 C 8.9765625 11.526 8.7043594 10.585438 9.9433594 9.1484375 C 10.622859 8.3824375 11.670203 7.9742031 12.705078 8.0019531 z"/></svg>
             </a>
             <a class="no-underline text-gray-800 visited:text-gray-80" href={Application.get_env(:pepicrft, :metadata).github_url} target="_blank">
               <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-slate-900"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"></path></svg>
@@ -56,7 +59,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
   <footer class="flex mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto py-5">
-    <div class="mx-auto font-sans text-gray-500 flex flex-col justify-center text-center text-sm">
+    <div class="mx-auto font-serif text-gray-500 flex flex-col justify-center text-center text-sm">
       <div>Built with ♥ from Berlin</div>
       <div>Powered by <a class="underline" href="https://phoenixframework.org/" target="_blank">Phoenix</a> and hosted in <a href="https://fly.io/" target="_blank" class="underline">Fly</a></div>
       <a href="https://github.com/pepicrft/website" target="_blank" class="underline">Source code</a>

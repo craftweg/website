@@ -3,8 +3,6 @@ title: "About"
 description: "Pepicrft is a purpose-driven organization that crafts software."
 ---
 
-
-
 ## Values
 
 ### Genuineness

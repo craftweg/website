@@ -15,6 +15,7 @@ config :pepicrft, :metadata, %{
   github_url: "https://github.com/pepicrft",
   language: "en-us",
   twitter_handle: "@pepicrft",
+  mastodon_url: "https://fosstodon.org/@pepicrft",
   author: "Pedro Piñera"
 }
 
