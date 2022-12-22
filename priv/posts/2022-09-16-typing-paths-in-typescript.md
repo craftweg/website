@@ -24,6 +24,6 @@ const dirAbsolutePath = absolutePath("/path/to/dir")
 const fileRelativePath = relativePath("./tsconfig.json")
 ```
 
-The inspiration for this project comes from [Path.swift](https://github.com/apple/swift-tools-support-core/blob/main/Sources/TSCBasic/Path.swift), a primitive that Apple built as part of their [swift-tools-support-core](https://github.com/apple/swift-tools-support-core/blob/main/Sources/TSCBasic/Path.swift) and that I used extensively in [Tuist](https://github.com/craftweg/typed-file-system-path).
+The inspiration for this project comes from [Path.swift](https://github.com/apple/swift-tools-support-core/blob/main/Sources/TSCBasic/Path.swift), a primitive that Apple built as part of their [swift-tools-support-core](https://github.com/apple/swift-tools-support-core/blob/main/Sources/TSCBasic/Path.swift) and that I used extensively in [Tuist](https://github.com/pepicrft/typed-file-system-path).
 Up next is adding more convenient functions,
 and update [Gestalt](https://github.com/gestaltjs/gestalt) to use the `AbsolutePath` and `RelativePath` types.

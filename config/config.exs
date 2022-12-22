@@ -7,25 +7,25 @@
 # General application configuration
 import Config
 
-config :craftweg, :metadata, %{
-  title: "Craftweg",
+config :pepicrft, :metadata, %{
+  title: "Pepicrft",
   description: "Open and human tech craftsmanship from Berlin",
-  domain: "craftweg.com",
-  base_url: "https://craftweg.com" |> URI.parse(),
-  github_url: "https://github.com/craftweg",
+  domain: "pepicrft.com",
+  base_url: "https://pepicrft.com" |> URI.parse(),
+  github_url: "https://github.com/pepicrft",
   language: "en-us",
   twitter_handle: "@pepicrft",
   author: "Pedro Piñera"
 }
 
-config :craftweg,
-  ecto_repos: [Craftweg.Repo]
+config :pepicrft,
+  ecto_repos: [Pepicrft.Repo]
 
 # Configures the endpoint
-config :craftweg, CraftwegWeb.Endpoint,
+config :pepicrft, PepicrftWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: CraftwegWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: Craftweg.PubSub,
+  render_errors: [view: PepicrftWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Pepicrft.PubSub,
   live_view: [signing_salt: "KU0gOAcJ"]
 
 # Configures the mailer
@@ -35,7 +35,7 @@ config :craftweg, CraftwegWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :craftweg, Craftweg.Mailer, adapter: Swoosh.Adapters.Local
+config :pepicrft, Pepicrft.Mailer, adapter: Swoosh.Adapters.Local
 
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false

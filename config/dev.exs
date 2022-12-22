@@ -1,11 +1,11 @@
 import Config
 
 # Configure your database
-config :craftweg, Craftweg.Repo,
+config :pepicrft, Pepicrft.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "craftweg_dev",
+  database: "pepicrft_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -16,7 +16,7 @@ config :craftweg, Craftweg.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with esbuild to bundle .js and .css sources.
-config :craftweg, CraftwegWeb.Endpoint,
+config :pepicrft, PepicrftWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
   http: [ip: {127, 0, 0, 1}, port: 4000],
@@ -55,13 +55,13 @@ config :craftweg, CraftwegWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :craftweg, CraftwegWeb.Endpoint,
+config :pepicrft, PepicrftWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/craftweg_web/(live|views)/.*(ex)$",
-      ~r"lib/craftweg_web/templates/.*(eex)$",
+      ~r"lib/pepicrft_web/(live|views)/.*(ex)$",
+      ~r"lib/pepicrft_web/templates/.*(eex)$",
       ~r"priv/posts/.*(md)$",
       ~r"priv/pages/.*(md)$"
     ]

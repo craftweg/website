@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Craftweg is a purpose-driven organization that crafts software."
+description: "Pepicrft is a purpose-driven organization that crafts software."
 ---
 
 

@@ -1,4 +1,4 @@
-defmodule CraftwegWeb.ConnCase do
+defmodule PepicrftWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -11,7 +11,7 @@ defmodule CraftwegWeb.ConnCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use CraftwegWeb.ConnCase, async: true`, although
+  by setting `use PepicrftWeb.ConnCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -22,17 +22,17 @@ defmodule CraftwegWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import CraftwegWeb.ConnCase
+      import PepicrftWeb.ConnCase
 
-      alias CraftwegWeb.Router.Helpers, as: Routes
+      alias PepicrftWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint CraftwegWeb.Endpoint
+      @endpoint PepicrftWeb.Endpoint
     end
   end
 
   setup tags do
-    Craftweg.DataCase.setup_sandbox(tags)
+    Pepicrft.DataCase.setup_sandbox(tags)
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
 end

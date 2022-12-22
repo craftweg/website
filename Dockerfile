@@ -85,7 +85,7 @@ RUN chown nobody /app
 ENV MIX_ENV="prod"
 
 # Only copy the final release from the build stage
-COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/craftweg ./
+COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/pepicrft ./
 
 USER nobody
 

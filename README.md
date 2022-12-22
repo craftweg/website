@@ -1,12 +1,12 @@
 # Website
 
-[![website](https://github.com/craftweg/website/actions/workflows/website.yml/badge.svg)](https://github.com/craftweg/website/actions/workflows/website.yml)
+[![website](https://github.com/pepicrft/website/actions/workflows/website.yml/badge.svg)](https://github.com/pepicrft/website/actions/workflows/website.yml)
 
-This repository contains Craftweg' website powered by Phoenix.
+This repository contains Pepicrft' website powered by Phoenix.
 
 ## Set up
 
-1. Clone the repository: `git clone https://github.com/craftweg/website.git`.
+1. Clone the repository: `git clone https://github.com/pepicrft/website.git`.
 2. Install dependencies: `mix deps.get`
 3. Create and migrate your database with `mix ecto.setup`
 4. Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
