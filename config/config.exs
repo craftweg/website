@@ -8,7 +8,7 @@
 import Config
 
 config :pepicrft, :metadata, %{
-  title: "Pepicrft",
+  title: "pepicrt",
   description: "Open and human tech craftsmanship from Berlin",
   domain: "pepicrft.com",
   base_url: "https://pepicrft.com" |> URI.parse(),
