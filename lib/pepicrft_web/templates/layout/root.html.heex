@@ -26,8 +26,10 @@
   <body class="font-serif space-y-6">
     <header class="py-4 font-serif">
       <div class="flex flex-col items-center gap-y-4 md:flex-row mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto">
-          <img src={Routes.static_url(@conn, "/images/logo-rounded.png")} class="h-6 w-6"/>
-          <a class="no-underline text-rose-700 visited:text-rose-700 font-bold" href={PepicrftWeb.Router.Helpers.page_path(@conn, :home)}>Pepicrft</a>
+          <a class="no-underline text-rose-700 visited:text-rose-700 font-bold flex flex-row items-center" href={PepicrftWeb.Router.Helpers.page_path(@conn, :home)}>
+            <img src={Routes.static_url(@conn, "/images/avatar.png")} class="h-12 w-12"/>
+            <span>pepicrft</span>
+          </a>
           <a class="no-underline text-gray-800 hover:text-rose-700 visited:text-gray-800" href={PepicrftWeb.Router.Helpers.page_path(@conn, :blog)}>Blog</a>
 
           <div class="flex-1"/>
