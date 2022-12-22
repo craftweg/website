@@ -1,6 +1,6 @@
-# fly.toml file generated for craftweg on 2022-08-22T07:55:07+02:00
+# fly.toml file generated for pepicrftme on 2022-12-22T10:08:08+01:00
 
-app = "craftweg"
+app = "pepicrftme"
 kill_signal = "SIGTERM"
 kill_timeout = 5
 processes = []
@@ -9,7 +9,7 @@ processes = []
   release_command = "/app/bin/migrate"
 
 [env]
-  PHX_HOST = "craftweg.fly.dev"
+  PHX_HOST = "pepicrftme.fly.dev"
   PORT = "8080"
 
 [experimental]
