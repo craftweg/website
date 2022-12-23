@@ -14,5 +14,12 @@
   },
   "tailwindCSS.includeLanguages": {
     "phoenix-heex": "html"
-  }
+  },
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2022-12-23-startup-time-in-node-clis.md"
+    }
+  ]
 }
