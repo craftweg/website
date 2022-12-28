@@ -20,6 +20,11 @@
       "language": "markdown",
       "scheme": "file",
       "pattern": "priv/posts/2022-12-23-startup-time-in-node-clis.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2022-12-28-gestalt-gestalt-development.md"
     }
   ]
 }
