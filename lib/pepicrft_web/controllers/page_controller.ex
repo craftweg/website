@@ -2,17 +2,17 @@ defmodule PepicrftWeb.PageController do
   use PepicrftWeb, :controller
 
   def home(conn, _params) do
-    render(conn, "home.html")
+    render(conn, :home)
   end
 
   def blog(conn, _params) do
-    render(conn, "blog.html")
+    render(conn, :blog)
   end
 
   def blog_post(conn, %{"year" => year, "month" => month, "day" => day, "title" => title}) do
     slug = "/blog/#{year}/#{month}/#{day}/#{title}"
     post = Pepicrft.Blog.all_posts() |> Enum.find(&(&1.slug == slug))
-    render(conn, "post.html", %{post: post})
+    render(conn, :post, %{post: post})
   end
 
   def feed(conn, _) do
@@ -24,6 +24,6 @@ defmodule PepicrftWeb.PageController do
   def show(conn, _params) do
     path = conn.request_path
     page = Pepicrft.Pages.all_pages() |> Enum.find(&(&1.slug == path))
-    render(conn, "markdown.html", %{page: page})
+    render(conn, :markdown, %{page: page})
   end
 end

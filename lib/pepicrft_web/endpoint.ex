@@ -20,7 +20,7 @@ defmodule PepicrftWeb.Endpoint do
     at: "/",
     from: :pepicrft,
     gzip: false,
-    only: ~w(assets fonts favicon images favicon.ico robots.txt)
+    only: PepicrftWeb.static_paths()
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
