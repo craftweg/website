@@ -9,6 +9,7 @@ defmodule PepicrftWeb.CoreComponents do
   Icons are provided by [heroicons](https://heroicons.com), using the
   [heroicons_elixir](https://github.com/mveytsman/heroicons_elixir) project.
   """
+  use PepicrftWeb.Meta
   use Phoenix.Component
 
   def posts_component(assigns) do
@@ -33,31 +34,36 @@ defmodule PepicrftWeb.CoreComponents do
     """
   end
 
-  def feed_url do
-    %{base_url: url} = Application.fetch_env!(:pepicrft, :metadata)
-    url = %{url | path: "/blog/feed.xml"}
-    url |> URI.to_string()
-  end
+  def meta(assigns) do
+    ~H"""
+      <title><%= get_metadata(@conn)[:title] %></title>
+      <meta property="article:published_time" content="2022-09-07T00:00:00+00:00">
+      <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata).author}>
 
-  def render("feed.xml", _assigns) do
-    Pepicrft.Blog.feed()
-  end
+      <!-- Open graph -->
+      <meta property="og:title" content={get_metadata(@conn)[:title]}>
+      <meta property="og:description" content={get_metadata(@conn)[:description]}>
+      <meta property="og:type" content="article">
+      <meta property="og:site_name" content="Pepicrft">
+      <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
+      <meta property="og:image" content="/images/logo.jpg">
 
-  # Metadata
+      <!-- Twitter -->
+      <meta name="twitter:title" content={get_metadata(@conn)[:title]}>
+      <meta name="twitter:description" content={get_metadata(@conn)[:description]}>
+      <meta name="twitter:image" content="/images/logo.jpg">
+      <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata).twitter_handle}>
+      <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata).domain}>
+      <meta property="twitter:url" content={Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.to_string}>
 
-  def metadata(_, %{page: %{title: title, description: description}}) do
-    %{
-      title: title,
-      description: description
-    }
-  end
-
-  def metadata(:blog_post, %{post: %{title: title, description: description}}) do
-    title
-
-    %{
-      title: title,
-      description: description
-    }
+      <!-- Favicon -->
+      <link rel="shortcut icon"  href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/favicon/site.webmanifest">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+    """
   end
 end

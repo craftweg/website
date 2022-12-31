@@ -19,10 +19,10 @@ defmodule PepicrftWeb.Router do
   scope "/", PepicrftWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/blog", PageController, :blog
-    get "/blog/:year/:month/:day/:title", PageController, :blog_post
-    get "/blog/feed.xml", PageController, :feed
+    get "/", HomeController, :index
+    get "/blog", BlogController, :index
+    get "/blog/:year/:month/:day/:title", BlogController, :show
+    get "/blog/feed.xml", BlogController, :feed
 
     for page <- Pepicrft.Pages.all_pages() do
       get page.slug, PageController, :show, as: page.identifier
