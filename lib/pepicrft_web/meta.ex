@@ -9,9 +9,10 @@ defmodule PepicrftWeb.Meta do
     quote do
       @before_compile unquote(__MODULE__)
 
-      def get_metadata(%{private: %{phoenix_action: action, phoenix_view: view}, assigns: assigns}) do
+      def get_metadata(%{private: %{phoenix_action: action, phoenix_view: %{"html" => html_view}}, assigns: assigns}) do
         app_metadata = Application.get_env(:pepicrft, :metadata)
-        view_metadata = view.metadata(action, assigns)
+        dbg %{ action: action, assigns: assigns }
+        view_metadata = html_view.metadata(action, assigns)
 
         view_metadata =
           view_metadata
