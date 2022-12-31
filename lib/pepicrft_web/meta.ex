@@ -11,7 +11,6 @@ defmodule PepicrftWeb.Meta do
 
       def get_metadata(%{private: %{phoenix_action: action, phoenix_view: %{"html" => html_view}}, assigns: assigns}) do
         app_metadata = Application.get_env(:pepicrft, :metadata)
-        dbg %{ action: action, assigns: assigns }
         view_metadata = html_view.metadata(action, assigns)
 
         view_metadata =
