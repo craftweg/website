@@ -30,7 +30,7 @@ defmodule Pepicrft.Feed do
         <item>
           <title>#{post.title}</title>
           <description><![CDATA[#{post.description}]]></description>
-          <author>hola@pepicrft.com</author>
+          <author>hola@craftweg.com</author>
           <pubDate>#{pub_date}</pubDate>
           <link>#{post_url}</link>
           <guid>#{guid}</guid>

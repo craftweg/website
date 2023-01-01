@@ -13,7 +13,7 @@ defmodule Pepicrft.MixProject do
       # Docs
       name: "Pepicrft",
       source_url: "https://github.com/pepicrft/website",
-      homepage_url: "https://pepicrft.com",
+      homepage_url: "https://pepicrft.me",
       docs: [
         main: "Pepicrft",
         extras: ["README.md"]

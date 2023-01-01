@@ -10,8 +10,8 @@ import Config
 config :pepicrft, :metadata, %{
   title: "pepicrt",
   description: "Open and human tech craftsmanship from Berlin",
-  domain: "pepicrft.com",
-  base_url: "https://pepicrft.com" |> URI.parse(),
+  domain: "pepicrft.me",
+  base_url: "https://pepicrft.me" |> URI.parse(),
   github_url: "https://github.com/pepicrft",
   language: "en-us",
   twitter_handle: "@pepicrft",
