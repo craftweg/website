@@ -30,6 +30,11 @@
       "language": "markdown",
       "scheme": "file",
       "pattern": "priv/posts/2022-12-31-2023.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/pages/projects.md"
     }
   ]
 }
