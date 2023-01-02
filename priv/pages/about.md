@@ -3,6 +3,15 @@ title: "About"
 description: "Pepicrft is a purpose-driven organization that crafts software."
 ---
 
+I'm Pedro Piñera, a software developer from Spain based in Berlin.
+I am a Senior Staff Developer at [Shopify](https://shopify.com) in the CLI Foundations team.
+We build the [CLI](https://github.com/shopify/cli) that developers use to build on the platform.
+I enjoy devising and building tools for developers that are a joy to use,
+like [Tuist](https://tuist.io), which I created in 2015, and eventually handed over.
+I continuously advocate for more open human software as the foundation for better societies and use some of my spare time to contribute to it. I also like learning new languages and technologies and building with them. Most recently, I’ve been playing with [Elixir](https://elixir-lang.org/) and [Rust](https://www.rust-lang.org/).
+
+When I’m not tinkering with software, I like spending time with family and friends, running, and traveling to new places.
+
 ## Values
 
 ### Genuineness
