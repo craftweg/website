@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Pepicrft is a purpose-driven organization that crafts software."
+description: "Pedro Piñera is a software developer with a strong interest in building great developer experiences."
 ---
 
 I'm Pedro Piñera, a software developer from Spain based in Berlin.
