@@ -14,7 +14,7 @@ This motivated me to build a tiny [node-module-benchmarker](https://github.com/p
 If you want to use it,
 all you need to do is to install the dependency,
 either globally or as a dependency of your project,
-and execute it as a replacement of the `node` executable.
+and execute it as a replacement for the `node`` executable.
 You'll have to pass the output path with the environment variable `BENCHMARK_OUTPUT_PATH`.
 
 ```language-bash
