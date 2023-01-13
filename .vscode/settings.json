@@ -45,6 +45,11 @@
       "language": "markdown",
       "scheme": "file",
       "pattern": "priv/posts/2023-01-04-benchmarking-node-module-loading.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-01-13-shopify-cli-on-hn.md"
     }
   ]
 }
