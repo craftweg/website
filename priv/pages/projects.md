@@ -14,30 +14,6 @@ This page contains projects that I am or was involved with.
 
 Gesttalt is an open-source localization hub. The goal is to empower organizations and translators to build great localized experiences.
 
-### [Chimera](https://github.com/chimerarun)
-
-- **Source:** Open
-- **Programming languages:** Rust, Swift, Typescript, Elixir
-
-Chimera is a knowledge base tool to work with [zettelkt](https://github.com/zettelkt) files.
-
-
-### [zettelkt](https://github.com/zettelkt)
-
-- **Source:** Open
-- **Programming languages:** Rust, Swift, Typescript
-
-The [Roam Research](https://roamresearch.com/) project led to a proliferation of tools to build graphs of interconnected thoughts (e.g., [Logseq](https://logseq.com/), [Obsidian](https://obsidian.md/)) that solved the same problem without aligning on a format that would make “second brains” portable across tools. zettelkt aims to be that missing standard to achieve portability and the narrow waist for more interfaces for the second brain to flourish. The standard is named after the German sociologist Niklas Luhmann's[ knowledge management method](https://en.wikipedia.org/wiki/Zettelkasten).
-
-
-### [Catalysis](https://github.com/catalysisdev)
-
-- **Source:** Open
-- **Programming languages:** Typescript
-
-Catalysis is a modern opinionated and batteries-included [NodeJS](https://nodejs.org/en/) framework for building digital experiences with web technologies. It's designed to spark joy through convenient abstractions and workflows that [conceptually compress](https://m.signalvnoise.com/conceptual-compression-means-beginners-dont-need-to-know-sql-hallelujah/) the intricacies of building apps.
-
-
 ## Low maintenance
 
 ### [typed-file-system-path](https://github.com/pepicrft/typed-file-system-path)
