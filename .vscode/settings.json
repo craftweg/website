@@ -19,7 +19,7 @@
     {
       "language": "markdown",
       "scheme": "file",
-      "pattern": "priv/posts/2022-12-23-startup-time-in-node-clis.md"
+      "pattern": "priv/posts/*.md"
     },
     {
       "language": "markdown",
@@ -50,6 +50,11 @@
       "language": "markdown",
       "scheme": "file",
       "pattern": "priv/posts/2023-01-13-shopify-cli-on-hn.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "priv/posts/2023-02-09-random-notes.md"
     }
   ]
 }

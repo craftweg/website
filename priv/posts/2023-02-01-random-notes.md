@@ -1,6 +1,6 @@
 ---
-title: Random notes - February 1st 2023
-description: Random unstructured notes that capture what's in my mind.
+title: Random notes - February 1st, 2023
+description: Random, unstructured notes that capture what's in my mind.
 categories: [journal]
 ---
 
