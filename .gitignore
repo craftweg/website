@@ -35,3 +35,5 @@ npm-debug.log
 TODO.md
 
 .DS_Store
+
+.direnv
