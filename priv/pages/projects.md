@@ -12,7 +12,7 @@ This page contains projects that I am or was involved with.
 - **Source:** Closed
 - **Programming languages:** Elixir
 
-Gesttalt is an open-source localization hub. The goal is to empower organizations and translators to build great localized experiences.
+Gesttalt is a localization hub. The goal is to empower organizations and translators to build great localized experiences.
 
 ## Low maintenance
 
