@@ -9,7 +9,7 @@ This page contains projects that I am or was involved with.
 
 ### [Gesttalt](https://github.com/gesttalt)
 
-- **Source:** Open
+- **Source:** Closed
 - **Programming languages:** Elixir
 
 Gesttalt is an open-source localization hub. The goal is to empower organizations and translators to build great localized experiences.
