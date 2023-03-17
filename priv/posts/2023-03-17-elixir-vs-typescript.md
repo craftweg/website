@@ -1,6 +1,6 @@
 ---
 title: Elixir or Typescript
-description: 'Typescript and Elixir both have their strengths and weaknesses. While Typescript offers a vibrant ecosystem of resources, Elixir provides a more harmonious and lean approach to development, with a strong focus on maintainability and scalability thanks to the power of the BEAM. Ultimately, the choice between the two will depend on your project's needs and priorities.'
+description: "Typescript and Elixir both have their strengths and weaknesses. While Typescript offers a vibrant ecosystem of resources, Elixir provides a more harmonious and lean approach to development, with a strong focus on maintainability and scalability thanks to the power of the BEAM. Ultimately, the choice between the two will depend on your project's needs and priorities."
 categories: [typescript, elixir]
 ---
 
