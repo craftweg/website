@@ -62,7 +62,7 @@ defmodule Pepicrft.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
-      {:tailwind, "~> 0.1.10", runtime: Mix.env() == :dev},
+      {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:rss, "~> 0.2.1"},
       {:sweet_xml, "~> 0.7.1", only: :test},
       {:redirect, "~> 0.4.0"},
