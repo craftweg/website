@@ -34,11 +34,6 @@
     {
       "language": "markdown",
       "scheme": "file",
-      "pattern": "priv/pages/projects.md"
-    },
-    {
-      "language": "markdown",
-      "scheme": "file",
       "pattern": "priv/posts/2023-01-02-gestalt-md.md"
     },
     {
