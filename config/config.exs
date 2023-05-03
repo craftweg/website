@@ -16,6 +16,7 @@ config :pepicrft, :metadata, %{
   language: "en-us",
   twitter_handle: "@pepicrft",
   mastodon_url: "https://mastodon.social/@pepicrft",
+  linkedin_url: "https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/",
   author: "Pedro Piñera"
 }
 

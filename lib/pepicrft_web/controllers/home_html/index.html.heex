@@ -1,11 +1,15 @@
-<div>
+<div class="flex flex-col gap-y-2">
   <p>Hola 👋.</p>
 
   <p>
     It's <a href="https://twitter.com/pepicrft" target="_blank"><b>Pedro</b></a>, a software crafter based in Berlin 🇩🇪.
-    I work as a Senior Staff Developer at <a href="https://shopify.com" target="_blank">Shopify</a> and like tinkering with technologies like Typescript, Elixir, Ruby, and Swift.
+    I work as a <a href="https://shopify.com" target="_blank"><b>Senior Staff Developer at Shopify</b></a> and like tinkering with technologies like Typescript, Elixir, Ruby, and Swift.
+  </p>
+
+  <p>
+    In the past I created and maintained <a href="https://tuist.io" target="_blank"><b>Tuist</b></a>, a tool for Xcode developers to maintain and scale their projects. I'm currently writing a book, <b>Eloquent CLIs</b>, and building an open-source hub for social localization with my lovely wife, <a href="https://github.com/gesttalt" target="_blank"><b>Gesttalt</b></a>.
   </p>
 
   <h2>Latest posts</h2>
-  <.posts_component posts={Pepicrft.Blog.all_posts()} take={10}/>
+  <.posts_component posts={Pepicrft.Blog.all_posts()} take={5}/>
 </div>
