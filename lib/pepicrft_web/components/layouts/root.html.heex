@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Feed -->
     <link rel="alternate" type="application/rss+xml" title={Application.fetch_env!(:pepicrft, :metadata).title} href={feed_url()}>
@@ -22,14 +22,14 @@
     <!-- Prism css -->
     <link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css">
   </head>
-  <body class="font-serif space-y-6">
-    <header class="py-4 font-serif">
+  <body class="font-sans space-y-6">
+    <header class="py-4 font-sans">
       <div class="flex flex-col items-center gap-y-4 md:flex-row mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto">
-          <a class="no-underline text-rose-700 visited:text-rose-700 font-bold flex flex-row items-center" href={~p"/"}>
-            <img src="/images/avatar.png" class="h-12 w-12"/>
-            <span>pepicrft</span>
+          <a class="no-underline text-lg text-gray-800 visited:text-gray-800 hover:text-indigo-700 font-bold flex flex-row items-center" href={~p"/"}>
+            <span>Pedro Piñera</span>
           </a>
-          <a class="no-underline text-gray-800 hover:text-rose-700 visited:text-gray-800" href={~p"/blog"}>Blog</a>
+          <a class="no-underline text-gray-800 hover:text-indigo-700 visited:text-gray-800" href={~p"/blog"}>Blog</a>
+          <a class="no-underline bg-indigo-700 text-white text-sm px-2 py-1 rounded-md" href={~p"/hire"}>Hire me</a>
 
           <div class="flex-1"/>
 
@@ -63,7 +63,7 @@
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
   <footer class="flex mx-0 gap-x-3 px-7 sm:max-w-4xl sm:mx-auto py-5">
-    <div class="mx-auto font-serif text-gray-500 flex flex-col justify-center text-center text-sm">
+    <div class="mx-auto font-sans text-gray-500 flex flex-col justify-center text-center text-sm">
       <div>Built with ♥ from Berlin</div>
       <div>Powered by <a class="underline" href="https://phoenixframework.org/" target="_blank">Phoenix</a> and hosted in <a href="https://fly.io/" target="_blank" class="underline">Fly</a></div>
       <a href="https://github.com/pepicrft/website" target="_blank" class="underline">Source code</a>

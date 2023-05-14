@@ -11,7 +11,7 @@ If you ever come across the same issue,
 all you have to do is to search the following extension in VSCode:
 
 
-```bash
+```language-bash
 @builtin typescript
 ```
 

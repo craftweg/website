@@ -22,8 +22,8 @@ defmodule PepicrftWeb.CoreComponents do
 
     ~H"""
     <%= for post <- assigns.posts() do %>
-      <article class="flex flex-col sm:flex-row font-serif">
-          <div class="flex-1 tracking-tight hover:text-rose-600">
+      <article class="flex flex-col sm:flex-row font-sans">
+          <div class="flex-1 tracking-tight hover:text-indigo-600">
               <% post_attributes = %{ href: post.slug } %>
               <a {post_attributes}><%= post.title  %></a>
           </div>

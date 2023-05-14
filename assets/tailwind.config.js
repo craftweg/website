@@ -10,6 +10,9 @@ module.exports = {
           "Georgia",
           "Century Schoolbook",
           "serif",
+        ],
+        sans: [
+          "Inter"
         ]
       }
     },

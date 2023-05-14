@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-serif;
+  @apply font-sans;
 }
 
 h1 {
@@ -40,7 +40,7 @@ pre {
 }
 
 a {
-  @apply text-rose-700 underline;
+  @apply text-indigo-700 underline;
 }
 
 strong {
@@ -80,7 +80,7 @@ ul {
 }
 
 .markdown a {
-  @apply underline text-rose-600 visited:text-rose-600;
+  @apply underline text-indigo-600 visited:text-indigo-600;
 }
 
 .markdown strong a {
@@ -118,5 +118,5 @@ ul {
 }
 
 code.inline {
-  @apply text-rose-700 bg-rose-100 rounded
+  @apply text-indigo-700 bg-indigo-100 rounded
 }
