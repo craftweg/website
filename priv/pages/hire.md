@@ -3,6 +3,7 @@ title: "Hire me"
 description: "Pedro Piñera is a Senior Staff Software Developer with a strong interest in building great developer experiences."
 ---
 
+<img style="width: 150px; height: 150px; border-radius: 75px;" src="/images/avatar.jpeg"/>
 
 ## Who I am
 
