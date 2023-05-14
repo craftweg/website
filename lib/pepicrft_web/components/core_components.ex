@@ -50,6 +50,7 @@ defmodule PepicrftWeb.CoreComponents do
       <meta property="og:image" content={static_asset_url("/images/logo.jpg")}>
 
       <!-- Twitter -->
+      <meta name="twitter:card" content="summary">
       <meta name="twitter:title" content={get_metadata(@conn)[:title]}>
       <meta name="twitter:description" content={get_metadata(@conn)[:description]}>
       <meta name="twitter:image" content={static_asset_url("/images/logo.jpg")}>
