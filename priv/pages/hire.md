@@ -1,13 +1,13 @@
 ---
 title: "Hire me"
-description: "Pedro Piñera is a Senior Staff Software Developer with a strong interest in building great developer experiences."
+description: "Pedro Piñera is a Senior Staff Software Developer with an interest in building great developer experiences."
 ---
 
 <img style="width: 150px; height: 150px; border-radius: 75px;" src="/images/avatar.jpeg"/>
 
 ## Who I am
 
-I’m open to new opportunities from Germany, **preferably as a contractor**, although I’m open to employment depending on the organization. I have a **generalist** profile with a **problem-oriented** mindset and a strong interest in **developer productivity and platforms**. I conceive programming languages as tools to solve problems and, therefore, can learn new ones more suitable for the problem at hand. I’m most familiar with programming languages Typescript, Javascript, Ruby, Elixir, and Swift.
+I’m open to new opportunities from Germany, **preferably as a contractor**, although I’m open to employment depending on the organization. I have a **generalist** profile with a **problem-oriented** mindset and an interest in **developer productivity, tooling, and platforms**. I conceive programming languages as tools to solve problems and, therefore, can learn new ones more suitable for the problem at hand. I’m most familiar with programming languages Typescript, Javascript, Ruby, Elixir, and Swift.
 
 ## What I'm looking for
 
