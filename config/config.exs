@@ -8,7 +8,7 @@
 import Config
 
 config :pepicrft, :metadata, %{
-  title: "pepicrt",
+  title: "Pedro Piñera",
   description: "Open and human tech craftsmanship from Berlin",
   domain: "pepicrft.me",
   base_url: "https://pepicrft.me" |> URI.parse(),

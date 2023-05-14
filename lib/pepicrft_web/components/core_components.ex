@@ -45,7 +45,7 @@ defmodule PepicrftWeb.CoreComponents do
       <meta property="og:title" content={get_metadata(@conn)[:title]}>
       <meta property="og:description" content={get_metadata(@conn)[:description]}>
       <meta property="og:type" content="article">
-      <meta property="og:site_name" content="Pepicrft">
+      <meta property="og:site_name" content="Pedro Piñera">
       <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
       <meta property="og:image" content={static_asset_url("/images/logo.jpg")}>
 
