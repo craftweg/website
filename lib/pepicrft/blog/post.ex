@@ -50,7 +50,7 @@ defmodule Pepicrft.Blog.Post do
     slug =
       "/blog/" <> year <> "/" <> month <> "/" <> day <> "/" <> filename_without_date_and_extension
 
-    og_image_slug = "/og_images#{slug}.png"
+    og_image_slug = "/images/og#{slug}.png"
     og_image_path = Application.app_dir(:pepicrft, "priv/static#{og_image_slug}")
     struct!(
       __MODULE__,
