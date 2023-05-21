@@ -2,8 +2,8 @@ defmodule Pepicrft.Blog.Post do
   @moduledoc """
   This module is a struct that represents a blog post.
   """
-
-  defstruct [:path, :slug, :old_slug, :title, :description, :date, :categories, :body]
+  @enforce_keys [:path, :slug, :old_slug, :title, :description, :date, :categories, :body, :og_image_path]
+  defstruct [:path, :slug, :old_slug, :title, :description, :date, :categories, :body, :og_image_path]
 
   @doc """
   This method takes the absolute path to the file representing a blog post,
@@ -25,7 +25,7 @@ defmodule Pepicrft.Blog.Post do
 
     slug =
       "/blog/" <> year <> "/" <> month <> "/" <> day <> "/" <> filename_without_date_and_extension
-
+    og_image_path = Application.app_dir(:pepicrft, "priv/static/images#{slug}.jpg")
     struct!(
       __MODULE__,
       path: path,
@@ -35,7 +35,8 @@ defmodule Pepicrft.Blog.Post do
       date: date,
       body: body,
       categories: categories,
-      description: description
+      description: description,
+      og_image_path: og_image_path
     )
   end
 
