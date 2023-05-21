@@ -86,7 +86,7 @@ defmodule Pepicrft.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["esbuild.install --if-missing"],
-      "assets.build": ["esbuild default"],
+      "assets.build": ["esbuild default", "phx.gen.open_graph"],
       "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest", "phx.gen.open_graph"]
     ]
   end
