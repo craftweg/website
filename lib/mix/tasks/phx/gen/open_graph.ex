@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.Phx.Gen.Og do
+defmodule Mix.Tasks.Phx.Gen.OpenGraph do
   use Mix.Task
 
   @shortdoc "Generates the Open Graph images for the blog posts"
