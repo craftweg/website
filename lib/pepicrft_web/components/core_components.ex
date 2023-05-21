@@ -47,13 +47,13 @@ defmodule PepicrftWeb.CoreComponents do
       <meta property="og:type" content="article">
       <meta property="og:site_name" content="Pedro Piñera">
       <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
-      <meta property="og:image" content={static_asset_url("/images/logo.jpg")}>
+      <meta property="og:image" content={image(@conn)}>
 
       <!-- Twitter -->
       <meta name="twitter:card" content="summary">
       <meta name="twitter:title" content={get_metadata(@conn)[:title]}>
       <meta name="twitter:description" content={get_metadata(@conn)[:description]}>
-      <meta name="twitter:image" content={static_asset_url("/images/logo.jpg")}>
+      <meta name="twitter:image" content={image(@conn)}>
       <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata).twitter_handle}>
       <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata).domain}>
       <meta property="twitter:url" content={Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.to_string}>
@@ -67,6 +67,11 @@ defmodule PepicrftWeb.CoreComponents do
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="theme-color" content="#ffffff">
     """
+  end
+
+  def image(conn) do
+    metadata_image = get_metadata(conn)[:image]
+    metadata_image ||  static_asset_url("/images/logo.jpg")
   end
 
   defp static_asset_url(path) do

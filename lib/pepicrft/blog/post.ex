@@ -13,6 +13,7 @@ defmodule Pepicrft.Blog.Post do
     :date,
     :categories,
     :body,
+    :og_image_slug,
     :og_image_path
   ]
   defstruct [
@@ -24,6 +25,7 @@ defmodule Pepicrft.Blog.Post do
     :date,
     :categories,
     :body,
+    :og_image_slug,
     :og_image_path
   ]
 
@@ -48,8 +50,8 @@ defmodule Pepicrft.Blog.Post do
     slug =
       "/blog/" <> year <> "/" <> month <> "/" <> day <> "/" <> filename_without_date_and_extension
 
-    og_image_path = Application.app_dir(:pepicrft, "priv/static/images#{slug}.png")
-
+    og_image_slug = "/images#{slug}.png"
+    og_image_path = Application.app_dir(:pepicrft, "priv/static#{og_image_slug}")
     struct!(
       __MODULE__,
       path: path,
@@ -60,6 +62,7 @@ defmodule Pepicrft.Blog.Post do
       body: body,
       categories: categories,
       description: description,
+      og_image_slug: og_image_slug,
       og_image_path: og_image_path
     )
   end
