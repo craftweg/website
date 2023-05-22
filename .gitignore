@@ -40,3 +40,5 @@ TODO.md
 .DS_Store
 
 .direnv
+
+priv/static/images/og/*

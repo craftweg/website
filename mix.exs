@@ -64,10 +64,12 @@ defmodule Pepicrft.MixProject do
       {:timex, "~> 3.7"},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:rss, "~> 0.2.1"},
-      {:sweet_xml, "~> 0.7.1", only: :test},
+      {:sweet_xml, "~> 0.7.3"},
       {:redirect, "~> 0.4.0"},
       {:pandex, "~> 0.2.0"},
-      {:phoenix_html_sanitizer, "~> 1.1"}
+      {:phoenix_html_sanitizer, "~> 1.1"},
+      {:image, "~> 0.31.1"},
+      {:file_system, "~> 0.2"}
     ]
   end
 
@@ -84,8 +86,8 @@ defmodule Pepicrft.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["esbuild.install --if-missing"],
-      "assets.build": ["esbuild default"],
-      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest"]
+      "assets.build": ["esbuild default", "phx.gen.open_graph"],
+      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest", "phx.gen.open_graph"]
     ]
   end
 end
