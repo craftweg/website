@@ -47,8 +47,11 @@ defmodule PepicrftWeb.CoreComponents do
       <meta property="og:type" content="article">
       <meta property="og:site_name" content="Pedro Piñera">
       <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
+      <meta property="og:image" content={image(@conn)}>
+
 
       <!-- Twitter -->
+      <meta property="twitter:image" content={image(@conn)}>
       <meta name="twitter:card" content="summary">
       <meta name="twitter:title" content={get_metadata(@conn)[:title]}>
       <meta name="twitter:description" content={get_metadata(@conn)[:description]}>
@@ -68,8 +71,7 @@ defmodule PepicrftWeb.CoreComponents do
   end
 
   def image(conn) do
-    metadata_image = get_metadata(conn)[:image]
-    metadata_image ||  static_asset_url("/images/logo.jpg")
+    static_asset_url("/images/logo.jpg")
   end
 
   defp static_asset_url(path) do
