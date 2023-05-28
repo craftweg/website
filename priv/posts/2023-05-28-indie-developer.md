@@ -12,7 +12,7 @@ For a while, I followed the traditional path that everyone around me was taking�
 
 What’s fueling my fire to embark on this journey are all the incredible tools I’ve created. Just look at [**Tuist**](https://tuist.io), for example. Big names like [Adidas](https://adidas.com), [Bloomberg](https://bloomberg.com), [American Express](https://americanexpress.com), [Monday](https://monday.com), [Stripe](https://stripe.com), and even [Ford Motors](https://ford.de) are using it to handle their Xcode projects. And let’s not forget about the revamp of Shopify’s CLI that I came up with to support their future.
 
-So here’s the plan: I’ll start by **identifying the best ideas** and diving right into them. I’m even excited to explore new domains beyond developer experience. I’ll focus on **building my personal brand**, getting super active on my blog and social networks, so people can find me and maybe even hire me as a contractor if things don’t go exactly as planned. Oh, and by the way, I’m also writing **a book on designing and building CLIs**, and I’m developing a framework and design system to create kick-ass CLIs. 
+So here’s the plan: I’ll start by **identifying the best ideas** and diving right into them. I’m even excited to explore new domains beyond developer experience. I’ll focus on **building my personal brand**, getting super active on my blog and social networks, so people can find me and maybe even hire me as a contractor if things don’t go exactly as planned.
 
 I’m all about **doing less but doing it way better** — putting all my passion into a handful of projects.
 
