@@ -18,4 +18,4 @@ My initial step will involve **identifying which ideas can be monetized most swi
 
 I am filled with excitement as I embark on this new chapter in my career. The last time life presented me with a similar opportunity was when I made one of the best decisions of my life — moving to Berlin. Now, as I enter my thirties, it is time for me to leap onto this new train of possibilities.
 
-If you have treaded a similar path and would be willing to share your experiences, I would love to hear from you. I have much to learn, and your insights would be invaluable.
+If you have treaded a similar path and would be willing to share your experiences, I would love to hear from you. I have much to learn, and your insights would be invaluable. you can send me an email at [hola@pepicrft.me](mailto:hola@pepicrft.me).
