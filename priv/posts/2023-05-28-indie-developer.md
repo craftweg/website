@@ -18,6 +18,6 @@ I’m all about **doing less but doing it way better** — putting all my passio
 
 I’m bursting with excitement as I embark on this new chapter in my career. The last time life threw a similar opportunity my way was when I made one of the best decisions of my life—moving to Berlin. And now, as I enter my thirties, it’s time for me to jump on this train of endless possibilities.
 
-If any of you have walked a similar path and want to share your experiences, I’d be thrilled to hear from you. I have so much to learn, and your insights would be priceless. Shoot me an email at hola@pepicrft.me.
+If any of you have walked a similar path and want to share your experiences, I’d be thrilled to hear from you. I have so much to learn, and your insights would be priceless. Shoot me an email at [hola@pepicrft.me](mailto:hola@pepicrft.me).
 
 Let’s make magic happen together!
