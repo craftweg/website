@@ -1,8 +1,8 @@
-—
-title: Embracing the Journey of a Solopreneur
+---
+title: “Embracing the Journey of a Solopreneur”
 description: “After 5 years at Shopify, I’ve decided to pursue solopreneurship. Drawing on my craftsmanship and software development skills, I’ll build and sell tools based on user needs. Excited for the intimate relationship with development and greater agency over my life. Open to insights from others on this journey.”
-categories: [Solopreneurshil]
-—
+categories: [Solopreneurship]
+---
 
 As many of you may already know, my time at Shopify came to a close after more than 5 years of dedicated work for developers. After overcoming the initial wave of emotions, I viewed this as a golden opportunity to explore new horizons. I applied to various companies, engaged in early conversations, and even reconnected with some incredible former colleagues from Shopify. However, during those initial pre-interview discussions, I realized that those paths didn’t align with my true aspirations. It took deep introspection, but I eventually arrived at a profound realization: I yearn to venture into the world of solopreneurship.
 
