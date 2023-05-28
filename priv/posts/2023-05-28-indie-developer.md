@@ -1,6 +1,6 @@
 ---
 title: Embracing the Journey of an Indie Developer
-description: “After 5 years at Shopify, I’ve decided to pursue solopreneurship. Drawing on my craftsmanship and software development skills, I’ll build and sell tools based on user needs. Excited for the intimate relationship with development and greater agency over my life. Open to insights from others on this journey.”
+description: After 5 years at Shopify, I’ve decided to pursue solopreneurship. Drawing on my craftsmanship and software development skills, I’ll build and sell tools based on user needs. Excited for the intimate relationship with development and greater agency over my life. Open to insights from others on this journey.
 categories: [Indie, Development, Product]
 ---
 
