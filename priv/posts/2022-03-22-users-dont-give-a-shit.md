@@ -1,5 +1,5 @@
 ---
-title: "Users don't give a shit about your web app's portable binary"
+title: "Users don't care about your web app's portable binary"
 categories: ['golang', 'open-source', 'binaries']
 ---
 
