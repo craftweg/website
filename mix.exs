@@ -68,7 +68,7 @@ defmodule Pepicrft.MixProject do
       {:redirect, "~> 0.4.0"},
       {:pandex, "~> 0.2.0"},
       {:phoenix_html_sanitizer, "~> 1.1"},
-      {:image, "~> 0.31.1"},
+      {:image, "~> 0.32.0"},
       {:file_system, "~> 0.2"}
     ]
   end
