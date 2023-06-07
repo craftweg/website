@@ -42,8 +42,8 @@ defmodule Pepicrft.MixProject do
     [
       {:nimble_publisher,
        git: "https://github.com/dashbitco/nimble_publisher",
-       ref: "e431affa0472da21484ed35898b37d46aa6f68b9"},
-       {:phoenix, "~> 1.7.1", override: true},
+       ref: "317d175f490248c0b1a1cdd71a3fe007f97d41f0"},
+      {:phoenix, "~> 1.7.1", override: true},
       {:phoenix_ecto, "~> 4.4"},
       {:yaml_elixir, "~> 2.9.0"},
       {:ecto_sql, "~> 3.6"},
@@ -87,7 +87,12 @@ defmodule Pepicrft.MixProject do
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["esbuild.install --if-missing"],
       "assets.build": ["esbuild default", "phx.gen.open_graph"],
-      "assets.deploy": ["tailwind default --minify", "esbuild default --minify", "phx.digest", "phx.gen.open_graph"]
+      "assets.deploy": [
+        "tailwind default --minify",
+        "esbuild default --minify",
+        "phx.digest",
+        "phx.gen.open_graph"
+      ]
     ]
   end
 end

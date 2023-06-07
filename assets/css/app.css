@@ -40,11 +40,7 @@ pre {
 }
 
 a {
-  @apply text-indigo-700 underline;
-}
-
-strong {
-  @apply font-bold;
+  @apply underline;
 }
 
 .container {
@@ -76,23 +72,27 @@ ul {
 }
 
 .markdown strong {
-  @apply text-black font-bold;
+  @apply text-black font-medium;
 }
 
 .markdown a {
-  @apply underline text-indigo-600 visited:text-indigo-600;
+  @apply underline;
 }
 
 .markdown strong a {
-  @apply font-bold;
+  @apply font-medium;
+}
+
+.markdown h1 {
+  @apply text-lg font-light text-black mb-2 mt-10;
 }
 
 .markdown h2 {
-  @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+  @apply text-base font-light text-black mb-2 mt-10;
 }
 
 .markdown h3 {
-  @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+  @apply text-sm font-medium text-black mt-8 -mb-2;
 }
 
 .markdown code {
@@ -100,7 +100,7 @@ ul {
 }
 
 .markdown pre code {
-  @apply block p-4 rounded;
+  @apply block p-4 rounded text-xs;
 }
 
 .markdown blockquote {
@@ -118,5 +118,5 @@ ul {
 }
 
 code.inline {
-  @apply text-indigo-700 bg-indigo-100 rounded
+  @apply text-gray-700 bg-gray-100 rounded text-xs
 }

@@ -1,12 +1,34 @@
-<div class="flex flex-col gap-y-2">
-  <p><b>Hola 👋.</b></p>
+<section>
+  <div class="mx-auto max-w-7xl px-8">
+    <div class="mx-auto max-w-xl">
+      <div class="text-sm font-light py-12">
+        <p class="text-black dark:text-white">About</p>
+        <div class="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3">
+          <p>
+            For the past ten years, I have been a hands-on and adaptable problem solver, collaborating with start-ups and e-commerce platforms and building open-source solutions like <a href="https://tuist.io" target="_blank">Tuist</a>.
+          </p>
+          <p>
+            My work is trusted by <a target="_blank" href="https://shopify.com">Shopify</a>, <a target="_blank" href="https://americanexpress.com">American Express</a>, <a target="_blank" href="https://soundcloud.com">SoundCloud</a>, <a target="_blank" href="https://shopify.com">Bloomberg</a>, <a target="_blank" href="https://stripe.com" >Stripe</a>, <a target="_blank" href="https://google.com">Google</a>, <a target="_blank" href="https://monday.com">Monday</a>, <a target="_blank" href="https://justeat.com">Just Eat</a>, <a target="_blank" href="https://etsy.com">Etsy</a>, and <a target="_blank" href="https://adidas.com">Adidas</a>.
+          </p>
+          <p>
+            I'm specialized in empowering developers by designing and building tools, libraries, and platforms that are <a href="https://basecamp.com/gettingreal/10.2-optimize-for-happiness" target="_blank">fun to work with</a>. I am also skilled in leading software projects and can
+            manage, mentor, and hire software engineers.
+          </p>
+          <p>
+            If your organization is going through scaling challenges, I can help you with them. <a href="https://cal.com/pepicrft/30-min" target="_blank">Let's chat</a>
+          </p>
+        </div>
+      </div>
 
-  <p>
-    It's <a href="https://twitter.com/pepicrft" target="_blank">Pedro</a>, a software crafter based in Berlin 🇩🇪.
-    Elixir, Ruby, and Typescript are my go-to programming languages.
-  </p>
+      <div class="grid gap-12 md:gap-24 py-12">
+        <div class="text-sm font-light">
+          <p class="text-black dark:text-white">Recent blog posts</p>
 
-  <p>
-    In the past, I worked at <a href="https://8fit.com" target="_blank">8fit</a>,  <a href="https://soundcloud.com" target="_blank">SoundCloud</a>, and most recently at <a href="https://shopify.com" target="_blank">Shopify</a> as a Senior Staff Developer. At Shopify I built and maintaned tools, services, and CI/CD for mobile developers (e.g., <a href="https://shopify.engineering/mobile-release-engineering-scale-shipit-mobile" target="_blank">Shipit Mobile</a>), managed, formed, and grew teams, and overhauled the <a href="https://shopify.engineering/overhauling-shopify-cli-for-a-better-developer-experience" target="_blank">organization's CLI</a> to improve the developer experience. In my spare time, I authored <a href="https://tuist.com" target="_blank">Tuist</a>, a tool for Xcode developers to maintain and scale their projects, and that's used by large organizations such as <a href="https://apps.apple.com/us/app/bloomberg-business-news-daily/id281941097" target="_blank">Bloomberg</a>, <a href="https://apps.apple.com/de/app/amex-deutschland/id560172227" target="_blank">American Express</a>, <a href="https://apps.apple.com/us/app/asana-work-in-one-place/id489969512" target="_blank">Asana</a>, and <a href="https://apps.apple.com/us/app/adidas/id1266591536" target="_blank">Adidas</a>.
-  </p>
-</div>
+          <div class="grid gap-6 mt-3">
+            <.posts_component posts={Pepicrft.Blog.all_posts() |> Enum.take(10)}/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

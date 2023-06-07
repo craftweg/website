@@ -52,6 +52,7 @@ defmodule Pepicrft.Blog.Post do
 
     og_image_slug = "/images/og#{slug}.png"
     og_image_path = Application.app_dir(:pepicrft, "priv/static#{og_image_slug}")
+
     struct!(
       __MODULE__,
       path: path,
@@ -93,10 +94,13 @@ defmodule Pepicrft.Blog.Post do
       </g>
     </svg>
     """
+
     directory = post.og_image_path |> Path.dirname()
+
     if !File.exists?(directory) do
       File.mkdir_p!(directory)
     end
+
     if File.exists?(post.og_image_path) do
       File.rm!(post.og_image_path)
     end

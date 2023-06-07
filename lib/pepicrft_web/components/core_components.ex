@@ -22,59 +22,85 @@ defmodule PepicrftWeb.CoreComponents do
 
     ~H"""
     <%= for post <- assigns.posts() do %>
-      <article class="flex flex-col sm:flex-row font-sans">
-          <div class="flex-1 tracking-tight hover:text-indigo-600">
-              <% post_attributes = %{ href: post.slug } %>
-              <a {post_attributes}><%= post.title  %></a>
-          </div>
-          <% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
-          <div class="text-gray-400 text-sm"><%= time_ago_date %></div>
-      </article>
+      <% {:ok, time_ago_date} =
+        Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
+      <% post_attributes = %{href: post.slug} %>
+
+      <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+        <div>
+          <p class="text-neutral-400 dark:text-neutral-400"><%= time_ago_date %></p>
+        </div>
+        <div class="md:col-span-2 w-full">
+          <p class="text-black dark:text-white">
+            <a
+              {post_attributes}
+              class="underline hover:no-underline duration-200 after:content-['_↗']"
+            >
+              <%= post.title %>
+            </a>
+          </p>
+          <p class=""><%= post.description %></p>
+        </div>
+      </div>
     <% end %>
     """
   end
 
   def meta(assigns) do
     ~H"""
-      <title><%= get_metadata(@conn)[:title] %></title>
-      <meta property="article:published_time" content="2022-09-07T00:00:00+00:00">
-      <meta name="description" content={get_metadata(@conn)[:description]}>
-      <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata).author}>
-
-      <!-- Open graph -->
-      <meta property="og:title" content={get_metadata(@conn)[:title]}>
-      <meta property="og:description" content={get_metadata(@conn)[:description]}>
-      <meta property="og:type" content="article">
-      <meta property="og:site_name" content="Pedro Piñera">
-      <meta property="og:url" content={Phoenix.Controller.current_url(@conn)}>
-      <meta property="og:image" content={image(@conn)}>
-
-
-      <!-- Twitter -->
-      <meta property="twitter:image" content={image(@conn)}>
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content={get_metadata(@conn)[:title]}>
-      <meta name="twitter:description" content={get_metadata(@conn)[:description]}>
-      <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata).twitter_handle}>
-      <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata).domain}>
-      <meta property="twitter:url" content={Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.to_string}>
-
-      <!-- Favicon -->
-      <link rel="shortcut icon"  href={static_asset_url("/favicon.ico")}/>
-      <link rel="apple-touch-icon" sizes="180x180" href={static_asset_url("/favicon/apple-touch-icon.png")}>
-      <link rel="icon" type="image/png" sizes="32x32" href={static_asset_url("/favicon/favicon-32x32.png")}>
-      <link rel="icon" type="image/png" sizes="16x16" href={static_asset_url("/favicon/favicon-16x16.png")}>
-      <link rel="manifest" href={static_asset_url("/favicon/site.webmanifest")}>
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="theme-color" content="#ffffff">
+    <title><%= get_metadata(@conn)[:title] %></title>
+    <meta property="article:published_time" content="2022-09-07T00:00:00+00:00" />
+    <meta name="description" content={get_metadata(@conn)[:description]} />
+    <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata).author} />
+    <!-- Open graph -->
+    <meta property="og:title" content={get_metadata(@conn)[:title]} />
+    <meta property="og:description" content={get_metadata(@conn)[:description]} />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Pedro Piñera" />
+    <meta property="og:url" content={Phoenix.Controller.current_url(@conn)} />
+    <meta property="og:image" content={image(@conn)} />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={get_metadata(@conn)[:title]} />
+    <meta name="twitter:description" content={get_metadata(@conn)[:description]} />
+    <meta name="twitter:image" content={image(@conn)} />
+    <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata).twitter_handle} />
+    <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata).domain} />
+    <meta
+      property="twitter:url"
+      content={Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.to_string()}
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href={static_asset_url("/favicon.ico")} />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href={static_asset_url("/favicon/apple-touch-icon.png")}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href={static_asset_url("/favicon/favicon-32x32.png")}
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href={static_asset_url("/favicon/favicon-16x16.png")}
+    />
+    <link rel="manifest" href={static_asset_url("/favicon/site.webmanifest")} />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     """
   end
 
   def image(conn) do
-    static_asset_url("/images/logo.jpg")
+    metadata_image = get_metadata(conn)[:image]
+    metadata_image || static_asset_url("/images/avatar.jpeg")
   end
 
   defp static_asset_url(path) do
-    Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.merge(path) |> URI.to_string
+    Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.merge(path) |> URI.to_string()
   end
 end

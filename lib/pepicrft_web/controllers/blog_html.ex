@@ -10,11 +10,16 @@ defmodule PepicrftWeb.BlogHTML do
     }
   end
 
-  def metadata(:show, %{post: %{title: title, description: description, og_image_slug: og_image_slug}}) do
+  def metadata(:show, %{
+        post: %{title: title, description: description, og_image_slug: og_image_slug}
+      }) do
     %{
       title: title,
       description: description,
-      image: Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.merge(og_image_slug) |> URI.to_string
+      image:
+        Application.fetch_env!(:pepicrft, :metadata).base_url
+        |> URI.merge(og_image_slug)
+        |> URI.to_string()
     }
   end
 end
