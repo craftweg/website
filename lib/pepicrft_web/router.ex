@@ -31,10 +31,6 @@ defmodule PepicrftWeb.Router do
 
   redirect "/blog/atom.xml", "/blog/feed.xml", :permanent
 
-  for post <- Pepicrft.Blog.all_posts() do
-    redirect(post.old_slug, post.slug, :permanent, preserve_query_string: true)
-  end
-
   # Other scopes may use custom stacks.
   # scope "/api", PepicrftWeb do
   #   pipe_through :api
