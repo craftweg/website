@@ -1,6 +1,6 @@
 ---
 title: Hitting memory limits deploying Vapor apps to Fly
-description: xx
+description: "Deploying a Vapor app to Fly encountered unexpected issues. Swift's linter requires more memory than Fly's 2048 MB limit. Scaling via fly scale didn't solve the problem. Workaround: built locally with Docker, then pushed to Fly's image registry for deployment."
 categories: [Swift, Vapor, Deployments]
 ---
 
