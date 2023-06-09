@@ -72,7 +72,7 @@ ul {
 }
 
 .markdown strong {
-  @apply text-black font-medium;
+  @apply text-black dark:text-white font-medium;
 }
 
 .markdown a {
@@ -118,5 +118,5 @@ ul {
 }
 
 code.inline {
-  @apply text-gray-700 bg-gray-100 rounded text-xs
+  @apply text-gray-700 bg-gray-100 dark:bg-neutral-500 dark:text-gray-300 rounded text-xs
 }
