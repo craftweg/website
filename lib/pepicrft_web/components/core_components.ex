@@ -95,9 +95,9 @@ defmodule PepicrftWeb.CoreComponents do
     """
   end
 
-  def image(conn) do
-    metadata_image = get_metadata(conn)[:image]
-    metadata_image || static_asset_url("/images/avatar.jpeg")
+  def image(_conn) do
+    # metadata_image = get_metadata(conn)[:image]
+    static_asset_url("/images/avatar.jpeg")
   end
 
   defp static_asset_url(path) do
