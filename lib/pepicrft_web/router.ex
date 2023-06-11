@@ -29,8 +29,6 @@ defmodule PepicrftWeb.Router do
     end
   end
 
-  redirect "/blog/atom.xml", "/blog/feed.xml", :permanent
-
   # Other scopes may use custom stacks.
   # scope "/api", PepicrftWeb do
   #   pipe_through :api

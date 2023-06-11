@@ -23,7 +23,7 @@ defmodule Pepicrft.Feed do
       posts
       |> Enum.map(fn post ->
         post_url = %{base_url | path: post.slug} |> URI.to_string()
-        guid = %{base_url | path: post.old_slug} |> URI.to_string()
+        guid = %{base_url | path: post.slug} |> URI.to_string()
         pub_date = post.date |> Timex.to_datetime("Europe/Berlin") |> Timex.format!("{RFC822}")
 
         """

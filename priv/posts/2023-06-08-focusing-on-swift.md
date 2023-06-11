@@ -22,5 +22,5 @@ as someone interested in building products,
 there isn't an ecosystem better than Apple's to stay focused on a problem.
 Apple provides a well-integrated set of tools to be highly productive and plenty of community resources like Swift Packages to help with common problems.
 
-It'll be an effort for me, but I'll park further learning Elixir, Typescript, Javascript, and anything related to the web ecosystem. I'm grateful for everything I've learned from it, but it's time to go back to my routes and **have some fun building apps**.
+It'll be an effort for me, but I'll park further learning Elixir, Typescript, Javascript, and anything related to the web ecosystem. I'm grateful for everything I've learned from it, but it's time to go back to my roots and **have some fun building apps**.
 
