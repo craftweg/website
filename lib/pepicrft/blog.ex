@@ -11,7 +11,6 @@ defmodule Pepicrft.Blog do
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
   @categories @posts |> Enum.flat_map(& &1.categories) |> Enum.uniq() |> Enum.sort()
-  @feed @posts |> Pepicrft.Feed.generate()
 
   @doc """
   The function returns all the Pepicrft.Blog.Post posts.
@@ -22,9 +21,4 @@ defmodule Pepicrft.Blog do
   The function returns all the categories.
   """
   def all_categories, do: @categories
-
-  @doc """
-  The function returns an RSS-formatted feed containing all the blog posts.
-  """
-  def feed, do: @feed
 end
