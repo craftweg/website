@@ -26,17 +26,7 @@ defmodule Pepicrft.Feed do
         guid = %{base_url | path: post.slug} |> URI.to_string()
         pub_date = post.date |> Timex.to_datetime("Europe/Berlin") |> Timex.format!("{RFC822}")
 
-        """
-        <item>
-          <title>#{post.title}</title>
-          <description><![CDATA[#{post.description}]]></description>
-          <author>hola@craftweg.com</author>
-          <pubDate>#{pub_date}</pubDate>
-          <link>#{post_url}</link>
-          <guid>#{guid}</guid>
-          <content><![CDATA[#{post.body}]]></content>
-        </item>
-        """
+        RSS.item(post.title, post.body, pub_date, post_url, guid)
       end)
 
     feed = RSS.feed(channel, items)

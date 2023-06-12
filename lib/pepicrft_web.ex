@@ -80,6 +80,17 @@ defmodule PepicrftWeb do
     end
   end
 
+  def xml do
+    quote do
+      use Phoenix.Component
+
+      import Phoenix.HTML
+
+      # Include general helpers for rendering HTML
+      unquote(html_helpers())
+    end
+  end
+
   defp html_helpers do
     quote do
       # HTML escaping functionality

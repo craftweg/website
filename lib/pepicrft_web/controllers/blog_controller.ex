@@ -14,6 +14,6 @@ defmodule PepicrftWeb.BlogController do
   def feed(conn, _) do
     conn
     |> put_resp_content_type("text/xml")
-    |> send_resp(200, Pepicrft.Blog.feed())
+    |> render("feed.xml",  layout: false)
   end
 end
