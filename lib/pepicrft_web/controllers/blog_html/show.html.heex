@@ -2,15 +2,15 @@
   <div class="mx-auto max-w-xl">
     <div class="flex flex-col gap-y-5">
       <header>
-        <h1 class="text-lg font-light mb-0"><%= @post.title %></h1>
+        <h1 class="text-lg font-normal mb-0"><%= @post.title %></h1>
         <div class="space-x-2">
-          <span class="text-xs text-gray-400 font-light" :for={category <- (@post.categories |> Enum.map(fn string -> String.capitalize(string) end) )}>
+          <span class="text-xs text-gray-400 font-normal" :for={category <- (@post.categories |> Enum.map(fn string -> String.capitalize(string) end) )}>
             <%= category %>
           </span>
           <%=  %>
         </div>
       </header>
-      <main class="markdown text-neutral-500 dark:text-neutral-400 space-y-3 mt-3 text-sm font-light">
+      <main class="markdown text-neutral-500 dark:text-neutral-400 space-y-3 mt-3 text-sm font-normal">
         <%= raw @post.body %>
       </main>
     </div>
