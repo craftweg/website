@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><%= @title %></title>
+  <description><%= @description %></description>
+  <icon><%= URI.merge(URI.parse(@base_url), "/images/avatar.jpeg") |> to_string() %></icon>
+  <link href="<%= URI.merge(URI.parse(@base_url), ~p"/") |> to_string() %>" />
+  <link href="<%= URI.merge(URI.parse(@base_url), ~p"/blog/feed.xml") |> to_string() %>" rel="self" />
+  <updated><%= @last_build_date |> to_rfc3339 %></updated>
+  <author>
+    <name>Pedro Piñera</name>
+    <email>hola@pepicrft.me</email>
+  </author>
+  <id><%= URI.merge(URI.parse(@base_url), ~p"/") |> to_string() %></id>
+  <%= for post <- @posts do %>
+    <entry>
+      <title><%= post.title %></title>
+      <link href="<%= URI.merge(URI.parse(@base_url), post.slug) |> to_string() %>" />
+      <id><%= URI.merge(URI.parse(@base_url), post.slug) |> to_string() %></id>
+      <published><%= post.date |> to_rfc3339 %></published>
+      <updated><%= post.date |> to_rfc3339 %></updated>
+      <content type="html"><![CDATA[<%= post.body %>]]></title>
+      <summary><![CDATA[<%= post.description %>]]></summary>
+    </entry>
+    <% end %>
+</feed>

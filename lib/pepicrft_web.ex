@@ -17,6 +17,7 @@ defmodule PepicrftWeb do
   those modules here.
   """
 
+  @spec static_paths :: [<<_::32, _::_*8>>, ...]
   def static_paths, do: ~w(assets pdfs fonts images favicon.ico robots.txt)
 
   def router do
@@ -40,7 +41,7 @@ defmodule PepicrftWeb do
     quote do
       use Phoenix.Controller,
         namespace: PepicrftWeb,
-        formats: [:html, :json],
+        formats: [:html, :json, :xml],
         layouts: [html: PepicrftWeb.Layouts]
 
       import Plug.Conn

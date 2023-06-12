@@ -1,10 +1,9 @@
 defmodule PepicrftWeb.Router do
-  import Redirect
-
+  alias PepicrftWeb.RSSController
   use PepicrftWeb, :router
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, ["html", "xml"]
     plug :fetch_session
     plug :fetch_live_flash
     plug :put_root_layout, {PepicrftWeb.Layouts, :root}
@@ -16,17 +15,26 @@ defmodule PepicrftWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :xml do
+    plug :accepts, ["xml"]
+  end
+
   scope "/", PepicrftWeb do
     pipe_through :browser
 
     get "/", HomeController, :index
     get "/blog", BlogController, :index
     get "/blog/:year/:month/:day/:title", BlogController, :show
-    get "/blog/feed.xml", BlogController, :feed
 
     for page <- Pepicrft.Pages.all_pages() do
       get page.slug, PageController, :show, as: page.identifier
     end
+  end
+
+  scope "/", PepicrftWeb do
+    pipe_through :xml
+
+    get "/blog/feed.xml", FeedController, :blog
   end
 
   # Other scopes may use custom stacks.
