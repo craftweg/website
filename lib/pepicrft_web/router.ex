@@ -1,5 +1,4 @@
 defmodule PepicrftWeb.Router do
-  alias PepicrftWeb.RSSController
   use PepicrftWeb, :router
 
   pipeline :browser do

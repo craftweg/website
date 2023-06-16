@@ -1,31 +1,50 @@
 <section>
   <div class="mx-auto max-w-7xl px-8">
     <div class="mx-auto max-w-xl">
-      <div class="text-sm font-normal py-12">
-        <p class="text-black dark:text-white">About</p>
-        <div class="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3">
+      <div class="text-base font-normal py-12">
+        <p class="text-black dark:text-white font-bold text-lg" id="about">
+          <a href="#about" class="no-underline">About</a>
+        </p>
+        <div class="dark:text-neutral-400 space-y-3 mt-3">
+          <p>
+          Hola 👋,
+          </p>
+          <p>
+          I'm a Berlin-based software crafter with a passion for open source and developer tooling.
+          </p>
           <p>
             For the past ten years, I have been a hands-on and adaptable problem solver, collaborating with start-ups and e-commerce platforms and building open-source solutions like <a href="https://tuist.io" target="_blank">Tuist</a>.
           </p>
           <p>
             My work is trusted by <a target="_blank" href="https://shopify.com">Shopify</a>, <a target="_blank" href="https://americanexpress.com">American Express</a>, <a target="_blank" href="https://soundcloud.com">SoundCloud</a>, <a target="_blank" href="https://shopify.com">Bloomberg</a>, <a target="_blank" href="https://stripe.com" >Stripe</a>, <a target="_blank" href="https://google.com">Google</a>, <a target="_blank" href="https://monday.com">Monday</a>, <a target="_blank" href="https://justeat.com">Just Eat</a>, <a target="_blank" href="https://etsy.com">Etsy</a>, and <a target="_blank" href="https://adidas.com">Adidas</a>.
           </p>
-          <p>
-            I'm specialized in empowering developers by designing and building tools, libraries, and platforms that are <a href="https://basecamp.com/gettingreal/10.2-optimize-for-happiness" target="_blank">fun to work with</a>. I am also skilled in leading software projects and can
-            manage, mentor, and hire software engineers.
+        </div>
+      </div>
+
+      <div class="text-base font-normal">
+        <div class="dark:text-neutral-400 space-y-3 mt-3">
+          <p class="text-black dark:text-white font-bold text-lg">
+            <a href="https://cal.com/pepicrft/30-min" class="no-underline">Consulting</a>
           </p>
-          <p>
-            If your organization is going through scaling challenges, I can help you with them. <a href="https://cal.com/pepicrft/30-min" target="_blank">Let's chat</a>
-          </p>
+          <p>Ready to level up your organization? As a consultant, I&#39;m here to tackle the following challenges and address your unique needs:</p>
+          <ul>
+          <li><strong>Developer productivity auditing and improvements:</strong> I&#39;ll assess your team&#39;s workflows and tools, identify areas for enhancement, and create a comprehensive plan to address any issues. I&#39;ll also implement safeguards to prevent regression.</li>
+          <li><strong><a href="https://tuist.io">Tuist</a> adoption:</strong> As the creator and maintainer of Tuist, I am your go-to expert for adopting the tool and ensuring your Xcode projects are optimized for cleanliness, performance, and ease of use. Let me guide you towards tidy, efficient, and highly manageable project structures that will elevate your development experience.</li>
+          <li><strong>Developer platform experience:</strong> While many developer platforms prioritize APIs and extensive capabilities, the developer experience is equally crucial but often overlooked. I specialize in crafting exceptional developer experiences, ensuring that every piece necessary to bring it to life is developed with precision. Let me help you create an outstanding developer journey that sets your platform apart.</li>
+          <li><strong>Code and project auditing and improvements:</strong> Drawing from my experience working on large-scale projects, I can help you create a future-proof codebase that aligns with your present and future business requirements. Neglecting these crucial aspects often results in projects that are less enjoyable to work with. Let&#39;s collaborate to ensure your codebase is not only robust but also a pleasure to work on.</li>
+          </ul>
+          <p>If any of these challenges resonate with your organization or if you simply want my expertise, <a href="https://cal.com/pepicrft/30-min" target="_blank">let&#39;s connect for a chat</a>. I&#39;m here to help you unlock your full potential.</p>
         </div>
       </div>
 
       <div class="grid gap-12 md:gap-24 py-12">
-        <div class="text-sm font-normal">
-          <p class="text-black dark:text-white">Recent blog posts</p>
+        <div class="text-base font-normal">
+          <p class="text-black dark:text-white font-bold text-lg" id="recent-blog-posts">
+            <a href="#recent-blog-posts" class="no-underline">Recent blog posts</a>
+          </p>
 
           <div class="grid gap-6 mt-3">
-            <.posts_component posts={Pepicrft.Blog.all_posts() |> Enum.take(10)}/>
+            <.posts_component posts={Pepicrft.Blog.all_posts() |> Enum.take(3)}/>
           </div>
         </div>
       </div>

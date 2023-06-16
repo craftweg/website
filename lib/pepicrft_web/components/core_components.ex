@@ -26,9 +26,9 @@ defmodule PepicrftWeb.CoreComponents do
         Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
       <% post_attributes = %{href: post.slug} %>
 
-      <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+      <div class="text-neutral-600  items-start grid grid-cols-1 md:grid-cols-3">
         <div>
-          <p class="text-neutral-400 dark:text-neutral-400"><%= time_ago_date %></p>
+          <p class="text-neutral-400 dark:text-neutral-500"><%= time_ago_date %></p>
         </div>
         <div class="md:col-span-2 w-full">
           <p class="text-black dark:text-white">
@@ -39,7 +39,7 @@ defmodule PepicrftWeb.CoreComponents do
               <%= post.title %>
             </a>
           </p>
-          <p class=""><%= post.description %></p>
+          <p class="dark:text-neutral-400"><%= post.description %></p>
         </div>
       </div>
     <% end %>

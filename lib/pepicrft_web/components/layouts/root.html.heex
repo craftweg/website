@@ -29,18 +29,17 @@
             <div class="md:flex md:items-center md:justify-between md:space-x-5">
               <div class="flex items-center space-x-5">
                 <div class="flex-shrink-0">
-                                    <a href="/">
-
-                  <div class="relative">
-                      <img
-                        class="h-16 w-16 lg:h-20 lg:w-20 rounded-full border border-white/10"
-                        src="/images/avatar.jpeg"
-                        alt="image"
-                      />
-                    <span
-                      class="absolute inset-0 rounded-full shadow-inner"
-                      aria-hidden="true"></span>
-                  </div>
+                  <a href="/">
+                    <div class="relative">
+                        <img
+                          class="h-16 w-16 lg:h-20 lg:w-20 rounded-full border border-white/10"
+                          src="https://gravatar.com/avatar/978dc676705e45bbf504152a516afb36?s=400&d=robohash&r=x"
+                          alt="Pedro's avatar"
+                        />
+                      <span
+                        class="absolute inset-0 rounded-full shadow-inner"
+                        aria-hidden="true"></span>
+                    </div>
                   </a>
                 </div>
 
@@ -48,16 +47,20 @@
                   <h1 class="text-base mb-0 mt-0 lg:text-xl text-black dark:text-white">
                     <a href="/" class="no-underline">Pedro Piñera Buendía</a>
                   </h1>
-                  <p class="text-sm font-normal text-neutral-500">
+                  <p class="text-base font-normal text-neutral-500">
                     Software crafter in Berlin
                   </p>
                   <div class="mt-3 flex flex-row space-x-5">
                     <a
-                      class="text-xs underline hover:no-underline duration-200 dark:text-white"
+                      class="text-base underline hover:no-underline duration-200 dark:text-white"
+                      href={~p"/"}>Home</a>
+
+                    <a
+                      class="text-base underline hover:no-underline duration-200 dark:text-white"
                       href={~p"/blog"}>Blog</a>
 
                     <a
-                      class="text-xs underline hover:no-underline duration-200 dark:text-white"
+                      class="text-base underline hover:no-underline duration-200 dark:text-white"
                       href={~p"/blog/feed.xml"}>RSS</a>
                   </div>
                 </div>
@@ -76,13 +79,15 @@
       <div class="pb-16 mx-0 px-8 sm:max-w-4xl sm:mx-auto">
         <div class="mx-auto max-w-xl">
 
-      <div class="text-sm font-normal">
-        <p class="text-black dark:text-white">Contact</p>
+      <div class="text-base font-normal">
+        <p class="text-black dark:text-white font-bold text-lg" id="contact">
+          <a href="#contact" class="no-underline">Contact</a>
+        </p>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">Email</p>
+              <p class="dark:text-neutral-400">Email</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
@@ -98,9 +103,9 @@
         </div>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">Twitter</p>
+              <p class="dark:text-neutral-400">Twitter</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
@@ -116,9 +121,9 @@
         </div>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">Read CV</p>
+              <p class="dark:text-neutral-400">Read CV</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
@@ -134,9 +139,9 @@
         </div>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">GitHub</p>
+              <p class="dark:text-neutral-400">GitHub</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
@@ -152,9 +157,9 @@
         </div>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">Mastodon</p>
+              <p class="dark:text-neutral-400">Mastodon</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
@@ -170,9 +175,9 @@
         </div>
 
         <div class="grid gap-6 mt-3">
-          <div class="text-neutral-500  items-start grid grid-cols-1 md:grid-cols-3">
+          <div class="items-start grid grid-cols-1 md:grid-cols-3">
             <div>
-              <p class="text-neutral-400 dark:text-neutral-400">LinkedIn</p>
+              <p class="dark:text-neutral-400">LinkedIn</p>
             </div>
             <div class="md:col-span-2 w-full">
               <p class="text-black dark:text-white">
