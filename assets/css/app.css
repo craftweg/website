@@ -35,9 +35,6 @@ h6 {
   letter-spacing: 0;
   line-height: 1.2;
 }
-pre {
-  padding: 1em;
-}
 
 a {
   @apply underline;
@@ -72,7 +69,7 @@ ul {
 }
 
 .markdown strong {
-  @apply text-black dark:text-white font-medium;
+  @apply text-black dark:text-white font-semibold;
 }
 
 .markdown a {
@@ -80,27 +77,23 @@ ul {
 }
 
 .markdown strong a {
-  @apply font-medium;
+  @apply font-semibold;
 }
 
 .markdown h1 {
-  @apply text-lg font-normal text-black mb-2 mt-10;
+  @apply text-xl font-bold text-black mb-2 mt-10;
 }
 
 .markdown h2 {
-  @apply text-base font-normal text-black mb-2 mt-10;
+  @apply text-base font-bold text-black mb-2 mt-10;
 }
 
 .markdown h3 {
+  @apply text-base font-semibold text-black mt-8 -mb-2;
+}
+
+.markdown h4 {
   @apply text-base font-medium text-black mt-8 -mb-2;
-}
-
-.markdown code {
-  @apply font-mono text-base inline px-1;
-}
-
-.markdown pre code {
-  @apply block p-4 rounded text-xs;
 }
 
 .markdown blockquote {
@@ -115,6 +108,18 @@ ul {
 .markdown ol {
   @apply pl-5;
   @apply sm:pl-10;
+}
+
+.markdown pre code {
+  @apply block p-4 rounded text-xs;
+}
+
+.markdown code {
+  @apply font-mono text-base inline px-1;
+}
+
+.markdown pre {
+  @apply my-10 !important;
 }
 
 code.inline {
