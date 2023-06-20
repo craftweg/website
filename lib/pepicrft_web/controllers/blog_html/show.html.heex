@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-xl">
     <div class="flex flex-col gap-y-5">
       <header>
-        <h1 class="text-lg font-normal mb-0 text-xl font-bold"><%= @post.title %></h1>
+        <h1 class="mb-0 text-xl font-bold"><%= @post.title %></h1>
         <div class="space-x-2">
           <span class="text-sm text-neutral-400 font-normal" :for={category <- (@post.categories |> Enum.map(fn string -> String.capitalize(string) end) )}>
             <%= category %>
