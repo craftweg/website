@@ -13,7 +13,7 @@ defmodule Pepicrft.OpenGraph do
     {:ok, %{watcher_pid: watcher_pid}}
   end
 
-  def handle_info({:file_event, watcher_pid, {path, events}}, %{watcher_pid: watcher_pid} = state) do
+  def handle_info({:file_event, watcher_pid, {path, _events}}, %{watcher_pid: watcher_pid} = state) do
     IO.puts("File changed: #{path}")
     {:noreply, state}
   end
