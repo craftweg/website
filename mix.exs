@@ -60,7 +60,7 @@ defmodule Pepicrft.MixProject do
       {:gettext, "~> 0.22"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:ex_doc, "~> 0.29", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.30", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:rss, "~> 0.2.1"},
