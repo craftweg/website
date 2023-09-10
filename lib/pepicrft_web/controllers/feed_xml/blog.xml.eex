@@ -18,7 +18,7 @@
       <id><%= URI.merge(URI.parse(@base_url), post.slug) |> to_string() %></id>
       <published><%= post.date |> to_rfc3339 %></published>
       <updated><%= post.date |> to_rfc3339 %></updated>
-      <content type="html"><![CDATA[<%= post.body <> "\n#{just_for_fun_sign_up_html_footer()}" %>]]></title>
+      <content type="html"><![CDATA[<%= post.body %>]]></title>
       <summary><![CDATA[<%= post.description %>]]></summary>
     </entry>
     <% end %>
