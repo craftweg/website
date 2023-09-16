@@ -16,7 +16,6 @@ defmodule Pepicrft.Application do
       {Phoenix.PubSub, name: Pepicrft.PubSub},
       # Start the Endpoint (http/https)
       PepicrftWeb.Endpoint,
-      {PlugAttack.Storage.Ets, name: PepicrftWeb.Plugs.AttackPlug.Storage, clean_period: 60_000}
       # Start a worker by calling: Pepicrft.Worker.start_link(arg)
       # {Pepicrft.Worker, arg}
     ]

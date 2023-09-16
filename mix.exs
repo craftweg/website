@@ -69,8 +69,7 @@ defmodule Pepicrft.MixProject do
       {:phoenix_html_sanitizer, "~> 1.1"},
       {:image, "~> 0.38.0"},
       {:file_system, "~> 0.2"},
-      {:remote_ip, "~> 1.1"},
-      {:plug_attack, "~> 0.4.2"}
+      {:remote_ip, "~> 1.1"}
     ]
   end
 

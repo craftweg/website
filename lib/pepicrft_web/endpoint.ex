@@ -47,7 +47,6 @@ defmodule PepicrftWeb.Endpoint do
   plug Plug.Head
   plug Plug.Session, @session_options
 
-  plug PepicrftWeb.Plugs.AttackPlug
   plug RemoteIp
 
   plug PepicrftWeb.Router
