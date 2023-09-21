@@ -59,7 +59,7 @@ end
 
 Notice how much more concise and ergonomic the code has become. I chose to prioritize convention over configuration, thereby standardizing the naming of child modules and the keys within the application environment.
 
-For those who use Mox for mock definitions, you can easily set a mock like so:
+For those who use [Mox](https://github.com/dashbitco/mox) or [Hammox](https://github.com/msz/hammox) for mock definitions, you can easily set a mock like so:
 
 ```language-elixir
 Mox.defmock(MyModule.mock_module(), for: MyModule.behaviour_module())
