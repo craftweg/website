@@ -1,5 +1,5 @@
 ---
-title: "Exploring Mocking Solutions in Elixir: Introducing `application_module`"
+title: "Exploring Mocking Solutions in Elixir: Introducing application_module"
 description: "Exploring Elixir's Mox for mocking reveals boilerplate code issues. A new package, application_module, aims to streamline this process."
 categories: ['Elixir', 'Testing', 'Mocking']
 ---
@@ -8,7 +8,7 @@ I've recently delved into the world of mocking in Elixir and have been particula
 
 Take, for example, the typical module structure in such a setup:
 
-```elixir
+```language-elixir
 defmodule MyModule do
   @behaviour __MODULE__.Behaviour
 
@@ -41,7 +41,7 @@ In this example, `MyModule` serves as a facade that selects an appropriate modul
 
 To tackle these challenges and experiment with Elixir macros, I created a new package for the Elixir ecosystem named [`application_module`](https://hex.pm/packages/application_module). With this package, the previous example can be refactored as follows:
 
-```elixir
+```language-elixir
 defmodule MyModule do
   use Application.Module
 
@@ -61,7 +61,7 @@ Notice how much more concise and ergonomic the code has become. I chose to prior
 
 For those who use Mox for mock definitions, you can easily set a mock like so:
 
-```elixir
+```language-elixir
 Mox.defmock(MyModule.mock_module(), for: MyModule.behaviour_module())
 MyModule.put_application_module(MyModule.mock_module())
 ```
