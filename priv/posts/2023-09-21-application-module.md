@@ -62,8 +62,10 @@ Notice how much more concise and ergonomic the code has become. I chose to prior
 For those who use [Mox](https://github.com/dashbitco/mox) or [Hammox](https://github.com/msz/hammox) for mock definitions, you can easily set a mock like so:
 
 ```language-elixir
-Mox.defmock(MyModule.mock_module(), for: MyModule.behaviour_module())
-MyModule.put_application_env_module(MyModule.mock_module())
+// test_helper.exs
+
+Mox.defmock(MyApplication.Module.mock_module(), for: MyApplication.Module.behaviour_module())
+MyApplication.Module.put_application_env_module(MyApplication.Module.mock_module())
 ```
 
 I'd love to hear any feedback on the implementation or the API design. This is my inaugural venture into Elixir macros, and the journey has been both rewarding and a process of trial and error.
