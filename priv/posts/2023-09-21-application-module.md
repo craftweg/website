@@ -62,7 +62,7 @@ Notice how much more concise and ergonomic the code has become. I chose to prior
 For those who use [Mox](https://github.com/dashbitco/mox) or [Hammox](https://github.com/msz/hammox) for mock definitions, you can easily set a mock like so:
 
 ```language-elixir
-// test_helper.exs
+# test_helper.exs
 
 Mox.defmock(MyApplication.Module.mock_module(), for: MyApplication.Module.behaviour_module())
 MyApplication.Module.put_application_env_module(MyApplication.Module.mock_module())

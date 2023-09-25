@@ -4,9 +4,6 @@ description: "From its inception in 2018, Tuist has grown through passion and de
 categories: ['Software craftsmanship', 'Tuist', 'Project evolution']
 ---
 
-> This post was originally shared in my newsletter [Just for fun](https://pepicrft.ck.page/justforfun
-).
-
 If you've journeyed with me from the onset, you'll recall the birth of [Tuist](https://tuist.io/) and how I've nurtured it through thick and thin. Since its inception in 2018, we've navigated tumultuous waters, including those frenzied days at my previous job. Today, allow me to pull back the curtain, recounting our **adventures, triumphs, and the promising horizon ahead.**
 
 For newcomers, here's a quick sketch: Tuist began as a beacon for developers crafting apps for Apple's platforms using Xcode. It sprung from a desire to simplify and enhance [Xcode](https://developer.apple.com/xcode/) project scalability. Today, it's not just a tool; it's a foundation. While I had dabbled in open source before, Tuist eclipsed them all in popularity. *So, what made Tuist stand out?*

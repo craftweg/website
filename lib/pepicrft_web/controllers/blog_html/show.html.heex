@@ -1,18 +1,16 @@
-<div class="mx-auto max-w-7xl px-8 py-12 text-black dark:text-white">
-  <div class="mx-auto max-w-xl">
-    <div class="flex flex-col gap-y-5">
-      <header>
-        <h1 class="mb-0 text-xl font-bold"><%= @post.title %></h1>
-        <div class="space-x-2">
-          <span class="text-sm text-neutral-400 font-normal" :for={category <- (@post.categories |> Enum.map(fn string -> String.capitalize(string) end) )}>
-            <%= category %>
-          </span>
-          <%=  %>
-        </div>
-      </header>
-      <main class="markdown dark:text-neutral-400 mt-3 text-base font-normal">
-        <%= raw @post.body %>
-      </main>
-    </div>
+<div class="py-12 text-black dark:text-white">
+  <div class="flex flex-col gap-y-5">
+    <header>
+      <h1 class="mb-0"><%= @post.title %></h1>
+      <div class="space-x-1">
+        <span class="text-base text-sky-800 font-normal">
+        <%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
+        </span>
+        <%=  %>
+      </div>
+    </header>
+    <main class="markdown dark:text-neutral-400 mt-3 text-base font-normal">
+      <%= raw @post.body %>
+    </main>
   </div>
 </div>

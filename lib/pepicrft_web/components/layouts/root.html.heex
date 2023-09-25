@@ -8,6 +8,10 @@
     <link phx-track-static rel="stylesheet" href="/assets/app.css"/>
     <script defer phx-track-static type="text/javascript" src="/assets/app.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- Meta -->
     <.meta conn={@conn}/>
 
@@ -30,10 +34,9 @@
     gtag('config', 'G-QTE1H0LRJ0');
   </script>
 
-  <body class="bg-white dark:bg-black">
-    <section>
-      <div class="md:pt-5 pt-10 mx-0 px-8 sm:max-w-4xl sm:mx-auto">
-        <div class="mx-auto max-w-xl">
+  <body class="bg-neutral-100 dark:bg-slate-900 px-5 sm:max-w-3xl sm:mx-auto">
+    <header>
+      <div class="md:pt-5 pt-10">
           <div>
             <div class="md:flex md:items-center md:justify-between md:space-x-5">
               <div class="flex items-center flex-col md:flex-row md:items-center md:space-x-5">
@@ -50,13 +53,13 @@
                 </div>
 
                 <div class="pt-5 md:pt-1">
-                  <h1 class="text-center text-base mb-0 mt-0 md:text-left lg:text-xl text-black dark:text-white">
+                  <h1 class="text-center text-base mb-0 mt-0 md:text-left lg:text-xl text-sky-700 dark:text-white">
                     <a href="/" class="no-underline">Pedro Piñera Buendía</a>
                   </h1>
-                  <p class="text-center text-base font-normal text-neutral-500 md:text-left">
+                  <p class="text-center text-base font-normal text-neutral-500 dark:text-sky-500 md:text-left">
                     Software crafter and entrepreneur
                   </p>
-                  <div class="mt-3 flex flex-row space-x-5">
+                  <div class="mt-3 flex flex-row space-x-5 justify-center md:justify-start">
                     <a
                       class="text-base underline hover:no-underline duration-200 dark:text-white"
                       href={~p"/blog"}>Blog</a>
@@ -65,162 +68,154 @@
                       class="text-base underline hover:no-underline duration-200 dark:text-white"
                       href={~p"/blog/feed.xml"}>RSS</a>
 
-                    <a
-                      class="text-base underline hover:no-underline duration-200 dark:text-white"
-                      href={~p"/projects"}>Projects</a>
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </section>
+    </header>
 
-    <main class="py-4 leading-8 mx-0 px-0 md:px-8 sm:max-w-4xl sm:mx-auto">
+    <main class="leading-8 mx-0">
       <%= @inner_content %>
     </main>
 
-    <section>
-      <div class="pb-16 mx-0 px-8 sm:max-w-4xl sm:mx-auto">
-        <div class="mx-auto max-w-xl">
+    <footer class="mt-10">
+      <div class="pb-16">
+          <div>
+            <h2 id="contact">
+              <a href="#contact" class="no-underline">Contact</a>
+            </h2>
 
-      <div class="text-base font-normal">
-        <p class="text-black dark:text-white font-bold text-lg" id="contact">
-          <a href="#contact" class="no-underline">Contact</a>
-        </p>
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">Email</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="mailto:hola@pepicrft.me"
+                      title="Email"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      hola@pepicrft.me
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">Email</p>
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">Twitter</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="https://twitter.com/pepicrft"
+                      title="Twitter"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      pepicrft
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="mailto:hola@pepicrft.me"
-                  title="Email"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  hola@pepicrft.me
-                </a>
-              </p>
+
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">Read CV</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="/pdfs/CV.pdf"
+                      title="CV"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      CV.pdf
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
+
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">GitHub</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="https://github.com/pepicrft"
+                      title="GitHub"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      github.com/pepicrft
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">Mastodon</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="https://mastodon.social/@pepicrft"
+                      title="Mastodon"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      @pepicrft@mastodon.social
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">Pixelfed</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="https://pixelfed.social/pepicrft"
+                      title="Pixelfed"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      @pepicrft@pixelfed.social
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-6 mt-3">
+              <div class="items-start grid grid-cols-1 md:grid-cols-3">
+                <div>
+                  <p class="dark:text-neutral-400 font-bold sm:font-normal">LinkedIn</p>
+                </div>
+                <div class="md:col-span-2 w-full">
+                  <p class="text-black dark:text-white">
+                    <a
+                      href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/"
+                      title="LinkedIn"
+                      class="underline hover:no-underline duration-200 after:content-['_↗']">
+                      Pedro Piñera
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">Twitter</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="https://twitter.com/pepicrft"
-                  title="Twitter"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  pepicrft
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">Read CV</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="/pdfs/CV.pdf"
-                  title="CV"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  CV.pdf
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">GitHub</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="https://github.com/pepicrft"
-                  title="GitHub"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  github.com/pepicrft
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">Mastodon</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="https://mastodon.social/@pepicrft"
-                  title="Mastodon"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  @pepicrft@mastodon.social
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">Pixelfed</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="https://pixelfed.social/pepicrft"
-                  title="Pixelfed"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  @pepicrft@pixelfed.social
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 mt-3">
-          <div class="items-start grid grid-cols-1 md:grid-cols-3">
-            <div>
-              <p class="dark:text-neutral-400">LinkedIn</p>
-            </div>
-            <div class="md:col-span-2 w-full">
-              <p class="text-black dark:text-white">
-                <a
-                  href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/"
-                  title="LinkedIn"
-                  class="underline hover:no-underline duration-200 after:content-['_↗']">
-                  Pedro Piñera
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
-        </div>
-      </div>
-    </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>

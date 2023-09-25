@@ -28,7 +28,7 @@ defmodule PepicrftWeb.CoreComponents do
 
       <div class="text-neutral-600  items-start grid grid-cols-1 md:grid-cols-3">
         <div>
-          <p class="text-neutral-400 dark:text-neutral-500"><%= time_ago_date %></p>
+          <p class="text-neutral-600 dark:text-neutral-500"><%= time_ago_date %></p>
         </div>
         <div class="md:col-span-2 w-full">
           <p class="text-black dark:text-white">

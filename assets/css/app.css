@@ -3,33 +3,47 @@
 @tailwind utilities;
 
 :root {
-  @apply text-gray-800;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @apply font-sans;
+  @apply text-gray-800 dark:text-gray-900;
+  @apply font-serif;
+  @apply text-base;
+  @apply sm:text-xl;
 }
 
 h1 {
-  @apply text-3xl;
-  @apply my-6
-}
-h2 {
-  @apply text-2xl;
-  @apply my-5;
-}
-h3 {
   @apply text-xl;
-  @apply my-4;
+  @apply sm:text-3xl;
+  @apply my-6;
+  @apply font-bold;
+  @apply text-black dark:text-white;
 }
+
+h2 {
+  @apply text-lg;
+  @apply sm:text-2xl;
+  @apply my-5;
+  @apply font-bold;
+  @apply text-black dark:text-white;
+}
+
+h3 {
+  @apply text-lg;
+  @apply sm:text-xl;
+  @apply my-4;
+  @apply text-black dark:text-white;
+}
+
 h4 {
   @apply text-xl;
   @apply my-3;
+  @apply text-black dark:text-white;
 }
+
 h5 {
   @apply text-lg;
   @apply my-3;
+  @apply text-black dark:text-white;
 }
+
 h6 {
   font-size: 1.4rem;
   letter-spacing: 0;
@@ -38,6 +52,7 @@ h6 {
 
 a {
   @apply underline;
+  @apply hover:underline;
 }
 
 .container {
@@ -111,11 +126,12 @@ ul {
 }
 
 .markdown pre code {
-  @apply block p-4 rounded text-xs;
+  @apply block p-4 rounded;
+  @apply text-xs;
 }
 
 .markdown code {
-  @apply font-mono text-base inline px-1;
+  @apply font-mono inline px-1;
 }
 
 .markdown pre {
@@ -123,5 +139,5 @@ ul {
 }
 
 code.inline {
-  @apply text-gray-700 bg-gray-100 dark:bg-neutral-500 dark:text-gray-300 rounded text-xs
+  @apply text-gray-700 bg-gray-100 dark:bg-sky-900 dark:text-sky-300 rounded text-xs;
 }

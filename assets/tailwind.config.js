@@ -102,7 +102,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-
+        serif: ['PT Serif', ...defaultTheme.fontFamily.serif],
       },
     },
   },
