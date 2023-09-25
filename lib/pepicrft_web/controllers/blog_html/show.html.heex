@@ -3,13 +3,13 @@
     <header>
       <h1 class="mb-0"><%= @post.title %></h1>
       <div class="space-x-1">
-        <span class="text-base text-sky-800 font-normal">
+        <span class="text-base text-sky-600 font-normal">
         <%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
         </span>
         <%=  %>
       </div>
     </header>
-    <main class="markdown dark:text-neutral-400 mt-3 text-base font-normal">
+    <main class="markdown mt-3 text-base font-normal">
       <%= raw @post.body %>
     </main>
   </div>

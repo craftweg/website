@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  @apply text-gray-800 dark:text-gray-900;
+  @apply text-gray-800 dark:text-sky-200;
   @apply font-serif;
   @apply text-base;
   @apply sm:text-xl;
@@ -139,5 +139,5 @@ ul {
 }
 
 code.inline {
-  @apply text-gray-700 bg-gray-100 dark:bg-sky-900 dark:text-sky-300 rounded text-xs;
+  @apply text-sky-800 bg-sky-200 dark:bg-sky-900 dark:text-sky-300 rounded text-xs;
 }
