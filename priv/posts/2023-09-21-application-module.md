@@ -1,6 +1,6 @@
 ---
-title: "Exploring Mocking Solutions in Elixir: Introducing application_module"
-description: "Exploring Elixir's Mox for mocking reveals boilerplate code issues. A new package, application_module, aims to streamline this process."
+title: "Exploring Mocking Solutions in Elixir: Introducing Modulex"
+description: "Exploring Elixir's Mox for mocking reveals boilerplate code issues. A new package, modulex, aims to streamline this process."
 categories: ['Elixir', 'Testing', 'Mocking']
 ---
 
@@ -39,7 +39,7 @@ In this example, `MyModule` serves as a facade that selects an appropriate modul
 - Boilerplate code that acts as a proxy to the underlying implementation could be automatically generated.
 - The method `application_env_module` and related naming conventions can become inconsistent across the codebase.
 
-To tackle these challenges and experiment with Elixir macros, I created a new package for the Elixir ecosystem named [`application_module`](https://hex.pm/packages/application_module). With this package, the previous example can be refactored as follows:
+To tackle these challenges and experiment with Elixir macros, I created a new package for the Elixir ecosystem named [`modulex`](https://hex.pm/packages/modulex). With this package, the previous example can be refactored as follows:
 
 ```language-elixir
 defmodule MyModule do
