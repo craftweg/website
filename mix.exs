@@ -63,7 +63,6 @@ defmodule Pepicrft.MixProject do
       {:ex_doc, "~> 0.30", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
-      {:rss, "~> 0.2.1"},
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
       {:phoenix_html_sanitizer, "~> 1.1"},
