@@ -1,3 +1,5 @@
+Code.compiler_options(on_undefined_variable: :warn)
+
 defmodule Pepicrft.MixProject do
   use Mix.Project
 
@@ -48,7 +50,7 @@ defmodule Pepicrft.MixProject do
       {:yaml_elixir, "~> 2.9.0"},
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 3.3"},
+      {:phoenix_html, "~> 3.3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.18.16"},
       {:floki, ">= 0.30.0", only: :test},
@@ -65,7 +67,7 @@ defmodule Pepicrft.MixProject do
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
-      {:phoenix_html_sanitizer, "~> 1.1"},
+      {:phoenix_html_sanitizer, "~> 1.1.1"},
       {:image, "~> 0.38.0"},
       {:file_system, "~> 0.2"},
       {:remote_ip, "~> 1.1"}
