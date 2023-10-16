@@ -44,7 +44,7 @@ jobs:
             deps
             _build
             _site
-          key: mix-${{ hashFiles('mix.lock') }}
+          key: mix-${{ env.ELIXIR_VERSION }}-${{ env.OTP_VERSION }}-${{ hashFiles('mix.lock') }}
 
       - run: mix deps.get
 
