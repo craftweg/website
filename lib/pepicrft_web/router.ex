@@ -22,6 +22,7 @@ defmodule PepicrftWeb.Router do
     pipe_through :browser
 
     get "/", HomeController, :index
+    get "/about", HomeController, :about
     get "/blog", BlogController, :index
     get "/blog/:year/:month/:day/:title", BlogController, :show
 

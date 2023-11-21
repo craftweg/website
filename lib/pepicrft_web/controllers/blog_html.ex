@@ -17,7 +17,8 @@ defmodule PepicrftWeb.BlogHTML do
       title: title,
       description: description,
       image:
-        Application.fetch_env!(:pepicrft, :metadata).base_url
+        Application.fetch_env!(:pepicrft, :metadata)
+        |> Keyword.fetch!(:base_url)
         |> URI.merge(og_image_slug)
         |> URI.to_string()
     }

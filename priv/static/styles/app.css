@@ -14,11 +14,27 @@ As a cheatsheet, the naming convention for Enduring CSS is:
   font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
 }
 
+@media (width >= 768px) {
+  .pp-Body {
+    max-width: var(--size-md);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pp-Body {
+  max-width: var(--size-lg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pp-Header_Navigation {
   display: flex;
   flex-direction: row;
 }
 
-@media (--md-n-above) {
-
+.pp-Header_Footer {
+  display: flex;
+  flex-direction: row;
 }
+
