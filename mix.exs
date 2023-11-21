@@ -64,7 +64,6 @@ defmodule Pepicrft.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:ex_doc, "~> 0.30", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
-      {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
       {:phoenix_html_sanitizer, "~> 1.1.1"},
@@ -89,7 +88,6 @@ defmodule Pepicrft.MixProject do
       "assets.setup": ["esbuild.install --if-missing"],
       "assets.build": ["esbuild default", "phx.gen.open_graph"],
       "assets.deploy": [
-        "tailwind default --minify",
         "esbuild default --minify",
         "phx.digest",
         "phx.gen.open_graph"

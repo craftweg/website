@@ -7,7 +7,7 @@
 # General application configuration
 import Config
 
-config :pepicrft, :metadata, %{
+config :pepicrft, :metadata,
   title: "Pedro Piñera",
   description: "Open and human tech craftsmanship from Berlin",
   domain: "pepicrft.me",
@@ -18,7 +18,6 @@ config :pepicrft, :metadata, %{
   mastodon_url: "https://mastodon.social/@pepicrft",
   linkedin_url: "https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/",
   author: "Pedro Piñera"
-}
 
 config :pepicrft,
   ecto_repos: [Pepicrft.Repo]
@@ -59,17 +58,6 @@ config :logger, :console,
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
-
-config :tailwind,
-  version: "3.1.8",
-  default: [
-    args: ~w(
-    --config=tailwind.config.js
-    --input=css/app.css
-    --output=../priv/static/assets/app.css
-  ),
-    cd: Path.expand("../assets", __DIR__)
-  ]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

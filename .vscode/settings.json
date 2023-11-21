@@ -12,9 +12,6 @@
   "[phoenix-heex]": {
     "editor.defaultFormatter": "RoyalMist.vscode-eex-format"
   },
-  "tailwindCSS.includeLanguages": {
-    "phoenix-heex": "html"
-  },
   "grammarly.selectors": [
     {
       "language": "markdown",

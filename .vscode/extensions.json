@@ -4,7 +4,6 @@
         "saratravi.elixir-formatter",
         "phoenixframework.phoenix",
         "EditorConfig.EditorConfig",
-        "RoyalMist.vscode-eex-format",
-        "bradlc.vscode-tailwindcss"
+        "RoyalMist.vscode-eex-format"
     ]
 }

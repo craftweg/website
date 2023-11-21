@@ -13,7 +13,7 @@ defmodule PepicrftWeb.Meta do
             private: %{phoenix_action: action, phoenix_view: %{"html" => html_view}},
             assigns: assigns
           }) do
-        app_metadata = Application.get_env(:pepicrft, :metadata)
+        app_metadata = Application.get_env(:pepicrft, :metadata) |> Enum.into(%{})
         view_metadata = html_view.metadata(action, assigns)
 
         view_metadata =

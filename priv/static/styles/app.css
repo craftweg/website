@@ -1,0 +1,24 @@
+@import "https://unpkg.com/open-props";
+@import "./base.css";
+
+/*
+The styling of this website follows the Enduring CSS methodology, https://ecss.benfrain.com,
+using variables from Open Props, https://open-props.style.
+
+As a cheatsheet, the naming convention for Enduring CSS is:
+
+.[namespace][-ModuleOrComponent][_ChildNode][-variant]
+*/
+
+:root {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+.pp-Header_Navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (--md-n-above) {
+
+}

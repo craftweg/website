@@ -51,7 +51,7 @@ defmodule PepicrftWeb.CoreComponents do
     <title><%= get_metadata(@conn)[:title] %></title>
     <meta property="article:published_time" content="2022-09-07T00:00:00+00:00" />
     <meta name="description" content={get_metadata(@conn)[:description]} />
-    <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata).author} />
+    <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:author)} />
     <!-- Open graph -->
     <meta property="og:title" content={get_metadata(@conn)[:title]} />
     <meta property="og:description" content={get_metadata(@conn)[:description]} />
@@ -64,11 +64,11 @@ defmodule PepicrftWeb.CoreComponents do
     <meta name="twitter:title" content={get_metadata(@conn)[:title]} />
     <meta name="twitter:description" content={get_metadata(@conn)[:description]} />
     <meta name="twitter:image" content={image(@conn)} />
-    <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata).twitter_handle} />
-    <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata).domain} />
+    <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:twitter_handle)} />
+    <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:domain)} />
     <meta
       property="twitter:url"
-      content={Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.to_string()}
+      content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.to_string()}
     />
     <!-- Favicon -->
     <link rel="shortcut icon" href={static_asset_url("/favicon.ico")} />
@@ -101,6 +101,6 @@ defmodule PepicrftWeb.CoreComponents do
   end
 
   defp static_asset_url(path) do
-    Application.fetch_env!(:pepicrft, :metadata).base_url |> URI.merge(path) |> URI.to_string()
+    Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.merge(path) |> URI.to_string()
   end
 end

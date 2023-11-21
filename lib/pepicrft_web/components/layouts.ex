@@ -4,7 +4,7 @@ defmodule PepicrftWeb.Layouts do
   embed_templates "layouts/*"
 
   def feed_url do
-    %{base_url: url} = Application.fetch_env!(:pepicrft, :metadata)
+    url = Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url)
     url = %{url | path: "/blog/feed.xml"}
     url |> URI.to_string()
   end

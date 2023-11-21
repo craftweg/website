@@ -27,9 +27,12 @@ config :pepicrft, PepicrftWeb.Endpoint,
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
     og: {Pepicrft.OpenGraph, :start_link, []}
   ]
+
+  config :pepicrft, :metadata,
+  domain: "localhost:4000",
+  base_url: "http://localhost:4000" |> URI.parse()
 
 # ## SSL Support
 #
