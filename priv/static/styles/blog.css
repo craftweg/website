@@ -1,0 +1,25 @@
+.pp-Posts {
+
+
+  & > * + * {
+    margin-top: var(--size-8)
+  }
+}
+
+.pp-Post {
+  & > * + * {
+    margin-top: var(--size-1)
+  }
+}
+
+.pp-Post_Title {
+  font-size: var(--font-size-3);
+}
+
+.pp-Post_Date {
+  font-size: var(--font-size-1);
+}
+
+.pp-Post_Description {
+
+}

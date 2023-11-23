@@ -21,28 +21,21 @@ defmodule PepicrftWeb.CoreComponents do
       end
 
     ~H"""
-    <%= for post <- assigns.posts() do %>
-      <% {:ok, time_ago_date} =
-        Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
-      <% post_attributes = %{href: post.slug} %>
+    <div class="pp-Posts">
+      <%= for post <- assigns.posts() do %>
+        <% {:ok, time_ago_date} =
+          Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
+        <% post_attributes = %{href: post.slug} %>
 
-      <div class="items-start grid grid-cols-1 md:grid-cols-3">
-        <div>
-          <p class="text-neutral-600 dark:text-sky-700"><%= time_ago_date %></p>
+        <div class="pp-Post">
+          <a {post_attributes} class="pp-Post_Title">
+            <%= post.title %>
+          </a>
+          <p class="pp-Post_Date"><%= time_ago_date %></p>
+          <p class="pp-Post_Description"><%= post.description %></p>
         </div>
-        <div class="md:col-span-2 w-full">
-          <p>
-            <a
-              {post_attributes}
-              class="dark:text-white font-semibold underline hover:no-underline duration-200 after:content-['_↗']"
-            >
-              <%= post.title %>
-            </a>
-          </p>
-          <p class="dark:text-sky-300"><%= post.description %></p>
-        </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
     """
   end
 
@@ -51,7 +44,10 @@ defmodule PepicrftWeb.CoreComponents do
     <title><%= get_metadata(@conn)[:title] %></title>
     <meta property="article:published_time" content="2022-09-07T00:00:00+00:00" />
     <meta name="description" content={get_metadata(@conn)[:description]} />
-    <meta name="author" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:author)} />
+    <meta
+      name="author"
+      content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:author)}
+    />
     <!-- Open graph -->
     <meta property="og:title" content={get_metadata(@conn)[:title]} />
     <meta property="og:description" content={get_metadata(@conn)[:description]} />
@@ -64,11 +60,19 @@ defmodule PepicrftWeb.CoreComponents do
     <meta name="twitter:title" content={get_metadata(@conn)[:title]} />
     <meta name="twitter:description" content={get_metadata(@conn)[:description]} />
     <meta name="twitter:image" content={image(@conn)} />
-    <meta name="twitter:site" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:twitter_handle)} />
-    <meta property="twitter:domain" content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:domain)} />
+    <meta
+      name="twitter:site"
+      content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:twitter_handle)}
+    />
+    <meta
+      property="twitter:domain"
+      content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:domain)}
+    />
     <meta
       property="twitter:url"
-      content={Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.to_string()}
+      content={
+        Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.to_string()
+      }
     />
     <!-- Favicon -->
     <link rel="shortcut icon" href={static_asset_url("/favicon.ico")} />
@@ -101,6 +105,9 @@ defmodule PepicrftWeb.CoreComponents do
   end
 
   defp static_asset_url(path) do
-    Application.fetch_env!(:pepicrft, :metadata) |> Keyword.fetch!(:base_url) |> URI.merge(path) |> URI.to_string()
+    Application.fetch_env!(:pepicrft, :metadata)
+    |> Keyword.fetch!(:base_url)
+    |> URI.merge(path)
+    |> URI.to_string()
   end
 end

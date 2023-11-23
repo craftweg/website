@@ -30,7 +30,7 @@ config :pepicrft, PepicrftWeb.Endpoint,
     og: {Pepicrft.OpenGraph, :start_link, []}
   ]
 
-  config :pepicrft, :metadata,
+config :pepicrft, :metadata,
   domain: "localhost:4000",
   base_url: "http://localhost:4000" |> URI.parse()
 

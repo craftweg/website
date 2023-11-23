@@ -1,0 +1,32 @@
+a {
+  color: black;
+}
+
+h1 {
+  margin-top: var(--size-6);
+  margin-bottom: var(--size-6);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5)
+}
+
+h2 {
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-6);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-5)
+}
+
+p {
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-3);
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-1);
+}
+
+b {
+  font-weight: var(--font-weight-5)
+}
+
+code {
+  font-size: var(--font-size-1);
+}

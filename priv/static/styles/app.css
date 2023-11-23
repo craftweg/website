@@ -1,5 +1,8 @@
-@import "https://unpkg.com/open-props";
+@import "./openprops.css";
+/* @import "./normalize.css"; */
 @import "./base.css";
+@import "./root.css";
+@import "./blog.css";
 
 /*
 The styling of this website follows the Enduring CSS methodology, https://ecss.benfrain.com,
@@ -11,30 +14,7 @@ As a cheatsheet, the naming convention for Enduring CSS is:
 */
 
 :root {
+  line-height: var(--size-7);
   font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-}
-
-@media (width >= 768px) {
-  .pp-Body {
-    max-width: var(--size-md);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.pp-Body {
-  max-width: var(--size-lg);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pp-Header_Navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-.pp-Header_Footer {
-  display: flex;
-  flex-direction: row;
 }
 

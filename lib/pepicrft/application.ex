@@ -15,7 +15,7 @@ defmodule Pepicrft.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Pepicrft.PubSub},
       # Start the Endpoint (http/https)
-      PepicrftWeb.Endpoint,
+      PepicrftWeb.Endpoint
       # Start a worker by calling: Pepicrft.Worker.start_link(arg)
       # {Pepicrft.Worker, arg}
     ]

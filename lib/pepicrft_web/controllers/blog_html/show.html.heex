@@ -1,12 +1,8 @@
-<header>
-  <h1><%= @post.title %></h1>
-  <div>
-    <span>
-    <%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
-    </span>
-    <%=  %>
-  </div>
-</header>
-<main>
-  <%= raw @post.body %>
-</main>
+<h1><%= @post.title %></h1>
+<div>
+  <span>
+  <%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
+  </span>
+  <%=  %>
+</div>
+<%= raw @post.body %>
