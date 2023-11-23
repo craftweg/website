@@ -1,8 +1,6 @@
 .pp-Posts {
-
-
   & > * + * {
-    margin-top: var(--size-8)
+    margin-top: var(--size-9)
   }
 }
 
@@ -17,9 +15,14 @@
 }
 
 .pp-Post_Date {
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-0);
 }
 
 .pp-Post_Description {
 
+}
+
+.pp-Post_Tags {
+  text-transform: uppercase;
+  font-size: var(--font-size-0);
 }

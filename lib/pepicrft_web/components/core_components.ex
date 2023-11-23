@@ -31,7 +31,7 @@ defmodule PepicrftWeb.CoreComponents do
           <a {post_attributes} class="pp-Post_Title">
             <%= post.title %>
           </a>
-          <p class="pp-Post_Date"><%= time_ago_date %></p>
+          <div class="pp-Post_Date"><%= time_ago_date %></div>
           <p class="pp-Post_Description"><%= post.description %></p>
         </div>
       <% end %>
