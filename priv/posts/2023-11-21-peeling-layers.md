@@ -35,7 +35,7 @@ However,
 I can't avoid but wonder if we might sometimes be going too high in the stack.
 This is a question that I find particularly interesting.
 It's in fact one of the reasons why I like following the Phoenix and Ruby on Rails ecosystems closely.
-Their love for the web as a platform makes them question every abstraction that arises (TODO: Add a note about the bias that's connected to this point).
+Their love for the web as a platform makes them question every abstraction that arises.
 I find somewhat some-provoking the swing of the pendulum from the server to the client with SPAs,
 and recently back to the server but with the additional legacy that they've accumulated in the swinging.
 React Server Components is a good example of that.
