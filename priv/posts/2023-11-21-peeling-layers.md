@@ -14,7 +14,7 @@ The process often goes like this:
 - Adjust content and structure accordignly.
 - Publish
 
-Did you know that this website has been implemented with technologies like Gatsby, [NextJS](https://nextjs.com), Jekyll, Rust, Phoenix?
+Did you know that this website has been implemented with technologies like Gatsby, NextJS, Jekyll, Rust, Phoenix?
 
 Sometimes the technology decision was driven by a technology I was getting excited about,
 like it's the case with the current iteration of this website, which is implemented with Phoenix and Elixir.
