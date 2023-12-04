@@ -47,7 +47,7 @@ If the integration with the Swift Package Manager is suboptimal,
 you have to wait for Apple to fix it.
 I'm sorry, but this is too bad.
 
-**Apple built **a package manager and faced** a community using it as a project manager **because they **were** tired of** Xcode project issues.**
+**Apple built a package manager and faced a community using it as a project manager because they were tired of Xcode project issues.**
 
 Apple is now in a difficult spot,
 but one they could move from with support from the community and a clear vision.
