@@ -62,3 +62,12 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
+
+config :lightning_css,
+  version: "1.22.1",
+  default: [
+    args: ~w(assets/css/app.css --bundle --output-file=priv/static/styles/bundle.css),
+    watch_files: "assets/css/**/*.css",
+    cd: Path.expand("..", __DIR__),
+    env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
+  ]
