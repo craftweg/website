@@ -28,9 +28,11 @@ defmodule PepicrftWeb.CoreComponents do
         <% post_attributes = %{href: post.slug} %>
 
         <div class="pp-Post">
-          <a {post_attributes} class="pp-Post_Title">
+          <h2 class="pp-Post_Title">
+            <a {post_attributes}>
             <%= post.title %>
-          </a>
+            </a>
+          </h2>
           <div class="pp-Post_Date"><%= time_ago_date %></div>
           <p class="pp-Post_Description"><%= post.description %></p>
         </div>

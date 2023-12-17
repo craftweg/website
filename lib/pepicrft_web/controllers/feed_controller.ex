@@ -2,8 +2,11 @@ defmodule PepicrftWeb.FeedController do
   use PepicrftWeb, :controller
 
   def blog(conn, _) do
-    %{title: title, description: description, language: language, base_url: base_url} =
-      Application.fetch_env!(:pepicrft, :metadata)
+    metadata = Application.fetch_env!(:pepicrft, :metadata)
+    title = metadata |> Keyword.fetch!(:title)
+    description = metadata |> Keyword.fetch!(:description)
+    language = metadata |> Keyword.fetch!(:language)
+    base_url = metadata |> Keyword.fetch!(:base_url)
 
     posts = Pepicrft.Blog.all_posts()
     last_build_date = posts |> List.first() |> Map.get(:date)
