@@ -1,7 +1,7 @@
 ---
 title: Paginated API requests using Functional Reactive in Swift
 description: "Reactive is magic, transform your API responses into streams of data and you'll se how easy is to build for example paginated API requests"
-categories: [reactive, objective-c, swift, reactive cocoa]
+tags: [reactive, objective-c, swift, reactive cocoa]
 ---
 
 I’ve been playing the days with Reactive Cocoa. I fell in love with that programming paradigm. I had heard about it before but hadn’t stopped to play a little bit with it.

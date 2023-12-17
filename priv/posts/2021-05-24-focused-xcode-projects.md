@@ -1,6 +1,6 @@
 ---
 title: Focused Xcode projects
-categories: ['tuist', 'open-source']
+tags: ['tuist', 'open-source']
 ---
 
 A while ago,

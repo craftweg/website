@@ -1,6 +1,6 @@
 ---
 title: What I like from Ruby and Rails
-categories: ['ruby', 'rails', 'development']
+tags: ['ruby', 'rails', 'development']
 ---
 
 The more I use Ruby and Rails, the more I like it. I’ve played with [Typescript](https://www.typescriptlang.org/) lately, and it continues to feel heavy: _parenthesis and brackets everywhere, layers on indirection through tools to accommodate the Javascript to the browser or to your preferred way of writing it._ It's a powerful programming language but it doesn't spark the same joy that Ruby does.

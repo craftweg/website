@@ -1,7 +1,7 @@
 ---
 title: Better relative paths
 description: We are providing a new API from Tuist to define relative paths and this blog post describes the motivation behind it and the solution that we are adopting.
-categories: [tuist, open source]
+tags: [tuist, open source]
 ---
 
 One of the best decisions that we made when we envisioned Tuist was using Swift as a language for describing projects. Its compiler can validate the syntax, users get documentation right in the code editor, Xcode, and very soon, it’ll allow defining paths that are relative to Tuist-specific directories.

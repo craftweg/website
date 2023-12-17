@@ -1,6 +1,6 @@
 ---
 title: Cognitive overhead
-categories: ['ios', 'development', 'xcode']
+tags: ['ios', 'development', 'xcode']
 ---
 
 Bootstrapping and publishing an app to the App Store is not a straightforward process. I tried to do it myself yesterday and a lazy me got stuck when I had to create signing artifacts, write automation scripts, and set up things on the App Store Connect side.

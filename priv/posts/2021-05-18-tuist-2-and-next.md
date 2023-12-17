@@ -1,6 +1,6 @@
 ---
 title: Tuist 2.0 and next
-categories: ['tuist', 'open-source']
+tags: ['tuist', 'open-source']
 ---
 
 As we are approaching the release of Tuist 2.0,

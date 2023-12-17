@@ -1,7 +1,7 @@
 ---
 title: "Dear Bitrise"
 description: "Read my personal take on Bitrise's actions against Tuist, and how we're rallying as a community to uphold our values and vision."
-categories: ['Bitrise', 'Open Source', 'Tuist']
+tags: ['Bitrise', 'Open Source', 'Tuist']
 ---
 
 Dear Bitrise Team,

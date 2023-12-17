@@ -1,6 +1,6 @@
 ---
 title: 'Decision records'
-categories: ['engineering', 'open-source', 'tuist', 'github']
+tags: ['engineering', 'open-source', 'tuist', 'github']
 ---
 
 One of the things I've been terrible at is at **keeping decisions records in projects**.

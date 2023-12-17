@@ -1,7 +1,7 @@
 ---
 title: Derived Info.plist files
 description: In this mini-post I talk about some recent work that I've done in Tuist to support defining Info.plist files in the manifest file.
-categories: [tuist, infoplist, xcode]
+tags: [tuist, infoplist, xcode]
 ---
 
 Today I found some time to do some work on [this PR](https://github.com/tuist/tuist/pull/380),

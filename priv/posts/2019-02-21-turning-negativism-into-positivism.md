@@ -1,7 +1,7 @@
 ---
 title: Turning negativism into positivism
 description: Short reflection on how beneficial it can be turning negativism into something positive.
-categories: [philosophy, work, life]
+tags: [philosophy, work, life]
 ---
 
 Today, while I was having a chat with whom used to be my manager, he brought up an idea that resonated a lot in me: _try to always turn sources of negativity into opportunities to bring positivism into the team_. Let me give you an example.

@@ -1,7 +1,7 @@
 ---
 title: "Empowering Development: The Journey and Vision of Tuist"
 description: "Tuist provides solutions to challenges in large-scale app development overlooked by Apple. It's a foundation for developers, promising simplicity and a future filled with actionable insights."
-categories: ['Tuist', 'Scalability', 'Xcode', 'Developer Tools']
+tags: ['Tuist', 'Scalability', 'Xcode', 'Developer Tools']
 ---
 
 It's been about six years since organizations began to understand the lack of focus Apple has given to the challenges of large-scale development. Within this timeframe, it became evident **how invaluable [Tuist](https://tuist.io) is in addressing these challenges**. Numerous major projects and white-label apps have come to recognize the prowess of Tuist, valuing its ability to maintain simplicity even while scaling. Some have even transitioned from intricate build systems like [Bazel](https://bazel.build/), which, despite their strengths, impose an **unsustainable level of complexity and support demands on many organizations.**

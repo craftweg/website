@@ -1,6 +1,6 @@
 ---
 title: Pairing sessions to introduce people to Tuist and open-source
-categories: ['tuist', 'community', 'coaching']
+tags: ['tuist', 'community', 'coaching']
 ---
 
 I recently started having pairing sessions with developers interested in contributing to open-source; it’s something that usually intimidates people, but that becomes easier if someone guides you through the first contribution. You have a person that can answer any question you might have and that can give you an overview of the projects ad the decisions made in the past.

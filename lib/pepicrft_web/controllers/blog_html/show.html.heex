@@ -1,5 +1,5 @@
 <h1><%= @post.title %></h1>
 <div class="pp-Post_Tags">
-  <%= @post.categories |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
+  Tags: <%= @post.tags |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
 </div>
 <%= raw @post.body %>

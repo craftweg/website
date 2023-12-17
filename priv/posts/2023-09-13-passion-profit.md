@@ -1,7 +1,7 @@
 ---
 title: "Passion vs. Profit: My Quest for Meaningful Craftsmanship in Tech"
 description: "In a world where money often takes the front seat, how do we balance the joy of craftsmanship with the need for financial stability? Here's a personal reflection on the intersection of passion, craft, and monetary pursuits."
-categories: ['Personal Reflection', 'Technology', 'Entrepreneurship', 'Software development']
+tags: ['Personal Reflection', 'Technology', 'Entrepreneurship', 'Software development']
 ---
 
 As I delve deeper into my work on [Glossia](https://github.com/glossia) and [Tuist Cloud](https://github.com/tuist/tuist), I frequently find myself drawn to tasks that, while they influence the final product, aren't necessarily seen as financial priorities by many. This leaves me in a conundrum: *I can pursue what I genuinely enjoy but might not be financially rewarding, or I can focus on monetary gains and potentially lose out on the joy of the process.* Striking the right balance is an ongoing challenge. It begs the question - what kind of world are we molding if human needs take a backseat?

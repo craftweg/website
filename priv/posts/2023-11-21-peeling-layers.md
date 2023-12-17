@@ -1,7 +1,7 @@
 ---
 title: "Peeling layers"
 description: "This blog post contains a recent reflection over the often over-abstracted web platform, and how powerful it's become, making many of the normalized abstractions feel unnecessary."
-categories: ['Web Platform', 'Complexities']
+tags: ['Web Platform', 'Complexities']
 ---
 
 If you've read the content in this blog,

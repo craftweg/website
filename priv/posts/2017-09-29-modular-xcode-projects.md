@@ -1,7 +1,7 @@
 ---
 title: Modular Xcode projects
 description: This post presents some elementary concepts of how Xcode projects are structured, and introduces an structural approach to build modular Xcode apps.
-categories: [xcodeproj, swift, xcode, xcodembed]
+tags: [xcodeproj, swift, xcode, xcodembed]
 ---
 
 Building modular projects with Xcode requires a good understanding of the project structure and its foundational concepts. The project structure is something that we don't usually care much about unless we start growing the project by adding more dependencies. Even in that case, most of the projects use [CocoaPods](https://cocoapods.org) that does the setup for us, or [Carthage](https://github.com/carthage) that doesn't do the setup, but makes it as easy as just adding a couple of changes in your project build phases. When the configuration becomes more complicated, it's very likely that we get confused because we didn't fully grasp all the elements that are involved in Xcode projects. I usually get asked questions like:

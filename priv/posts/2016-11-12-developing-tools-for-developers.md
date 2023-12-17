@@ -1,7 +1,7 @@
 ---
 title: Developing tools for developers
 description: Learnings from being a core developer and providing other teams with the tools that they need for their daily work.
-categories: [soundcloud, core, developer, ios, xcode]
+tags: [soundcloud, core, developer, ios, xcode]
 ---
 
 It’s been a few months since I moved to the iOS Core team at SoundCloud. The team is responsible for providing other developers with the tools that they need to develop features for users. We could say that our users are the developers. We are responsible for designing, implementing and maintaining the tools that allow them to interact with core services like the storage and the API. Although what we do at the end is writing code, there are a lot of things that change in comparison with coding features for users. It took me time to adopt the new mindset, and I keep learning new things as I work with my colleagues iterating over the processes and the solutions that we’re designing. In this short journey, I’ve discovered a lot of things, working with other teams, and with people inside the team. In this post, I’ll share some of these learnings.

@@ -1,7 +1,7 @@
 ---
 title: Random thoughts a Friday night in Ottawa
 description: I sat down after work and thought about some things that have been in my mind for some time. I wrote them in this blog post that if I have to summarize it, it talks about minimalism, open source, egno, and career paths.
-categories: ['2017', retro, year]
+tags: ['2017', retro, year]
 ---
 
 It's January 19th, and I'm right now in Canada. It's been a fascinating beginning of the year, starting with my onboarding at Shopify. I had forgotten how it feels to start a new job, with a lot of tools and processes to learn, and a lot of people to meet. It requires a lot of energy, and I tend to overwhelm, but I'm trying to take it easy this time, step by step. What excites me the most about joining this new company is that I'll be able to dive deeper into how to make developers productive working on mobile codebases. I've been learning a lot about it in the last couple of years, and I love building tools to make developers' life easier. Shopify has a team for that I'm glad to be part of it. I'm excited about all the stuff that I'll have the opportunity to learn here.

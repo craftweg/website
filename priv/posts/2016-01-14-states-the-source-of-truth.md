@@ -1,7 +1,7 @@
 ---
 title: 'States - The source of truth'
 description: 'Overview of states in iOS apps, how we tipically handle them, current challenges with states and how to overcome them'
-categories: [tvos, popcorn time, torrent]
+tags: [tvos, popcorn time, torrent]
 ---
 
 I have been these days thinking about how we do manage states in our iOS apps. States are a source of information but also the source of bugs, why? Because we spread states across multiple components, duplicate them, and we forget about considering derived states. Our app shows off unexpected behaviors, and we struggle to find the reason. The user credentials are persisted in the _Keychain_, so we know whether the user is logged in or not, but our _ApiClient_ also contains that information. Which one should I trust? Are you sure both are synchronizing when any of them changes? I’m sure you miss some. States are a common source of bugs in our apps. There are no silver bullets to solve this problem but multiple approaches out there, programming paradigms, patterns and tricks that can help you with the state simplification.

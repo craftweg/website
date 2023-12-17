@@ -1,7 +1,7 @@
 ---
 title: 'All you need is tools 🛠'
 description: In this post I talk about why investing in good tooling is crucial for projects to move steadily.
-categories: [swift, ruby, fastlane, ios, android, shopify, engineering, tooling]
+tags: [swift, ruby, fastlane, ios, android, shopify, engineering, tooling]
 ---
 
 Almost a year ago, I joined the team _Mobile Tooling_ at Shopify. It’s a team that focuses on developing tools and infrastructure that mobile developers can leverage to build and release high-quality apps. It was the first time I had the opportunity to work full time on tooling, something that I’d had the opportunity to experiment with in some open source space.

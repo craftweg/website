@@ -1,6 +1,6 @@
 ---
 title: Sparking joy working with Xcode
-categories: ['xcode', 'tuist', 'complexity']
+tags: ['xcode', 'tuist', 'complexity']
 ---
 
 I learned by working with Ruby and Ruby on Rails during my time at Shopify that using tools and programming languages that spark joy is crucial for developers' motivation. Even though we developers love to understand complexities, **we enjoy working with simplicities and conveniences day-to-day**.

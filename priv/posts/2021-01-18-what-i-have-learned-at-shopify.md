@@ -1,6 +1,6 @@
 ---
 title: 'Reflecting on 3 years at Shopify'
-categories: ['engineering', 'ruby', 'shopify']
+tags: ['engineering', 'ruby', 'shopify']
 ---
 
 A few days ago,

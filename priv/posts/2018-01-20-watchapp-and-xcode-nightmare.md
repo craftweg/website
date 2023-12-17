@@ -1,7 +1,7 @@
 ---
 title: This app could not be installed at this time
 description: Because sometimes Xcode cannot install your apps, and you have to figure out why.
-categories: [ios, watch, xcode, install]
+tags: [ios, watch, xcode, install]
 ---
 
 I've spent a whole Sunday trying to get an Xcode project running. The project contains an iOS and watchOS app sharing code using frameworks. Moreover, I've automated the generation of the Xcode projects using [XcodeGen](https://github.com/yonaskolb/xcodegen). Everything seemed to be fine; I was able to generate the projects, compile the modules individually, run their tests, but at some point, I got stuck at something that after a few hours, can't understand. Whenever I tried to run the iOS app or the watchOS application I got the error that you can see in the screenshot below:

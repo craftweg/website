@@ -1,6 +1,6 @@
 ---
 title: "Mitigating 'delete node_modules'"
-categories: ['javascript', 'open-source', 'tooling']
+tags: ['javascript', 'open-source', 'tooling']
 ---
 
 If you've worked in the Javascript ecosystem, you might already be familiar with the *"delete node_modules"* solution commonly suggested on [StackOverflow](https://stackoverflow.com/) and GitHub Issues. People make fun of it, but it's a frustrating scenario that ruins the developer's experience using a tool or a framework.

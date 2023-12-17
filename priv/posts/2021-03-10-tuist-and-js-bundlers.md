@@ -1,6 +1,6 @@
 ---
 title: 'Tuist and JS bundlers'
-categories: ['javascript', 'tuist', 'open source']
+tags: ['javascript', 'tuist', 'open source']
 ---
 
 I think there are a lot of similarities between Tuist and JS bundlers.

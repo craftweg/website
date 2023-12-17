@@ -15,7 +15,8 @@
 }
 
 .pp-Post_Date {
-  font-size: var(--font-size-0);
+  font-size: var(--font-size-1);
+  color: var(--stone-7);
 }
 
 .pp-Post_Description {
@@ -23,6 +24,5 @@
 }
 
 .pp-Post_Tags {
-  text-transform: uppercase;
-  font-size: var(--font-size-0);
+  color: var(--indigo-5);
 }

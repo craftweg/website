@@ -1,7 +1,7 @@
 ---
 title: 'A journey into Frameworks - Le Testing Framework'
 description: 'One of posts that tells about the migration from a monolithic architecture based in single target to have multiple reusable Frameworks.'
-categories: [xcode, ios swift, objective-c]
+tags: [xcode, ios swift, objective-c]
 ---
 
 I’ve been lately focused on architecting the apps in multiple frameworks that are platform independent. I’ve also given [some talks] about it and applied these principles to a personal project, [GitDo]. However, who could benefit most from that architecture that would be SoundCloud. I proposed it internally and started taking the first steps on one direction. Being a so consolidated project used by many users around the world makes things more complicated compared to GitDo, but… let’s accept the challenge, shouldn’t we?

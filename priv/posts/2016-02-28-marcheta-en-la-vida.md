@@ -1,7 +1,7 @@
 ---
 title: 'Marcheta en la vida'
 description: 'Mi experiencia de haber salido a vivir fuera de España y las lecciones aprendidas'
-categories: [vida, marcheta, berlin]
+tags: [vida, marcheta, berlin]
 ---
 
 Volando de vuelta a Berlin, ha sido un fin de semana reconfortante con familia y amigos, de esos que te sirven para cargar las basterías. Llevaba tiempo queriendo escribir sobre la experiencia que ha supuesto salir del país, y lo que ha sido para mí el casi un año que llevo viviendo en Berlín. Era difícil elegir el título para esta entrada, en la que a priori no se ni lo que voy a acabar contando, pero finalmente me vino _marcheta_ a la mente. Aquellos que me conocen, conocen muy bien lo que marcheta significa para mi. Desafortunadamente no se encuentra en el diccionario y lo más parecido es **marchar** _(ni qué decir de explicar fuera de España lo que es marcheta)_. Marchar significa seguir hacia adelante, puedes marchar en una carrera, y también puedes hacerlo en la vida. También puedes hacerlo de casa, o marchar de fiesta. De marcha, marcheta, y de marchares este último año, un año de marchetas.

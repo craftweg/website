@@ -1,7 +1,7 @@
 ---
 title: Open Source
 description: In this blog post I talk about why I work on open source projects and what are the most important elements for me when starting an open source community.
-categories: [open source, xcbuddy, swift, xcode]
+tags: [open source, xcbuddy, swift, xcode]
 ---
 
 I've been wondering how many things that I do, I do them because everyone does them. With everyone sharing how they do things, and pitching us their library, their work-style, or even their tools I think software engineers are strongly biased by external opinions, including me. Are you using VIPER because it's a good fit for your project's needs or because you saw a few companies using it? Are you using that library because it's saving you time, or because you saw an example of how to use it and you thought you could go with replicating the example?

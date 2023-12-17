@@ -1,7 +1,7 @@
 ---
 title: "Making Tuist easier to work with by saying goodbye to Ruby"
 description: "We're removing Ruby from Tuist, integrating everything into Xcode, replacing Fourier with bash scripts, and rewriting tests in Swift for ease."
-categories: ['Tuist', 'Development Tools', 'Ruby', 'Automation']
+tags: ['Tuist', 'Development Tools', 'Ruby', 'Automation']
 ---
 
 At some point in the life of [Tuist](https://tuist.io), we decided to introduce [Ruby](https://www.ruby-lang.org/en/) into its codebase. The **CI pipelines were beginning to contain a considerable amount of business logic**, and it was somewhat inconvenient for developers to run the same workflows locally. Therefore, I developed a small Ruby-based CLI, which would be included in the repository as **Fourier**.

@@ -1,7 +1,7 @@
 ---
 title: My first Apple Watch impressions
 description: After a day using Apple Watch I would like to share my impressions with the new Apple toy and why I wouldn’t buy the first version
-categories: [apple watch, watch, apple, glance, apps]
+tags: [apple watch, watch, apple, glance, apps]
 ---
 
 We’ve finally received the 8fit Apple Watch. We worked on 8fit on an Apple Watch App one month ago and since then we hadn’t had access to a real device. Only a few users had shown us our app working there but that’s all. The first thing did today after the unboxing was installing 8fit. I was a bit worried because since we released the first app version we haven’t released any new update. Was it working? Had it something broken? Could I send messages to the coach?

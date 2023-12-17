@@ -1,6 +1,6 @@
 ---
 title: Social anxiety
-categories: [social networks, anxiety, facebook, twitter]
+tags: [social networks, anxiety, facebook, twitter]
 ---
 
 I keep falling into the same trap over and over:

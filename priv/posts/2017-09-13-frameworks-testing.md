@@ -1,7 +1,7 @@
 ---
 title: Providing mocks and testing data from your frameworks.
 description: This post introduces an approach to share testing data and mocks from your frameworks to other frameworks that might need them for testing purposes.
-categories: [xcodeproj, swift, xcode]
+tags: [xcodeproj, swift, xcode]
 ---
 
 If you build your apps in a modular manner using Swift, you have probably been in the situation where a `ModuleX` defines some mocks or testing data for its tests in its tests target, but they cannot be shared to be used from other tests targets, playgrounds, example apps... _(essentially because they cannot import a tests target)_ With Objective-C it wasn't an issue at all because we could mock the interface of our dependencies at runtime with just one line of code. In Swift, the definition of mocks or data for testing requires some manual work _(unless you have some code generation in place)_ that we don't want to have to do it more than once. Listed below you can see some scenarios where you face this issue:

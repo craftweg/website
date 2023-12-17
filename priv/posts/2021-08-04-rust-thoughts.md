@@ -1,6 +1,6 @@
 ---
 title: Some Rust thoughts
-categories: ['open-source', 'rust', 'learning', 'education']
+tags: ['open-source', 'rust', 'learning', 'education']
 ---
 
 A while ago,

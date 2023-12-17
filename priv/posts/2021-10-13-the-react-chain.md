@@ -1,6 +1,6 @@
 ---
 title: 'The React chain'
-categories: ['react', 'javascript', 'development']
+tags: ['react', 'javascript', 'development']
 ---
 
 I’ve been thinking a lot lately about the role [React](https://reactjs.org/) plays when building a web app. Companies like [GitHub](https://github.com) and [Shopify](https://shopify.com), both very successful software companies, introduced React recently in areas where **it makes sense**. This led me to the question: Is React and everything that comes with it (e.g., abstractions, tools, libraries) an influential piece in generating value for users?

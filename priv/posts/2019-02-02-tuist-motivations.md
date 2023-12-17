@@ -1,7 +1,7 @@
 ---
 title: The motivations behind building Tuist
 description: Tuist is my most beloved open source project. In this blog post I touch on the motivations that led me to build it.
-categories: [tuist, xcodeproje, xcodegen]
+tags: [tuist, xcodeproje, xcodegen]
 ---
 
 It's been a long time working on [xcodeproj](https://github.com/tuist/xcodeproj) and [Tuist](https://github.com/tuist/tuist), two open source projects that I'm very proud of. Before I started working on xcodeproj, the library that Tuist depends on, I'd worked on other open source projects that were Swift libraries. They had a much smaller scope and were intended to be used as a helpers and time savers in iOS apps.

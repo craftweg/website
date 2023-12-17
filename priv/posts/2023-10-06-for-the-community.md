@@ -1,7 +1,7 @@
 ---
 title: "We do it for the community"
 description: "Embarking on a nuanced journey with Tuist, facing ethical dilemmas & aiming for sustainability, I invite you to be part of our personal tech story."
-categories: ['Tuist', 'Sustainability', 'Ethics', 'Open Source']
+tags: ['Tuist', 'Sustainability', 'Ethics', 'Open Source']
 ---
 
 It’s a beautiful sentiment to reflect upon – *"We do this for the community."* This phrase, delicately expressed to us recently, cast light on the vibrant pulse and potential inherent in our project, [Tuist](https://tuist.io). An insightful suggestion about integrating a feature to streamline Tuist remote caching presented not just a technological prospect, but a moment to ponder about **collaborative innovation and ethical praxis in the open-source landscape.**

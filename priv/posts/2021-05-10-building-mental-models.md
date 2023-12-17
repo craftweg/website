@@ -1,6 +1,6 @@
 ---
 title: Building mental models
-categories: ['buildify', 'open-source']
+tags: ['buildify', 'open-source']
 ---
 
 As you probably know,

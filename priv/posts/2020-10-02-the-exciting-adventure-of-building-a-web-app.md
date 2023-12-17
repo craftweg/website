@@ -1,6 +1,6 @@
 ---
 title: The exciting adventure of building a web app
-categories: ['saas', 'web app', 'rails', 'react']
+tags: ['saas', 'web app', 'rails', 'react']
 ---
 
 I’ve been playing lately with building a web app that complements [Tuist](https://tuist.io) with some features that require storing state in a server. Since I have a mobile development background, being familiar with Swift, iOS, and very recently React Native, I’m learning a lot along developing both a web app and a backend that exposes a GraphQL API. This blog post is me reflecting on what I’ve learned so far from the technology choices we’ve made.

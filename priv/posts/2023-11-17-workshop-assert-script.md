@@ -1,7 +1,7 @@
 ---
 title: "Ensuring a smooth workshop experience"
 description: "In preparation for a workshop that I'm conducting in Swiftable (Buenos Aires), I came up with an idea to ensure a smooth experience following the workshop"
-categories: ['Swiftable', 'Conferences', 'Open Source', 'Tuist']
+tags: ['Swiftable', 'Conferences', 'Open Source', 'Tuist']
 ---
 
 While preparing a workshop for [Swiftable](https://swiftable.com),

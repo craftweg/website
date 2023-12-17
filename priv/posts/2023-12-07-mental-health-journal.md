@@ -1,7 +1,7 @@
 ---
 title: "On mental health"
 description: "In this blog post I open myself about recent mental breakdowns and how I'm dealing with them."
-categories: ['Mental health', 'Depression', 'Anxiety']
+tags: ['Mental health', 'Depression', 'Anxiety']
 ---
 
 Today I had one of those days of feeling down and not being able to pinpoint the exact reason.

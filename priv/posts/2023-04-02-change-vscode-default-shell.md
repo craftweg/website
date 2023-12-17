@@ -1,7 +1,7 @@
 ---
 title: How to Configure VSCode to Use Alternative Shells
 description: "Learn how to easily configure VSCode to use your preferred alternative shell installation like ZSH or Fish instead of the default profiles."
-categories: [Nix, Shell]
+tags: [Nix, Shell]
 ---
 
 

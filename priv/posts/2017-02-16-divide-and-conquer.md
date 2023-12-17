@@ -1,7 +1,7 @@
 ---
 title: Divide and conquer
 description: How modularizing your apps is helping us to scale our Xcode app.
-categories: [swift, scalability, apps, xcode]
+tags: [swift, scalability, apps, xcode]
 ---
 
 > **Divide and rule** _(or divide and conquer, from Latin dīvide et īmpera)_ in politics and [sociology](https://en.wikipedia.org/wiki/Sociology) is gaining and maintaining [power](<https://en.wikipedia.org/wiki/Power_(social_and_political)>) by breaking up larger concentrations of power into pieces that individually have less power than the one implementing the strategy. The concept refers to a strategy that breaks up existing power structures, and especially prevents smaller power groups from linking up, causing rivalries and fomenting discord among the people.

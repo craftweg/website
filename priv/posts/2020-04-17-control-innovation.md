@@ -1,6 +1,6 @@
 ---
 title: Control and innovation
-categories: ['apple', 'tech industry', 'community']
+tags: ['apple', 'tech industry', 'community']
 ---
 
 I saw a [tweet](https://twitter.com/kikeenrique/status/1250897617686614016?s=20) this morning where the author was hoping for Apple to announce a new product in the domain of CI.

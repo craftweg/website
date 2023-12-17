@@ -1,5 +1,5 @@
 a {
-  color: black;
+  color: var(--indigo-9);
 }
 
 h1 {
@@ -47,4 +47,8 @@ pre {
 
 code {
   font-size: var(--font-size-0) !important;
+  background-color: var(--indigo-1);
+  color: var(--indigo-9);
+  padding-right: var(--size-1);
+  padding-left: var(--size-1);
 }

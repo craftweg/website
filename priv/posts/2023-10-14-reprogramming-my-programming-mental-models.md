@@ -1,7 +1,7 @@
 ---
 title: "Recalibrating Mental Models in Elixir Programming"
 description: "Navigating through Elixir requires a rethinking of traditional OOP mental models, inviting a shift towards domain-centric thinking. Embracing Elixir's functional paradigm offers intriguing challenges and a rewarding, fresh perspective on problem-solving in programming."
-categories: ['Elixir', 'Erlang', 'Functional Programming', 'Mental Models']
+tags: ['Elixir', 'Erlang', 'Functional Programming', 'Mental Models']
 ---
 
 As I delve deeper into programming with Elixir, I am prompted to reconsider the mental models formulated over years of experience. Initially, when contemplating a problem space and a potential solution, my mind spontaneously navigates towards an [Object-Oriented Programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented_programming) world, constructing a picture involving repositories, services, and presenters to facilitate various layers of application, especially testing. However, this model doesn’t quite fit seamlessly into [Elixir](https://elixir-lang.org/)-a functional language where everything condenses down to functions and modules simply act as namespaces to encapsulate them, occasionally embodying semantics similar to interfaces in OOP.

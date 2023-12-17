@@ -16,7 +16,7 @@ As a cheatsheet, the naming convention for Enduring CSS is:
 :root {
   line-height: var(--size-7);
   font-family:"PT Serif",serif;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
   /* font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif; */
 }
 

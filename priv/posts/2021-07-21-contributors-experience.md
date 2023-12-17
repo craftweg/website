@@ -1,6 +1,6 @@
 ---
 title: Contributors' first experience
-categories: ['open-source', 'contributions']
+tags: ['open-source', 'contributions']
 ---
 
 When building open-source software,

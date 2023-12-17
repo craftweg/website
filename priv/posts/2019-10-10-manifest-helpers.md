@@ -1,7 +1,7 @@
 ---
 title: Project description helpers
 description: In this blog post I talk about a beautiful abstraction which Alex and I came up with to push Tuist's awesomeness even further.
-categories: [tuist, open source]
+tags: [tuist, open source]
 ---
 
 Yesterday I had a pairing session with a good friend of mine who started introducing Tuist to his company's project. He brought up an interesting need that had been in the backlog for quite some time but that no one embarked on building it: reusing code across manifests.

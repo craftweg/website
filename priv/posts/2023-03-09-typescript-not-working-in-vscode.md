@@ -1,7 +1,7 @@
 ---
 title: Typescript not loading in Visual Studio Code
 description: "I share the investigation into Visual Studio Code not loading Typescript and the solution I found - enabling the @builtin typescript extension."
-categories: [typescript, visual studio code]
+tags: [typescript, visual studio code]
 ---
 
 I spent much time today investigating why Visual Studio Code was not loading Typescript as usual.

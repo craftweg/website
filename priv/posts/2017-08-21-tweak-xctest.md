@@ -1,7 +1,7 @@
 ---
 title: Little tweak to be more productive writing XCTest tests
 description: Because readability might compromise productivity.
-categories: [xcodeproj, swift, xcode]
+tags: [xcodeproj, swift, xcode]
 ---
 
 **Are you using [Quick](https://github.com/quick/quick) or [Specta](https://github.com/specta/specta) for your XCTest unit tests?** They provide you with a nice DSL to define your tests in a more descriptive way using the keywords: _“describe”, “context”, “it”_. Although it makes your tests more readable, it breaks the integration of XCTest with Xcode. The example below shows a test written with Specta:

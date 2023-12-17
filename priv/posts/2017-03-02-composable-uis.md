@@ -1,7 +1,7 @@
 ---
 title: Composable UIs
 description: Build UIs based on reusable components that you can compose in more complex hierarchies.
-categories: [swift, components, react, react native, ios, xcode]
+tags: [swift, components, react, react native, ios, xcode]
 ---
 
 One important aspect that as developers, we should keep in mind, is trying to reuse the code that we write whenever it's possible. The main reason behind that is saving time. For example, if you write a cell for your app, `TrackCell` and you need the same _(or similar)_ cell in a different collection view, you should try to reuse the one that you already have. However, sometimes the specifications of that cell change a little bit, and we end up with a bunch of properties that are being passed and a lot of if-elses in code updating the layout accordingly. Another approach would be using inheritance, but we'd easily get into a mess, breaking the SOLID principles and spreading the cell logic between the parent and the children. _Have you ever find yourself in that situation?_

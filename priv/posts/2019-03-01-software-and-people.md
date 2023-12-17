@@ -1,7 +1,7 @@
 ---
 title: Software and people
 description: A reflection on what's one of the most important things to me when building software, the people that make it possible.
-categories: [work, development, people, shopify, open source]
+tags: [work, development, people, shopify, open source]
 ---
 
 I'm currently flying back to Berlin, somewhere over the Atlantic ocean. Perfect time _(without an Internet connection)_ to make some reflections. The one that I made this time has to do with my motivations when it comes to writing software. _Guess what?_ One of the things that motivate me the most about writing software is **getting to know and meet people that I would not meet otherwise**.

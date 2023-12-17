@@ -1,6 +1,6 @@
 ---
 title: 'Data-driven open source'
-categories: ['tuist', 'open source']
+tags: ['tuist', 'open source']
 ---
 
 Yesterday, we announced that Tuist has now [stats](https://stats.tuist.io) that allows us to understand how users use the tool and therefore, invest our time working on Tuist more wisely.

@@ -1,6 +1,6 @@
 ---
 title: Transitive React Native dependencies
-categories: ['react-native', 'ios', 'android', 'shopify']
+tags: ['react-native', 'ios', 'android', 'shopify']
 ---
 
 Today I learned about how dependencies are organized by NPM and Yarn. Let's say we have the following scenario of dependencies:

@@ -1,6 +1,6 @@
 ---
 title: Working on new features or tackling technical debt
-categories: ['open-source', 'software', 'technical-debt']
+tags: ['open-source', 'software', 'technical-debt']
 ---
 
 One of the things that I find the hardest when working on [Tuist](https://tuist.io) these days is finding a good balance between adding new features and tackling technical debt.

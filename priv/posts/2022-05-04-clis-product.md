@@ -1,6 +1,6 @@
 ---
 title: "CLIs are products too"
-categories: ['cli', 'open-source', 'product']
+tags: ['cli', 'open-source', 'product']
 ---
 
 Over the years of working on [command-line interface tools](https://en.wikipedia.org/wiki/Command-line_interface) I observed that they are not often perceived as products. Consequently, organizations don't embrace the same principles as UI-oriented products, which leads to complex tools designed by developers for developers.  **The few projects that adopt a product mindset make a difference.**

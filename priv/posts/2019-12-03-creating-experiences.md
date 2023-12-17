@@ -1,7 +1,7 @@
 ---
 title: Creating experiences
 description: Picked up my phone and dumped some thoughts on why I'm so engaged and excited to build Tuist.
-categories: [tuist, product, open source, development]
+tags: [tuist, product, open source, development]
 ---
 
 There's something in Tuist that keeps me very engaged with the project. Never before I had had that experience with other projects; I think it has something to do with the fact that with Tuist I'm creating new experiences and workflows that would otherwise be unimaginable.

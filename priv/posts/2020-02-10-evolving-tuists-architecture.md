@@ -1,6 +1,6 @@
 ---
 title: Evolving Tuist's architecture
-categories: [tuist, open source, swift, xcode, project generation]
+tags: [tuist, open source, swift, xcode, project generation]
 ---
 
 I'm flying back from Tokyo and took the opportunity to code a bit on Tuist.

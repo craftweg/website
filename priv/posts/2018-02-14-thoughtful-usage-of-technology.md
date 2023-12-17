@@ -1,7 +1,7 @@
 ---
 title: Thoughtful usage of technology
 description: I gave up using Medium and here are the reasons that led me to make the decission.
-categories: [technology, detox, disconnection]
+tags: [technology, detox, disconnection]
 ---
 
 - I struggle to concentrate when I read.

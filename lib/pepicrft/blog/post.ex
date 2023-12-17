@@ -10,7 +10,7 @@ defmodule Pepicrft.Blog.Post do
     :title,
     :description,
     :date,
-    :categories,
+    :tags,
     :body,
     :og_image_slug,
     :og_image_path
@@ -21,7 +21,7 @@ defmodule Pepicrft.Blog.Post do
     :title,
     :description,
     :date,
-    :categories,
+    :tags,
     :body,
     :og_image_slug,
     :og_image_path
@@ -34,7 +34,7 @@ defmodule Pepicrft.Blog.Post do
   """
   @type attributes :: any
   @spec build(String.t(), attributes, String.t()) :: %Pepicrft.Blog.Post{}
-  def build(path, %{"title" => title, "categories" => categories} = frontmatter, body) do
+  def build(path, %{"title" => title, "tags" => tags} = frontmatter, body) do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
@@ -58,7 +58,7 @@ defmodule Pepicrft.Blog.Post do
       title: title,
       date: date,
       body: body,
-      categories: categories,
+      tags: tags,
       description: description,
       og_image_slug: og_image_slug,
       og_image_path: og_image_path

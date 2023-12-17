@@ -1,7 +1,7 @@
 ---
 title: 'Rewriting SugarRecord, 2.0'
 description: 'I explain in this post how was the process of rewriting SugarRecord, a CoreData/Realm wrapper for Swift.'
-categories: [sugarrecord, realm, coredata]
+tags: [sugarrecord, realm, coredata]
 ---
 
 [SugarRecord](https://github.com/swiftreactive/sugarrecord) is one of the libraries I'm most proud of. It has currently 1.155 favs and 98 forks on Github and a couple of issues opened. I wrote this library when the first version of Swift was released since I wanted to learn the language and I thought that writing a library could be a great idea for learning.

@@ -1,7 +1,7 @@
 ---
 title: "Abstracted complexity remains complexity"
 description: "Recently, I had to decide on a technology stack for Glossia, a localization tool I’m bootstrapping with my wife. Choosing a technology stack is an exciting decision for us, as software crafters. Still, it carries a profound impact on both the software and the business that builds on it, and should not be taken lightly."
-categories: ['Elixir', 'Complexity', 'Glossia']
+tags: ['Elixir', 'Complexity', 'Glossia']
 ---
 
 Recently, I had to decide on a technology stack for [**Glossia**](https://click.convertkit-mail2.com/wvunw9zro6fgh5xwzgzu7heweekxx/reh8hoh0vvnq48i2/SFRUUFM6Ly9nbG9zc2lhLmFp), a localization tool I'm bootstrapping with my wife. Choosing a technology stack is an exciting decision for us, as software crafters. Still, it carries a profound impact on both the software and the business that builds on it, and should not be taken lightly.\

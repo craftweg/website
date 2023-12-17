@@ -1,7 +1,7 @@
 ---
 title: 'Being disconnected in a connected world'
 description: 'In a world where social networks are moving relationships to the Internet people is becoming more disconnected.'
-categories: [danger, social networks, facebook]
+tags: [danger, social networks, facebook]
 ---
 
 We live in a connected world. We all are connected with our mobile phones, computers, social accounts. We spend our time tweeting, posting the photos of our last trip on Facebook, or recording Snapchats to let everyone know what we are doing right now. I watched this TED talk, [**Connected but alone?**](https://www.ted.com/talks/sherry_turkle_alone_together?language=en) while I was having a coffee and it made me think about the way people interact nowadays. How this has changed compared to a few years ago and what does it mean for us, and for the future generations.

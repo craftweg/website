@@ -1,7 +1,7 @@
 ---
 title: "Swinging back to positivity"
 description: "2023 was a year full of micro-traumas that led me to a negative mindset. In this blog post, I talk about how I'm working on swinging back to positivity."
-categories: ['Traumas', 'Tech industry', 'Open-source', 'Communities']
+tags: ['Traumas', 'Tech industry', 'Open-source', 'Communities']
 ---
 
 I'm a person who tends to look at things through a positive lens.

@@ -1,7 +1,7 @@
 ---
 title: 'Automating iOS review tasks with Danger'
 description: 'Post that explains how to automate review tasks with the help of the tool Danger'
-categories: [review, danger, pr, github]
+tags: [review, danger, pr, github]
 ---
 
 This week I've been working automating some review tasks at SoundCloud with a tool called [Danger](https://github.com/danger/danger) from [@orta](https://github.com/orta/) and [@krausefx](https://github.com/KrauseFx). We had some linting tasks in CI that analyzed the code and stopped the whole build process notifying the affected developers about something not matching the project specs. Developers had to go into Jenkins (in our case), check out the build log, fix what was failing, commit and push the changes restarting the pipeline execution. **What if we could report all that handy information and check results directly to GitHub?** That's exactly what Danger tool does. I first heard about it reading this very interesting article from Orta title ["Being a Better Programmer When You're Actually Lazy"](http://artsy.github.io/blog/2016/03/02/Lazily-Automation/). Just summarizing what Danger does:

@@ -1,6 +1,6 @@
 ---
 title: My first coding video on Youtube
-categories: ['youtube', 'community', 'tuist']
+tags: ['youtube', 'community', 'tuist']
 ---
 
 I never thought I'd end up doing this,

@@ -1,7 +1,7 @@
 ---
 title: Why Open Source helps you to become a better developer
 description: "Most of developers haven't tried creating an Open Source component before. Since I apply it to every of my projects I feel the results and development process has improved a lot. In this article I will describe why it's so important"
-categories: [opensource, carthage, cocoapods]
+tags: [opensource, carthage, cocoapods]
 ---
 
 For those who are not conscious about that, Open Source is the reason of the existence of many development communities. Would you imagine nowadays the iOS/OSX development without CocoaPods? And what about Ruby without its Gems? A lot of developers around the world put their efforts to simplify your daily stuff publishing their work in an Open Source way through these dependency managers (for them because otherwise it would be impossible to resolve many dependencies conflicts of our projects). Open Source a project doesn't mean just `git push origin` of your projects and making them public. It has some extra implications that will help you as a developer and with your future projects. Have you ever done it before? Would you like to know how it helped to me? Let's see.

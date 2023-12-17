@@ -1,7 +1,7 @@
 ---
 title: "Balancing mastery and sustainability"
 description: "Juggling roles in Tuist, from coding to community support, taught the delicate balance between mastery and sustainability in open-source projects."
-categories: ['Sustainability', 'Open Source', 'Tuist']
+tags: ['Sustainability', 'Open Source', 'Tuist']
 ---
 
 My work with Tuist has revealed the intricate evolution of open-source projects into complex systems that demand effective governance. I embarked on this journey with a singular **focus on craft and community**, yet as the project expanded, I found myself juggling numerous roles. These included *coding, updating social media, reviewing code, delivering talks, writing documentation, providing support, and even redesigning and implementing websites*. Such diverse tasks are typically handled by specialized roles or entire teams in corporations, but in the realm of open-source, these responsibilities often fall on a few individuals, sometimes just one. This can lead to [burnout](https://en.wikipedia.org/wiki/Emotional_exhaustion), a struggle often borne in silence due to a fear of appearing vulnerable to the community. It feels like an unspoken obligation to live up to a vision, showcasing the** complex nature of human psychology.**

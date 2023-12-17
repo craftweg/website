@@ -1,7 +1,7 @@
 ---
 title: How I feel working on Tuist
 description: A random reflection about Tuist and why I'm so glad working on it.
-categories: [xcode, tuist, feelings]
+tags: [xcode, tuist, feelings]
 ---
 
 It’s been a long time working on Tuist, and despite some downs, I continue to be excited about the project. In hindsight, these are the facts that contribute to that:

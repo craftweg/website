@@ -1,6 +1,6 @@
 ---
 title: Anxiety-free working
-categories: ['anxiety', 'tech industry']
+tags: ['anxiety', 'tech industry']
 ---
 
 I feel it really hard to work these days without feeling anxious.

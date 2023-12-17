@@ -1,7 +1,7 @@
 ---
 title: Keeping up with dependencies updates
 description: A brief reflection on Dependabot, a tool that was recently acquired by GitHub and that helps automate the process of updating dependencies on your GitHub repositories.
-categories: [open source, github, repository, dependencies]
+tags: [open source, github, repository, dependencies]
 ---
 
 Keeping dependencies up to date is and important task that we shouldn't disregard because updates sometimes bring **security patches and improvements** that we might want to benefit from in our projects. Unfortunately,

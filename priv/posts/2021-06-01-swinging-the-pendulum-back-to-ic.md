@@ -1,6 +1,6 @@
 ---
 title: Swinging the pendulum back to engineering
-categories: ['shopify', 'management', 'coding']
+tags: ['shopify', 'management', 'coding']
 ---
 
 Over the past two years,

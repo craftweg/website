@@ -1,6 +1,6 @@
 ---
 title: Signing with Xcode on CI
-categories: [xcode, swift, signing, macos]
+tags: [xcode, swift, signing, macos]
 ---
 
 Today,

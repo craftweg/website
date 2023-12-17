@@ -1,7 +1,7 @@
 ---
 title: 'Codemotion experience'
 description: 'After two days of Codemotion I would like to share my experience in my first time in a developers event like that one'
-categories: ['codemotion', 'viper']
+tags: ['codemotion', 'viper']
 ---
 
 It was the first time I attended a developers event of that magnitude and I did it as _a speaker_. It was a challenge for me because I had given the same talk in my previous job office but not in a national event like Codemotion is. More than 1500 developers sharing their knowledge, their skills, tools, ... and I was there to talk about the architecture VIPER we had been working with in Redbooth during the past months before leaving (I keep using it in my new job).

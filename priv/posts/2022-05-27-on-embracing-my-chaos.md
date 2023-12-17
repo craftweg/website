@@ -1,6 +1,6 @@
 ---
 title: "On embracing my chaos"
-categories: ['lifestyle', 'learnings']
+tags: ['lifestyle', 'learnings']
 ---
 
 Over the past few years, I’ve tried and failed many times at giving my chaotic self some order — **something that inevitably made me feel anxious**.

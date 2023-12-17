@@ -1,7 +1,7 @@
 ---
 title: Be Reactive my friend
 description: Article that explains the benefits of reactive programming in the iOS world.
-categories: [github, scrum, issues, zenhub, management, project]
+tags: [github, scrum, issues, zenhub, management, project]
 ---
 
 In a world where data comes from everywhere being reactive when coding your apps could make a huge difference in the user experience. Even though Reactive is becoming more popular across the community the benefits are not clear enough. Entities can trigger events from many places around the app. It can be either from an user action, an application lifecycle or a push notification. These triggers turn into some state changes that our app has to reflect somehow. Some examples could be:

@@ -1,6 +1,6 @@
 ---
 title: Catching crashes at launch time on Android React Native apps
-categories: ['react-native', 'android', 'crashes']
+tags: ['react-native', 'android', 'crashes']
 ---
 
 One thing that I noticed about React Native is that with the setup that most teams have on CI **launch-time crashes can go unnoticed**.

@@ -1,6 +1,6 @@
 ---
 title: ViteJS and Rails
-categories: ['vite', 'rails', 'open-source']
+tags: ['vite', 'rails', 'open-source']
 ---
 
 I recently had to set up a React frontend for a Rails app,

@@ -1,6 +1,6 @@
 ---
 title: The beauty of not expecting something in return
-categories: ['people', 'philosophy']
+tags: ['people', 'philosophy']
 ---
 
 Yesterday I had a thought-provoking chat with an acquaintance. He thinks that **when we connect with someone is because they are a means to achieve goals** - for example a business partnership. He was, in fact, trying to do that with me, and I felt really disappointed. I was invited to a casual lunch, then spent a nice afternoon with them having coffee and some drinks, until at some point he realize that I was too naive to get the game that he was trying to play.

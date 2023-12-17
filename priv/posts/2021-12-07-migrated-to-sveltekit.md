@@ -1,6 +1,6 @@
 ---
 title: 'Migrated to SvelteKit'
-categories: ['web', 'svelte', 'sveltekit']
+tags: ['web', 'svelte', 'sveltekit']
 ---
 
 I migrated this blog to [SvelteKit](https://kit.svelte.dev/).

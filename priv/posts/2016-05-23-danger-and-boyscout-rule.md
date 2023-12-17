@@ -1,7 +1,7 @@
 ---
 title: 'Boy Scouts rule with Danger'
 description: 'Post where I explain how Danger helped us at SoundCloud to apply the programming Boy Scouts rule to our workflow'
-categories: [danger, github, soundcloud]
+tags: [danger, github, soundcloud]
 ---
 
 ![Boy Scouts](/images/posts/boyscouts.jpg)

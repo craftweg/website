@@ -1,7 +1,7 @@
 ---
 title: "Reclaiming Mental Peace: My Personal Odyssey"
 description: "Battling daily mental fatigue, I embarked on a personal journey to rediscover clarity. Through exercise, mindful task management, and self-reflection, I'm finding my way back."
-categories: ['Mental health', 'Personal Growth', 'Mindfulness', 'Productivity', 'Life Balance']
+tags: ['Mental health', 'Personal Growth', 'Mindfulness', 'Productivity', 'Life Balance']
 ---
 
 Every morning, I wake up with a vigor that promises a fruitful day. But come evening, ** my mind clouds over**, leaving me mentally drained. This daily battle with mental fatigue has shadowed me for years. I'd gaze at my reflection, asking the weary eyes staring back, *"What am I missing?"*

@@ -1,7 +1,7 @@
 ---
 title: Static imports with ESM and startup time
 description:
-categories: [node, javascript]
+tags: [node, javascript]
 ---
 
 When building a [Command-line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface) with Javascript and [ESM](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) to run on [NodeJS](https://nodejs.org/en/),

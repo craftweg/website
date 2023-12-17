@@ -1,7 +1,7 @@
 ---
 title: 'Micro Features Architecture for iOS'
 description: 'Organize your app in small features that you '
-categories: [xcode, ios swift, objective-c, testing, appcode]
+tags: [xcode, ios swift, objective-c, testing, appcode]
 ---
 
 When teams grow, maintaining large codebases can be a big pain in the ass. You end up having a lot of conflicts because when a feature is built up, it relies on horizontal layers and across teams that are shared with other features. One example for an horizontal layer could be the database.

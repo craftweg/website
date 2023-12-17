@@ -1,7 +1,7 @@
 ---
 title: "3 package managers + 2 build tools = One big mess "
 description: "I shared a bit of a reflection on what are the issues with current Apple's tooling touching on some of the points that I presented in my Swiftable 2023 talk."
-categories: ['Tuist', 'Xcode', 'Swift Package Manager']
+tags: ['Tuist', 'Xcode', 'Swift Package Manager']
 ---
 
 As you know,

@@ -1,7 +1,7 @@
 ---
 title: Hot-reloading and ESM
 description:
-categories: [esm, javascript, modules]
+tags: [esm, javascript, modules]
 ---
 
 While building [Gestalt](https://github.com/gestaltjs), I realized that many web frameworks don’t move away from [CommonJS](https://en.wikipedia.org/wiki/CommonJS) because their usage of modules in [ESM](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) would lead to a slower hot-reloading experience. This is primarily due to how module graphs are loaded with ESM – the entire graph needs to be fully loaded before the code starts executing. Imagine how slow hot-reloading would be if that had to happen every time we changed a file.

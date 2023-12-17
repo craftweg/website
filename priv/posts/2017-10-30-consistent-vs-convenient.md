@@ -1,7 +1,7 @@
 ---
 title: Consistent vs convenient
 description: I analyze in this post why some decisions that we make in our projects might turn into bad viruses that spread all over the code base.
-categories: [consistency, convenience, rxswift, swift, xcode, reactive, realm]
+tags: [consistency, convenience, rxswift, swift, xcode, reactive, realm]
 ---
 
 Have you ever used programming paradigms like [functional](https://en.wikipedia.org/wiki/Functional_programming) or [reactive programming](https://en.wikipedia.org/wiki/Functional_reactive_programming)? Have you tried the revolutionary approach to model how the state is contained and flows in your app, [Redux](http://redux.js.org/)? I find it great that companies and open source organizations try to solve issues that we developers, have to face on a daily basis by introducing new concepts in the industry. We'll see more of those coming, and what it's cool nowadays won't be in a matter of months/years. Do you think reactive programming is the coolest thing ever? Let's see in a few years if it was the coolest thing ever, or there was still space for even cooler alternatives.

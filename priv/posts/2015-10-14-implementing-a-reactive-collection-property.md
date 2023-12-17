@@ -1,7 +1,7 @@
 ---
 title: Implementing a Mutable Collection Property for ReactiveCocoa
 description: 'These are the steps I followed to create a Mutable Collection Property for ReactiveCocoa. Very useful if you want to get events about changes produced in a collection'
-categories: [reactivecocoa, reactive, cocoa, stream, signals]
+tags: [reactivecocoa, reactive, cocoa, stream, signals]
 ---
 
 I've been recently playing a lot with Reactive, especially ReactiveCocoa. Since they launched the version for Swift I can say I'm like a baby using it in my project. There's something in particular which I use a lot in a MVVM pattern which are properties.

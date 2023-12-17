@@ -1,6 +1,6 @@
 ---
 title: Generation of Swift interfaces to access resources
-categories: [tuist, swiftgen, project generation, xcode, swift, fastlane]
+tags: [tuist, swiftgen, project generation, xcode, swift, fastlane]
 ---
 
 Many of you might already be familiar with [SwiftGen](https://github.com/SwiftGen/SwiftGen); a tool that generates Swift code to access resources in a type-safe manner. Having a type-safe API is something that Android developers have had for a long time, and that Apple has never added to Xcode.

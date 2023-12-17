@@ -1,7 +1,7 @@
 ---
 title: "Exploring Mocking Solutions in Elixir: Introducing Modulex"
 description: "Exploring Elixir's Mox for mocking reveals boilerplate code issues. A new package, modulex, aims to streamline this process."
-categories: ['Elixir', 'Testing', 'Mocking']
+tags: ['Elixir', 'Testing', 'Mocking']
 ---
 
 I've recently delved into the world of mocking in Elixir and have been particularly intrigued by the Mox package, endorsed by José Valim. While studying this approach, I noticed that it could introduce a considerable amount of boilerplate code into a codebase, along with potential inconsistencies in how module references are managed in the application environment. I couldn't help but think there had to be a more streamlined solution. 

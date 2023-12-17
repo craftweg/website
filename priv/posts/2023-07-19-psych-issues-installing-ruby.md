@@ -1,7 +1,7 @@
 ---
 title: Fixing psych compilation error trying to install Ruby on an Apple M2 laptop
 description: "Buckle up for a hilarious adventure in Ruby installation! Unravel the mysteries of rtx, Homebrew, and secret environment variables."
-categories: [Homebrew, Ruby, GitHub, rtx, asdf]
+tags: [Homebrew, Ruby, GitHub, rtx, asdf]
 ---
 
 Let me tell you about the hilarious roller coaster ride I had today while attempting to install [Ruby 3.2.2](https://www.ruby-lang.org/en/news/2023/03/30/ruby-3-2-2-released/) using [rtx](https://github.com/jdxcode/rtx), which is basically a turbocharged version of asdf. Man, oh man, did I encounter some wild errors during this wild adventure! But fear not, dear readers, because I've got the solution to this mind-boggling puzzle, and I'm here to share it with you. **Consider it my gift to humanity, saving you precious time and countless headaches.**

@@ -1,6 +1,6 @@
 ---
 title: "On learning Elixir"
-categories: ['elixir', 'erlang']
+tags: ['elixir', 'erlang']
 ---
 
 As you might have noticed, I’ve been learning [Elixir](https://elixir-lang.org/) for the past few weeks. Why? You might wonder. I’m a programming languages nerd. I like learning about how different languages solve the same challenges, which gives me new perspectives and ideas for solving upcoming problems.

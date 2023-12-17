@@ -1,7 +1,7 @@
 ---
 title: Setup your iOS Projects for testing
 description: 'Learn how to setup your iOS for testing using the most popular testing libraries and how to integrate your project tests in the development flow.'
-categories: [specta, kiwi, tdd, unittests, cocoapods]
+tags: [specta, kiwi, tdd, unittests, cocoapods]
 ---
 
 In other programming communities, like the Ruby one, developers are more aware of testing new components. Ensuring every component is tested **is not common** within the mobile appcommunity.

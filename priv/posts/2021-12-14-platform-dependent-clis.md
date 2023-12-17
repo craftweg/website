@@ -1,6 +1,6 @@
 ---
 title: 'Platform-dependent CLIs'
-categories: ['development', 'platforms', 'cli']
+tags: ['development', 'platforms', 'cli']
 ---
 
 I'm a firm believer that **shaping products as developer platforms is an amazing idea to let developers from all over the world make your product diverse**.

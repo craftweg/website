@@ -1,7 +1,7 @@
 ---
 title: Focusing on Swift
 description: "Transitioning from Swift to diverse technologies broadened my problem-solving skills, but scattered focus hindered productivity. To prioritize mental well-being, I'll limit tech consumption. Swift and Apple's ecosystem captivate me, offering integrated tools and a supportive community for app development. I'll step back from web-related learning and return to my roots, enjoying the process of building apps once again."
-categories: [Swift, Programming languages]
+tags: [Swift, Programming languages]
 ---
 
 In the past years of my career, I went from being a Swift developer to working with various technologies.

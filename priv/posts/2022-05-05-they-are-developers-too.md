@@ -1,6 +1,6 @@
 ---
 title: "But they are developers too"
-categories: ['tooling', 'open-source']
+tags: ['tooling', 'open-source']
 ---
 I often hear a statement when justifying decisions in building developer tools: but they are developers too. It bugs me a ton because it throws all the developers into the same bag and assumes that they know what you know.
 

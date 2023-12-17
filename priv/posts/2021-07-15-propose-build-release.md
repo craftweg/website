@@ -1,6 +1,6 @@
 ---
 title: Propose, prototype, and build
-categories: ['organization', 'management', 'planning']
+tags: ['organization', 'management', 'planning']
 ---
 
 One of the things I like about [Shopify](https://shopify.com) is an internal tool called **Vault**.

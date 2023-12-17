@@ -1,7 +1,7 @@
 ---
 title: Modularize your mobile projects
 description: 'Learn how to split your app components in different bundles instead of dealing with an unique bundle that packages the whole app'
-categories: [target, module, android studio, scheme, xcconfig, xcode]
+tags: [target, module, android studio, scheme, xcconfig, xcode]
 ---
 
 When we start building mobile apps we tend to do everything on the same bundle. If you are an iOS developer that means only one target, with one scheme with the build config and that project has some dependencies that might be attached as frameworks, static libraries, or using a dependency manager like CocoaPods. If you are familiar with Android you probably use a module with some dependencies managed by Gradle.

@@ -1,6 +1,6 @@
 ---
 title: "Users don't care about your web app's portable binary"
-categories: ['golang', 'open-source', 'binaries']
+tags: ['golang', 'open-source', 'binaries']
 ---
 
 We,

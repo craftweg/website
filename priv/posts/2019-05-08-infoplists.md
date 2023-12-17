@@ -1,7 +1,7 @@
 ---
 title: Abstracting Info.plist files
 description: On this blog post I talk about an idea that I'm pondering for Tuist. In the aim of abstracting implementation details from Xcode projects, I think there's an opportunity for Tuist to abstract `Info.plist` files which are barely modified by developers after they get created.
-categories: [xcode, swift, ios, info.plist]
+tags: [xcode, swift, ios, info.plist]
 ---
 
 If you have worked with Xcode projects before, you might know what `Info.plist` files are. For those of you who are not familiar with them, they are plain xml files with key-value pairs that define app settings such as the icon or the build number. Below you find an example of the structure of the file:

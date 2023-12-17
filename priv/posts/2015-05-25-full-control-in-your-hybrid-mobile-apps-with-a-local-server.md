@@ -1,7 +1,7 @@
 ---
 title: Full control in your hybrid mobile apps with a local server, 8fit
 description: 'Custom solution to have full control over your hybrid apps bundling the content locally and controlling updates'
-categories: [gcdwebserver, nanohttpd, ionic]
+tags: [gcdwebserver, nanohttpd, ionic]
 ---
 
 Since 8fit was developed we’ve been using the webview application cache to send new updates to the users. It allowed us to update without releasing new apps (something slow if you think about the Apple review process). Although it’s something good, it has also some cons, it’s a bit difficult to setup everything properly, specially the server config to ensure the webview doesn’t cache the files that shouldn’t be cached. Moreover the control over the update process is very low and it increases the boot times because sometimes it has to get the resources remotely when it doesn’t actually need them.

@@ -1,6 +1,6 @@
 ---
 title: Add and remove footer using NSBox
-categories: ['angle', 'cocoa', 'appkit', 'macos']
+tags: ['angle', 'cocoa', 'appkit', 'macos']
 ---
 
 If you use macOS,

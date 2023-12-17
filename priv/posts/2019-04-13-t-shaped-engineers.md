@@ -1,7 +1,7 @@
 ---
 title: T-shaped engineers
 description: Specialized engineers usually refrain from working on tasks outside their comfort zone of familiar programming languages and tools. While I believe this might be a good setup for projects that are just starting, I think building teams with t-shaped engineers is crucial for the long-term success of the project.
-categories: [shopify, engineering, teams, leadership]
+tags: [shopify, engineering, teams, leadership]
 ---
 
 _How often have you heard "I'm an iOS engineer"?_ Every time I hear it, I wonder if that means that the engineer is only able to code iOS apps, or that it's their expertise area but are open to engineer for other platforms and with other programming languages.

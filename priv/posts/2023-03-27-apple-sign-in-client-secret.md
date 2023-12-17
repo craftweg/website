@@ -1,7 +1,7 @@
 ---
 title: Generating client secret from Apple's P8 key in Elixir
 description: "Implementing Sign in with Apple on a macOS app using JWT and Phoenix. Learn how to generate a client secret for web authentication. "
-categories: [SigninWithApple, macOS, JWT, Phoenix]
+tags: [SigninWithApple, macOS, JWT, Phoenix]
 ---
 
 I had to implement [Sign in with Apple](https://developer.apple.com/sign-in-with-apple/) as part of a macOS app I'm building with a friend.

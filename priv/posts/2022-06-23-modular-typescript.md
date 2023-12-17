@@ -1,6 +1,6 @@
 ---
 title: "Modular projects, Typescript, and developer experience"
-categories: ['typescript', 'developer experience', 'modularity']
+tags: ['typescript', 'developer experience', 'modularity']
 ---
 
 Have you tried to set up a modular Typescript project with multiple NPM packages?

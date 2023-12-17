@@ -1,7 +1,7 @@
 ---
 title: Integrating Tailwind into your Swift projects
 description: "Tailwind: A game-changer for web styling, with seamless integration into Swift server projects using SwiftyTailwind."
-categories: [Swift, Tailwind]
+tags: [Swift, Tailwind]
 ---
 
 In recent years, [Tailwind](https://tailwindcss.com) has gained popularity as a web styling tool. Frameworks such as [Ruby on Rails](https://rubyonrails.org) and [Phoenix](https://www.phoenixframework.org) default to using Tailwind for new projects. If you're unfamiliar with Tailwind, it provides **a set of well-defined and configurable utility classes that ensure consistent styling and allow for atomicity of markup and style**. While JavaScript-based UI solutions like [React](https://react.dev) or [Vue](https://vuejs.org) already offer this functionality, they rely on the JavaScript ecosystem of tools and packages. Tailwind, on the other hand, brings these benefits to other ecosystems without introducing additional dependencies. It accomplishes this through a simple CLI that runs during build time and outputs CSS, removing any unused classes from the project. Essentially, using Tailwind doesn't require developers to install new system dependencies like [NodeJS](https://nodejs.org/en), making it easier to contribute to a project.

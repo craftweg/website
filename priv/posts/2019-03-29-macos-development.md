@@ -1,7 +1,7 @@
 ---
 title: macOS development and being comfortable
 description: I've been avoiding macOS development for no reason. This blog post is a short reflection on why I think I've been doing it.
-categories: [comfortable, macos, development]
+tags: [comfortable, macos, development]
 ---
 
 _How has your week been?_ It's Friday, I'm having a sip of the first morning coffee, and I thought it'd be a good idea to write something down in my blog post. For years, I've been focusing on building iOS apps and tools around it. Developing macOS was always a far remote thing to me, and somehow postponed every time the idea of doing something for macOS came to my mind.

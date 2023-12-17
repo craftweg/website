@@ -1,7 +1,7 @@
 ---
 title: Functional is about functions (Swift)
 description: 'Quick introduction to what Functional Programming in Swift is from the simple perspective of functions'
-categories: [functional, functions, programming, reactive, swift]
+tags: [functional, functions, programming, reactive, swift]
 ---
 
 Since Swift 2.0 was launched this term has become very popular. You attend conferences and this is usually the topic most of the people talk about. You see people even struggling for its use in their apps, really overwhelming for it. Why? It’s **something that can be easily done with Swift but it’s not something new** _(a lot of languages where already offering fully functional paradigms before)_

@@ -1,7 +1,7 @@
 ---
 title: An explicit build graph with Nx for a better DX
 description:
-categories: [nx, javascript, workspaces]
+tags: [nx, javascript, workspaces]
 ---
 
 When I started doing Javascript more actively,

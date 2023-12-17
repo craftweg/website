@@ -1,7 +1,7 @@
 ---
 title: 'I want to be rich'
 description: ""
-categories: ['finances', 'investments', 'financial independence', 'dvag scam']
+tags: ['finances', 'investments', 'financial independence', 'dvag scam']
 ---
 
 It's been a while since I started reading more about personal finances and investments.

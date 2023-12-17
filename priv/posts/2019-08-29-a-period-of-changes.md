@@ -1,7 +1,7 @@
 ---
 title: A period of changes
 description: Dumping some thoughts on what the last month have been for me in my personal and professional life.
-categories: [life, update]
+tags: [life, update]
 ---
 
 It's been a while since I wrote my last blog post here.

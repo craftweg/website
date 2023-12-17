@@ -1,6 +1,6 @@
 ---
 title: 'Great solutions for the wrong problems'
-categories: ['development', 'problem-solving', 'software']
+tags: ['development', 'problem-solving', 'software']
 ---
 
 As you might know,

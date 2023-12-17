@@ -1,7 +1,7 @@
 ---
 title: The urge to be the first
 description: "Just an observation of a trend that I've seen in our industry: developers rushing to be the gain the label of expert in a given technology."
-categories: [unhealthy-tech, stress, technology, wwdc]
+tags: [unhealthy-tech, stress, technology, wwdc]
 ---
 
 I have the impression that there's a increasing urge to be the first in our industry. The first one to write a blog post about SwiftUI, a book, a podcast, a talk, an opinion to be pushed onto others. I'm honestly exhausted when I look at Twitter these days. I haven't had time to watch the talks or read the official documentation, but I feel I know a lot about SwiftUI. I know a lot through the lenses of those who are running the race to be the first one, to be assigned the label of expert on the technology. _God sake!_

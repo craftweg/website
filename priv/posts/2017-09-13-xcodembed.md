@@ -1,7 +1,7 @@
 ---
 title: Conditionally embed your dynamic frameworks
 description: A command line tool written in Swift for copying the frameworks from your project to the output frameworks directory.
-categories: [xcodeproj, swift, xcode, xcodembed]
+tags: [xcodeproj, swift, xcode, xcodembed]
 ---
 
 As part of dynamic linking frameworks in your Xcode apps frameworks need to be copied into your app `Frameworks` folder. There are multiples ways to do so:

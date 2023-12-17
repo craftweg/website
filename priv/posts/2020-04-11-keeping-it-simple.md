@@ -1,6 +1,6 @@
 ---
 title: Keeping it simple
-categories: ['product', 'tooling', 'development principles']
+tags: ['product', 'tooling', 'development principles']
 ---
 
 If there's something that characterizes my approach to problem solving these days is **simplicity.**

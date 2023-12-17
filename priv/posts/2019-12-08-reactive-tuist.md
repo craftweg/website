@@ -1,7 +1,7 @@
 ---
 title: Adding bits of reactive programming to Tuist
 description: In this blog post I talk about a recent decision that we made to start using reactive programming to model asynchronous tasks in Tuist.
-categories: [tuist, open source, reactive programming]
+tags: [tuist, open source, reactive programming]
 ---
 
 Until now, most of the code in Tuist followed an imperative approach,

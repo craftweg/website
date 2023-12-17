@@ -1,6 +1,6 @@
 ---
 title: A better signing experience in Xcode
-categories: ['tuist', 'signing', 'xcode', 'fastlane']
+tags: ['tuist', 'signing', 'xcode', 'fastlane']
 ---
 
 A few days ago, [Marek](https://twitter.com/marekfort) decided to take on a proposal that I made for Tuist a while ago, **management of certificates and provisioning profiles**.

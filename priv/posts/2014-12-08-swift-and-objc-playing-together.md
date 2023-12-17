@@ -1,7 +1,7 @@
 ---
 title: 'Swift and Objective-C playing together'
 description: 'Start using Swift in your Objective-C projects. Avoid some headaches with these useful tips and advices for the communication layer between your Objective-C code base and your future Swift implementations'
-categories: [swift, objective-c, integration, cocoapods]
+tags: [swift, objective-c, integration, cocoapods]
 ---
 
 Since Swift was released, a lot of developers have been wondering about the Swift integration in their projects. If we take a look to the Apple documentation it seems that the integration is possible, the language was designed for having that kind of copmatibility instead. However the majority of them haven't taken the decission of start using it, sometimes for fear of breaking something on the current code base, or probably for not having enough time to learn it.

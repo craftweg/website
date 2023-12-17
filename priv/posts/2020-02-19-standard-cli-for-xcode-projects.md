@@ -1,6 +1,6 @@
 ---
 title: A standard CLI for Xcode projects
-categories: [tuist, open source, swift, xcode, project generation]
+tags: [tuist, open source, swift, xcode, project generation]
 ---
 
 There’s an idea that I’d love [Tuist](https://tuist.io) to move towards: provide a CLI that is standard across all the projects defined using Tuist.

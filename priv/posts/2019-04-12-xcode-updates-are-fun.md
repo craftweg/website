@@ -1,7 +1,7 @@
 ---
 title: Xcode updates are fun
 description: On this blog post I talk about Xcode updates and how painful they can sometimes be.
-categories: [xcode, swift, ios, macos]
+tags: [xcode, swift, ios, macos]
 ---
 
 Last week we pushed the latest Xcode version to all the CI hosts. It's an exciting thing because you see the company projects keeping up with the tools, but updates are painful. There hasn't been any Xcode update that required any work other than installing it. We cross our fingers every time hoping for the update to be straightforward but we know that's being too optimistic. That never happens.

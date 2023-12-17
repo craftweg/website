@@ -1,6 +1,6 @@
 ---
 title: "On finding passion in devising developer experiences"
-categories: ['career', 'developer experience', 'growth']
+tags: ['career', 'developer experience', 'growth']
 ---
 
 **What am I professionally?**

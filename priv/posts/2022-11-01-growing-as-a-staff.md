@@ -1,7 +1,7 @@
 ---
 title: Growing as a Staff Developer
 description:
-categories: [staff developer, engineering, growth]
+tags: [staff developer, engineering, growth]
 ---
 
 A couple of months ago, I reached [Shopify](https://shopify.com)'s Senior Staff Developer level. They were exciting news and excellent proof that Shopify continues to be a place for growth. Yet they pushed me out of my comfort zone, throwing me into a new realm of responsibilities.

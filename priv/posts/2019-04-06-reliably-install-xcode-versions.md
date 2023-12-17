@@ -1,7 +1,7 @@
 ---
 title: Reliably installing Xcode
 description: I started developing a tool, install-xcode that aims to help developers to install and upgrade versions of Xcode easily. In this blog post I talk about the motivation behinds building it and some design principles that I'm embrazcing.
-categories: [xcode, swift, ios, macos]
+tags: [xcode, swift, ios, macos]
 ---
 
 Apple hasn't traditionally done a good job at providing convenient channels for distributing their tools for development environments. A good example of that is Xcode. If you want to install it on your laptop and have an account on the App Store is fine. You just need to search for it, click download and voila 🎉! You can start coding straight away.

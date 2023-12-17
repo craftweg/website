@@ -1,7 +1,7 @@
 ---
 title: "From side project to sustainable tool"
 description: "Tuist, now 6 years old, has become essential for organizations using Xcode. While initially a side project, its popularity surged. To ensure sustainability, we're introducing paid features alongside free ones, navigating challenges like unauthorized forks and finding the right business model."
-categories: ['Tuist', 'Scalability', 'Xcode', 'Developer Tools']
+tags: ['Tuist', 'Scalability', 'Xcode', 'Developer Tools']
 ---
 
 It's hard to believe, but [Tuist](https://tuist.io) is now 6 years old and has become an **indispensable tool for medium and large organizations**. I began building it due to my profound understanding of the challenges associated with using Xcode at scale and the inaccessibility of alternative build systems for smaller organizations. Tuist was always a side project — something I built in my spare time.

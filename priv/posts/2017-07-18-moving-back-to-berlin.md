@@ -1,7 +1,7 @@
 ---
 title: Moving back to Berlin
 description: A brief retrospective on what my life has been in the last few months and my thougts on my move to Berlin.
-categories: [budapest, berlin, remote]
+tags: [budapest, berlin, remote]
 ---
 
 On January 2017 I moved to Budapest. My girlfriend was living there, and the distance was very hard. I had been in Berlin for approximately two years, and although I loved the city, I thought that moving to Budapest was the right call to make. I liked, and like my company, SoundCloud, so I wanted to continue working for it. I appreciate a lot the opportunity that I was given by them, working remotely supporting the team and the project from there. I was very excited; new working setup, new city and life style.

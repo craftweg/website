@@ -1,6 +1,6 @@
 ---
 title: What I learned as a manager
-categories: ['management', 'shopify', 'engineering']
+tags: ['management', 'shopify', 'engineering']
 ---
 
 As you might know,

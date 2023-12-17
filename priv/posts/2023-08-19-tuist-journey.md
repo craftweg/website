@@ -1,7 +1,7 @@
 ---
 title: "Tuist: From Passion to Craftsmanship, Charting New Horizons"
 description: "From its inception in 2018, Tuist has grown through passion and dedication, now embarking on new horizons."
-categories: ['Software craftsmanship', 'Tuist', 'Project evolution']
+tags: ['Software craftsmanship', 'Tuist', 'Project evolution']
 ---
 
 If you've journeyed with me from the onset, you'll recall the birth of [Tuist](https://tuist.io/) and how I've nurtured it through thick and thin. Since its inception in 2018, we've navigated tumultuous waters, including those frenzied days at my previous job. Today, allow me to pull back the curtain, recounting our **adventures, triumphs, and the promising horizon ahead.**

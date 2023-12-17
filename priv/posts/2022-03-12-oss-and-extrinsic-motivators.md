@@ -1,6 +1,6 @@
 ---
 title: 'OSS and extrinsic motivators'
-categories: ['javascript', 'open-source', 'communities']
+tags: ['javascript', 'open-source', 'communities']
 ---
 
 More and more,

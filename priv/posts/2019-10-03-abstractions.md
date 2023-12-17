@@ -1,7 +1,7 @@
 ---
 title: Abstractions
 description: In this blog post I talk about abstractions in the Xcode projects domain and how Tuist leverages the concept to conceptually compress intricacies of Xcode projects that developers are often confronted with.
-categories: [tuist, open source]
+tags: [tuist, open source]
 ---
 
 Most developers are familiar with the concept of abstractions. They are often used to turn a domain language into another language that suits the problem or set of problems better. Moreover, they can be leveraged to simplify things, or extend the abstracted element’s functionality. We have seen that over the years in open source libraries that aimed to simplify system frameworks such as UIKit, Foundation, or CoreData. Almofire, MagicalRecord, and SnapKit are good examples of abstractions that turned intricate APIs into a beautiful experience for developers. Those libraries **sparked joy**, which is a key element be engaged and motivated when we craft software. Let’s be honest, no one wants to spend their time understanding complex interfaces, figuring out how to use them safely, or working on repetitive tasks.

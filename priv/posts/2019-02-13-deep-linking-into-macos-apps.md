@@ -1,7 +1,7 @@
 ---
 title: Deep linking into macOS apps
 description: Some comments on what's the state of art of macOS handling deeplinks.
-categories: [deeplink, macos, cocoa, safari]
+tags: [deeplink, macos, cocoa, safari]
 ---
 
 Today I happened to play with deep links on macOS. Having worked a lot on the iOS platform, I assumed things would be alike. To my surprise, it wasn't like that.

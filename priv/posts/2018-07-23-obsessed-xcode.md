@@ -1,7 +1,7 @@
 ---
 title: Why am I obsessed with developers being productive using Xcode?
 description: In the last months I've been investing a big chunk of my free time on building tools to make developers productive working with Xcode. In this blog post I reflect on what led me to start working on that tool, Tuist, and how I'm addressing some of the challenges that are presented when using Xcode at scale.
-categories: [xcode, scale, swift, tuist, developer]
+tags: [xcode, scale, swift, tuist, developer]
 ---
 
 These days I'm attending Shopify's RnD summit where different teams give talks and workshops about some areas of the company. In today's talks, there was a topic that resonated with me: **being obsessed with developers productivity**. It made me think about a tool which I've been building for a few months, [Tuist](https://github.com/tuist), and what led me to devote part of my free time to build it.

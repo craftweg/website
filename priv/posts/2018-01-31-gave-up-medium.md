@@ -1,7 +1,7 @@
 ---
 title: I gave up using Medium
 description: I gave up using Medium and here are the reasons that led me to make the decission.
-categories: [medium, blog, writing]
+tags: [medium, blog, writing]
 ---
 
 A week ago I decided to remove all my publications from [Medium](https://mediu.com). I've been using Medium together with my blog to publish articles, and also to find content from other publishers. I like how clean the design of the platform is, and how easy it is to discover new content based on other publications that you liked. However, several reasons made me decide to stop using it, remove my posts and focus on my personal blog instead. These are the reasons:

@@ -1,7 +1,7 @@
 ---
 title: An update on the entrepreneurship path
 description: "Embarking on a tech-venture adventure; creating value, chasing joy, and conquering challenges."
-categories: [Entrepreneurship, Startups, Technology, Open Source, AI, Localization]
+tags: [Entrepreneurship, Startups, Technology, Open Source, AI, Localization]
 ---
 
 Just over a month has elapsed since [I embarked on my **entrepreneurial journey**](/blog/2023/05/28/indie-developer). I thought it would be an enriching experience to share my current standing, the emotional journey, and my forward-looking plans.

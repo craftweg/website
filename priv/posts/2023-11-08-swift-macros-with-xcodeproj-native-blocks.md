@@ -1,7 +1,7 @@
 ---
 title: "Integrating Swift Macros with Xcodeproj native blocks"
 description: "Exploring native Swift macro support in Tuist to simplify and accelerate Xcode project builds."
-categories: ['Macros', 'Swift', 'Xcode']
+tags: ['Macros', 'Swift', 'Xcode']
 ---
 [Swift Macros](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros/) were introduced by Apple as a feature bundled within Swift Packages. This approach enhances shareability—a notable limitation of [XcodeProj](https://github.com/tuist/xcodeproj) elements like [targets](https://github.com/tuist/XcodeProj/blob/main/Sources/XcodeProj/Objects/Targets/PBXNativeTarget.swift). However, it also tightens the reliance on seamless integration between Xcode and the Swift Package Manager (SPM), which, from my experience and that of others, can be less than ideal in large projects with numerous dependencies. In fact, some developers are shifting towards Tuist's methodology, reminiscent of [CocoaPods](https://cocoapods.org), where projects are immediately ready for compilation upon opening.
 

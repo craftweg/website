@@ -1,7 +1,7 @@
 ---
 title: Introducing xcodeproj
 description: Read, update and write your Xcode projects from Swift
-categories: [xcodeproj, swift, xcode]
+tags: [xcodeproj, swift, xcode]
 ---
 
 Today I’m pleased to announce a new open source project I’ve been working on for the last few months, [xcodeproj](https://github.com/carambalabs/xcodeproj). Xcodeproj is a library written in Swift that allows you interact with your Xcode projects from Swift. It provides a foundational API to build up your scripts and tools on top of it. It’s entirely written in Swift, documented and ready to be used. In this post, I’ll explain the motivation behind working on xcodeproj, show you the “get started” steps to start using the library, and give you some hints about ideas that I have to leverage this tool.

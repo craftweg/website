@@ -1,7 +1,7 @@
 ---
 title: Adding error tracking to a CLI written in Swift
 description: Trying to add error tracking to Tuist, I realized how the process is not very straightforward. This blog post describes the process that I followed to help other Swift developers add error tracking to their CLI tools.
-categories: [tuist, swift, swiftpm, xcode]
+tags: [tuist, swift, swiftpm, xcode]
 ---
 
 Software is written by imperfect creatures,

@@ -1,7 +1,7 @@
 ---
 title: 'Boosting your mobile app with Javascript and some mobile knowledge'
 description: 'Learn how useful might be giving some steps on mobile (Android/iOS) launching mobile solutions with web knowledge and with the same mobile native experience as any other app'
-categories: [backbone, mobile, angular, webapp, bridge]
+tags: [backbone, mobile, angular, webapp, bridge]
 ---
 
 When the 8fit team started giving their first steps they decided that the product was going to be a web app with some kind of native integrations. It was something with a lot of sense if we think that the founders of the company feel very comfortable with the language and with web in general. Might we have a great mobile experience using web technologies?

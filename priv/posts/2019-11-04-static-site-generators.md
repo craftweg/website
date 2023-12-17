@@ -1,7 +1,7 @@
 ---
 title: Static site generators
 description: In this blog post I talk about what traits I expect a static site generator to have, and why I believe Gatsby is a more suitable option than other alternatives in the industry.
-categories: [web, open source, static generator]
+tags: [web, open source, static generator]
 ---
 
 The range of options that we find nowadays to create static sites is endless. I remember back when I started as a developer and set up my personal website and blog using [Jekyll](https://jekyllrb.com/). I was not familiar with HTML & CSS but the amount of themes out there was so large that I could pick my favorite, customize it, and get a beautiful website where I could dump my thoughts and learnings.

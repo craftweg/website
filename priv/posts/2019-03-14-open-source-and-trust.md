@@ -1,7 +1,7 @@
 ---
 title: Open source and trust
 description: Trust is key for open source projects to thrive. In this blog post I explain what trust has meant for Tuist.
-categories: [tuist, open source, trust]
+tags: [tuist, open source, trust]
 ---
 
 As I wrote on [this blog post](/2019/03/01/software-and-people), one of the facts that I value the most about writing software is being able to meet and collaborate with people. Coincidentally, I recently had the opportunity to meet like-minded developers that started getting involved in [Tuist](https://tuist.io).

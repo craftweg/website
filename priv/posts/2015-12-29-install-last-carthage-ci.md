@@ -1,7 +1,7 @@
 ---
 title: 'Install the last Carthage version on CI services (Travis, Circle, ...)'
 description: 'Very simple script to keep your Carthage version updated without depending on Brew.'
-categories: [carthage, travis, ci]
+tags: [carthage, travis, ci]
 ---
 
 I've lately been working with multiple libraries and integrating them with CI, in particular Travis-CI because these libraries are Open Source. These libraries have dependencies that are resolved and built using [Carthage](https://github.com/carthage) which is distributed through Github Releases and [Brew](http://brew.sh). However, the version in brew does not always match the last version available on Github Releases and your CI providers don't offer the last version either. **What can you do then?**. Get the last version from Github and install it with a very simple script, _how?_:

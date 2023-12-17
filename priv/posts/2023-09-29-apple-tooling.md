@@ -1,7 +1,7 @@
 ---
 title: "Between Simplicity and Limitations: A Developer's Take on Apple's Tooling Strategy"
 description: "Apple's focus on simplifying basic tasks may overshadow the challenges of complex operations. Developers, often uninformed due to lack of data, face hard choices: pivot to alternatives or revamp systems. "
-categories: ['Xcode', 'iOS', 'Swift', 'Tuist', 'Build Systems']
+tags: ['Xcode', 'iOS', 'Swift', 'Tuist', 'Build Systems']
 ---
 
 Yesterday, I wrote about [the evolution of iOS development and the role of Tuist in it](https://tuist.io/blog/2023/09/23/ios-evolution-and-tuist/). I kept reflecting on some of the ideas that I touched on in it. One of them, in particular, is the **tradeoff** that Apple found itself having to make between developers' convenience, which is a key tool to make it easy for developers to get started, and flexibility, which is what medium-to-large apps need to be able to scale.

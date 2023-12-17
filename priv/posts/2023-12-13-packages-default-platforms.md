@@ -1,7 +1,7 @@
 ---
 title: "Swift Packages default to supporting all platforms"
 description: "Swift Package Manager defaults to supporting all platforms when they don't specify any. This is a problem for tooling like Tuist that integrates Swift Packages as Xcode project targets."
-categories: ["Swift", "Packages", "Xcode"]
+tags: ["Swift", "Packages", "Xcode"]
 ---
 
 **Did you know that Swift Packages default to supporting all platforms when they don't specify any?**

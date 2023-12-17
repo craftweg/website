@@ -1,7 +1,7 @@
 ---
 title: "Open-sourcing the lightning_css Elixir package"
 description: "In this blog post I talk about the motivations that led me to build and open-source lightning_css, an Elixir package to bring a more advanced CSS bundler to Elixir and Phoenix projects."
-categories: ['Elixir', 'CSS', 'Open-source', 'Web']
+tags: ['Elixir', 'CSS', 'Open-source', 'Web']
 ---
 
 I've been reading a lot and connecting with the idea of embracing the web platform and building right on it,

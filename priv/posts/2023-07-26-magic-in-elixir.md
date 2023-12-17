@@ -1,7 +1,7 @@
 ---
 title: "The Power of Concurrency: My Journey Learning Elixir"
 description: "Exploring Elixir, I discovered the power of concurrency-oriented programming"
-categories: [Elixir, Concurrency, Swift, Ruby, Software, 'Functional programming', 'José Valim']
+tags: [Elixir, Concurrency, Swift, Ruby, Software, 'Functional programming', 'José Valim']
 ---
 
 For the past few months, I've been immersed in learning **Elixir**. I can still recall the precise moment when curiosity about Elixir ignited within me. There I was, strolling around New York, while tuning into a podcast that featured [José Valim](https://twitter.com/josevalim?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor). He discussed how many programming languages, like [Ruby](https://www.ruby-lang.org/en/), were **not designed to scale vertically** (increasing computing power with more CPU processors). Moreover, those that did scale through threading primitives often posed challenges, such as data races. This made the task of writing parallel code less than ideal. Elixir, however, **combined the Ruby-like syntax I favored with the Erlang mental models and virtual machines.** This fusion allowed for the easy construction of scalable, distributed, and fault-tolerant apps. As soon as I returned home, I delved into the [Elixir documentation](https://elixir-lang.org/docs.html).

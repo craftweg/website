@@ -1,7 +1,7 @@
 ---
 title: Github as your project management tool
 description: Github is a powerful Git platform commonly used between the developers community. It offers features like issues, labels, milestones, releases, that used properly might help you to manage not only your technical repos but different aspects around your project like design, ideas, ...
-categories: [github, scrum, issues, zenhub, management, project]
+tags: [github, scrum, issues, zenhub, management, project]
 ---
 
 Github is a well known Git solution between all developers around the world. It helps you to manage your Git repositories remotely and offers extra features to complement the Git core and make you more productive. These extra features are for example Issues, Pull Requests, Labels, Milestones, Releases... We know about about them becase we use Github daily but we're totally conscious of how productive we can be using these components properly.

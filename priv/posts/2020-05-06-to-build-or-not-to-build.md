@@ -1,6 +1,6 @@
 ---
 title: To build, or not to build
-categories: ['tuist', 'open source']
+tags: ['tuist', 'open source']
 ---
 
 These days I'm a rollercoaster of emotions ―

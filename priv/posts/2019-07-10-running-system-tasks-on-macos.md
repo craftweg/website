@@ -1,7 +1,7 @@
 ---
 title: Running system tasks with Swift and Foundation
 description: In this blog post, I talk about my experience using one of Foundation's APIs, Process.
-categories: [foundation, swift, macos]
+tags: [foundation, swift, macos]
 ---
 
 Have you ever tried to use Foundation's API on macOS to run system tasks?

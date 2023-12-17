@@ -1,6 +1,6 @@
 ---
 title: "Javascript, ESM, and tools"
-categories: ['javascript', 'esm']
+tags: ['javascript', 'esm']
 ---
 
 I'm using Javascript, Typescript, and Node a lot these days as part of my work at [Shopify](https://shopify.com/) and [Gestalt](https://gestaltjs.org/) and I'm really loving it. In particular, its **[module system](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)** because it allows extensibility in ways it'd be more challenging with compiled languages or interpreted languages like Ruby that have a shared namespace where the code is loaded into. [Vite](https://vitejs.dev/) is an excellent example.

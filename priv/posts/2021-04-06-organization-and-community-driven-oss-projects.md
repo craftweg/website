@@ -1,6 +1,6 @@
 ---
 title: Community-driven and organization-driven open source
-categories: ['apple', 'open source', 'rust', 'cargo', 'swift']
+tags: ['apple', 'open source', 'rust', 'cargo', 'swift']
 ---
 
 Yesterday,

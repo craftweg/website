@@ -1,6 +1,6 @@
 ---
 title: 'The beauty of a standard command line interface'
-categories: ['reaxt-native', 'open-source', 'mobile']
+tags: ['reaxt-native', 'open-source', 'mobile']
 ---
 
 There's something beautiful in entering a directory that contains a project and knowing how to interact with it.

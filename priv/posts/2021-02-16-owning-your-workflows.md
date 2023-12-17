@@ -1,6 +1,6 @@
 ---
 title: 'Owning your workflows'
-categories: ['tooling', 'software', 'developer productivity', 'javascripts']
+tags: ['tooling', 'software', 'developer productivity', 'javascripts']
 ---
 
 The more I work with Javascript and Ruby,

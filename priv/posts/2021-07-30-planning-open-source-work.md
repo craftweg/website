@@ -1,6 +1,6 @@
 ---
 title: Planning open-source work
-categories: ['open-source', 'planning']
+tags: ['open-source', 'planning']
 ---
 
 One of the things that I find the hardest when building open-source software is **planning the work**.

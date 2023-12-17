@@ -1,7 +1,7 @@
 ---
 title: Typing file-system paths in Typescript
 description: Learn about an NPM package that we published recently, typed-file-system-path, that adds primitives to work with file-system paths more safely using types.
-categories: [cli, typescript, node, npm]
+tags: [cli, typescript, node, npm]
 ---
 
 **Have you ever noticed how common it is in standard libraries to treat file system paths as strings?** In fact, Node’s [path](https://nodejs.org/api/path.html) module exports a handful of convenient functions, all of which expect string arguments. There are a few caveats in following that approach. The first and more prominent one is that developers naturally operate with paths as if they were strings, which often leads to bugs. For example, concatenating a string that represents a relative path (e.g., `index.ts`) to an absolute one (e.g., `/project/src`) leads to `/project/srcindex.ts`, which is wrong. These issues don’t happen if we use the functions provided by the `node:path` module, but once again, they are strings; why not treat them as such?

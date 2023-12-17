@@ -1,6 +1,6 @@
 ---
 title: 'On evolving opinions'
-categories: ['reflection']
+tags: ['reflection']
 ---
 
 I recently came across a tweet that suggested me to undo my blog post on [Web3](/2021/11/29/exploring-web3) after sharing some bad things I'd uncovered in the technology.

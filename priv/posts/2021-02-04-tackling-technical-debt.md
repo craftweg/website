@@ -1,6 +1,6 @@
 ---
 title: 'Tackling technical debt in Tuist'
-categories: ['engineering', 'open-source', 'tuist', 'xcode', 'swift']
+tags: ['engineering', 'open-source', 'tuist', 'xcode', 'swift']
 ---
 
 I've recently spent a lot of time in [Tuist](https://tuist.io) tackling technical debt. It'd been a while since the last time I have to pause some other work for weeks to do something that would be beneficial for the long-term of the project.

@@ -1,6 +1,6 @@
 ---
 title: 'Programación Reactiva en Swift: Parte 1, Introducción'
-categories: [reactive, objective-c, swift, reactive cocoa]
+tags: [reactive, objective-c, swift, reactive cocoa]
 ---
 
 Con la llegada de Swift y la introducción de interesantes operadores, conceptos funcionales, y la seguridad de tipos el paradigma de programación reactiva ha cobrado especial importancia en el desarrollo de apps. En comparación con la programación imperativa a la que la mayoría de desarrolladores estamos acostumbrados _(yo incluido)_ programar de forma reactiva consiste en modelar los sucesos que tienen lugar en el sistema como un conjunto de _eventos_ que son enviados a través de un “stream” de datos. El concepto es bastante sencillo, y aunque no todos los sucesos tienen carácter de _stream_, pueden acabar siendo modelados como tal. Desde acciones que realiza el usuario sobre la UI, hasta la información que proviene del framework de localización.

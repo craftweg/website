@@ -1,7 +1,7 @@
 ---
 title: Working on a new website for Tuist
 description: An update on what I'm up to these days with Tuist. In particular, I talk about the new website that I'm designing and implementing for the project.
-categories: [tuist, product, open source, development]
+tags: [tuist, product, open source, development]
 ---
 
 Over the past few weeks I've been working on a new website for Tuist's.

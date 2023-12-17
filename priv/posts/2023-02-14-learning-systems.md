@@ -1,7 +1,7 @@
 ---
 title: Iterating on my learning system
 description: Some notes on what changes I'm introducing to my learning system.
-categories: [learning, logseq]
+tags: [learning, logseq]
 ---
 
 I find it challenging to retain the things that I learn.

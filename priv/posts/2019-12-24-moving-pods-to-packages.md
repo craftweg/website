@@ -1,6 +1,6 @@
 ---
 title: Moving Pods to Packages
-categories: [swift, swift package manager, cocoapods]
+tags: [swift, swift package manager, cocoapods]
 ---
 
 Today,

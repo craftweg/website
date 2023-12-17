@@ -1,6 +1,6 @@
 ---
 title: 'A future note to self about Omniauth'
-categories: ['rails', 'devise', 'open-source', 'omniauth']
+tags: ['rails', 'devise', 'open-source', 'omniauth']
 ---
 
 Every time I try to set up [Omniauth](https://github.com/omniauth/omniauth) on a Rails codebase I run into the same issue:

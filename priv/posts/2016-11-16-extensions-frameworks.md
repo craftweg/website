@@ -1,7 +1,7 @@
 ---
 title: Extensions, dependency injection and frameworks
 description: Learn how handy protocol extensions can be, when used in a frameworks architecture.
-categories: [soundcloud, core, developer, ios, xcode, swift, extensionss]
+tags: [soundcloud, core, developer, ios, xcode, swift, extensionss]
 ---
 
 I'd barely used extensions in my Swift code. When we started using Swift at SoundCloud I noticed a common parttern that most of people follow. They created extensions to organize the interface methods in different _"namespaces"_. As shown in the example below:

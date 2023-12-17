@@ -1,6 +1,6 @@
 ---
 title: Seeking inmutability
-categories: [tuist, open source, tuist]
+tags: [tuist, open source, tuist]
 ---
 
 I recently opened up [this PR](https://github.com/tuist/tuist/pull/870) on Tuist that turns models that represent the projects into structs.

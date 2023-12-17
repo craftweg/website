@@ -1,7 +1,7 @@
 ---
 title: 'VIPER, Looking for the perfect architecture'
 description: 'Talk I gave in the Redbooth HQ office for NSBarcelona with the iOS team talking about the VIPER architecture'
-categories: [redbooth, ios, 8fit]
+tags: [redbooth, ios, 8fit]
 ---
 
 The past thursday I gave a talk at Redbooth Office with the iOS team about an architecture we had been working with during the past months. We didn't use any architecture until then and the code was too coupled and messy that it was hard to review, debug, detect bugs, ...

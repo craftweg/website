@@ -1,6 +1,6 @@
 ---
 title: 'On cutting off some dopamine dependency'
-categories: ['mental health', 'health', 'technology']
+tags: ['mental health', 'health', 'technology']
 ---
 
 Over time, my relationship with the Internet has turned me into a dopamine-dependent.

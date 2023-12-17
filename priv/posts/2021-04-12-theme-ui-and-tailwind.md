@@ -1,6 +1,6 @@
 ---
 title: TailwindCSS or Theme-UI
-categories: ['styling', 'web', 'html', 'react']
+tags: ['styling', 'web', 'html', 'react']
 ---
 
 I’ve been using TailwindCSS a lot lately. I like the fact that styles are contained within the HTML elements through classes. You can copy and paste an element styled with Tailwind and you can be certain it’ll look the same. Unlike other styling solutions, Tailwind doesn’t require the UI to be JS-based so that you can leverage CSS-in-JS and Babel transformations. But like any solution to a problem, it comes with caveats. In the case of Tailwind is the steep learning curve to learn the semantics of the classes. I find myself doing frequent back and forths between VSCode and the documentation.

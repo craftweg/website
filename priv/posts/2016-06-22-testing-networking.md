@@ -1,7 +1,7 @@
 ---
 title: 'Network Testing - Say hello to Szimpla'
 description: "Introduction post for the last library that I've been working on, Szimpla."
-categories: [xcode, ios swift, objective-c, testing, appcode]
+tags: [xcode, ios swift, objective-c, testing, appcode]
 ---
 
 **Where does Szimpla come from?** For those who are curious about the naming, I got the name from a famous [Ruinpub in Budapest](http://welovebudapest.com/clubs.and.nightlife.1/budapest.s.most.famous.ruin.pub.szimpla.kert) I liked the name the first time I heard about it and I decided to use the name for this testing library _(later on I discovered that there’s also a [Szimpla in Berlin](http://www.szimpla.de/))_. Translated from the Hungarian it means _“Single”_ which doesn’t match with what the library is actually doing…😖

@@ -1,7 +1,7 @@
 ---
 title: Leaving Redbooth
 description: 'I took de decision to leave Redbooth and join to a new adventure. I explain here the reasons, everything I learned from there and my expectations for 8fit'
-categories: ['redbooth', 'ios', '8fit']
+tags: ['redbooth', 'ios', '8fit']
 ---
 
 It's difficult for me to talk about this and it was a few days ago when I had to tell my workmates about my decission, leaving Redbooth. I started with that startup from Barcelona when I haven't finished my bachelor yet. They gave me the opportunity to work remotely and I did my best. I help firstly the iOS team when the company's name was aready Teambox. Then I learnt a **bit of Android** when thought that I was able to help them and I thought why not?

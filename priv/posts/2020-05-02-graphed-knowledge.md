@@ -1,6 +1,6 @@
 ---
 title: Graphed knowledge
-categories: ['ios', 'knowledge', 'apps']
+tags: ['ios', 'knowledge', 'apps']
 ---
 
 Most of the note-taking apps that we can find out there are designed around the same organization principle: _notes are linearly organized and grouped into higher-lever abstractions that are folders._

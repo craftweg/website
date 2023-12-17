@@ -1,6 +1,6 @@
 ---
 title: 'Scaling up an open-source project'
-categories: ['engineering', 'open-source', 'tuist', 'github']
+tags: ['engineering', 'open-source', 'tuist', 'github']
 ---
 
 One thing that I've been struggling a lot with lately is the amount of distractions that come with the growth of an open-source project.

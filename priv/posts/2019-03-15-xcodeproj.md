@@ -1,7 +1,7 @@
 ---
 title: Interacting with Xcode projects in Swift
 description: This blog post is an introduction to the format of Xcode projects and xcodeproj, a Swift library that helps read and update Xcode projects in Swift. The post contains a few hands-on examples for developers to experiment with the library.
-categories: [xcodeproj, swift, xcode, project]
+tags: [xcodeproj, swift, xcode, project]
 ---
 
 There are some scenarios where it might be useful to do some automation on those files, for example, to detect references to files that don’t exist, or invalid build settings. Even though you could check those things by parsing the file yourself and traversing the structure, you can do it more conveniently with `xcodeproj`. It not only provides you with an API in Swift, but ensures that your changes in the project file are persisted with the format that Xcode.

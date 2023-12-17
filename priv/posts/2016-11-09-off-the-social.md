@@ -1,6 +1,6 @@
 ---
 title: Stepping off the social world
-categories: [facebook, twitter, instagram, social]
+tags: [facebook, twitter, instagram, social]
 ---
 
 I became addicted to social networks. **What's addicted for me?** Opening apps like [Facebook](https://facebook.com), [Twitter](https://twitter.com) and [Instagram](https://instagram.com) from time to time and scrolling on their home page up and down for minutes. I was at that point when unconsciously ended up opening the apps. _Do I have free time?_ Then let's open Facebook. _Is the project taking a lot of time to compile?_ Let's check what's going on on Instagram. A lot of context switching during the day...

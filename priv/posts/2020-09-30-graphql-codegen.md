@@ -1,6 +1,6 @@
 ---
 title: Generating Typescript code from a GraphQL schema
-categories: ['graphql', 'typescript', 'api']
+tags: ['graphql', 'typescript', 'api']
 ---
 
 Today, I learned about a tool called [GraphQL Code Generator](https://graphql-code-generator.com/) turns a GraphQL schema into typed models and utilities for interacting with a GraphQL API. In my case, I'm using it in a React application where I'm using [Apollo](https://www.apollographql.com/) as the client. Using the tool is as simple as adding a configuration YAML at the root of the project:

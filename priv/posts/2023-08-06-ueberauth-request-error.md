@@ -1,7 +1,7 @@
 ---
 title: "Fixing request/2 is undefined or private with Ueberauth"
 description: "Tackled 'request/2 undefined' error in Ueberauth setup for Digestfully, sharing solution here."
-categories: ['Elixir', 'Authentication', 'Ueberauth', 'Digestfully']
+tags: ['Elixir', 'Authentication', 'Ueberauth', 'Digestfully']
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Streamlining app development
-categories: ['shopify', 'react-native', 'xcode', 'apps']
+tags: ['shopify', 'react-native', 'xcode', 'apps']
 ---
 
 One thing that I noticed after [Shopify](https://shopify.com)'s commitment to [React Native](https://reactnative.dev/) is that it foster a culture of turning ideas into mobile apps.

@@ -1,7 +1,7 @@
 ---
 title: 'Xcode scripts to rule them all'
 description: 'Set of normalized scripts very useful for Xcode projects. Individual contributors will be familiar with them after they clone the project.'
-categories: [setup, xcode, script]
+tags: [setup, xcode, script]
 ---
 
 ![Scripts](/images/posts/scripts-rule-them-all.png)
