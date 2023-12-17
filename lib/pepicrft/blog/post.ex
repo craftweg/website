@@ -72,7 +72,7 @@ defmodule Pepicrft.Blog.Post do
   @spec generate_og_image(%Pepicrft.Blog.Post{}) :: any
   def generate_og_image(post) do
     {title_line_1, title_line_2} = og_image_title_lines(post)
-    categories = Enum.join(post.categories, ", ")
+    tags = Enum.join(post.tags, ", ")
 
     svg = """
     <svg viewbox="0 0 1200 600" width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ defmodule Pepicrft.Blog.Post do
         <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Alumni Sans'" font-size="70" y="250" x="100" stroke-width="0" stroke="#000" fill="#f8fafc">#{title_line_1}</text>
         <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Alumni Sans'" font-size="70" y="350" x="100" stroke-width="0" stroke="#000" fill="#f8fafc">#{title_line_2}</text>
         <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Alumni Sans'" font-size="30" y="550" x="50" stroke-width="0" stroke="#000" fill="#f8fafc" opacity="0.5">By Pedro Piñera</text>
-        <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="end" font-family="'Alumni Sans'" font-size="30" y="550" x="1150" stroke-width="0" stroke="#000" fill="#f8fafc" opacity="0.5">#{categories}</text>
+        <text font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="end" font-family="'Alumni Sans'" font-size="30" y="550" x="1150" stroke-width="0" stroke="#000" fill="#f8fafc" opacity="0.5">#{tags}</text>
       </g>
     </svg>
     """
