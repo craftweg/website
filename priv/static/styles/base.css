@@ -38,7 +38,11 @@ p {
 }
 
 b {
-  font-weight: var(--font-weight-7)
+  font-weight: var(--font-weight-6)
+}
+
+strong {
+  font-weight: var(--font-weight-6)
 }
 
 pre {
