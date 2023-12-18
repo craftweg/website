@@ -38,7 +38,11 @@ p {
 }
 
 b {
-  font-weight: var(--font-weight-6)
+  font-weight: var(--font-weight-6);
+}
+
+li {
+  font-weight: var(--font-weight-3);
 }
 
 strong {
