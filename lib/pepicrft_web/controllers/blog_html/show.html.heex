@@ -1,5 +1,13 @@
-<h1><%= @post.title %></h1>
-<div class="pp-Post_Tags">
-  Tags: <%= @post.tags |> Enum.map(fn string -> String.capitalize(string) end) |> Enum.join(", ")  %>
+<% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(@post.date, "{relative}") %>
+<p class="pp-Post_TimeAgo"><%= time_ago_date %></p>
+<h1 class="pp-Post_Title"><%= @post.title %></h1>
+
+<div class="pp-Post_Body">
+  <%= raw @post.body %>
 </div>
-<%= raw @post.body %>
+
+
+<div>
+  <a class="pp-Blog_About-Title" href={~p"/about"}>About Pedro Piñera</a>
+  <.description/>
+</div>

@@ -1,5 +1,4 @@
 @import "./openprops.css";
-/* @import "./normalize.css"; */
 @import "./base.css";
 @import "./root.css";
 @import "./blog.css";
@@ -14,9 +13,8 @@ As a cheatsheet, the naming convention for Enduring CSS is:
 */
 
 :root {
-  line-height: var(--size-7);
-  font-family:"PT Serif",serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: var(--font-size-3);
-  /* font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif; */
+  line-height: var(--font-lineheight-2);
 }
 

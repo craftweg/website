@@ -27,17 +27,26 @@ defmodule PepicrftWeb.CoreComponents do
           Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
         <% post_attributes = %{href: post.slug} %>
 
-        <div class="pp-Post">
-          <h2 class="pp-Post_Title">
-            <a {post_attributes}>
-            <%= post.title %>
-            </a>
-          </h2>
-          <div class="pp-Post_Date"><%= time_ago_date %></div>
-          <p class="pp-Post_Description"><%= post.description %></p>
-        </div>
+        <a {post_attributes} class="pp-PostItem_Link">
+          <div class="pp-PostItem">
+            <div class="pp-PostItem_Date"><%= time_ago_date %></div>
+            <h2 class="pp-PostItem_Title">
+              <%= post.title %>
+            </h2>
+            <p class="pp-PostItem_Description"><%= post.description %></p>
+          </div>
+        </a>
       <% end %>
     </div>
+    """
+  end
+
+  def description(assigns) do
+    ~H"""
+    <p class="pp-Header_Navigation-Description">
+      I created <a href="https://github.com/tuist/xcodeproj">XcodeProj</a>
+      and <a href="https://github.com/tuist/tuist">Tuist</a>, and co-founded <a href="https://tuist.io/cloud">Tuist Cloud</a>. My work is trusted by companies like <a href="https://adidas.com">Adidas</a>, <a href="https://www.americanexpress.com">American Express</a>, and <a href="https://etsy.com">Etsy</a>. I enjoy building delightful tools for developers and open-source communities.
+    </p>
     """
   end
 

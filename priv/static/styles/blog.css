@@ -1,28 +1,63 @@
 .pp-Posts {
   & > * + * {
-    margin-top: var(--size-10)
+    margin-top: var(--size-7)
   }
 }
 
-.pp-Post {
+.pp-PostItem_Link {
+  display: block;
+  text-decoration: none;
+  box-shadow: var(--shadow-2);
+}
+
+.pp-PostItem {
+  padding: var(--size-4);
+  border-style: solid;
+  border-color: var(--gray-4);
+  border-width: var(--border-size-1);
+
   & > * + * {
-    margin-top: var(--size-1)
+    margin-top: var(--size-2)
   }
+}
+
+.pp-PostItem_Title {
+  margin-bottom: var(--size-1);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.pp-PostItem_Date {
+  font-size: 0.80rem;
+  text-align: center;
+  color: var(--gray-7);
+}
+
+.pp-PostItem_Description {
+  color: black;
 }
 
 .pp-Post_Title {
-  margin-bottom: var(--size-1);
+  margin-top: var(--size-1);
+  text-align: center;
 }
 
-.pp-Post_Date {
-  font-size: var(--font-size-1);
-  color: var(--stone-7);
+.pp-Post_TimeAgo {
+  text-align: center;
+  font-size: var(--font-size-0);
+  color: var(--gray-8)
 }
 
-.pp-Post_Description {
-
+.pp-Post_Body {
+  margin-top: var(--size-8);
 }
 
-.pp-Post_Tags {
-  color: var(--indigo-5);
+.pp-Blog_About-Title {
+  display: block;
+  text-align:center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--gray-7);
 }

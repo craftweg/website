@@ -29,24 +29,25 @@
   <body class="pp-Body">
     <header>
       <nav class="pp-Header_Navigation">
-        <a class="pp-Header_Navigation-Title" href={~p"/"}>Pedro Piñera</a>
-        <a class="pp-Header_Navigation-Item" href={~p"/blog"}>Blog</a>
-        <a class="pp-Header_Navigation-Item" href={~p"/about"}>About</a>
-        <a class="pp-Header_Navigation-Item" href={~p"/blog/feed.xml"}>Feed</a>
+        <a href={~p"/"}>
+          <img class="pp-Header_Navigation-Avatar" src="https://gravatar.com/avatar/978dc676705e45bbf504152a516afb36?s=400&d=robohash&r=x"/>
+        </a>
+
+        <a class="pp-Header_Navigation-Title" href={~p"/about"}>Pedro Piñera</a>
       </nav>
     </header>
 
-    <main>
+    <main class="pp-Main">
       <%= @inner_content %>
     </main>
 
     <footer>
       <nav class="pp-Footer_Navigation">
-        <a class="pp-Footer_Navigation-Item" href={~p"/"}>Pedro Piñera</a>
         <a class="pp-Footer_Navigation-Item" href="https://x.com/pepicrft" target="_blank">X</a>
         <a class="pp-Footer_Navigation-Item" href="https://mastodon.social/@pepicrft" target="_blank">Mastodon</a>
         <a class="pp-Footer_Navigation-Item" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/" target="_blank">LinkedIn</a>
         <a class="pp-Footer_Navigation-Item" href="https://github.com/pepicrft" target="_blank">GitHub</a>
+        <a class="pp-Footer_Navigation-Item" href={~p"/blog/feed.xml"} target="_blank">Feed</a>
       </nav>
     </footer>
   </body>
