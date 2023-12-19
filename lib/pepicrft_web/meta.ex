@@ -19,7 +19,7 @@ defmodule PepicrftWeb.Meta do
         view_metadata =
           view_metadata
           |> Map.update(:title, app_metadata.title, fn value ->
-            app_metadata.title <> " | " <> value
+            value
           end)
 
         Map.merge(app_metadata, view_metadata)
