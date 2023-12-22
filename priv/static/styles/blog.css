@@ -41,11 +41,13 @@
 .pp-Post_Title {
   margin-top: var(--size-1);
   text-align: center;
+  letter-spacing: -0.02em;
 }
 
 .pp-Post_TimeAgo {
   text-align: center;
   font-size: var(--font-size-0);
+  margin-bottom: var(--size-1);
   color: var(--gray-8)
 }
 
