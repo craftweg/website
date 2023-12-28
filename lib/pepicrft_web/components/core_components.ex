@@ -53,7 +53,7 @@ defmodule PepicrftWeb.CoreComponents do
   def meta(assigns) do
     ~H"""
     <title><%= get_metadata(@conn)[:title] %></title>
-    <meta property="article:published_time" content="2022-09-07T00:00:00+00:00" />
+    <meta property="article:published_time" content={Timex.format!(Timex.to_datetime(Timex.to_naive_datetime(@conn.assigns[:published_time]), "Etc/UTC"), "{ISO:Extended}")} :if={@conn.assigns[:published_time] != nil}/>
     <meta name="description" content={get_metadata(@conn)[:description]} />
     <meta
       name="author"
