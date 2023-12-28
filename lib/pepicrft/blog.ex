@@ -10,7 +10,7 @@ defmodule Pepicrft.Blog do
     highlighters: []
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
-  @categories @posts |> Enum.flat_map(& &1.tags) |> Enum.uniq() |> Enum.sort()
+  @tags @posts |> Enum.flat_map(& &1.tags) |> Enum.uniq() |> Enum.sort()
 
   @doc """
   The function returns all the Pepicrft.Blog.Post posts.
