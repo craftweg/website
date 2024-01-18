@@ -53,7 +53,16 @@ defmodule PepicrftWeb.CoreComponents do
   def meta(assigns) do
     ~H"""
     <title><%= get_metadata(@conn)[:title] %></title>
-    <meta property="article:published_time" content={Timex.format!(Timex.to_datetime(Timex.to_naive_datetime(@conn.assigns[:published_time]), "Etc/UTC"), "{ISO:Extended}")} :if={@conn.assigns[:published_time] != nil}/>
+    <meta
+      :if={@conn.assigns[:published_time] != nil}
+      property="article:published_time"
+      content={
+        Timex.format!(
+          Timex.to_datetime(Timex.to_naive_datetime(@conn.assigns[:published_time]), "Etc/UTC"),
+          "{ISO:Extended}"
+        )
+      }
+    />
     <meta name="description" content={get_metadata(@conn)[:description]} />
     <meta
       name="author"
@@ -66,7 +75,6 @@ defmodule PepicrftWeb.CoreComponents do
     <meta property="og:site_name" content="Pedro Piñera" />
     <meta property="og:url" content={Phoenix.Controller.current_url(@conn)} />
     <meta property="og:image" content={image(@conn)} />
-
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={get_metadata(@conn)[:title]} />

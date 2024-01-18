@@ -25,7 +25,11 @@ config :pepicrft,
 # Configures the endpoint
 config :pepicrft, PepicrftWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: PepicrftWeb.ErrorView, accepts: ~w(html json), layout: false],
+  render_errors: [
+    formats: [
+      html: PepicrftWeb.ErrorHTML
+    ]
+  ],
   pubsub_server: Pepicrft.PubSub,
   live_view: [signing_salt: "KU0gOAcJ"]
 
