@@ -68,7 +68,7 @@ defmodule Pepicrft.MixProject do
       {:pandex, "~> 0.2.0"},
       {:phoenix_html_sanitizer, "~> 1.1.1"},
       {:image, "~> 0.41.0"},
-      {:file_system, "~> 0.2"},
+      {:file_system, "~> 1.0"},
       {:remote_ip, "~> 1.1"},
       {:lightning_css, "~> 0.4.0"}
     ]
