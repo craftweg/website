@@ -1,0 +1,19 @@
+---
+title: "AirPods Max died after 2 years"
+description: "Apple might have found a legal loophole to charge users for hardware issues caused by software updates."
+tags: ["AirPods Max", "Apple"]
+---
+
+I bought the first model of [AirPods Max](https://www.apple.com/airpods-max/) headphones in September 2021 at the official [Apple Store in Murcia, Spain](https://www.apple.com/es/retail/nuevacondomina/). From the beginning, I experienced intermittent issues. One issue was the poor microphone quality during meetings with colleagues. The store's solution was to wait for a software update that would fix the problem, but that update never arrived. However, I primarily bought them for listening to music, so it wasn't a major concern.
+
+The music quality was astounding. However, occasionally, they would disconnect automatically, requiring a hard reset and reconnection. This was somewhat annoying, but not enough to warrant a trip to the Apple Store. Despite these issues, I enjoyed listening to music with them and considered it a great purchase.
+
+That feeling lasted until they suddenly stopped working. I attempted to reset them, but instead of the sequence of blinks being three ambers and one white, it was just three ambers. The headphones had become useless. Consequently, I visited the Apple Store in Berlin, where I currently reside.
+
+I explained the issue, and after examining them in a private area, the staff returned, ready to discuss the problem, starting with an unexpected question: "*I'm sorry, Mr. Pedro, but do you have insurance for the headphones?"* I was surprised. Insurance for headphones? They informed me that the repair would cost up to 250 Euros. I was shocked. *"What happened to them? Why are they broken? It's only been two years,"* I questioned. I asked if I could send them for an estimate of the repair costs, suspecting a software issue. However, they informed me that if sent for repair, I would have to pay the full amount and would receive a 90-day warranty. I was puzzled and felt like it was a case of [planned obsolescence](https://en.wikipedia.org/wiki/Planned_obsolescence). The Apple employee added that if I had reported the intermittent connection issues earlier and had a record of them, the repair would be free. I left the store feeling a mix of disappointment and anger.
+
+At home, I researched the three amber blinks issue and discovered I wasn't alone ([Reddit](https://www.reddit.com/r/Airpodsmax/comments/172phnn/airpods_max_3_amber_flashes/), [Reddit](https://www.reddit.com/r/Airpodsmax/comments/1587vjk/3_orange_blinks_of_death_maybe_not/), [Apple Discussions](https://discussions.apple.com/thread/254760110?login=true&page=2&sortBy=best)). Others had similar problems; one person fixed theirs with a software downgrade, which failed again after an automatic update. Some had their headphones replaced for free. Others got it working by putting them in the freezer for a while. **It was unbelievable that Apple could potentially cause hardware issues through a software update without any liability, shifting the responsibility onto the user.**
+
+I secured another appointment at the same store in [Rosenthaler Straße, Berlin](https://www.apple.com/de/retail/rosenthalerstrasse/). This time, the employee, after consulting with his superiors, offered to cover 50% of the repair cost. I inquired about the specific issue and the warranty duration, but they were unable to provide detailed information about the fault and only offered a 90-day warranty. It seemed they could temporarily fix the issue and charge me 250 Euros without a guarantee of a long-term solution.
+
+**Apple seems to have found a legal loophole to charge users, but this is unfair, and I am determined to seek a resolution.** If you're reading this, I would appreciate your help in spreading the word. I am also considering approaching consumer agencies in Europe to file a complaint.
