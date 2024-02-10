@@ -21,11 +21,23 @@
   }
 }
 
+@media(prefers-color-scheme: dark) {
+  .pp-PostItem {
+    border-color: var(--gray-9);
+  }
+}
+
 .pp-PostItem_Title {
   margin-bottom: var(--size-1);
   text-align: center;
   text-decoration: none;
   color: black;
+}
+
+@media(prefers-color-scheme: dark) {
+  .pp-PostItem_Title {
+    color: white;
+  }
 }
 
 .pp-PostItem_Date {
@@ -34,14 +46,31 @@
   color: var(--gray-7);
 }
 
+@media(prefers-color-scheme: dark) {
+  .pp-PostItem_Date {
+    color: var(--gray-4);
+  }
+}
+
 .pp-PostItem_Description {
   color: black;
+}
+
+@media(prefers-color-scheme: dark) {
+  .pp-PostItem_Description {
+    color: var(--gray-6);
+  }
 }
 
 .pp-Post_Title {
   margin-top: var(--size-1);
   text-align: center;
   letter-spacing: -0.02em;
+}
+@media(prefers-color-scheme: dark) {
+  .pp-Post_Title {
+    color: white;
+  }
 }
 
 .pp-Post_TimeAgo {
@@ -51,8 +80,20 @@
   color: var(--gray-8)
 }
 
+@media(prefers-color-scheme: dark) {
+  .pp-Post_TimeAgo {
+    color: var(--gray-4);
+  }
+}
+
 .pp-Post_Body {
   margin-top: var(--size-8);
+}
+
+@media(prefers-color-scheme: dark) {
+  .pp-Post_Body {
+    color: var(--gray-4);
+  }
 }
 
 .pp-Blog_About-Title {

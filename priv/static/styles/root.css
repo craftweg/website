@@ -18,6 +18,12 @@
   }
 }
 
+@media(prefers-color-scheme: dark) {
+  .pp-Body {
+    background-color: var(--gray-11);
+  }
+}
+
 .pp-Main {
   & > * + * {
     margin-top: var(--size-7);
@@ -51,11 +57,23 @@
   color: var(--gray-7);
 }
 
+@media(prefers-color-scheme: dark) {
+  .pp-Header_Navigation-Title {
+    color: var(--gray-3);
+  }
+}
+
 .pp-Header_Navigation-Description {
   color: var(--gray-7);
   font-size: 0.85rem;
   text-align: center;
 
+}
+
+@media(prefers-color-scheme: dark) {
+  .pp-Header_Navigation-Description {
+    color: var(--gray-3);
+  }
 }
 
 .pp-Footer_Navigation {
