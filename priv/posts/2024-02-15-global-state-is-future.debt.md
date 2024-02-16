@@ -53,7 +53,7 @@ it's very tempting to use global state.
 In the ecosystem, they tooling refer to them as "side effects".
 And not only it makes the software harder to reason about and unpredictable,
 not just for the developers but for the tooling that's unable to understand the software well enough to optimize it.
-Hence why Webpack decided to [introduced](https://webpack.js.org/guides/tree-shaking/) a convention at the package level to mark the side effects of a package.
+Hence why Webpack decided to [introduce](https://webpack.js.org/guides/tree-shaking/) a convention at the package level to mark the side effects of a package.
 Other technology stacks like Ruby and Rails,
 where global state is common in databases,
 provides testing tools to scope databases to a particular test so that it's not shared across different tests.
