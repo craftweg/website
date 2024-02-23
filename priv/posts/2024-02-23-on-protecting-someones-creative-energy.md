@@ -1,0 +1,13 @@
+---
+title: "On protecting my creative energy"
+description: "In this post, I share my thoughts on protecting my creative energy and how I'm doing it."
+tags: ["Ideas", "Creativity"]
+---
+
+Has it ever happened to you that your work style drains your creative energy? This is something I've noticed with [Tuist](https://tuist.io). Since the number of contributors and users outweighs the number of maintainers, our attention is often divided into different areas. For instance, over the past few days, I've been planning a trip to attend some conferences in Asia, ordering swag to bring with us, searching for a professional tax advisor in Germany, reviewing PRs, organizing ticket raffles on social accounts, and shipping code. For most of these tasks, you don’t need to be very creative. You just have to learn about the process and follow it. It’s very routine, and I don’t mind doing it, but if I do it for too long, my brain gets tired and leaves me with no energy to do creative work, which is what I enjoy the most.
+
+I’m now fully aware of it, and I’m taking steps to protect my creative energy. I've started allocating some time to work on stuff that was not a priority but that I enjoy doing and that I believe can have a high impact on the community. At first, I felt guilty. My brain was telling me that I should be doing something else that was more urgent. And I felt bad for feeling that way. Sure, there’ll always be something more urgent, but I can’t be working like that all the time or I’ll feel like a hamster on a wheel. I think my creativity is one of my most valuable assets, and I have to protect it.
+
+For instance, I recently started working on new MIT-licensed gifts for the Swift community under the Tuist umbrella. One of them is a design system for building CLIs. I noticed that unlike other ecosystems like Go’s and Rust’s, Swift lacks a proper toolchain for building stunning CLIs. So I started [building it](https://github.com/tuist/swiftterminal). Is it a priority? Hell no. There’s a business to run. But through that work, we can positively impact the experience of Tuist users and the users of many other Swift CLIs that might be built in the future. I’ve also been playing with Apple’s virtualization and containerization technologies. I find it's such an unexplored area in the Swift community, where we could also have an impact with some open-source work that could serve as a foundation to diversify our [Tuist Cloud](https://tuist.io/cloud) offering. If no one tries those things, we’ll never know if they are worth it.
+
+*Do you feel the same?* *If so, how do you protect your creative energy?* This is one of the topics in my therapy sessions, and we are coming up with strategies to protect it.
