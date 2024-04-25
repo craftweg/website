@@ -25,7 +25,7 @@ export default {
     const { alert_id, metric_name, human_comparison_value, trigger_description } = alert;
     // https://docs.appsignal.com/application/integrations/webhooks.html#exception-incidents
 
-    await fetch("https://api.incident.io/v2/alert_events/http/01HW8CC9EFVC94HW4QDY0FEKSC", { headers: {
+    await fetch("https://api.incident.io/v2/alert_events/http/....", { headers: {
       "Authorization": `Bearer ${token}`,
       "Content-Type": "application/json"
     }, method: "POST", body: JSON.stringify({
