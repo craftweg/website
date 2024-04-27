@@ -20,4 +20,6 @@ Those utilities in order of priority are:
 - [**Dependencies:**](https://github.com/tuist/dependencies) Utilities to declare the registration of a dependency graph.
 - **XcodeProjectGenerator (coming):** A foundation for generating Xcode projects and workspaces from the graph description.
 
+All the packages will accept a [swift-log](https://github.com/apple/swift-log)'s `Logger` instance to give users control over how they'd like the packages to log messages.
+
 Note that they are still in the early stages of development. We want to make sure each of them is well-tested across the supported platforms and that they include documentation.
