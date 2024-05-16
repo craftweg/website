@@ -70,7 +70,7 @@ defmodule Pepicrft.MixProject do
       {:image, "~> 0.47.0"},
       {:file_system, "~> 0.2"},
       {:remote_ip, "~> 1.1"},
-      {:lightning_css, "~> 0.4.0"}
+      {:lightning_css, "~> 0.5.0"}
     ]
   end
 
