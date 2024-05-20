@@ -69,8 +69,7 @@ defmodule Pepicrft.MixProject do
       {:phoenix_html_sanitizer, "~> 1.1.1"},
       {:image, "~> 0.47.0"},
       {:file_system, "~> 0.2"},
-      {:remote_ip, "~> 1.1"},
-      {:lightning_css, "~> 0.5.0"}
+      {:remote_ip, "~> 1.1"}
     ]
   end
 
@@ -86,11 +85,10 @@ defmodule Pepicrft.MixProject do
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
-      "assets.setup": ["esbuild.install --if-missing", "lightning_css.install --if-missing"],
-      "assets.build": ["esbuild default", "lightning_css default", "phx.gen.open_graph"],
+      "assets.setup": ["esbuild.install --if-missing"],
+      "assets.build": ["esbuild default", "phx.gen.open_graph"],
       "assets.deploy": [
         "esbuild default --minify",
-        "lightning_css default",
         "phx.digest",
         "phx.gen.open_graph"
       ]

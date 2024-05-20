@@ -27,8 +27,7 @@ config :pepicrft, PepicrftWeb.Endpoint,
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    og: {Pepicrft.OpenGraph, :start_link, []},
-    css: {LightningCSS, :install_and_run, [:default, ~w(), [watch: true]]}
+    og: {Pepicrft.OpenGraph, :start_link, []}
   ]
 
 config :pepicrft, :metadata,
