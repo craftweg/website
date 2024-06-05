@@ -18,7 +18,7 @@ The linker's dead-stripping logic can't delete dynamically referenced symbols.
 And this is something that happens not only when referencing Objective-C symbols, but [Swift too](https://forums.swift.org/t/linker-flag-objc-force-loads-swift-libraries/47466/3).
 For example, when integrating Composable Architecture,
 which [uses](https://github.com/pointfreeco/swift-composable-architecture/blob/7cbde3b07f193f732e256429e1351ff53cd31641/Sources/ComposableArchitecture/UIKit/NSObject%2BObservation.swift#L172) Objective-C runtime capabilities,
-developers might need to add explicit references to those symbols or add the aforementioned flags to the build settings.
+developers might need to add explicit references to those symbols or add the aforementioned flags to the build settings when using Tuist's default integration via Xcode targets.
 
 What's the solution? There are a few options:
 
