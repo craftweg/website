@@ -1,0 +1,7 @@
+<h1>Mastodon</h1>
+
+<ul>
+  <li :for={status <- @statuses}>
+    <%= raw status["content"] %>
+  </li>
+</ul>

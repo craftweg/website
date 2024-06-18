@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="csrf-token" content={get_csrf_token()}>
     <link phx-track-static rel="stylesheet" href="/styles/app.css"/>
-     <link phx-track-static rel="stylesheet" href="/styles/bundle.css"/>
     <script defer phx-track-static type="text/javascript" src="/assets/app.js"></script>
 
     <!-- Meta -->
@@ -27,29 +26,34 @@
   </head>
 
   <body class="pp-Body">
-    <header>
-      <nav class="pp-Header_Navigation">
-        <a href={~p"/"}>
-          <img class="pp-Header_Navigation-Avatar" src="https://gravatar.com/avatar/978dc676705e45bbf504152a516afb36?s=400&d=robohash&r=x"/>
-        </a>
+    <nav class="pp-Navigation">
+      <a class="pp-Navigation_Title" href={~p"/about"}>Pedro Piñera</a>
 
-        <a class="pp-Header_Navigation-Title" href={~p"/about"}>Pedro Piñera</a>
-      </nav>
-    </header>
+      <ul class="pp-Navigation-Links">
+        <a href={~p"/about"}>About</a>
+        <a href={~p"/about"}>Writing</a>
+        <a href={~p"/about"}>Projects</a>
+        <a href={~p"/mastodon"}>Mastodon</a>
+        <a href={~p"/camera"}>Camera</a>
+        <a href={~p"/camera"}>Now</a>
+      </ul>
+    </nav>
 
     <main class="pp-Main">
       <%= @inner_content %>
+
+      <footer>
+        <nav class="pp-Footer_Navigation">
+          <a class="pp-Footer_Navigation-Item" href="https://x.com/pepicrft" target="_blank">X</a>
+          <a class="pp-Footer_Navigation-Item" href="https://mastodon.social/@pepicrft" target="_blank">Mastodon</a>
+          <a class="pp-Footer_Navigation-Item" href="https://codeberg.org/pepicrft" target="_blank">Codeberg</a>
+          <a class="pp-Footer_Navigation-Item" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/" target="_blank">LinkedIn</a>
+          <a class="pp-Footer_Navigation-Item" href="https://github.com/pepicrft" target="_blank">GitHub</a>
+          <a class="pp-Footer_Navigation-Item" href={~p"/blog/feed.xml"} target="_blank">Feed</a>
+        </nav>
+      </footer>
     </main>
 
-    <footer>
-      <nav class="pp-Footer_Navigation">
-        <a class="pp-Footer_Navigation-Item" href="https://x.com/pepicrft" target="_blank">X</a>
-        <a class="pp-Footer_Navigation-Item" href="https://mastodon.social/@pepicrft" target="_blank">Mastodon</a>
-        <a class="pp-Footer_Navigation-Item" href="https://codeberg.org/pepicrft" target="_blank">Codeberg</a>
-        <a class="pp-Footer_Navigation-Item" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/" target="_blank">LinkedIn</a>
-        <a class="pp-Footer_Navigation-Item" href="https://github.com/pepicrft" target="_blank">GitHub</a>
-        <a class="pp-Footer_Navigation-Item" href={~p"/blog/feed.xml"} target="_blank">Feed</a>
-      </nav>
-    </footer>
+
   </body>
 </html>
