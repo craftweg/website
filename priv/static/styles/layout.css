@@ -77,9 +77,8 @@
 }
 
 .pp-Navigation-Links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
 
   & > a {
@@ -89,4 +88,8 @@
   & > a:hover {
     text-decoration: underline;
   }
+}
+
+.pp-Navigation-Links__Link {
+  justify-self: end;
 }

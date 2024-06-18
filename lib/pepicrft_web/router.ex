@@ -19,7 +19,7 @@ defmodule PepicrftWeb.Router do
   end
 
   scope "/", PepicrftWeb do
-    pipe_through :browser
+    pipe_through [:browser, :put_current_url]
 
     get "/", HomeController, :index
     get "/about", HomeController, :about
@@ -70,5 +70,9 @@ defmodule PepicrftWeb.Router do
 
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
+  end
+
+  def put_current_url(conn, params) do
+    Plug.Conn.assign(conn, :request_path, conn.request_path)
   end
 end
