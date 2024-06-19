@@ -41,15 +41,6 @@ defmodule PepicrftWeb.CoreComponents do
     """
   end
 
-  def description(assigns) do
-    ~H"""
-    <p class="pp-Navigation-Description">
-      I created <a href="https://github.com/tuist/xcodeproj">XcodeProj</a>
-      and <a href="https://github.com/tuist/tuist">Tuist</a>. My work is trusted by companies like <a href="https://adidas.com">Adidas</a>, <a href="https://www.americanexpress.com">American Express</a>, and <a href="https://etsy.com">Etsy</a>. I enjoy building delightful tools for developers and open-source communities.
-    </p>
-    """
-  end
-
   def meta(assigns) do
     ~H"""
     <title><%= get_metadata(@conn)[:title] %></title>

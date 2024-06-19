@@ -10,7 +10,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[phoenix-heex]": {
-    "editor.defaultFormatter": "RoyalMist.vscode-eex-format"
+    "editor.defaultFormatter": "elixir-lsp.elixir-ls"
   },
   "grammarly.selectors": [
     {

@@ -1,0 +1,6 @@
+.pp-Mastodon-List {
+
+  & > *+* {
+    margin-top: var(--size-10)
+  }
+}

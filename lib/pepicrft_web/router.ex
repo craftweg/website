@@ -23,6 +23,7 @@ defmodule PepicrftWeb.Router do
 
     get "/", HomeController, :index
     get "/about", HomeController, :about
+    get "/projects", HomeController, :projects
     get "/mastodon", HomeController, :mastodon
     get "/photos", HomeController, :photos
     get "/blog/:year/:month/:day/:title", BlogController, :show
@@ -72,7 +73,7 @@ defmodule PepicrftWeb.Router do
     end
   end
 
-  def put_current_url(conn, params) do
+  def put_current_url(conn, _params) do
     Plug.Conn.assign(conn, :request_path, conn.request_path)
   end
 end

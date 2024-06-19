@@ -27,16 +27,12 @@
 
   <body class="pp-Body">
     <nav class="pp-Navigation">
-      <a class="pp-Navigation_Title" href={~p"/about"}>Pedro Piñera</a>
-
-      <ul class="pp-Navigation-Links">
-        <a class="pp-Navigation-Links__Link" href={~p"/about"}>About</a><div><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation-Links__Link" href={~p"/writing"}>Writing</a><div><%= raw if @request_path == ~p"/writing", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation-Links__Link" href={~p"/projects"}>Projects</a><div><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation-Links__Link" href={~p"/mastodon"}>Mastodon</a><div><%= raw if @request_path == ~p"/mastodon", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation-Links__Link" href={~p"/camera"}>Camera</a><div><%= raw if @request_path == ~p"/camera", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation-Links__Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
-      </ul>
+      <a class="pp-Navigation_Title" href={~p"/"}>Pedro Piñera</a><div><%= raw "&nbsp;" %></div>
+      <a class="pp-Navigation_Link" href={~p"/about"}>About</a><div><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
+      <a class="pp-Navigation_Link" href={~p"/projects"}>Projects</a><div><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
+      <a class="pp-Navigation_Link" href={~p"/mastodon"}>Mastodon</a><div><%= raw if @request_path == ~p"/mastodon", do: "⇢", else: "&nbsp;" %></div>
+      <a class="pp-Navigation_Link" href={~p"/camera"}>Camera</a><div><%= raw if @request_path == ~p"/camera", do: "⇢", else: "&nbsp;" %></div>
+      <a class="pp-Navigation_Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
     </nav>
 
     <main class="pp-Main">
