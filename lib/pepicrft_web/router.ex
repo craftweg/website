@@ -24,8 +24,9 @@ defmodule PepicrftWeb.Router do
     get "/", HomeController, :index
     get "/about", HomeController, :about
     get "/projects", HomeController, :projects
-    get "/mastodon", HomeController, :mastodon
+    get "/feed", HomeController, :feed
     get "/photos", HomeController, :photos
+    get "/now", HomeController, :now
     get "/blog/:year/:month/:day/:title", BlogController, :show
 
     for page <- Pepicrft.Pages.all_pages() do

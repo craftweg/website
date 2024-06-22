@@ -27,29 +27,29 @@
 
   <body class="pp-Body">
     <nav class="pp-Navigation">
-      <a class="pp-Navigation_Title" href={~p"/"}>Pedro Piñera</a><div><%= raw "&nbsp;" %></div>
-      <a class="pp-Navigation_Link" href={~p"/about"}>About</a><div><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
-      <a class="pp-Navigation_Link" href={~p"/projects"}>Projects</a><div><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
-      <a class="pp-Navigation_Link" href={~p"/mastodon"}>Mastodon</a><div><%= raw if @request_path == ~p"/mastodon", do: "⇢", else: "&nbsp;" %></div>
-      <a class="pp-Navigation_Link" href={~p"/camera"}>Camera</a><div><%= raw if @request_path == ~p"/camera", do: "⇢", else: "&nbsp;" %></div>
-      <a class="pp-Navigation_Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
+      <ul class="pp-Navigation_List">
+        <a class="pp-Navigation_List_Title" href={~p"/"}>Pedro Piñera</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/about"}>About</a><div><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/projects"}>Projects</a><div><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/feed"}>Feed</a><div><%= raw if @request_path == ~p"/feed", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/photos"}>Photos</a><div><%= raw if @request_path == ~p"/photos", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/blog/feed.xml"}>RSS</a><div>&nbsp;</div>
+      </ul>
+
+      <ul class="pp-Navigation_List">
+        <a class="pp-Navigation_List_Title" href={~p"/"}>On the internet</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://mastodon.social/@pepicrft">Mastodon</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://x.com/pepicrft">X</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://github.com/pepicrft">GitHub</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/">LinkedIn</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://codeberg.org/pepicrft/">Codeberg</a><div><%= raw "&nbsp;" %></div>
+      </ul>
     </nav>
 
     <main class="pp-Main">
       <%= @inner_content %>
-
-      <footer>
-        <nav class="pp-Footer_Navigation">
-          <a class="pp-Footer_Navigation-Item" href="https://x.com/pepicrft" target="_blank">X</a>
-          <a class="pp-Footer_Navigation-Item" href="https://mastodon.social/@pepicrft" target="_blank">Mastodon</a>
-          <a class="pp-Footer_Navigation-Item" href="https://codeberg.org/pepicrft" target="_blank">Codeberg</a>
-          <a class="pp-Footer_Navigation-Item" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/" target="_blank">LinkedIn</a>
-          <a class="pp-Footer_Navigation-Item" href="https://github.com/pepicrft" target="_blank">GitHub</a>
-          <a class="pp-Footer_Navigation-Item" href={~p"/blog/feed.xml"} target="_blank">Feed</a>
-        </nav>
-      </footer>
     </main>
-
-
   </body>
 </html>

@@ -1,0 +1,35 @@
+.pp-Feed-List {
+  & > * + * {
+    margin-top: var(--size-4);
+  }
+
+  & hr {
+    border: none;
+  border-top: 1px dotted transparent; /* Make the default border transparent */
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 50%;
+  margin: 0; /* Remove default margins */
+  text-align: left; /* Ensure text (or other elements) align left */
+  background: repeating-linear-gradient(
+    to right,
+    black 0,
+    black 2px, /* Length of the dot */
+    transparent 2px,
+    transparent 10px /* Space between dots */
+  );
+  }
+}
+
+.pp-Feed-List_Post {
+  margin: var(--size-4) 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pp-Feed-List_Post_Link {
+  align-self: end;
+  font-weight: var(--font-weight-4);
+}

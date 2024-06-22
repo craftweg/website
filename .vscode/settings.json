@@ -1,5 +1,7 @@
 {
-  "editor.defaultFormatter": "saratravi.elixir-formatter",
+  "files.associations": {
+    "*.heex": "phoenix-heex",
+  },
   "emmet.includeLanguages": {
     "phoenix-heex": "html"
   },
@@ -10,7 +12,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[phoenix-heex]": {
-    "editor.defaultFormatter": "elixir-lsp.elixir-ls"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
   "grammarly.selectors": [
     {

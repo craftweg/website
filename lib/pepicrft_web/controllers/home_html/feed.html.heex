@@ -1,0 +1,17 @@
+<h1 id="feed">
+  <a href="#feed">Feed 📋</a>
+</h1>
+
+<section class="pp-Feed-List">
+  <%= for status <- @statuses do %>
+    <% content = status["content"] %>
+    <% url = status["url"] %>
+    <%= if String.trim(content) != "" do %>
+      <article class="pp-Feed-List_Post">
+        <a class="pp-Feed-List_Post_Link" href={url}>Link</a>
+        <%= raw content %>
+      </article>
+      <hr>
+    <% end %>
+  <% end  %>
+</section>

@@ -21,23 +21,22 @@ defmodule PepicrftWeb.CoreComponents do
       end
 
     ~H"""
-    <div class="pp-Posts">
+    <ul class="pp-Posts">
       <%= for post <- assigns.posts() do %>
-        <% {:ok, time_ago_date} =
-          Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
+        <% date_as_string =
+          Timex.format!(post.date, "%Y.%m.%d", :strftime) %>
         <% post_attributes = %{href: post.slug} %>
 
-        <a {post_attributes} class="pp-PostItem_Link">
-          <div class="pp-PostItem">
-            <div class="pp-PostItem_Date"><%= time_ago_date %></div>
-            <h2 class="pp-PostItem_Title">
+        <li class="pp-PostItem">
+          <a class="pp-PostItem__Link" {post_attributes}>
+            <span class="pp-PostItem_Date"><%= date_as_string %></span>
+            <span class="pp-PostItem_Title">
               <%= post.title %>
-            </h2>
-            <p class="pp-PostItem_Description"><%= post.description %></p>
-          </div>
-        </a>
+            </span>
+          </a>
+        </li>
       <% end %>
-    </div>
+    </ul>
     """
   end
 

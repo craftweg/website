@@ -1,24 +1,25 @@
 .pp-Posts {
-  & > * + * {
-    margin-top: var(--size-7)
-  }
-}
+  margin-block-start: var(--size-7);
+  margin-block-end: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
 
-.pp-PostItem_Link {
-  display: block;
-  text-decoration: none;
-  box-shadow: var(--shadow-2);
+  & > * + * {
+    margin-top: var(--size-2);
+  }
 }
 
 .pp-PostItem {
-  padding: var(--size-4);
-  border-style: solid;
-  border-color: var(--gray-4);
-  border-width: var(--border-size-1);
+  display: block;
+  text-decoration: none;
+}
 
-  & > * + * {
-    margin-top: var(--size-2)
-  }
+.pp-PostItem__Link {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-4);
+  text-decoration: none;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -29,9 +30,14 @@
 
 .pp-PostItem_Title {
   margin-bottom: var(--size-1);
-  text-align: center;
+  text-align: start;
   text-decoration: none;
   color: black;
+  font-weight: var(--font-weight-4);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media(prefers-color-scheme: dark) {
@@ -41,9 +47,8 @@
 }
 
 .pp-PostItem_Date {
-  font-size: 0.80rem;
   text-align: center;
-  color: var(--gray-7);
+  font-weight: var(--font-weight-3);
 }
 
 @media(prefers-color-scheme: dark) {
@@ -52,21 +57,10 @@
   }
 }
 
-.pp-PostItem_Description {
-  color: black;
-}
-
-@media(prefers-color-scheme: dark) {
-  .pp-PostItem_Description {
-    color: var(--gray-6);
-  }
-}
-
 .pp-Post_Title {
-  margin-top: var(--size-1);
-  text-align: center;
-  letter-spacing: -0.02em;
+  text-align: start;
 }
+
 @media(prefers-color-scheme: dark) {
   .pp-Post_Title {
     color: white;
@@ -74,10 +68,10 @@
 }
 
 .pp-Post_TimeAgo {
-  text-align: center;
-  font-size: var(--font-size-0);
+  margin-top: 0px;
+  text-align: start;
   margin-bottom: var(--size-1);
-  color: var(--gray-8)
+  font-weight: var(--font-weight-3);
 }
 
 @media(prefers-color-scheme: dark) {
