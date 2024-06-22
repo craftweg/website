@@ -14,11 +14,28 @@ As a cheatsheet, the naming convention for Enduring CSS is:
   color: var(--gray-12);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: white;
+    background-color: var(--gray-12);
+  }
+}
+
 a {
   color: var(--gray-12);
 
   &:visited {
     color: var(--gray-12);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
   }
 }
 

@@ -35,11 +35,11 @@
         <a class="pp-Navigation_List_Link" href={~p"/photos"}>Photos</a><div><%= raw if @request_path == ~p"/photos", do: "⇢", else: "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href={~p"/blog/feed.xml"}>RSS</a><div>&nbsp;</div>
+        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a><div><%= raw "&nbsp;" %></div>
       </ul>
 
       <ul class="pp-Navigation_List">
         <a class="pp-Navigation_List_Title" href={~p"/"}>On the internet</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a><div><%= raw "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href="https://mastodon.social/@pepicrft">Mastodon</a><div><%= raw "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href="https://x.com/pepicrft">X</a><div><%= raw "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href="https://github.com/pepicrft">GitHub</a><div><%= raw "&nbsp;" %></div>

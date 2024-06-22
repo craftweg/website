@@ -21,14 +21,9 @@
   }
 }
 
-@media(prefers-color-scheme: dark) {
-  .pp-Body {
-    background-color: var(--gray-11);
-  }
-}
-
 .pp-Main {
   flex: 1;
+  margin-left: 0px;
 }
 
 .pp-Navigation {
@@ -38,6 +33,12 @@
   flex-direction: column;
   height: auto;
   gap: var(--size-4)
+}
+
+@media (max-width: 480px) {
+  .pp-Navigation {
+    display:  none;
+  }
 }
 
 .pp-Navigation_List {
@@ -62,10 +63,4 @@
   text-align: end;
   text-decoration: none;
   font-weight: 600;
-}
-
-@media(prefers-color-scheme: dark) {
-  .pp-Navigation_List_Title {
-    color: var(--gray-3);
-  }
 }

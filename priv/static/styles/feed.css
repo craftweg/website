@@ -5,20 +5,20 @@
 
   & hr {
     border: none;
-  border-top: 1px dotted transparent; /* Make the default border transparent */
-  color: #fff;
-  background-color: #fff;
-  height: 1px;
-  width: 50%;
-  margin: 0; /* Remove default margins */
-  text-align: left; /* Ensure text (or other elements) align left */
-  background: repeating-linear-gradient(
-    to right,
-    black 0,
-    black 2px, /* Length of the dot */
-    transparent 2px,
-    transparent 10px /* Space between dots */
-  );
+    border-top: 1px dotted transparent; /* Make the default border transparent */
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 50%;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Ensure text (or other elements) align left */
+    background: repeating-linear-gradient(
+      to right,
+      black 0,
+      black 2px,
+      /* Length of the dot */ transparent 2px,
+      transparent 10px /* Space between dots */
+    );
   }
 }
 
@@ -47,4 +47,3 @@
   border-width: 1px;
   border-color: black;
 }
-
