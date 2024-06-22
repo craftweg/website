@@ -54,8 +54,8 @@ h1 {
 }
 
 h2 {
-  margin-top: var(--size-8);
-  margin-bottom: var(--size-3);
+  margin-bottom: var(--size-1);
+  margin-bottom: var(--size-1);
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-6);
 

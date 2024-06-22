@@ -3,4 +3,5 @@
 @import "./layout.css";
 @import "./blog.css";
 @import "./feed.css";
-@import "./photos.css"
+@import "./photos.css";
+@import "./core_components.css";

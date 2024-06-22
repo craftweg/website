@@ -12,6 +12,18 @@ defmodule PepicrftWeb.CoreComponents do
   use PepicrftWeb.Meta
   use Phoenix.Component
 
+  attr :class, :list, default: []
+  attr :rest, :global
+  def hamburger_button(assigns) do
+    ~H"""
+    <div {@rest} class={@class ++ ["pp-Components_Hamburger"]}>
+      <div class="pp-Components_Hamburger_Stripe"/>
+      <div class="pp-Components_Hamburger_Stripe"/>
+      <div class="pp-Components_Hamburger_Stripe"/>
+    </div>
+    """
+  end
+
   def posts_component(assigns) do
     assigns =
       if assigns |> Map.has_key?(:take) do

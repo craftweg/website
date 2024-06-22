@@ -21,9 +21,43 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .pp-Body {
+    flex-direction: column;
+
+    & > * + * {
+      margin-top: var(--size-6);
+    }
+  }
+}
+
+
 .pp-Main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   margin-left: 0px;
+  margin-top: 0px;
+  margin-left: var(--size-6);
+  gap: var(--size-2);
+}
+
+@media (max-width: 1024px) {
+  .pp-Main {
+    margin-left: 0px;
+  }
+}
+
+.pp-Main_Hamburger-Button {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .pp-Main_Hamburger-Button {
+    display:  block;
+    margin-top: var(--size-4);
+    margin-bottom: var(--size-4);
+  }
 }
 
 .pp-Navigation {
@@ -35,7 +69,7 @@
   gap: var(--size-4)
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .pp-Navigation {
     display:  none;
   }
