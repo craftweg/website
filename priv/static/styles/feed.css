@@ -33,3 +33,18 @@
   align-self: end;
   font-weight: var(--font-weight-4);
 }
+
+.pp-Feed-List_Post_Media {
+  display: grid;
+  gap: var(--size-2);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pp-Feed-List_Post_Media_Image {
+  width: 100%;
+  object-fit: contain;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
