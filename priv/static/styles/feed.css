@@ -14,11 +14,25 @@
     text-align: left; /* Ensure text (or other elements) align left */
     background: repeating-linear-gradient(
       to right,
-      black 0,
-      black 2px,
+      var(--gray-12) 0,
+      var(--gray-12) 2px,
       /* Length of the dot */ transparent 2px,
       transparent 10px /* Space between dots */
     );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pp-Feed-List {
+    & hr {
+      background: repeating-linear-gradient(
+        to right,
+        white 0,
+        white 2px,
+        /* Length of the dot */ transparent 2px,
+        transparent 10px /* Space between dots */
+      );
+    }
   }
 }
 
@@ -27,6 +41,11 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  word-wrap: break-word;
+
+  & .invisible {
+    display: none;
+  }
 }
 
 .pp-Feed-List_Post_Link {

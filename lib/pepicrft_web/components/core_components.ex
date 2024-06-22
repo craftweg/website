@@ -14,12 +14,13 @@ defmodule PepicrftWeb.CoreComponents do
 
   attr :class, :list, default: []
   attr :rest, :global
+
   def hamburger_button(assigns) do
     ~H"""
     <div {@rest} class={@class ++ ["pp-Components_Hamburger"]}>
-      <div class="pp-Components_Hamburger_Stripe"/>
-      <div class="pp-Components_Hamburger_Stripe"/>
-      <div class="pp-Components_Hamburger_Stripe"/>
+      <div class="pp-Components_Hamburger_Stripe" />
+      <div class="pp-Components_Hamburger_Stripe" />
+      <div class="pp-Components_Hamburger_Stripe" />
     </div>
     """
   end

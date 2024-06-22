@@ -39,3 +39,11 @@ At which moment did I deprioritize it?
 
 How do you deal with emotional breakdowns?
 
+
+```language-elixir
+defmodule Tuist do
+  def run do
+    IO.puts("Tuist is running")
+  end
+end
+```

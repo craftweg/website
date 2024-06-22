@@ -28,31 +28,27 @@
   <body class="pp-Body">
     <nav class="pp-Navigation">
       <ul class="pp-Navigation_List">
-        <a class="pp-Navigation_List_Title" href={~p"/"}>Pedro Piñera</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/about"}>About</a><div><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/projects"}>Projects</a><div><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/feed"}>Feed</a><div><%= raw if @request_path == ~p"/feed", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/photos"}>Photos</a><div><%= raw if @request_path == ~p"/photos", do: "⇢", else: "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href={~p"/now"}>Now</a><div><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Title" href={~p"/"}>Pedro Piñera</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/about"}>About</a><div class="pp-Navigation_List_Arrow"><%= raw if @request_path == ~p"/about", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/projects"}>Projects</a><div class="pp-Navigation_List_Arrow"><%= raw if @request_path == ~p"/projects", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/feed"}>Feed</a><div class="pp-Navigation_List_Arrow"><%= raw if @request_path == ~p"/feed", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/photos"}>Photos</a><div class="pp-Navigation_List_Arrow"><%= raw if @request_path == ~p"/photos", do: "⇢", else: "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/now"}>Now</a><div class="pp-Navigation_List_Arrow"><%= raw if @request_path == ~p"/now", do: "⇢", else: "&nbsp;" %></div>
         <a class="pp-Navigation_List_Link" href={~p"/blog/feed.xml"}>RSS</a><div>&nbsp;</div>
-        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href={~p"/pdfs/CV.pdf"}>CV</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
       </ul>
 
       <ul class="pp-Navigation_List">
-        <a class="pp-Navigation_List_Title" href={~p"/"}>On the internet</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href="https://mastodon.social/@pepicrft">Mastodon</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href="https://x.com/pepicrft">X</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href="https://github.com/pepicrft">GitHub</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/">LinkedIn</a><div><%= raw "&nbsp;" %></div>
-        <a class="pp-Navigation_List_Link" href="https://codeberg.org/pepicrft/">Codeberg</a><div><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Title" href={~p"/"}>On the Internet</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://mastodon.social/@pepicrft">Mastodon</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://x.com/pepicrft">X</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://github.com/pepicrft">GitHub</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://www.linkedin.com/in/pedro-piñera-buendia-9765a9125/">LinkedIn</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
+        <a class="pp-Navigation_List_Link" href="https://codeberg.org/pepicrft/">Codeberg</a><div class="pp-Navigation_List_Arrow"><%= raw "&nbsp;" %></div>
       </ul>
     </nav>
 
     <main class="pp-Main">
-      <div class="pp-Main_Hamburger-Button">
-        <.hamburger_button phx-click={Phoenix.LiveView.JS.toggle()}/>
-      </div>
-
       <%= @inner_content %>
     </main>
   </body>
