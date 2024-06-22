@@ -1,13 +1,8 @@
-<% {:ok, time_ago_date} = Elixir.Timex.Format.DateTime.Formatters.Relative.format(@post.date, "{relative}") %>
-<p class="pp-Post_TimeAgo"><%= time_ago_date %></p>
+
+<% date_as_string = Timex.format!(@post.date, "%Y.%m.%d", :strftime) %>
 <h1 class="pp-Post_Title"><%= @post.title %></h1>
+<p class="pp-Post_TimeAgo"><%= date_as_string %></p>
 
 <div class="pp-Post_Body">
   <%= raw @post.body %>
-</div>
-
-
-<div>
-  <a class="pp-Blog_About-Title" href={~p"/about"}>About Pedro Piñera</a>
-  <.description/>
 </div>

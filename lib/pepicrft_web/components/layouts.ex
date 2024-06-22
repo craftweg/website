@@ -8,7 +8,4 @@ defmodule PepicrftWeb.Layouts do
     url = %{url | path: "/blog/feed.xml"}
     url |> URI.to_string()
   end
-
-  def something do
-  end
 end

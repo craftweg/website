@@ -1,0 +1,68 @@
+.pp-Feed-List {
+  & > * + * {
+    margin-top: var(--size-4);
+  }
+
+  & hr {
+    border: none;
+    border-top: 1px dotted transparent; /* Make the default border transparent */
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 50%;
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Ensure text (or other elements) align left */
+    background: repeating-linear-gradient(
+      to right,
+      var(--gray-12) 0,
+      var(--gray-12) 2px,
+      /* Length of the dot */ transparent 2px,
+      transparent 10px /* Space between dots */
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pp-Feed-List {
+    & hr {
+      background: repeating-linear-gradient(
+        to right,
+        white 0,
+        white 2px,
+        /* Length of the dot */ transparent 2px,
+        transparent 10px /* Space between dots */
+      );
+    }
+  }
+}
+
+.pp-Feed-List_Post {
+  margin: var(--size-4) 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  word-wrap: break-word;
+
+  & .invisible {
+    display: none;
+  }
+}
+
+.pp-Feed-List_Post_Link {
+  align-self: end;
+  font-weight: var(--font-weight-4);
+}
+
+.pp-Feed-List_Post_Media {
+  display: grid;
+  gap: var(--size-2);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pp-Feed-List_Post_Media_Image {
+  width: 100%;
+  object-fit: contain;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}

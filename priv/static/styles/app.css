@@ -1,20 +1,7 @@
 @import "./openprops.css";
 @import "./base.css";
-@import "./root.css";
+@import "./layout.css";
 @import "./blog.css";
-
-/*
-The styling of this website follows the Enduring CSS methodology, https://ecss.benfrain.com,
-using variables from Open Props, https://open-props.style.
-
-As a cheatsheet, the naming convention for Enduring CSS is:
-
-.[namespace][-ModuleOrComponent][_ChildNode][-variant]
-*/
-
-:root {
-  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: var(--font-size-3);
-  line-height: var(--font-lineheight-2);
-}
-
+@import "./feed.css";
+@import "./photos.css";
+@import "./core_components.css";

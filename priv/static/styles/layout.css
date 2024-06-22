@@ -1,0 +1,119 @@
+@media (width >= 768px) {
+  .pp-Body {
+    max-width: var(--size-md);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--size-5);
+  }
+}
+
+.pp-Body {
+  max-width: var(--size-md);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--size-5);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  & > * + * {
+    margin-left: var(--size-6);
+  }
+}
+
+.pp-Main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-left: var(--size-6);
+  gap: var(--size-2);
+}
+
+@media (max-width: 1024px) {
+  .pp-Main {
+    margin-left: 0px;
+    padding-bottom: var(--size-10);
+  }
+}
+
+.pp-Navigation {
+  text-wrap: nowrap;
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  height: auto;
+  gap: var(--size-4)
+}
+
+@media (max-width: 1024px) {
+  .pp-Navigation {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: var(--gray-12);
+    background-color: white;
+    z-index: 20;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--size-3) 0px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pp-Navigation {
+    border-color: white;
+    background-color: var(--gray-12);
+  }
+}
+
+.pp-Navigation_List {
+  display: grid;
+  grid-template-columns: 1fr 10px;
+  gap: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1024px) {
+  .pp-Navigation_List {
+    padding-inline-start: var(--size-4);
+    padding-inline-end: var(--size-4);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-4);
+  }
+}
+
+.pp-Navigation_List_Link {
+  justify-self: end;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.pp-Navigation_List_Title {
+  display: block;
+  text-align: end;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .pp-Navigation_List_Arrow {
+    display: none;
+  }
+}

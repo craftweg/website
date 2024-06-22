@@ -21,32 +21,22 @@ defmodule PepicrftWeb.CoreComponents do
       end
 
     ~H"""
-    <div class="pp-Posts">
+    <ul class="pp-Posts">
       <%= for post <- assigns.posts() do %>
-        <% {:ok, time_ago_date} =
-          Elixir.Timex.Format.DateTime.Formatters.Relative.format(post.date, "{relative}") %>
+        <% date_as_string =
+          Timex.format!(post.date, "%Y.%m.%d", :strftime) %>
         <% post_attributes = %{href: post.slug} %>
 
-        <a {post_attributes} class="pp-PostItem_Link">
-          <div class="pp-PostItem">
-            <div class="pp-PostItem_Date"><%= time_ago_date %></div>
-            <h2 class="pp-PostItem_Title">
+        <li class="pp-PostItem">
+          <a class="pp-PostItem__Link" {post_attributes}>
+            <span class="pp-PostItem_Date"><%= date_as_string %></span>
+            <span class="pp-PostItem_Title">
               <%= post.title %>
-            </h2>
-            <p class="pp-PostItem_Description"><%= post.description %></p>
-          </div>
-        </a>
+            </span>
+          </a>
+        </li>
       <% end %>
-    </div>
-    """
-  end
-
-  def description(assigns) do
-    ~H"""
-    <p class="pp-Header_Navigation-Description">
-      I created <a href="https://github.com/tuist/xcodeproj">XcodeProj</a>
-      and <a href="https://github.com/tuist/tuist">Tuist</a>. My work is trusted by companies like <a href="https://adidas.com">Adidas</a>, <a href="https://www.americanexpress.com">American Express</a>, and <a href="https://etsy.com">Etsy</a>. I enjoy building delightful tools for developers and open-source communities.
-    </p>
+    </ul>
     """
   end
 

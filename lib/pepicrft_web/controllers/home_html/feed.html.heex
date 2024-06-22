@@ -1,0 +1,34 @@
+<h1 id="feed">
+  <a href="#feed">Feed 📋</a>
+</h1>
+
+<section class="pp-Feed-List">
+  <%= for status <- @statuses do %>
+    <% content = status["content"] %>
+    <% media = status["media_attachments"] %>
+    <% url = status["url"] %>
+    <%= if String.trim(content) != "" do %>
+      <article class="pp-Feed-List_Post">
+        <a class="pp-Feed-List_Post_Link" href={url}>Link</a>
+        <%= raw content %>
+        <%= if media != [] do %>
+          <div class="pp-Feed-List_Post_Media">
+            <%= for m <- media do %>
+              <%= case m["type"] do %>
+              <% "gifv" -> %>
+                <video autoplay loop muted playsinline class="pp-Feed-List_Post_Media_Image">
+                  <source src={m["url"]} type="video/mp4">
+                </video>
+              <% _ -> %>
+                <a href={m["url"]} target="_blank">
+                  <img src={m["url"]} alt={m["description"]} class="pp-Feed-List_Post_Media_Image"/>
+                </a>
+              <% end  %>
+            <% end %>
+          </div>
+        <% end %>
+      </article>
+      <hr>
+    <% end %>
+  <% end  %>
+</section>

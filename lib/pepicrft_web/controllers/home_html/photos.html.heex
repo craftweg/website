@@ -1,0 +1,15 @@
+<h1 id="photos">
+  <a href="#photos">Photos 📸</a>
+</h1>
+
+<section>
+  <%= for status <- @statuses do %>
+    <% %{"url" => url, "content" => content, "media_attachments" => [ %{"url" => image_url, "description" => image_alt} | _]} = status %>
+    <article>
+      <h2>
+        <a href={url}><%= content %></a>
+      </h2>
+      <img class="pp-Photos_Image" src={image_url} alt={image_alt}/>
+    </article>
+  <% end %>
+</section>
