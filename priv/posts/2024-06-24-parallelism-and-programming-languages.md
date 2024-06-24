@@ -53,7 +53,7 @@ The best of all is that there's a programming language that blends
 the best of both worlds: [Elixir](https://elixir-lang.org/).
 From Ruby and JavaScript, it draws the high-level abstractions and the ease of use.
 It's also hot-reloadable, which at the end of the day is a productivity booster (this is achieved through the Erlang VM).
-From Rust, Javas, and Swift, it draws the ability to run tasks in parallel without worrying about data races.
+From Rust, Java, and Swift, it draws the ability to run tasks in parallel without worrying about data races.
 It just doesn't happen because there's no shared mutable state.
 Logic is encapsulated in processes that communicate passing copies of the state.
 It's amazing.
