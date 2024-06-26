@@ -6,6 +6,7 @@ defmodule Pepicrft.Blog.Post do
   """
   @enforce_keys [
     :path,
+    :relative_path,
     :slug,
     :title,
     :description,
@@ -13,10 +14,11 @@ defmodule Pepicrft.Blog.Post do
     :tags,
     :body,
     :og_image_slug,
-    :og_image_path
+    :og_image_path,
   ]
   defstruct [
     :path,
+    :relative_path,
     :slug,
     :title,
     :description,
@@ -35,7 +37,8 @@ defmodule Pepicrft.Blog.Post do
   @type attributes :: any
   @spec build(String.t(), attributes, String.t()) :: %Pepicrft.Blog.Post{}
   def build(path, %{"title" => title, "tags" => tags} = frontmatter, body) do
-    filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.take(-1) |> hd
+    filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.at(-1)
+    relative_path = "/priv/" <> (Path.relative_to_cwd(path) |> String.split("/priv/") |> Enum.at(-1))
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
 
@@ -54,6 +57,7 @@ defmodule Pepicrft.Blog.Post do
     struct!(
       __MODULE__,
       path: path,
+      relative_path: relative_path,
       slug: slug,
       title: title,
       date: date,

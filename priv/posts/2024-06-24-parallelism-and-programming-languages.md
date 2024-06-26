@@ -43,7 +43,7 @@ but it's a whole different approach to building, debugging, and testing software
 Is it worth it?
 What's clear though is that there's something unique in the functional programming paradigm that we can't ignore.
 When the state is mutated as it's passed around,
-data race problems and gone and you can take full advantage of the hardware where the software is running.
+data race problems are gone and you can take full advantage of the hardware where the software is running.
 Your production servers and development scales by throwing more CPU cores and memory.
 Does your test suite take a long time to execute? Increase its parallelism.
 And the best part? You can do that without being worried about flakiness levels increasing.

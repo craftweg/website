@@ -1,8 +1,18 @@
-
 <% date_as_string = Timex.format!(@post.date, "%Y.%m.%d", :strftime) %>
 <h1 class="pp-Post_Title"><%= @post.title %></h1>
 <p class="pp-Post_TimeAgo"><%= date_as_string %></p>
 
 <div class="pp-Post_Body">
-  <%= raw @post.body %>
+  <%= raw(@post.body) %>
 </div>
+
+<footer>
+  <p class="pp-Post_Footer">
+    <small>
+      © <time datetime="2024">2024</time>
+      Pedro Piñera. The post is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+      and available as markdown <a href={"https://github.com/pepicrft/website/blob/main#{@post.relative_path}"}>here</a>.
+    </small>
+  </p>
+</footer>
