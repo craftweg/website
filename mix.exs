@@ -47,7 +47,7 @@ defmodule Pepicrft.MixProject do
        ref: "5d35d42493b94b35f1ccec39da640cf8b69acc95"},
       {:phoenix, "~> 1.7.3", override: true},
       {:phoenix_ecto, "~> 4.6.0"},
-      {:yaml_elixir, "~> 2.9.0"},
+      {:yaml_elixir, "~> 2.11.0"},
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3.3"},
