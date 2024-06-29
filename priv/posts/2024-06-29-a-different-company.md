@@ -26,6 +26,4 @@ We believe that teams shouldn’t have to rely on complex scripting to glue tool
 
 We’re leveraging our culture of innovation to challenge cargo-culted solutions and move the ecosystem forward. In the coming months, I’ll be sharing more ideas on how we plan to approach common problems in novel ways.
 
-—-
-
 Building Tuist is like working with a blank canvas, allowing us to create the company we envision based on our values. We’re not simply copying what’s been done before, but rather reflecting deeply on what we want to achieve. Our goal is to build a unique company that embraces open source without fear.
