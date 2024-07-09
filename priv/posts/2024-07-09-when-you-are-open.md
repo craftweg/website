@@ -1,5 +1,5 @@
 ---
-title: "The technology does matter"
+title: "When you are open"
 description: "While many companies see openness as a business risk, I see it as an opportunity to build a different type of company."
 tags: ["Business", "Values"]
 ---
