@@ -67,7 +67,7 @@ defmodule Pepicrft.MixProject do
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
       {:phoenix_html_sanitizer, "~> 1.1.1"},
-      {:image, "~> 0.51.0"},
+      {:image, "~> 0.52.0"},
       {:file_system, "~> 0.2"},
       {:remote_ip, "~> 1.1"},
       {:req, "~> 0.5.0"},
