@@ -39,7 +39,9 @@ In the example below, that folder is `Frameworks`, relative to the parent contai
 /* End PBXFileSystemSynchronizedRootGroup section */
 ```
 
-Then Apple introduced another object, `PBXFileSystemSynchronizedBuildFileExceptionSet`, which is used to provide "exceptions." Those exceptions are used for three things, and maybe others that I'm yet to uncover:
+The glue between that object and the targets happens in the new `fileSystemSynchronizedGroups` property of the `PBXTarget` object.
+
+Then Apple also introduced another object, `PBXFileSystemSynchronizedBuildFileExceptionSet`, which is used to provide "exceptions." Those exceptions are used for three things, and maybe others that I'm yet to uncover:
 
 - Filtering out certain files and folders.
 - Overriding the default file type.
