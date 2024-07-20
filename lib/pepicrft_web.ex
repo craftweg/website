@@ -18,7 +18,7 @@ defmodule PepicrftWeb do
   """
 
   @spec static_paths :: [<<_::32, _::_*8>>, ...]
-  def static_paths, do: ~w(assets pdfs fonts styles images favicon favicon.ico robots.txt)
+  def static_paths, do: ~w(assets pdfs fonts styles images favicon favicon.ico robots.txt ai.txt)
 
   def router do
     quote do
