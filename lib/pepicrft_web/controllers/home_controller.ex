@@ -23,7 +23,7 @@ defmodule PepicrftWeb.HomeController do
   def photos(conn, _params) do
     %{body: statuses} =
       Req.get!(
-        "https://camera.pepicrft.me/api/pixelfed/v1/accounts/702760890334240769/statuses?only_media=true&min_id=1"
+        "https://photos.pepicrft.me/api/pixelfed/v1/accounts/724512574492979201/statuses?only_media=true&min_id=1"
       )
 
     render(conn, :photos, statuses: statuses)
