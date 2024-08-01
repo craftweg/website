@@ -15,7 +15,7 @@ defmodule PepicrftWeb.HomeController do
 
   def feed(conn, _params) do
     %{body: statuses} =
-      Req.get!("https://masto.pepicrft.me/api/v1/accounts/112545800553693985/statuses")
+      Req.get!("https://mastodon.pepicrft.me/api/v1/accounts/112887825210968145/statuses")
 
     render(conn, :feed, statuses: statuses)
   end
@@ -23,7 +23,7 @@ defmodule PepicrftWeb.HomeController do
   def photos(conn, _params) do
     %{body: statuses} =
       Req.get!(
-        "https://photos.pepicrft.me/api/pixelfed/v1/accounts/724512574492979201/statuses?only_media=true&min_id=1"
+        "https://photos.pepicrft.me/api/pixelfed/v1/accounts/724674489426051073/statuses?only_media=true&min_id=1"
       )
 
     render(conn, :photos, statuses: statuses)
