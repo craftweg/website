@@ -14,7 +14,7 @@ defmodule Pepicrft.Blog.Post do
     :tags,
     :body,
     :og_image_slug,
-    :og_image_path,
+    :og_image_path
   ]
   defstruct [
     :path,
@@ -38,7 +38,10 @@ defmodule Pepicrft.Blog.Post do
   @spec build(String.t(), attributes, String.t()) :: %Pepicrft.Blog.Post{}
   def build(path, %{"title" => title, "tags" => tags} = frontmatter, body) do
     filename_without_extension = path |> Path.rootname() |> Path.split() |> Enum.at(-1)
-    relative_path = "/priv/" <> (Path.relative_to_cwd(path) |> String.split("/priv/") |> Enum.at(-1))
+
+    relative_path =
+      "/priv/" <> (Path.relative_to_cwd(path) |> String.split("/priv/") |> Enum.at(-1))
+
     [year, month, day] = filename_without_extension |> String.split("-") |> Enum.take(3)
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
 
@@ -129,15 +132,9 @@ defmodule Pepicrft.Blog.Post do
   end
 
   defp html_to_text(html) do
-    {:safe, html} =
+    {:ok, html} =
       html
-      |> String.replace(~r/<li>/, "\\g{1}- ", global: true)
-      |> String.replace(
-        ~r/<\/?\s?br>|<\/\s?p>|<\/\s?li>|<\/\s?div>|<\/\s?h.>/,
-        "\\g{1}\n\r",
-        global: true
-      )
-      |> PhoenixHtmlSanitizer.Helpers.sanitize(:strip_tags)
+      |> Pandex.html_to_plain()
 
     html
   end
