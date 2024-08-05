@@ -1,0 +1,17 @@
+---
+title: "Where do I see myself in 10 years?"
+description: "This blog post reflects on the importance of living a simple life and the impact of social media on our definition of success."
+tags: ["Reflections", "Life"]
+---
+
+Where do I see myself in 10 years? That’s a question my therapist asked me a week ago. My answer was **being healthy, living a simple life, and having a business where people feel inspired and creative.**
+
+In recent years, I’ve learned through life circumstances that a simple life brings a peace of mind that’s priceless. This is hard because sometimes the environment pushes you to seek happiness through material possessions, but those, in the end, bring additional problems that I wouldn’t have had in the first place. For example, I wouldn’t have felt angry at Apple wanting to charge me €250 to fix an [AirPods Max](https://www.apple.com/de/airpods-max/) that they broke with a software update if I hadn’t bought them. Now I use old earphones with cables, and not only do they last longer, but I don’t have the responsibility of having to charge them. I don’t have a car, and I don’t plan to buy one. I fell into the trap of buying an [Apple Watch](https://www.apple.com/watch/), and now I have to remember to charge it every night. I don’t know... life is simple, and we are pushed to make it more complicated. I think that complication puts us in mental exhaustion, which is the perfect ground for hyper-capitalists to keep pushing more stuff on us. Note that I say hyper-capitalists to differentiate from other forms of capitalism that bet on [circular economies](https://www.europarl.europa.eu/topics/en/article/20151201STO05603/circular-economy-definition-importance-and-benefits).
+
+I never felt the need to buy to show off. If I was lucky enough to get a bit of extra money through my work, I saved it or took my parents on holiday in return for all they invested in me over the years. Their happiness is priceless and something that I’d pay for endlessly.
+
+When I scroll through X or [LinkedIn](https://linkedin.com), a lot of what I see makes me allergic to those platforms. There is a definition of success based on how many impressions your publications got or how large your last round of investment was. They are pushing us to redefine happiness and success based on monetary and fame goals, and it’s very common to fall into that trap and pursue the same things, only to realize that you might end up being more miserable despite all those impressions of your posts. I feel allergic to that, but I must admit I fell into that a few times in the past. Those platforms were designed for that.
+
+And now that we are [building a company](https://tuist.io), it feels like rowing in a different direction, but it’s a lot of fun doing something based on our own intuition and definition of happiness. Companies build proprietary walls that we tear down. [We make others angry](/blog/2023/11/10/dear-bitrise) by protecting a piece of software to ensure every organization can continue using it for as long as they can. We step into established domains like CI with the energy to do things differently. We share what and how we do it because we’d like to inspire others to do the same and build trust through transparency.
+
+So yeah, a simple and social life optimizing for fun is what I see myself doing in 10 years. And I’ll push away anything that tries to steer my life in a different direction.
