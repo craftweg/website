@@ -19,7 +19,7 @@ Open Source and permissive licenses like [MIT](https://opensource.org/license/mi
 
 Other organizations seek protection by adopting AGPLv3, which many companies have policies against, and selling dual licenses and enterprise features. Those businesses are often referred to as [Open Core](https://en.wikipedia.org/wiki/Open-core_model). However, companies are still facing litigation risks, which we do not want for our customers. So what's the alternative?
 
-I think the answer for Tuist is Sentry's new license concept: [Fair Source](https://fair.io/), particularly their [Functional Source License (FSL)](https://fsl.software/). The license beautifully strikes a good balance between the freedom of Open Source and the protection of the business:
+I think the answer for Tuist is Sentry's new license concept: [Fair Source](https://fair.io/), particularly their [Functional Source License (FSL)](https://fsl.software/). The license beautifully strikes a good balance between the freedom of Open Source and the protection of the business.
 
 The code is available (Customer freedom). You can check out the code, use it, extend it, contribute to it, and host it as long as you don't try to compete with the business (Business protection) so that the project can thrive and benefit everyone. And after two years, the code becomes MIT, so if the business dies, anyone can take it over and continue to thrive.
 
