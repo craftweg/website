@@ -1,5 +1,5 @@
 ---
-title: "Fair software: Sustainability with no customer risk"
+title: "Fair Source: Sustainability with no customer risk"
 description: "In this post, I explore the idea of a fully open Tuist platform."
 tags: ["Fair souce", "Open business", "Tuist"]
 ---
