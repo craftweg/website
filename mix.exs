@@ -66,7 +66,7 @@ defmodule Pepicrft.MixProject do
       {:timex, "~> 3.7"},
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
-      {:image, "~> 0.54.0"},
+      {:image, "~> 0.53.0"},
       {:file_system, "~> 0.2"},
       {:remote_ip, "~> 1.1"},
       {:req, "~> 0.5.0"}
