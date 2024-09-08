@@ -16,7 +16,7 @@ Dagger will not only be instrumental in gaining freedom but also in transitionin
 
 Tuist will enable Dagger pipelines to run in macOS environments, triggered by a CLI command or a GitHub event. It’s simple:
 
-```bash
+```language-bash
 tuist workflows run test –remote xcode-15
 ```
 
@@ -24,7 +24,7 @@ This command means: “Take my project, run the workflow in a remote environment
 
 Want to see a running build? Easy:
 
-```bash
+```language-bash
 tuist workflows logs 1234 –tail
 ```
 
