@@ -8,7 +8,7 @@ Did you notice how much development power CI companies have wasted on creating s
 
 Remember the revolution that containers brought to the shipping industry? Suddenly, transportation methods adhered to a standard, allowing innovation at different layers. There are many examples of this on the internet, and the phenomenon is called the “narrow waist.” Narrow waists shift focus from redundant efforts to new forms of innovation.
 
-What we are missing in automation is the equivalent of containers or narrow waists. Fortunately, Dagger is building just that. No more vendor lock-in through proprietary pipeline formats or walled-off automation experiences built into SaaS products. A brighter future for automation is on the horizon, and Tuist is betting on it.
+What we are missing in automation is the equivalent of containers or narrow waists. Fortunately, [Dagger](https://dagger.io) is building just that. No more vendor lock-in through proprietary pipeline formats or walled-off automation experiences built into SaaS products. A brighter future for automation is on the horizon, and Tuist is betting on it.
 
 Mobile DevOps? Free Automation Ops is better. It’s free because it gives organizations the freedom to choose and move across services with minimal costs. As a result, it forces existing CI providers to innovate. My guess is that many will fall victim to the sunk cost fallacy, throwing money at marketing their Mobile DevOps solutions. Good luck! We need to bring freedom back to organizations.
 
