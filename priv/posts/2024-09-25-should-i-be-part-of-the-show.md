@@ -1,6 +1,6 @@
 ---
 title: "Should I join the show?"
-description: “This blog post is a reflection in my relationship with a social network, X. I share my thoughts on the unhealthy environment that the platform has become and how it contrasts with the values of the company I'm building, Tuist. I also reflect on the benefits of the web in its raw form and the importance of running marathons over sprints."
+description: "This blog post is a reflection in my relationship with a social network, X. I share my thoughts on the unhealthy environment that the platform has become and how it contrasts with the values of the company I'm building, Tuist. I also reflect on the benefits of the web in its raw form and the importance of running marathons over sprints."
 tags: ["Mental health", "Social networks"]
 ---
 
