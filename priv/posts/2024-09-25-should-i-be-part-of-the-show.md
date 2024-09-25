@@ -1,7 +1,7 @@
 ---
 title: "Should I join the show?"
 description: “This blog post is a reflection in my relationship with a social network, X. I share my thoughts on the unhealthy environment that the platform has become and how it contrasts with the values of the company I'm building, Tuist. I also reflect on the benefits of the web in its raw form and the importance of running marathons over sprints."
-tags: ["Mental health”, "Social networks"]
+tags: ["Mental health", "Social networks"]
 ---
 
 When I enter X these days, it reminds me of Facebook, which I moved away from long ago. The feed is full of crap, with posts formatting their text in bold to get your attention. People step on each other in a macho-like manner: "Hey! You think you know about this topic, but let me tell you that I know more than you." It feels like a show where people are feeding their narcissism, and X tries to get everyone’s eyes on debates. Not everything is like this, but most of the feed the algorithm designed for me.
