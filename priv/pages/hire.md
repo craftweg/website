@@ -28,5 +28,5 @@ Being a generalist makes one’s role harder to understand for organizations tha
 
 ## How to contact me
 
-Drop me an email at [hola@pepicrft.me](mailto:hola@pepicrft.me) or [use this link](https://cal.com/pepicrft/new-opportunity) to book a 30-minute call.
+Drop me an email at [hola@pepicrft.me](mailto:hola@pepicrft.me) or [use this link](https://cal.com/pepicrft/30-min) to book a 30-minute call.
 Even if your needs are not included in the list above, if you’d like to bring me to your team, let’s chat.
