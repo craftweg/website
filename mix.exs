@@ -62,7 +62,7 @@ defmodule Pepicrft.MixProject do
       {:gettext, "~> 0.26"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.35", only: :dev, runtime: false},
       {:timex, "~> 3.7"},
       {:sweet_xml, "~> 0.7.3"},
       {:pandex, "~> 0.2.0"},
