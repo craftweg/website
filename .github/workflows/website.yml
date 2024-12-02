@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 15
     services:
       db:
-        image: postgres:16
+        image: postgres:17
         ports: ['5432:5432']
         env:
           POSTGRES_PASSWORD: postgres
