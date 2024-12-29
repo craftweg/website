@@ -1,5 +1,5 @@
 [tools]
-elixir="1.18.0"
+elixir="1.18.1"
 erlang="27.2"
 flyctl="0.1.104"
 pandoc="3.3"
